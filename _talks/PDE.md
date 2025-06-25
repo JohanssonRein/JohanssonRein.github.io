@@ -1,0 +1,11 @@
+---
+title: "Conference in PDE"
+collection: talks
+type: "Conference proceedings talk"
+permalink: /talks/PDE
+venue: "McGill University, Burnside Building"
+date: Summer 2025
+location: "Montreal, QC, Canada"
+---
+
+This is a description of your conference proceedings talk, note the different field in type. You can put anything in this field.
