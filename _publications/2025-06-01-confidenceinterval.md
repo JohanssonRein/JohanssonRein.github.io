@@ -28,12 +28,12 @@ A random function $Q(\vec x,\theta)$ is called a pivot quantity (PQ) iff its dis
 
 Note that the function $Q$ might include $\theta$, but its overall distribution $Q(\vec x,\theta)$ is free of any parameters! For example if $X \sim N(0,\theta^2)$, then $Q(x,\theta) = \frac{1}{\theta} X \sim N(0,1)$, which is free of any parameter and it is a known distribution!\\
 
-Once we have a PQ, and the confidence level $1-\alpha$ is given, we may find constants $c_1,c_2$ such that \[ P(c_1 \leq Q(\vec x,\theta) \leq c_2) = 1-\alpha \]
+Once we have a PQ, and the confidence level $1-\alpha$ is given, we may find constants $c_1,c_2$ such that $$ P(c_1 \leq Q(\vec x,\theta) \leq c_2) = 1-\alpha $$
 
 then having $c_1,c_2$ we can solve in terms of $\theta$ to get
-\[
+$$
 P(L(\vec X) \leq \theta \leq U(\vec X)) = 1-\alpha.
-\]
+$$
 
 Mostly, the PQ is chosen based on a sufficient statistic.
 
