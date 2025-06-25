@@ -13,5 +13,5 @@ I love travelling, cooking, and plane-spotting. Below is a collection of some of
 
 <div style="text-align: center;">
   <img src="images/vancouver1.jpg" alt="Summer research" width="300">
-  <p><em>This was taken during my summer research at McGill.</em></p>
+  <p><em>Stanley Park, Vancouver, Fall 2023.</em></p>
 </div>
