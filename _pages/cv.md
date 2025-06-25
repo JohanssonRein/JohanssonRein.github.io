@@ -46,6 +46,10 @@ Talks
 * Summer 2025: Survival Analysis Conference
   * McGill University
   * I organised a reading group in survival analysis during June 2025 to Augest 2025, I will present my research works via weekly or bi-weekly presentations.
+
+* Summer 2025: PDE Conference
+  * McGill University
+  * Me and few of my friends organised a reading group in PDE during May 2025 to Augest 2025, there will be weekly presentations on different topics of PDE. My latest talk is on harmonic functions.
   
 Teaching
 ======
