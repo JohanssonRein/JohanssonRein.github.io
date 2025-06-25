@@ -183,6 +183,80 @@ $$
 
 **Since we are interested in $z_{0.05}$. if we can not find the exact value, i.e we know $z_{0.0495} = 1.65$ and $z_{0.505 = 1.64}$, we then may take the average to get a better approximate of $z_{0.05} \approx 1.645$.**
 
+**4. Mean Difference in Two Mutually Independent Normal Random Samples:**
+
+Given two mutually independent random samples $X_1,\cdots,X_m \sim N(\mu_1,\sigma^2)$ and $Y_1,\cdots,Y_n \sim N(\mu_2,\sigma^2)$, we are interested in constructing the confidence interval for $\mu_1-\mu_2$. The PQ is
+
+\[
+Q(\vec X,\vec Y,\vec\mu) = \frac{(\overline{X}_m - \overline{Y}_n) - (\mu_1-\mu_2)}{S\sqrt{\frac{1}{m}+\frac{1}{n}}} \sim t(m+n-2)
+\]
+
+where 
+
+\[
+S^2 = \frac{1}{m+n-2} \left\{ \sum_{i=1}^m (X_i -\overline{X}_m)^2 +\sum_{j=1}^n (Y_i - \overline{Y}_n)^2 \right\}
+\]
+
+so the $100(1-\alpha)\%$ C.I is given by
+
+\[
+\left( (\overline{X}_m - \overline{Y}_n) - t(m+n-2,\alpha/2) \cdot S\sqrt{\frac{1}{m} +\frac{1}{n}},(\overline{X}_m -\overline{Y}_n) + t(n+m-2,\alpha/2) \cdot S\sqrt{\frac{1}{m}+\frac{1}{n}}\right)
+\]
+
+**Example:**
+In a packing plant, a machine packs cartons with jars. It is supposed that a new machine will pack faster on the average than
+the machine currently used. To test that hypothesis, the times it
+takes each machine to pack ten cartons are recorded. The results
+in seconds are:
+\begin{center}
+old : $42.7, 43.8, 42.5, 43.1, 44.0, 43.6, 43.3, 43.5, 41.7, 44.1$;
+
+new : $42.1, 41.3, 42.4, 43.2, 41.8, 41.0, 41.8, 42.8, 42.3, 42.7$.
+\end{center}
+Construct a $95\%$ confidence interval for the difference in the
+respective means. Provide interpretation for the interval. (Assume
+that the timings for the old and new machines are independent $i.i.d$
+samples from $N(\mu_1, \sigma_1^2)$
+and $N(\mu_2,\sigma_2^2)$ respectively, and $\sigma_1 = \sigma_2$.
+
+
+Here, denote $X_i$ to be the old sample, and $Y_j$ to be the new sample. Then from the data provided we can compute that $\overline{X} = 43.23$ and $\overline{Y} = 42.14$, so $\overline{X} - \overline{Y} = 1.09$, and 
+\[
+S^2 = \frac{1}{18}\left\{ \sum_{i=1}^{10} (\overline{X}_i - 43.23)^2 + \sum_{j=1}^{10} (\overline{Y}_j -42.14)^2\right\}
+\]
+
+
+**5. Mean Difference in Two Mutually Independent Non-normal Random Samples:**
+
+This set up is roughly the same as the previous one, but here we removed the normal restriction, and we use central limit theorem to get the approximate of C.I for large $n,m$. We know that the PQ is
+\[
+Q(\vec X,\vec Y,\vec\theta) = \frac{(\overline{X}_m - \overline{Y}_n) - (\mu_1-\mu_2)}{\sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}}} \overset{d}{\to} N(0,1).
+\]
+
+and the $100(1-\alpha)\%$ C.I is given by
+\[
+\left( \overline{X}_m - \overline{Y}_n - z_{\alpha/2}\cdot \sqrt{\frac{S_m^2}{m} + \frac{S_n^2}{n}} , \overline{X}_m - \overline{Y}_n +z_{\alpha/2}\cdot\sqrt{\frac{S_m^2}{m} +\frac{S_n^2}{n}}\right)
+\]
+
+Note that as $n\to\infty$, $S_m^2 \overset{P}{\to} \sigma_1^2$ and $S_n^2 \overset{P}{\to} \sigma_2^2$, so we can swap to whichever is easier for us to compute.
+
+**Example:**
+We wish to compare the daily intake of selenium in two regions. In
+each region, $30$ adults were tested and the results (in mg/day)
+were:
+$\overline{x}_n = 167.1 , s_n = 24.3 , \overline{y}_m = 140.9 , s_m = 17.6$
+Find a $95\%$ approximate confidence interval for the difference in
+mean daily intake of selenium in the two regions. Provide
+interpretation for the interval.
+
+
+This is the case where we will find the C.I for the difference of mean in two non-normal random samples. So we apply the above formula, we know that $\overline{X}_m - \overline{Y}_n = 26.2$, $\sqrt{\frac{s_m^2}{m}+\frac{s_n^2}{n}\approx 5.477986}$ and here $\alpha = 0.05$, so $z_{\alpha/2} = z_{0.025}$, and hence we have the $95\%$ C.I to be $26.2 \pm z_{0.025} \cdot 5.477986$. From the normal table, $z_{0.025} = 1.96$, so finally we have $(15.46315,36.93685)$.
+
+Please make sure how to read a normal table!! Here you want to find $z_{\alpha/2}$, where by definition we have $P(X<z_{\alpha/2}) = \alpha/2$, so you will go through in the middle of the table to get $\alpha/2$ first (in our table would be $1-\alpha/2$ and then see the coordinates correspond to $z$! That will give you the correct $x$ value! Make sure you know it! Make sure you know it! Don't wait until you are in the gym and realized you're an idiot.\\
+
+
+
+
 
 
 
