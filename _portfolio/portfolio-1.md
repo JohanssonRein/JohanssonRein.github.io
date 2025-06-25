@@ -1,6 +1,6 @@
 ---
-title: "My Favourite Restaurants"
-excerpt: "Where To Eat at Montreal"  #<br/><img src='/images/mcgill.jpg'>"
+title: "Katsu Lovers"
+excerpt: "Best Katsu places in Montreal (By me)"  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
 ---
 
