@@ -1,11 +1,11 @@
 ---
-title: "Statistics: Confidence Interval"
+title: "Statistics Series 2: Confidence Interval"
 collection: publications
 category: manuscripts
 permalink: /publication/2025-06-01-confidenceinterval
 excerpt: 'In this article we will talk about confidence interval'
 date: 2025-06-01
-venue: '01'
+venue: 'Summer'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
