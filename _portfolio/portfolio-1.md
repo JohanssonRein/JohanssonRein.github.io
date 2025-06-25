@@ -12,7 +12,7 @@ collection: portfolio
 
 <div style="text-align: center;">
   <img src="/images/katsuya.jpg" alt="Winter Break" width="400">
-  <p><em>Restaurent Katsuya, 1665 Blvd. De Maisonneuve.</em></p>
+  <p><em>Restaurant Katsuya, 1665 Blvd. De Maisonneuve.</em></p>
 </div>
 
 <div style="text-align: center;">
