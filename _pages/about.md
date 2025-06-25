@@ -12,6 +12,7 @@ My name is Jiajun Zhang, I am an undergraduate at McGill University, located in 
 I love travelling, cooking, and plane-spotting. Below is a collection of some of my favourite pictures taken throughout my undergraduate period:
 
 <div style="text-align: center;">
-  <img src="images/vancouver1.jpg" alt="Summer research" width="300">
+  <img src="images/vancouver1.jpg" alt="Reading Break" width="300">
   <p><em>Stanley Park, Vancouver, Fall 2023.</em></p>
 </div>
+
