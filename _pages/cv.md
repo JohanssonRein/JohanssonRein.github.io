@@ -50,7 +50,7 @@ Talks
 Teaching
 ======
 * Fall 2023 - Now: Mathematics Tutor and Teaching Assistant
-  *McGill University
+  * McGill University
 
   
 Service and leadership
