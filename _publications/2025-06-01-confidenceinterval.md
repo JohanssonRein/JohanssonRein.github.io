@@ -98,9 +98,9 @@ Q(\vec X,\sigma^2) = \frac{(n-1)S_n^2}{\sigma^2} \sim \chi_{n-1}^2
 
 and the $100(1-\alpha)\%$ C.I is given by
 
-\[
+$$
 \left( \frac{(n-1)S_n^2}{\chi^2_{(n-1,\alpha/2)}} , \frac{(n-1)S_n^2}{\chi^2_{(n-1,1-\alpha/2)}}\right).
-\]
+$$
 
 $\bullet$ if $\mu$ is known, then
 
