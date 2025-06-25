@@ -79,6 +79,44 @@ From the C.I above, we construct
 
 From the $t$-table, $t(7,0.025) =2.365$, so for the $95\%$ confidence interval, our final answer is $(2926.38,2991.62)$. The interpretation is that, **this interval estimator either includes $\theta$ or not, basically it captures $\theta$ with probability $0$ or $1$. if we were to repeat the experiment and compute similar confidence intervals for $\mu$, we expect that $100(1-\alpha)\%$ of those post-experimental intervals to capture $\mu$.**\\
 
+(\romannumeral 2) **Confidence interval for $\sigma^2$ in a normal family:**\\
+
+$\bullet$ If $\mu$ is unknown, then
+\[
+Q(\vec X,\sigma^2) = \frac{(n-1)S_n^2}{\sigma^2} \sim \chi_{n-1}^2
+\]
+
+and the $100(1-\alpha)\%$ C.I is given by
+\[
+\left( \frac{(n-1)S_n^2}{\chi_{(n-1,\alpha/2)}^2} , \frac{(n-1)S_n^2}{\chi_{(n-1,1-\alpha/2)}^2}\right).
+\]
+
+$\bullet$ if $\mu$ is known, then
+\[
+Q(\vec X,\sigma^2) = \frac{\sum_{i=1}^n (X_i - \mu)^2}{\sigma^2} \sim \chi_n^2
+\]
+
+and the $100(1-\alpha)\%$ C.I is given by
+\[
+\left( \frac{(n-1)\sum(X_i-\mu)^2}{\chi^2_{(n,\alpha/2)}}, \frac{(n-1)\sum (X_i - \mu)^2}{\chi^2_{(n,1-\alpha/2)}}\right)
+\]
+
+**Example:**
+Assume that the number of days needed to hatch an egg of a certain type of a rare lizard is distributed Normally. Using incubator, $13$ eggs from different nests separately hatched. The
+sample mean is $18.97$ weeks and the sample standard deviation
+is $\sqrt{10.7}$ weeks. Find a $90\%$ confidence interval for the population
+variance. Provide interpretation for the interval.
+
+
+**Solution:**
+Here, it is the case that both $\mu,\sigma^2$ are unknown, so we construct the C.I based on
+\[
+\left( \frac{(n-1)S_n^2}{\chi_{(n-1,\alpha/2)}^2} , \frac{(n-1)S_n^2}{\chi_{(n-1,1-\alpha/2)}^2}\right) = \left( \frac{12 \cdot10.7}{\chi^2_{(12,0.05)}}, \frac{12\cdot 10.7}{\chi^2_{(12,0.95)}}\right)=(6.107,24.569).
+\]
+
+**Note that in this example sample mean is not population mean $\mu$! It is there to confuse you :)** The interpretation is that, **this interval estimator either includes $\theta$ or not, basically it captures $\theta$ with probability $0$ or $1$. if we were to repeat the experiment and compute similar confidence intervals for $\mu$, we expect that $100(1-\alpha)\%$ of those post-experimental intervals to capture $\mu$, which is the same as above.**\\
+
+
 
 
 
