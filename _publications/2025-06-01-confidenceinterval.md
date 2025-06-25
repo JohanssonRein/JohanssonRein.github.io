@@ -131,6 +131,60 @@ Here, it is the case that both $\mu,\sigma^2$ are unknown, so we construct the C
 **Note that in this example sample mean is not population mean $\mu$! It is there to confuse you :)** The interpretation is that, **this interval estimator either includes $\theta$ or not, basically it captures $\theta$ with probability $0$ or $1$. if we were to repeat the experiment and compute similar confidence intervals for $\mu$, we expect that $100(1-\alpha)\%$ of those post-experimental intervals to capture $\mu$, which is the same as above.**
 
 
+**3. Confidence Interval Approximation for $\mu$ of non-normal large sample:**
+
+We will assume that in a large random sample (\textit{usually $n>25$ is good enough}) we have $X_1,\cdots,X_n \sim f$, $\E X = \mu$, and $Var X =\sigma^2$, $E X^4 <\infty$, and we consider the asymptotic approximate C.I for $\mu$, as $n \to \infty$.
+
+$\bullet$ If $\sigma$ is known, then we have
+
+\[
+\frac{\sqrt{n}(\overline{X}_n - \mu)}{\sigma} \overset{d}{\to} N(0,1)
+\]
+
+so the $100(1-\alpha)\%$ C.I approximate is
+
+\[
+\left( \overline{X}_n - z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} , \overline{X}_n + z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} \right).
+\]
+
+$\bullet$ If $\sigma$ is unknown, then we have
+
+\[
+\frac{\sqrt{n}(\overline{X}_n - \mu)}{S_n} \overset{d}{\to} N(0,1)
+\]
+
+so the $100(1-\alpha)\%$ C.I approximate is
+
+\[
+\left( \overline{X}_n - z_{\alpha/2} \cdot \frac{S_n}{\sqrt{n}} , \overline{X}_n + z_{\alpha/2} \cdot \frac{S_n}{\sqrt{n}} \right).
+\]
+
+**Example: **
+Shopping times of $64$ randomly selected customers in a
+supermarket averaged $33$ minutes with a standard deviation of $16$
+minutes. Construct an approximate $90\%$ confidence interval for
+the mean shopping time per customer. Provide interpretation for
+the interval.
+
+
+*Note: Standard deviation is $S_n$, not the square!!!*
+
+Here, if we use large sample theory and the central limit theorem, we will have
+
+\[
+\frac{\sqrt{64} (33-\mu)}{16} \overset{d}{\to} N(0,1)
+\]
+
+Here $\alpha = 0.1$, so we look at the normal table and see that $z_{\alpha/2} = z_{0.05} \approx 1.64$, hence we have the C.I
+
+\[
+\left( 33-1.64\times\frac{16}{8} , 33+1.64\times\frac{15}{8}\right) = (29.72,36.28).
+\]
+
+**Since we are interested in $z_{0.05}$. if we can not find the exact value, i.e we know $z_{0.0495} = 1.65$ and $z_{0.505 = 1.64}$, we then may take the average to get a better approximate of $z_{0.05} \approx 1.645$.**
+
+
+
 
 
 
