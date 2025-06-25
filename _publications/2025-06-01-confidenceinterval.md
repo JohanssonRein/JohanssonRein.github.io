@@ -159,7 +159,7 @@ $$
 \left( \bar{X}_n - z_{\alpha/2} \cdot \frac{S_n}{\sqrt{n}} , \bar{X}_n + z_{\alpha/2} \cdot \frac{S_n}{\sqrt{n}} \right).
 $$
 
-**Example: **
+**Example:**
 Shopping times of $64$ randomly selected customers in a
 supermarket averaged $33$ minutes with a standard deviation of $16$
 minutes. Construct an approximate $90\%$ confidence interval for
@@ -367,12 +367,12 @@ $$
 
 The second partial derivative is
 $$
-\frac{\pl^2 \log f(X=k,\lambda)}{\partial \lambda^2}=-k \frac{1}{\lambda^2}
+\frac{\partial^2 \log f(X=k,\lambda)}{\partial \lambda^2}=-k \frac{1}{\lambda^2}
 $$
 
 and hence we have
 $$
-\mathcal{I}_1(\lambda) = -\E\left\{ -X \frac{1}{\lambda^2} \right\} = \frac{1}{\lambda}, \mathcal{I}^{-1}_1(\lambda) = \lambda
+\mathcal{I}_1(\lambda) = -E\left\{ -X \frac{1}{\lambda^2} \right\} = \frac{1}{\lambda}, \mathcal{I}^{-1}_1(\lambda) = \lambda
 $$
 
 So the MLE theory says that
