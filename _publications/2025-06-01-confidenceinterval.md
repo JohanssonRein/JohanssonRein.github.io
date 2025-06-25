@@ -169,6 +169,7 @@ the interval.
 
 *Note: Standard deviation is $S_n$, not the square!!!*
 
+**Solution:**
 Here, if we use large sample theory and the central limit theorem, we will have
 
 $$
@@ -219,7 +220,7 @@ that the timings for the old and new machines are independent $i.i.d$
 samples from $N(\mu_1, \sigma_1^2)$
 and $N(\mu_2,\sigma_2^2)$ respectively, and $\sigma_1 = \sigma_2$.
 
-
+**Solution:**
 Here, denote $X_i$ to be the old sample, and $Y_j$ to be the new sample. Then from the data provided we can compute that $\overline{X} = 43.23$ and $\overline{Y} = 42.14$, so $\overline{X} - \overline{Y} = 1.09$, and 
 $$
 S^2 = \frac{1}{18}\left\{ \sum_{i=1}^{10} (\overline{X}_i - 43.23)^2 + \sum_{j=1}^{10} (\overline{Y}_j -42.14)^2\right\}
@@ -229,11 +230,13 @@ $$
 **5. Mean Difference in Two Mutually Independent Non-normal Random Samples:**
 
 This set up is roughly the same as the previous one, but here we removed the normal restriction, and we use central limit theorem to get the approximate of C.I for large $n,m$. We know that the PQ is
+
 $$
 Q(\vec X,\vec Y,\vec\theta) = \frac{(\overline{X}_m - \overline{Y}_n) - (\mu_1-\mu_2)}{\sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}}} \overset{d}{\to} N(0,1).
 $$
 
 and the $100(1-\alpha)\%$ C.I is given by
+
 $$
 \left( \overline{X}_m - \overline{Y}_n - z_{\alpha/2}\cdot \sqrt{\frac{S_m^2}{m} + \frac{S_n^2}{n}} , \overline{X}_m - \overline{Y}_n +z_{\alpha/2}\cdot\sqrt{\frac{S_m^2}{m} +\frac{S_n^2}{n}}\right)
 $$
@@ -249,6 +252,7 @@ Find a $95\%$ approximate confidence interval for the difference in
 mean daily intake of selenium in the two regions. Provide
 interpretation for the interval.
 
+**Solution:**
 This is the case where we will find the C.I for the difference of mean in two non-normal random samples. So we apply the above formula, we know that $\overline{X}_m - \overline{Y}_n = 26.2$, also
 
 $\sqrt{\frac{s_m^2}{m}+\frac{s_n^2}{n}} \approx 5.477986$ and here $\alpha = 0.05$, so $z_{\alpha/2} = z_{0.025}$, and hence we have the $95\%$ C.I to be $26.2 \pm z_{0.025} \cdot 5.477986$. From the normal table, $z_{0.025} = 1.96$, so finally we have $(15.46315,36.93685)$.
@@ -257,16 +261,19 @@ $\sqrt{\frac{s_m^2}{m}+\frac{s_n^2}{n}} \approx 5.477986$ and here $\alpha = 0.0
 **6. Population Proportion:**
 
 Now consider we have a random sample $X_1,\cdots,X_n \sim Bernoulli(\theta)$, then we know that by central limit theorem, a PQ is
+
 $$
 Q(\vec X,\theta) = \frac{\overline{X}_n - \theta}{\sqrt{\theta(1-\theta)/n}} \overset{d}{\to} N(0,1)
 $$
 
 also for large sample, we have $\overline{X}_n \overset{P}{\to} \theta$, denote $\hat\theta_n = \overline{X}_n$, we also have an alternative PQ
+
 $$
 Q(\vec X,\theta) = \frac{\hat\theta_n - \theta}{\sqrt{\hat\theta_n(1-\hat\theta_n)}} \overset{d}{\to} N(0,1).
 $$
 
 The advantage for this PQ is that we can easily separate $\theta$ and get the $100(1-\alpha)\%$ C.I:
+
 $$
 \left( \hat\theta_n - z_{\alpha/2} \cdot \sqrt{\frac{\hat\theta_n(1-\hat\theta_n)}{n}}, \hat\theta_n +z_{\alpha/2} \cdot \sqrt{\frac{\hat\theta_n(1-\hat\theta_n)}{n}}\right)
 $$
@@ -277,7 +284,7 @@ showed $560$ in favour of candidate Jones. Find an approximate
 $99\%$ confidence interval for the population proportion in favour of
 candidate Jones. Provide interpretation for the interval.
 
-
+**Solution:**
 Here we can easily see that in this Bernoulli random sample, we have $\hat\theta_n = \overline{X}_n = 0.56$, hence we construct the C.I by
 
 $$
@@ -289,11 +296,13 @@ From the normal table, we see that $z_{0.005} \approx 2.575$.
 **7. Difference in Two Population Proportion:**
 
 Here, we have two mutually independent random samples $X_1,\cdots,X_m \sim Bernoulli(\theta_1)$ and $Y_1,\cdots,Y_n \sim Bernoulli(\theta_2)$. We are interested in the C.I of $\theta_1-\theta_2$. Similarly, denote $\hat\theta_1 = \overline{X}_m, \hat\theta_2 =\overline{Y}_n$, and the improved PQ is
+
 $$
 Q(\vec X,\vec Y,\vec\theta) = \frac{(\hat\theta_1-\theta_1)-(\hat\theta_2-\theta_2)}{\sqrt{\hat\theta_1(1-\hat\theta_1)/m +\hat\theta_2(1-\hat\theta_2)/n}} \overset{d}{\to} N(0,1).
 $$
 
 and the $100(1-\alpha)\%$ C.I is now
+
 $$
 \left((\hat\theta_1 - \hat\theta_2) - z_{\alpha/2} \cdot \sqrt{\frac{\hat\theta_1(1-\hat\theta_1)}{m}+\frac{\hat\theta_2(1-\hat\theta_2)}{n}},(\hat\theta_1 - \hat\theta_2) + z_{\alpha/2} \cdot \sqrt{\frac{\hat\theta_1(1-\hat\theta_1)}{m}+\frac{\hat\theta_2(1-\hat\theta_2)}{n}}\right)
 $$
@@ -308,18 +317,19 @@ approximate $95\%$ confidence interval for the difference in the
 proportions of people who have wrinkled skin around their eyes in
 the two populations. Provide interpretation for the interval.
 
-
+**Solution:**
 Here, we have two independent random samples, let $X_1,\cdots,X_{150} \sim Bernoulli(\theta_1)$ to be the smokers sample and $Y_1,\cdots,Y_{250} \sim Bernoulli(\theta_2)$ to be the nonsmokers sample, where $\theta_1,\theta_2$ denotes the proportion of populations who have wrinkled skin, thus $\hat\theta_1 = 95/150 = 0.633$ and $\hat\theta_2 = 105/250=0.42$. Also in this case we have $\alpha = 0.05$ hence $\alpha/2 = 0.025$ and from the normal table we have $z_{\alpha/2} = z_{0.025} = 1.96$, also $\hat\theta_1-\hat\theta_2=0.213$, $\displaystyle{\sqrt{\frac{\hat\theta_1(1-\hat\theta_1)}{m}+\frac{\hat\theta_2(1-\hat\theta_2)}{n}} \approx0.0502}$, and thus our $95\%$ C.I is $(0.1146,0.3114)$. As for interpretation? You know that.
 
 
 **8. Approximate Using MLE Theory:**
 
 Recall that, let a random sample $X_1,\cdots,X_n \sim f(x,\theta)$ where $\theta$ is a one-dimensional parameter, and $\hat\theta_n$ to be the MLE of $\theta$, then we know that
+
 $$
 \sqrt{n} (\hat\theta_n - \theta) \overset{d}{\to} N\left( 0, \mathcal{I}^{-1}_1(\hat\theta_n) \right)
 $$
 
-\textit{One remark is that since we have convergence in probability $\hat\theta_n \overset{P}{\to} \theta$, so we can replaced by $\hat\theta_n$ in Fisher information, which would be easier to separate $\theta$ in the calculation.}\\
+\textit{One remark is that since we have convergence in probability $\hat\theta_n \overset{P}{\to} \theta$, so we can replaced by $\hat\theta_n$ in Fisher information, which would be easier to separate $\theta$ in the calculation.}
 
 So we have the $100(1-\alpha)\%$ given by
 $$
@@ -329,12 +339,13 @@ $$
 Also we may use the ``empirical Fisher'' to get our estimate of $\mathcal{I}_1(\hat\theta)$:
 
 $$
-\mathcal{I}(\theta) = \frac{1}{n} \sum_{i=1}^n \left( \frac{\pl}{\pl \theta} \log f(x_i,\theta) \Bigg|_{ \theta = \hat\theta_{MLE}}  \right)^2 \overset{\text{under regularity conditions}}{=} -\frac{1}{n}\sum_{i=1}^n \left( \frac{\pl^2}{\pl \theta^2} \log f(x_i,\theta) \Bigg|_{\theta = \hat\theta_{MLE}}\right)
+\mathcal{I}(\theta) = \frac{1}{n} \sum_{i=1}^n \left( \frac{\partial}{\partial \theta} \log f(x_i,\theta) \Bigg|_{ \theta = \hat\theta_{MLE}}  \right)^2 \overset{\text{under regularity conditions}}{=} -\frac{1}{n}\sum_{i=1}^n \left( \frac{\partial^2}{\partial \theta^2} \log f(x_i,\theta) \Bigg|_{\theta = \hat\theta_{MLE}}\right)
 $$
 
 
 
 Recall the delta-method and the invariance of MLE. If $\hat\theta_n$ is the MLE of $\theta$, and then for any function $g$, $g(\hat\theta_n)$ is the MLE of $g(\theta)$, and the first order delta-method shows us that if $\sqrt{n}(\hat\theta_n - \theta) \overset{d}{\to} N(0,\mathcal{I}_1^{-1}(\hat\theta_n))$, then
+
 $$
 \sqrt{n}(g(\hat\theta_n) - g(\theta)) \overset{d}{\to} N(0, [g'(\theta)]^2 \cdot \mathcal{I}_1^{-1}(\hat\theta_n)).
 $$
@@ -347,8 +358,8 @@ $$
 **Example:**
 Suppose a random sample $X_1,\cdots,X_n \sim Poisson(\lambda)$ and $\lambda$ is the unknown parameter. Using the MLE theory, construct
 a $100(1-\alpha)\%$ approximate two-sided confidence interval for $\lambda$. Then find the $100(1-\alpha)\%$ C.I for $\lambda^2$, and $e^{-\lambda}$.
-**
 
+**Solution:**
 Here, we can easily see that the MLE of a Poisson random sample is just the sample mean, $\hat\theta_n = \overline{X}_n$. Now we find the Fisher information. The log-pdf of one sample is
 $$
 \log f(X=k,\lambda) = \log e^{-\lambda} \frac{\lambda^k}{k!} = -\lambda + k\log \lambda - \log k!.
@@ -356,7 +367,7 @@ $$
 
 The second partial derivative is
 $$
-\frac{\pl^2 \log f(X=k,\lambda)}{\pl \lambda^2}=-k \frac{1}{\lambda^2}
+\frac{\pl^2 \log f(X=k,\lambda)}{\partial \lambda^2}=-k \frac{1}{\lambda^2}
 $$
 
 and hence we have
@@ -370,11 +381,14 @@ $$
 $$
 
 and given that $\mathcal{I}_1^{-1}(\hat\theta) = \overline{X}_n$, hence the $100(1-\alpha)\%$ C.I is
+
 $$
 \left(\overline{X}_n - z_{\alpha/2}\cdot \sqrt{\frac{1}{n} \cdot \overline{X}_n} \hspace{0.2cm} , \hspace{0.2cm}\overline{X}_n +z_{\alpha/2} \cdot \sqrt{\frac{1}{n} \cdot \overline{X}_n}\right).
 $$
 
-For $\lambda^2$ and $e^{-\lambda}$, we will then apply delta-method to find the C.I, we define $g(\lambda) = \lambda^2$, and $h(\lambda) = e^{-\lambda}$, hence it is easy to see that $\hat\lambda^2_{MLE} = \overline{X}_n^2$ and $e^{-\lambda}_{MLE} = e^{-\overline{X}_n}$. Then delta-method says that
+For $\lambda^2$ and $e^{-\lambda}$, we will then apply delta-method to find the C.I, we define $g(\lambda) = \lambda^2$, and $h(\lambda) = e^{-\lambda}$, hence it is easy to see that  $\hat\lambda^2_{MLE} = \bar{X}^2_n$ 
+and $e^{-\lambda}_{MLE} = e^{-\overline{X}_n}$. Then delta-method says that
+
 $$
 \sqrt{n}(\overline{X}_n^2 - \lambda^2) \overset{d}{\to} N\left(0,4\lambda^2\cdot\overline{X}_n \right)
 $$
@@ -396,7 +410,7 @@ $$
 
 and the C.I is
 $$
-\left(e^{-\overline{X}_n} - z_{\alpha/2} \cdot 2e^{-\overline{X}_n} \cdot e^{-e^{\overline{X}_n}} \cdot \sqrt{\frac{e^{-\overline{X}_n}}{n}} \hspace{0.2cm} , \hspace{0.2cm}e^{-\overline{X}_n} + z_{\alpha/2} \cdot 2e^{-\overline{X}_n} \cdot e^{-e^{\overline{X}_n}} \cdot \sqrt{\frac{e^{-\overline{X}_n}}{n}} \right).
+\left(e^{-\bar{X}_n } - z_{\alpha/2} \cdot 2e^{-\overline{X}_n} \cdot e^{-e^{\overline{X}_n}} \cdot \sqrt{\frac{e^{-\overline{X}_n}}{n}} \hspace{0.2cm} , \hspace{0.2cm}e^{-\overline{X}_n} + z_{\alpha/2} \cdot 2e^{-\overline{X}_n} \cdot e^{-e^{\overline{X}_n}} \cdot \sqrt{\frac{e^{-\overline{X}_n}}{n}} \right).
 $$
 
 
