@@ -12,4 +12,10 @@ bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
 citation: 'Jiajun Zhang, You. (2025), part of my notes in Honors Statistics taught by Prof. Abbas Khalili'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font. $E = mc^2$ 
+The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font. 
+
+
+Let $L(\vec X), U(\vec X)$ be two statistics such that $L(\vec x) \leq U(\vec x), \forall x\in\mathcal{X}$. A random interval $(L(\vec X),U(\vec X))$ is called an interval estimator or confidence interval with confidence level $1-\alpha, \alpha \in (0,1)$ if $P(L(\vec X) \leq \theta \leq U(\vec X)) = 1-\alpha$.
+
+
+Note that it is \textbf{wrong} to say that $(L(\vec x), U(\vec x))$ (post-experimental data) captures $\theta$ with probability $1-\alpha$. The interpretation is that \textit{this interval estimator either includes $\theta$ or not, basically it captures $\theta$ with probability $0$ or $1$. if we were to repeat the experiment and compute similar confidence intervals for $\theta$, we expect that $100(1-\alpha)\%$ of those post-experimental intervals to capture $\theta$.}\\
