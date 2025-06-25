@@ -11,26 +11,26 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Bachelor of Science in Honors Applied Mathematics, McGill University, 2022-2026
+  * Undergraduate Research Thesis: Analysing Incident and Prevalent Cohort Survival Data (2025)
+
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* 2024.9 - 2025.6: Mathematics Helpdesk Tutor
+  * McGill University
+  * Duties includes: Hold weekly office hours (5 hours weekly) at Burnside building room 911 and answer math questions from other students. Questions are from a wide range of fields including calculus, analysis, abstract algebra, linear algebra, probability, statistics and differential equations.
+  * Supervisor: Jerome Fortier
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* 2024.9 - 2025.1: Undergraduate Course Assistant
+  * McGill University
+  * Duties included: I work as an undergraduate course assistant for MATH 248 (Honors Vector Calculus) taught by Prof. Jean-Pierre Mutanguha, my duties include grading students' homework and writing solutions and provide feedbacks to the professor.
+  * Supervisor: Angela White
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* 2023.9 - 2024. 4: Undergraduate Course Assistant
+  * McGill University
+  * Duties included: I work as an undergraduate course assistant for MATH 233 (Linear Algebra) taught by Prof. Mikael Pichot, my duties include grading students' homework and writing solutions and provide feedback to the professor.
+  * Supervisor: Angela White
   
 Skills
 ======
