@@ -187,21 +187,21 @@ $$
 
 Given two mutually independent random samples $X_1,\cdots,X_m \sim N(\mu_1,\sigma^2)$ and $Y_1,\cdots,Y_n \sim N(\mu_2,\sigma^2)$, we are interested in constructing the confidence interval for $\mu_1-\mu_2$. The PQ is
 
-\[
+$$
 Q(\vec X,\vec Y,\vec\mu) = \frac{(\overline{X}_m - \overline{Y}_n) - (\mu_1-\mu_2)}{S\sqrt{\frac{1}{m}+\frac{1}{n}}} \sim t(m+n-2)
-\]
+$$
 
 where 
 
-\[
+$$
 S^2 = \frac{1}{m+n-2} \left\{ \sum_{i=1}^m (X_i -\overline{X}_m)^2 +\sum_{j=1}^n (Y_i - \overline{Y}_n)^2 \right\}
-\]
+$$
 
 so the $100(1-\alpha)\%$ C.I is given by
 
-\[
+$$
 \left( (\overline{X}_m - \overline{Y}_n) - t(m+n-2,\alpha/2) \cdot S\sqrt{\frac{1}{m} +\frac{1}{n}},(\overline{X}_m -\overline{Y}_n) + t(n+m-2,\alpha/2) \cdot S\sqrt{\frac{1}{m}+\frac{1}{n}}\right)
-\]
+$$
 
 **Example:**
 In a packing plant, a machine packs cartons with jars. It is supposed that a new machine will pack faster on the average than
@@ -221,22 +221,22 @@ and $N(\mu_2,\sigma_2^2)$ respectively, and $\sigma_1 = \sigma_2$.
 
 
 Here, denote $X_i$ to be the old sample, and $Y_j$ to be the new sample. Then from the data provided we can compute that $\overline{X} = 43.23$ and $\overline{Y} = 42.14$, so $\overline{X} - \overline{Y} = 1.09$, and 
-\[
+$$
 S^2 = \frac{1}{18}\left\{ \sum_{i=1}^{10} (\overline{X}_i - 43.23)^2 + \sum_{j=1}^{10} (\overline{Y}_j -42.14)^2\right\}
-\]
+$$
 
 
 **5. Mean Difference in Two Mutually Independent Non-normal Random Samples:**
 
 This set up is roughly the same as the previous one, but here we removed the normal restriction, and we use central limit theorem to get the approximate of C.I for large $n,m$. We know that the PQ is
-\[
+$$
 Q(\vec X,\vec Y,\vec\theta) = \frac{(\overline{X}_m - \overline{Y}_n) - (\mu_1-\mu_2)}{\sqrt{\frac{\sigma_1^2}{m} + \frac{\sigma_2^2}{n}}} \overset{d}{\to} N(0,1).
-\]
+$$
 
 and the $100(1-\alpha)\%$ C.I is given by
-\[
+$$
 \left( \overline{X}_m - \overline{Y}_n - z_{\alpha/2}\cdot \sqrt{\frac{S_m^2}{m} + \frac{S_n^2}{n}} , \overline{X}_m - \overline{Y}_n +z_{\alpha/2}\cdot\sqrt{\frac{S_m^2}{m} +\frac{S_n^2}{n}}\right)
-\]
+$$
 
 Note that as $n\to\infty$, $S_m^2 \overset{P}{\to} \sigma_1^2$ and $S_n^2 \overset{P}{\to} \sigma_2^2$, so we can swap to whichever is easier for us to compute.
 
