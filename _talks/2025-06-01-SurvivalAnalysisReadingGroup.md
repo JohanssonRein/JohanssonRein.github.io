@@ -9,4 +9,4 @@ date: Summer 2025
 location: "Montreal, QC, Canada"
 ---
 
-This talk will be on survival analysis
+This talk will be on survival analysis oh
