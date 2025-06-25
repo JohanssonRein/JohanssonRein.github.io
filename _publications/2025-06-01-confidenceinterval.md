@@ -99,7 +99,7 @@ Q(\vec X,\sigma^2) = \frac{(n-1)S_n^2}{\sigma^2} \sim \chi_{n-1}^2
 and the $100(1-\alpha)\%$ C.I is given by
 
 \[
-\left( \frac{(n-1)S_n^2}{\chi_{(n-1,\alpha/2)}^2} , \frac{(n-1)S_n^2}{\chi_{(n-1,1-\alpha/2)}^2}\right).
+\left( \frac{(n-1)S_n^2}{\chi^2_{(n-1,\alpha/2)}} , \frac{(n-1)S_n^2}{\chi^2_{(n-1,1-\alpha/2)}}\right).
 \]
 
 $\bullet$ if $\mu$ is known, then
@@ -125,7 +125,7 @@ variance. Provide interpretation for the interval.
 Here, it is the case that both $\mu,\sigma^2$ are unknown, so we construct the C.I based on
 
 \[
-\left( \frac{(n-1)S_n^2}{\chi_{(n-1,\alpha/2)}^2} , \frac{(n-1)S_n^2}{\chi_{(n-1,1-\alpha/2)}^2}\right) = \left( \frac{12 \cdot10.7}{\chi^2_{(12,0.05)}}, \frac{12\cdot 10.7}{\chi^2_{(12,0.95)}}\right)=(6.107,24.569).
+\left( \frac{(n-1)S_n^2}{\chi^2_{(n-1,\alpha/2)}} , \frac{(n-1)S_n^2}{\chi^2_{(n-1,1-\alpha/2)}}\right) = \left( \frac{12 \cdot 10.7}{\chi^2_{(12,0.05)}}, \frac{12\cdot 10.7}{\chi^2_{(12,0.95)}}\right)=(6.107,24.569).
 \]
 
 **Note that in this example sample mean is not population mean $\mu$! It is there to confuse you :)** The interpretation is that, **this interval estimator either includes $\theta$ or not, basically it captures $\theta$ with probability $0$ or $1$. if we were to repeat the experiment and compute similar confidence intervals for $\mu$, we expect that $100(1-\alpha)\%$ of those post-experimental intervals to capture $\mu$, which is the same as above.**
@@ -133,7 +133,7 @@ Here, it is the case that both $\mu,\sigma^2$ are unknown, so we construct the C
 
 **3. Confidence Interval Approximation for $\mu$ of non-normal large sample:**
 
-We will assume that in a large random sample (\textit{usually $n>25$ is good enough}) we have $X_1,\cdots,X_n \sim f$, $\E X = \mu$, and $Var X =\sigma^2$, $E X^4 <\infty$, and we consider the asymptotic approximate C.I for $\mu$, as $n \to \infty$.
+We will assume that in a large random sample (\textit{usually $n>25$ is good enough}) we have $X_1,\cdots,X_n \sim f$, $E X = \mu$, and $Var X =\sigma^2$, $E X^4 <\infty$, and we consider the asymptotic approximate C.I for $\mu$, as $n \to \infty$.
 
 $\bullet$ If $\sigma$ is known, then we have
 
@@ -156,7 +156,7 @@ $\bullet$ If $\sigma$ is unknown, then we have
 so the $100(1-\alpha)\%$ C.I approximate is
 
 \[
-\left( \overline{X}_n - z_{\alpha/2} \cdot \frac{S_n}{\sqrt{n}} , \overline{X}_n + z_{\alpha/2} \cdot \frac{S_n}{\sqrt{n}} \right).
+\left( \bar{X}_n - z_{\alpha/2} \cdot \frac{S_n}{\sqrt{n}} , \bar{X}_n + z_{\alpha/2} \cdot \frac{S_n}{\sqrt{n}} \right).
 \]
 
 **Example: **
