@@ -5,8 +5,13 @@ permalink: /teaching/
 author_profile: true
 ---
 
+<p align="center">
+  <img src="{{ '/images/teaching.jpg' | relative_url }}" alt="Teaching Banner" style="max-width: 100%; height: auto; margin-bottom: 20px;">
+</p>
+
 {% include base_path %}
 
 {% for post in site.teaching reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
