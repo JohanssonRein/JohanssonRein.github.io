@@ -30,9 +30,9 @@ then having $c_1,c_2$ we can solve in terms of $\theta$ to get
 P(L(\vec X) \leq \theta \leq U(\vec X)) = 1-\alpha.
 \\]
 
-Mostly, the PQ is chosen based on a sufficient statistic. Below are common random samples and their corresponding PQ and  confidence intervals:\\
+Mostly, the PQ is chosen based on a sufficient statistic. Below are common random samples and their corresponding PQ and  confidence intervals:
 
-**1. Confidence Interval for $\mu$ in a normal family:**\\
+**1. Confidence Interval for $\mu$ in a normal family:**
 
 $\bullet$ If $\sigma^2$ is known, then
 \\[
@@ -77,9 +77,9 @@ From the C.I above, we construct
 \left( 2959 - t(7,0.025)\cdot\frac{39.09}{\sqrt{8}},2959+t(7,0.025) \cdot \frac{39.09}{\sqrt{8}}\right).
 \\]
 
-From the $t$-table, $t(7,0.025) =2.365$, so for the $95\%$ confidence interval, our final answer is $(2926.38,2991.62)$. The interpretation is that, **this interval estimator either includes $\theta$ or not, basically it captures $\theta$ with probability $0$ or $1$. if we were to repeat the experiment and compute similar confidence intervals for $\mu$, we expect that $100(1-\alpha)\%$ of those post-experimental intervals to capture $\mu$.**\\
+From the $t$-table, $t(7,0.025) =2.365$, so for the $95\%$ confidence interval, our final answer is $(2926.38,2991.62)$. The interpretation is that, **this interval estimator either includes $\theta$ or not, basically it captures $\theta$ with probability $0$ or $1$. if we were to repeat the experiment and compute similar confidence intervals for $\mu$, we expect that $100(1-\alpha)\%$ of those post-experimental intervals to capture $\mu$.**
 
-**2. Confidence interval for $\sigma^2$ in a normal family:**\\
+**2. Confidence interval for $\sigma^2$ in a normal family:**
 
 $\bullet$ If $\mu$ is unknown, then
 \\[
@@ -114,7 +114,7 @@ Here, it is the case that both $\mu,\sigma^2$ are unknown, so we construct the C
 \left( \frac{(n-1)S_n^2}{\chi_{(n-1,\alpha/2)}^2} , \frac{(n-1)S_n^2}{\chi_{(n-1,1-\alpha/2)}^2}\right) = \left( \frac{12 \cdot10.7}{\chi^2_{(12,0.05)}}, \frac{12\cdot 10.7}{\chi^2_{(12,0.95)}}\right)=(6.107,24.569).
 \\]
 
-**Note that in this example sample mean is not population mean $\mu$! It is there to confuse you :)** The interpretation is that, **this interval estimator either includes $\theta$ or not, basically it captures $\theta$ with probability $0$ or $1$. if we were to repeat the experiment and compute similar confidence intervals for $\mu$, we expect that $100(1-\alpha)\%$ of those post-experimental intervals to capture $\mu$, which is the same as above.**\\
+**Note that in this example sample mean is not population mean $\mu$! It is there to confuse you :)** The interpretation is that, **this interval estimator either includes $\theta$ or not, basically it captures $\theta$ with probability $0$ or $1$. if we were to repeat the experiment and compute similar confidence intervals for $\mu$, we expect that $100(1-\alpha)\%$ of those post-experimental intervals to capture $\mu$, which is the same as above.**
 
 
 
