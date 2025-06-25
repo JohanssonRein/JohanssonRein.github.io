@@ -44,9 +44,9 @@ Q(\vec X, \mu) = \frac{\sqrt{n} (\overline{X}_n - \mu)}{\sigma} \sim N(0,1)
 
 and the $100(1-\alpha)\%$ C.I is given by
 
-$$
+$
 \left( \overline{X}_n - z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} , \overline{X}_n + z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} \right)
-$$
+$
 
 $\bullet$ If $\sigma^2$ is unknown, then
 
