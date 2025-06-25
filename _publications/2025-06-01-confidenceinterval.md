@@ -22,15 +22,15 @@ Note that the function $Q$ might include $\theta$, but its overall distribution 
 
 Once we have a PQ, and the confidence level $1-\alpha$ is given, we may find constants $c_1,c_2$ such that 
 
-\[
+\\[
 P(c_1 \leq Q(\vec x,\theta) \leq c_2) = 1-\alpha
-\]
+\\]
 
 then having $c_1,c_2$ we can solve in terms of $\theta$ to get
 
-\[
+\\[
 P(L(\vec X) \leq \theta \leq U(\vec X)) = 1-\alpha.
-\]
+\\]
 
 Mostly, the PQ is chosen based on a sufficient statistic. Below are common random samples and their corresponding PQ and  confidence intervals:
 
@@ -38,15 +38,15 @@ Mostly, the PQ is chosen based on a sufficient statistic. Below are common rando
 
 $\bullet$ If $\sigma^2$ is known, then
 
-\[
+\\[
 Q(\vec X, \mu) = \frac{\sqrt{n} (\overline{X}_n - \mu)}{\sigma} \sim N(0,1)
-\]
+\\]
 
 and the $100(1-\alpha)\%$ C.I is given by
 
-$
+\\[
 \left( \overline{X}_n - z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} , \overline{X}_n + z_{\alpha/2} \cdot \frac{\sigma}{\sqrt{n}} \right)
-$
+\\]
 
 $\bullet$ If $\sigma^2$ is unknown, then
 
