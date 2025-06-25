@@ -32,32 +32,26 @@ Work experience
   * Duties included: I work as an undergraduate course assistant for MATH 233 (Linear Algebra) taught by Prof. Mikael Pichot, my duties include grading students' homework and writing solutions and provide feedback to the professor.
   * Supervisor: Angela White
   
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
-Publications
+Research Experience
 ======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* 2025: Independent Research
+  * McGill University
+  * Research Title: Analysing Incident and Prevalent Cohort Survival Data (2025), related fields: Survival Analysis, Mathematical Statistics
+  * Supervisor: Prof. Masoud Asgharian
+  
   
 Talks
 ======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
+* Summer 2025: Survival Analysis Conference
+  * McGill University
+  * I organised a reading group in survival analysis during June 2025 to Augest 2025, I will present my research works via weekly or bi-weekly presentations.
   
 Teaching
 ======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+* Fall 2023 - Now: Mathematics Tutor and Teaching Assistant
+  *McGill University
+
   
 Service and leadership
 ======
