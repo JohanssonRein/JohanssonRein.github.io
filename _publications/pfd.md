@@ -538,7 +538,29 @@ $$
 $$
 
 
+**EXERCISES ON PFD**
 
+
+$\bullet$ 1. Evaluate $$\displaystyle{\int \frac{4 + x}{(1+2x)(3-x)} dx }$$
+
+
+$\bullet$ 2. Evaluate $$\displaystyle{\int \frac{1 - x + 2x^2 - x^3}{x(x^2 + 1)^2} dx }$$
+
+
+$\bullet$ 3. Evaluate $$\displaystyle{\int \frac{x^3 + 4x^2 + x - 1}{x^3 + x^2} dx }$$
+
+
+$\bullet$ 4. Evaluate $$\displaystyle{\int \frac{x^3 - 2x^2 + 2x - 5}{x^4 + 4x^2 + 3} dx }$$
+
+
+$\bullet$ 5. Evaluate $$\displaystyle{\int \frac{\sin x}{\cos^2 x - 3\cos x} dx }$$
+
+
+
+$\bullet$ 6. Evaluate $$\displaystyle{\int \frac{e^{2x}}{e^{2x} + 3e^x + 2}} dx$$
+
+
+$\bullet$ 7. Evaluate $$\displaystyle{\int \frac{1}{\sqrt{x} - \sqrt[3]{x}} }dx$$
 
 
 
