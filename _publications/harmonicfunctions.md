@@ -507,7 +507,7 @@ $$
 Hence we have
 
 $$
-|D^\alpha u(x_0)| \leq \frac{2n}{r} ||u||_{L^\infty(\partial B(x_0,r/2))} \leq \left( \frac{2}{r} \right)^{n+1} \cdot\frac{n}{\alpha(n)} ||u||_{L^1(B(x_0,r))}.
+|D^\alpha u(x_0)| \leq \frac{2n}{r} ||u||_{{L^\infty(\partial B(x_0,r/2))}} \leq \left( \frac{2}{r} \right)^{n+1} \cdot\frac{n}{\alpha(n)} ||u||_{L^1(B(x_0,r))}.
 $$
 
 QED.
@@ -517,7 +517,7 @@ We now prove Liouville's theorem:
 **Proof**
 Fix $x_0 \in \mathbb{R}^n$ and $r>0$, we have
 $$
-|Du(x_0)| \leq \frac{n}{\alpha(n)} \left( \frac{2}{r} \right)^{n+1} \cdot || u ||_{L^1(B(x_0,r))} \leq \frac{n}{\alpha(n)} \left( \frac{2}{r} \right)^{n+1} \cdot ||u||_{L^\infty(\mathbb{R}^n)} \overset{r \to \infty}{\to} 0.
+|Du(x_0)| \leq \frac{n}{\alpha(n)} \left( \frac{2}{r} \right)^{n+1} \cdot || u || \leq \frac{n}{\alpha(n)} \left( \frac{2}{r} \right)^{n+1} \cdot ||u||_{L^\infty(\mathbb{R}^n)} \overset{r \to \infty}{\to} 0.
 $$
 which means $u$ is a constant.
 
@@ -564,7 +564,7 @@ $$
 u(x) = ⨍_{B(x,\frac{1}{4}r)} u(z) dz \leq ⨍_{B(\frac{3}{4}r,y)} u(z)dz = 3^n u(y).
 $$
 
-Now since $V$ is compact so there exists a finite cover of balls $\{ B_i \}_{i=1}^M$ where $B_i \equiv B(a_i,r_i) \subset U$. Then for any $x,y \in V$, we may find an ordered subcover $B_{i1},\cdots B_{i\ell}$ such that $x \in B_{i1}$, $y \in B_{i\ell}$ and $B_{ij} \cap B_{ij+1} \neq \varnothing$, and the previous conclusion holds. Then we have a chain of inequalities:
+Now since $V$ is compact so there exists a finite cover of balls $\{ B_i \}, i = 1,\cdots, M$ where $B_i \equiv B(a_i,r_i) \subset U$. Then for any $x,y \in V$, we may find an ordered subcover $B_{i1},\cdots B_{i\ell}$ such that $x \in B_{i1}$, $y \in B_{i\ell}$ and $B_{ij} \cap B_{ij+1} \neq \varnothing$, and the previous conclusion holds. Then we have a chain of inequalities:
 
 $$
 u(x) \leq 3^n u(x_1) \leq \cdots \leq 3^{n\ell} u(y) \leq 3^{nM} u(y)
@@ -587,6 +587,7 @@ In this section we shall discuss some convergence theorems for harmonic function
 
 **Proof**
 Let $K \subset U$ be compact, we choose a larger compact set $\tilde{K}$ and $r:= \text{dist}(K,\mathbb{R}^n/\tilde{K}) >0$, we use the derivative estimate to get
+
 $$
 | D^\alpha h_{l}(a) - D^\alpha h_k(a) | \leq \frac{C}{r^{|\alpha|}} \sup_{\tilde{K}} |h_l - h_k |
 $$
@@ -597,7 +598,7 @@ QED.
 
 
 **Theorem**
-(Harnack Convergence Theorem) Consider an increasing sequence of harmonic functions $\{ h_n \}_{n=1}^\infty$ on $U \subset \mathbb{R}^n$, then either $\lim_{n\to\infty} h_n = \infty$ or it converge locally uniformaly to a harmonic function. In particular, if $\exists x_0 \in U$ such that $\lim_{n\to\infty} h_n(x_0) \neq \infty$, then we may conclude locally uniform convergence.
+(Harnack Convergence Theorem) Consider an increasing sequence of harmonic functions $\{ h_n \}$ on $U \subset \mathbb{R}^n$, then either $\lim_{n\to\infty} h_n = \infty$ or it converge locally uniformaly to a harmonic function. In particular, if $\exists x_0 \in U$ such that $\lim_{n\to\infty} h_n(x_0) \neq \infty$, then we may conclude locally uniform convergence.
 
 
 
