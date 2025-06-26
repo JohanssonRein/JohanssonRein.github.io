@@ -35,23 +35,23 @@ $$\sin(2x) = 2\sin(x)\cos(x)$$
 
 $$\cos(2x) = 2\cos^2(x) - 1 = 1 - 2\sin^2(x)$$
 
-$$\tan(2x) = \frac{2\tan(x)}{1 - \tan^2(x)}}$$ 
+$$\tan(2x) = \frac{2\tan(x)}{1 - \tan^2(x)}$$ 
 
-$$\sin^2(x) = \frac{1}{2}(1 - \cos(2x))}$$ 
+$$\sin^2(x) = \frac{1}{2}(1 - \cos(2x))$$ 
 
-$$\cos^2(x) =\frac{1}{2}(1 + \cos(2x))}$$ 
+$$\cos^2(x) =\frac{1}{2}(1 + \cos(2x))$$ 
 
 $$\sin^2(x) + \cos^2(x) = 1$$
 
 $$\sec^2(x) = 1 + \tan^2(x)$$
 
-$$\sin{(2x)} = \frac{2\tan(x)}{1 + \tan^2(x)}}$$
+$$\sin{(2x)} = \frac{2\tan(x)}{1 + \tan^2(x)}$$
 
-$$\cos{(2x)} = \frac{1 - \tan^2(x)}{1 + \tan^2(x)}}$$ 
+$$\cos{(2x)} = \frac{1 - \tan^2(x)}{1 + \tan^2(x)}$$ 
 
-$$\sin(x)\cos(y) = \frac{1}{2}\left(\sin(x+y)+\sin(x-y)\right)}$$
+$$\sin(x)\cos(y) = \frac{1}{2}\left(\sin(x+y)+\sin(x-y)\right)$$
 
-$$\sin(x)\sin(y) = {-\frac{1}{2}(\cos(x+y)-\cos(x-y))}$$
+$$\sin(x)\sin(y) = -\frac{1}{2}(\cos(x+y)-\cos(x-y))$$
 
 $$\cos(x)\cos(y)= \frac{1}{2}(\cos(x+y)+\cos(x-y))$$
 
@@ -82,11 +82,11 @@ Exercise 1 : Evaluate the integral $\int \sin^5(x)\cos^2(x) dx.$
 
 
 (1) If we have $n = 2k + 1, k \in \mathbb{Z}$, rewrite as
-$\displaystyle{\int \sin^m(x)(1 - \sin^2(x))^{k}\cos(x) dx} $
+$\int \sin^m(x)(1 - \sin^2(x))^{k}\cos(x) dx $
 
 
 (2) If we have $m = 2k + 1, k \in \mathbb{Z}$, rewrite as
-$\displaystyle{-\int(1 - \cos^2(x))^{k}\cos^n(x)\sin(x) dx} $
+$-\int(1 - \cos^2(x))^{k}\cos^n(x)\sin(x) dx$
 
 
 (3) Both $m,n$ are odd, then we can do for both $m,n$, by the same strategy.
@@ -102,7 +102,8 @@ Exercise 2: Evaluate the integral $\int_0^{\pi}\sin^2(x)dx$
 
 **Integral of type 2 : $\int \sec^m(x)\tan^n(x) dx$**
 
-We may do the same, since we have $\sec^2(x) = 1 + \tan^2(x)$, and keep in mind, that 
+We may do the same, since we have $\sec^2(x) = 1 + \tan^2(x)$, and keep in mind, that
+
 $$
 \frac{d}{dx}\tan(x) = \sec^2(x); \frac{d}{dx}\sec(x) = \tan(x)\sec(x)
 $$
@@ -143,7 +144,7 @@ $\bigstar \bigstar \bigstar \bigstar \bigstar$ Evaluate the integral $\int \sqrt
 
 
 Example 3 : Evaluate the integral $\int \frac
-{1}{x^2\sqrt{x^2 + 4}} dx.$
+{1}{x^2\sqrt{x^2 + 4} dx.$
 
 In forms like this, we will perform a trig-sub to simplify the 
 terms inside the square root. Usually we do $\sec(x)$ sub if inside the square 
