@@ -425,13 +425,7 @@ $ u = \sqrt[n]{g(x)}$, it will be more effective.
 $\bullet$ Example 2 : Evaluate $\displaystyle{\int \frac{x^3-4x + 1}{x^2-3x+2}dx}$
 
 
-Note that this fraction is improper, thus we will do the long division first.
-
-$$
-\polylongdiv{x^3 -4x + 1}{x^2 - 3x + 2}
-$$
-
-Thus, we can rewrite the integral as
+Note that this fraction is improper, thus we will do the long division first and thus, we can rewrite the integral as
 
 $$
 \displaystyle{\int \frac{x^3-4x + 1}{x^2-3x+2}dx} = \int \left( x + 3 + \frac{3x - 5}{x^2 - 3x + 2}\right)dx
