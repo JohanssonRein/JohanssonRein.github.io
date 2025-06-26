@@ -2,7 +2,7 @@
 title: "Solving Trigonometric Integrals"
 collection: publications
 category: calculus
-permalink: /publication/2024-04-01-trigintegrals
+permalink: /publication/trigintegrals
 excerpt: 'In this article we will investigate different ways to solve trigonometric integrals'
 date: 2024-04-01
 venue: 'Summer'
