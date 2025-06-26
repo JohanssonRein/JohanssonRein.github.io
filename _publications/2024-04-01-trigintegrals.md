@@ -116,7 +116,7 @@ $\int \tan^6(x) (1 + \tan^2(x))\sec^2 (x)dx$, and we let $u = \tan(x)$,
 thus we know $du = \sec^2(x)dx$, then it becomes $\int u^6
 (1+u^2)du$, which can be calculated as 
 $\int u^6
-(1+u^2)du} = \frac{1}{7}\tan^7(x)+\frac{1}{9}\tan^9(x)+C$
+(1+u^2)du = \frac{1}{7}\tan^7(x)+\frac{1}{9}\tan^9(x)+C$
 
 
 
@@ -144,7 +144,7 @@ $\bigstar \bigstar \bigstar \bigstar \bigstar$ Evaluate the integral $\int \sqrt
 
 
 Example 3 : Evaluate the integral $\int \frac
-{1}{x^2\sqrt{x^2 + 4} dx.$
+{1}{x^2\sqrt{x^2 + 4}} dx.$
 
 In forms like this, we will perform a trig-sub to simplify the 
 terms inside the square root. Usually we do $\sec(x)$ sub if inside the square 
