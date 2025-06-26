@@ -2,7 +2,7 @@
 title: "Confidence Interval"
 collection: publications
 category: statistics
-permalink: /publication/2025-06-01-confidenceinterval
+permalink: /publication/confidenceinterval
 excerpt: 'In this article we will talk about confidence interval'
 date: 2025-06-01
 venue: 'Summer'
