@@ -6,7 +6,7 @@ permalink: /publication/harmonicfunctions
 excerpt: 'In this article we will investigate some properties of harmonic functions and fundamental solutions to the Laplace equations.'
 date: 2025-06-25
 venue: 'Summer'
-#slidesurl: 'http://academicpages.github.io/files/slides2.pdf'
+slidesurl: 'http://JohanssonRein.github.io/files/harmonic.pdf'
 #paperurl: 'http://academicpages.github.io/files/paper2.pdf'
 citation: 'Jiajun Zhang, (2025). Harmonic Functions'
 ---
