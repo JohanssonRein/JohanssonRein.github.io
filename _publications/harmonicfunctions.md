@@ -11,11 +11,11 @@ venue: 'Summer'
 citation: 'Jiajun Zhang, (2025). Harmonic Functions'
 ---
 
-#Laplace's Equations and Harmonic Functions
+# Laplace's Equations and Harmonic Functions
 
-##Fundamental Solutions of Harmonic Functions
+## Fundamental Solutions of Harmonic Functions
 
-\begin{definition}
+**Definition**
 Let $u(x_1,\cdots,x_n): U \subset \mathbb{R}^n \to \mathbb{R}$ be a unknown function, the Laplacian of the function is defined by
 $$
 \Delta u = \sum_{i=1}^n \frac{\pl^2 u}{\pl x_i^2}.
@@ -25,246 +25,294 @@ $$
 \Delta u = 0
 $$
 for all $x \in U$, any function satisfying the above is also called harmonic.
-\end{definition}
 
-\begin{lemma}
+
+**Lemma**
 Laplace's equation is invariant under rotation, i.e if $P$ is an orthogonal matrix with entries $p_{ij}$, then $\Delta u(Px) = 0$ for all $x\in U$.
-\end{lemma}
 
-\begin{proof}
+
+**Proof**
 By Chain rule, we have
+
 $$
 D_{x_i} (u(Px)) = \sum_{k=1}^n D_{x_k}(u(Px) p_{ik})
 $$
+
 and similarly
+
 $$
 D_{x_i x_j} (u(Px)) = \sum_{l=1}^n \sum_{k=1}^n D_{x_k x_l} (u(Px) p_{ik} p_{il}).
 $$
+
 Since $P$ is orthogonal, thus $p_{ik} p_{il} = 1$ iff $k=l$ and hence
+
 $$
 \Delta u(Px) = \sum_{i=1}^n\sum_{l=1}^n \sum_{k=1}^n D_{x_k x_l} (u(Px) p_{ik} p_{il} ) = \Delta u = 0.
 $$
-\end{proof}
+
+QED.
 
 Given this, we seek for radial solutions which takes the form $u(x) = v(r)$ where $r = |x|$. Denote $r = (x_1^2+\cdots+x_n^2)^{1/2}$, let $x\neq 0$, then we see that
+
 $$
 \frac{\pl r}{\pl x_i} = (x_1^2+\cdots+x_n^2)^{-1/2} x_i = \frac{x_i}{r}
 $$
 
 and by Chain rule we have
+
 $$
 u_{x_i} = v'(r) \frac{x_i}{r}
 $$
+
 $$
 u_{x_i x_i} = v''(r) \frac{x_i^2}{r^2} + v'(r) \frac{r-x_i \frac{x_i}{r}}{r^2} = v''(r) \frac{x_i^2}{r^2} + v'(r) \left( \frac{1}{r} - \frac{x_i^2}{r^3} \right)
 $$
 
 using the fact that $x_1^2+\cdots+x_n^2 = r^2$, we would have
+
 $$
 \Delta u = \sum_{i=1}^n \left( v''(r) \frac{x_i^2}{r^2} + v'(r) \left( \frac{1}{r} - \frac{x_i^2}{r^3} \right) \right) = v''(r) + \frac{n-1}{r} v'(r).
 $$
 
 by letting $\Delta u = 0$, we obtain the following ODE:
+
 $$
 v''(r)+\frac{n-1}{r} v'(r) = 0.
 $$
 
 Now if $v'(r) \neq 0$, we see that
+
 $$
  \log(v'(r)) ' = \frac{v''(r)}{v'(r)} = \frac{1-n}{r}
 $$
 
 and we integrate with respect to $r$, we have
+
 $$
 \log (v'(r)) = (1-n)\log r + C
 $$
 
 which simplifies to $v'(r) = C_0 / r^{n-1}$ for some constant $C_0$, hence the general solution $v(r)$ takes the form
+
 $$
 v(r) = \begin{cases} A\log r + B & n =2 \\ \frac{C}{r^{n-2}} + D & n \geq 3 \end{cases}
 $$
 
 where $A,B,C,D$ are all constants. This motivates the fundamental solution to Laplace's equation:
 
-\begin{definition}
+**Definition**
 The function defined by
+
 $$
 \Phi(x) = \begin{cases} -\frac{1}{2\pi} \log |x| & n=2 \\ \frac{1}{n(n-2)\alpha(n)} \cdot \frac{1}{|x|^{n-2}} & n\geq 3 \end{cases}
+
 $$
 is the fundamental solution to Laplace's equation $\Delta u = 0$ for all $x \in \mathbb{R}^n / \{ 0 \}$ where $\alpha(n)$ denotes the volume of the unit ball in $\mathbb{R}^n$.
-\end{definition}
+
 
 Laplace's equation is a special class of Poisson's equations, we define Poisson's equation as
 
-\begin{definition}
+**Definition**
 For a given $f: \mathbb{R}^n \to \mathbb{R}$, and the unknown $u(x_1,\cdots,x_n) : U \subset \mathbb{R}^n \to \mathbb{R}$, the Poisson's equation takes the form
+
 $$
 -\Delta u = f.
 $$
-\end{definition}
+
 
 By construction, we know $\Phi(x)$ is harmonic since it solves $\Delta u = 0$. We shift the origin to a new point $y$, and under invariant we still have $\Delta u = 0$ and now $\Phi(x-y)$ is harmonic in $x$. Consider a given function $f: \mathbb{R}^n \to \mathbb{R}$ and that $\Phi(x-y) f(y)$ is also harmonic when $x\neq y$, by taking all possible $y$, it suggests the following convolution integral:
+
 $$
 u(x) = \int_{\mathbb{R}^n} \Phi(x-y) f(y) dy.
 $$
 
 We may want to compute $\Delta u$ in this case but we see that it is hard to deal with at when $x=y$, the next theorem will formally prove $u(x)$ is indeed the fundamental solution to the Poisson's equation:
 
-\begin{theorem}
-Define $\displaystyle{u(x) = \int_{\mathbb{R}^n} \Phi(x-y) f(y) dy}$ and assume that $f \in C_C^2(\mathbb{R}^n)$, then:\\
+**Theorem**
+Define $\displaystyle{u(x) = \int_{\mathbb{R}^n} \Phi(x-y) f(y) dy}$ and assume that $f \in C_C^2(\mathbb{R}^n)$, then:
 
-(\romannumeral 1) $ u \in C^2(\mathbb{R}^n)$;\\
+1. $ u \in C^2(\mathbb{R}^n)$;\\
 
-(\romannumeral 2) $-\Delta u = f$ in $\mathbb{R}^n$.
-\end{theorem}
+2. $-\Delta u = f$ in $\mathbb{R}^n$.
 
 
-We will prove both results separately:\\
 
-\textbf{For (\romannumeral 1)}:\\
+We will prove both results separately:
 
-\begin{proof}
+For 1:
+
+**Proof**:
+
 Use the property of a convolution, we have
 $$
 u(x) = \int_{\mathbb{R}^n} \Phi(y) f(x-y) dy
 $$
 
 then denote $e_i$ as the unit vector in $i$th position of $x = (x_1,\cdots,x_n)$, and abusing the notion of interchanging limits and integrals (we actually could do that), we have
+
+$$
 \begin{align*}
-\frac{\pl u}{\pl x_i}(x) = \lim_{h \to 0} \frac{u(x+he_i) - u(x)}{h} &=  \int_{\mathbb{R}^n} \Phi(y) \cdot \lim_{h \to 0}\left[ \frac{f(x+he_i - y) - f(x-y)}{h} \right] dy\\
+\frac{\pl u}{\pl x_i}(x) = \lim_{h \to 0} \frac{u(x+he_i) - u(x)}{h} &=  \int_{\mathbb{R}^n} \Phi(y) \cdot \lim_{h \to 0}\left[ \frac{f(x+he_i - y) - f(x-y)}{h} \right] dy
 &=\int_{\mathbb{R}^n} \Phi(y)\cdot \frac{\pl f}{\pl x_i}(x-y)dy.
 \end{align*}
+$$
 
 Similarly one can show
+
 $$
 \frac{\pl u}{\pl x_i \pl x_j}(x) = \int_{\mathbb{R}^n} \Phi(y) \cdot \frac{\pl^2 f}{\pl x_i \pl x_j}(x-y)dy.
 $$
 
-Since $f \in C_C^2(\mathbb{R}^n)$, the second partial derivative is continuous w.r.t $x$, hence $u \in C^2(\mathbb{R}^n)$.\\
+Since $f \in C_C^2(\mathbb{R}^n)$, the second partial derivative is continuous w.r.t $x$, hence $u \in C^2(\mathbb{R}^n)$.
 
-\end{proof}
+QED.
 
-\textbf{For (\romannumeral 2):}\\
+For 2:
 
-\begin{proof}
+**Proof**
 
 We split the integral into two parts to avoid the blow-up of $\Phi$ near $0$, $\forall \epsilon>0$ fixed, denote $B(0,\epsilon)$ as the ball centerted at $0$ with radius $\epsilon$, write
+
 $$
 u(x) = \int_{B(0,\epsilon)} \Phi(y) f(x-y) dy + \int_{\mathbb{R}^n / B(0,\epsilon)} \Phi(y) f(x-y) dy
 $$
 
 hence
+
 $$
 \Delta u(x) = \int_{B(0,\epsilon)} \Phi(y) \Delta_x f(x-y) dy + \int_{\mathbb{R}^n/B(0,\epsilon)} \Phi(y) \Delta_xf(x-y) dy.
 $$
 
-Denote the first term as $I_{\epsilon}$, second term as $J_{\epsilon}$. Our first goal is to bound $I_{\epsilon}$, proceed as follows:\\
+Denote the first term as $I_{\epsilon}$, second term as $J_{\epsilon}$. Our first goal is to bound $I_{\epsilon}$, proceed as follows:
 
 When $n=2$, we have
+
+$$
 \begin{align*}
 |I_{\epsilon}| = \Bigg|-\int_{B(0,\epsilon)} \frac{1}{2\pi} \log|y| \cdot \Delta_x f(x-y) dy \Bigg|\leq C||Df||_{L^\infty(\mathbb{R}^n)} \cdot \Bigg|\int_{B(0,\epsilon)} \log|y|dy\Bigg|
 \end{align*}
+$$
 
 for some constant $C$, and we further have
+
 $$
 \int_{B(0,\epsilon)} \log |y| dy = \int_0^\epsilon \int_0^{2\pi} \log|r| rd\theta dr = \epsilon^2\log |\epsilon|
 $$
 
 so we have $|I_\epsilon| < C\epsilon^2 |\log \epsilon|$ for some constant $C$. When $n\geq3$, similarly we can show that $|I_{\epsilon}| < C\epsilon$, hence the term $I_{\epsilon}$ is bounded in terms of arbitrary $\epsilon$. Now for $J_\epsilon$, first note that $\Delta_x f(x-y) = \Delta_yf(x-y)$, we have
+
 $$
 J_\epsilon = \int_{\mathbb{R}^n/B(0,\epsilon)} \Phi(y) \Delta_y f(x-y)dy.
 $$
 
 To compute this integral, we need some technical lemmas:
 
-\begin{lemma}
+**Lemma**
 (Gauss-Green Theorem)
 Let $u(x_1,\cdots,x_n) \in C^1(\overline{U})$, let $\nu = (\nu_1,\cdots,\nu_n)$ be the outward pointing unit normal vector field of $U$ defined on $\pl U$ then
+
 $$
 \int_U u_{x_i} dx = \int_{\pl U} u \nu_i dS.
 $$
-\end{lemma}
+
 
 We can use this lemma to further derive an integration by parts formula:
 
-\begin{lemma}
+**Lemma**
 (Integration by Parts)
 Let $u,v \in C^1(\overline{U})$, then
+
 $$
 \int_U u_{x_i} v dx = -\int_U u v_{x_i} dx + \int_{\pl U} uv \nu^i d S.
 $$
-\end{lemma}
+
 
 
 Then we may rewrite $J_\epsilon$ as
+
 $$
 J_{\epsilon} = -\int_{\mathbb{R}^n / B(0,\epsilon)} D\Phi(y) \cdot D_y f(x-y) dy + \int_{\pl B(0,\epsilon)} \Phi(y) \nu Df(x-y) dS(y)
 $$
 
 where $\nu$ is the inward pointing unit normal vector field. We now denote the first term by $K_\epsilon$ and the second term by $L_\epsilon$, then using the same technique as we did for $I_\epsilon$, we can check that
+
 $$
 |L_\epsilon| \leq C||D f||_{L^\infty(\mathbb{R}^n)} \int_{\pl B(0,\epsilon)} |\Phi(y)| dS(y) \leq \begin{cases} C\epsilon|\log \epsilon| & n=2 \\ C\epsilon & n\geq 3 \end{cases}
 $$
 
 hence $L_{\epsilon}$ is also bounded in terms of $\epsilon$. We again perform integration by parts in $K_{\epsilon}$, and we have
+
+$$
 \begin{align*}
 K_\epsilon &= \int_{\mathbb{R}^n/B(0,\epsilon)} \Delta \Phi(y) f(x-y)dy - \int_{\pl B(0,\epsilon)} \nu D\Phi(y) f(x-y) dS(y)\\
 &=-\int_{\pl B(0,\epsilon)} \nu D\Phi(y) f(x-y)dS(y).
 \end{align*}
+$$
 
 Since $D\Phi(y) = \frac{-1}{n\alpha(n)} \frac{y}{|y|^n}$ when $y\neq 0$ and $\nu = -y/|y| = -y/\epsilon$ on $\pl B(0,\epsilon)$, so we will have
+
 $$
 \nu D\Phi(y) = \frac{1}{n\alpha(n)\epsilon^{n-1}}
 $$
 
 also $n\alpha(n)\epsilon^{n-1}$ is the surface area of the ball $\pl B(0,\epsilon)$, so
+
 $$
 K_{\epsilon} = -\frac{1}{n\alpha(n)\epsilon^{n-1}} \int_{\pl B(0,\epsilon)} f(x-y) dS(y) = -\fint_{\pl B(0,\epsilon)} f(y) dS(y) \to -f(x)
 $$
 
 as $\epsilon \to 0$. Since we have shown that $I_\epsilon, L_\epsilon$ are all bounded by terms of $\epsilon$ so by setting $\epsilon \to 0$ they will vanish as well. Hence we have
+
 $$
 -\Delta u(x) = f(x).
 $$
-\end{proof}
+
+QED.
 
 
-\section{Properties of Harmonic Functions}
+## Properties of Harmonic Functions
 
-\subsection{Mean Value Property}
+### Mean Value Property
 
 For a harmonic function $u$, its value $u(x)$ is equal to the average $u$ over both the boundary $\pl B(x,r)$ and the ball $B(x,r)$ as long as $B(x,r) \in U$.
 
 
-\begin{theorem}
+**Theorem**
 Let $U \in \mathbb{R}^n$ open, if $u(x_1,\cdots,x_n) \in C^2(U)$ is harmonic then for each ball $B(x,r) \in U$, 
+
 $$
 u(x) = \fint_{\pl B(x,r)} u(y) dS(y) = \fint_{B(x,r)} u(y)dy
 $$
 
 where
+
 $$
 \fint_{\pl B(x,r)} u(y) dS(y) = \frac{1}{n\alpha(n) r^{n-1}} \int_{\pl B(x,r)} u(y) dS(y),
 $$
+
 $$
 \fint_{B(x,r)} u(y) dy = \frac{1}{\alpha(n) r^n} \int_{B(x,r)}u(y) dy
 $$
-$\alpha(n)$ is the volume of the unit ball in $\mathbb{R}^n$ and $n\alpha(n)$ is the surface area of the unit ball in $\mathbb{R}^n$.
-\end{theorem}
 
-\begin{proof}
+$\alpha(n)$ is the volume of the unit ball in $\mathbb{R}^n$ and $n\alpha(n)$ is the surface area of the unit ball in $\mathbb{R}^n$.
+
+
+**Proof**
 Let $u(x_1,\cdots,x_n) \in C^2(U)$ be harmonic, and define
+
 $$
 \phi(r) = \begin{cases} \displaystyle{\fint_{\pl B(x,r)} u(y) dS(y)} & r>0 \\\\u(x) & r = 0\end{cases}.
 $$
 
 If $u$ is a smooth function (we later will show all harmonic functions are smooth), then $\lim_{r \to 0} \phi(r) = u(x)$ and hence $\phi$ is continuous. Note that by change of variables, we have
+
 $$
 \phi(r) = \fint_{\pl B(0,1)} u(x+rz)dS(z)
 $$
 
 and we take the derivative of $\phi(r)$:
 
+$$
 \begin{align*}
 \phi'(r) &= \fint_{\pl B(0,1)} \nabla u(x+rz) \cdot zdS(z)\\
 &=\fint_{\pl B(x,r)} \nabla u(y) \cdot \frac{y-x}{r} dS(y)\\
@@ -273,124 +321,141 @@ and we take the derivative of $\phi(r)$:
 &= \frac{1}{n\alpha(n)r^{n-1}} \int_{B(x,r)} \nabla (\nabla u) dy\\
 &= \frac{1}{n\alpha(n) r^{n-1}} \int_{B(x,r)} \Delta u(y) dy \equiv 0.
 \end{align*}
+$$
 
 which means $\phi$ is a constant function, and hence we have 
+
 $$
 u(x) = \fint_{\pl B(x,r)} u(y)dS(y).
 $$
 
 Furthermore we have
+
+$$
 \begin{align*}
 \int_{B(x,r)} u(y) dy &= \int_0^r\left( \int_{\pl B(x,s)} u dS \right)ds\\
 &=u(x) \int_0^r n\alpha(n) s^{n-1} ds\\
 &=\alpha(n) r^n u(x).
 \end{align*}
+$$
 
-\end{proof}
+QED.
 
 Another result is the converse to mean-value property:
 
-\begin{theorem}
+**Theorem**
 If $u \in C^2(U)$ satisfies
+
 $$
 u(x) = \fint_{\pl B(x,r)} u dS
 $$
-for each ball $B(x,r) \in U$, then $u$ is harmonic.
-\end{theorem}
 
-\begin{proof}
+for each ball $B(x,r) \in U$, then $u$ is harmonic.
+
+**Proof**
 Suppose $\Delta u \neq 0$, then $\exists B(x,r) \in U$ such that $\Delta u > 0$ say, but then
+
 $$
 \phi'(r) = \frac{1}{n\alpha(n)r^{n-1}} \int_{\pl B(x,r)}\Delta u dS = \frac{r}{n}\fint_{B(x,r)} \Delta u(y) dy >0
 $$
 which contradicts the fact that $\phi$ is a constant function.
-\end{proof}
+
+QED.
 
 
-\subsection{Maximum Principle}
+### Maximum Principle
 
 A nice property of harmonic functions is that if $u$ is harmonic on a bounded domain $\Omega$, then $u$ attains its maximum value on the boundary of $\Omega$.
 
-\begin{theorem}
+**Theorem**
 (Strong Maximum Principle) Suppose $u \in C^2(U) \cap C(\overline{U})$ is harmonic within $U$, then
 
-(\romannumeral 1) $\max_{\overline{U}} u = \max_{\pl U} u$;\\
+1. $\max_{\overline{U}} u = \max_{\pl U} u$;\\
 
-(\romannumeral 2) Furthermore, if $U$ is connected and there exists a point $x_0 \in U$ such that $u(x_0) = \max_{\overline{U}} u$, then $u$ is constant within $U$.
-\end{theorem}
+2. Furthermore, if $U$ is connected and there exists a point $x_0 \in U$ such that $u(x_0) = \max_{\overline{U}} u$, then $u$ is constant within $U$.
 
-\begin{proof}
+
+**Proof**
 We will prove the second statement since the first followed from the second. Suppose $\exists x_0 \in U$ such that $u(x_0) = \max_{\bar{U}} u(x) \equiv M$. Then $\forall r \in (0,\text{dist}(x_0,\pl U))$, the mean-value property states that
+
 $$
 M = u(x_0) = \fint_{B(x_0,r)} u(y) dy
 $$
 
 by taking the ''average'' around the maximum $x_0$, we would except
+
 $$
 \fint_{B(x_0,r)} u(y) dy \leq M
 $$
 
 and such will hold only if $u \equiv M$ within $B(x_0,r)$, and $u(y) = M$.
-\end{proof}
 
+QED.
 
 An important application of maximum principle is establishing the uniqueness of solutions to certain boundary value problems for Poisson's equation.
 
-\begin{theorem}
+**Theorem**
 Let $g \in C(\pl U), f\in C(U)$, then there exists at most one solution $u \in C^2(U) \cap C(\bar{U})$ of the boundary value problem
+
 $$
 \begin{cases} -\Delta u = f & \text{ in $U$} \\ u =g & \text{ on $\pl U$} \end{cases}
 $$
-\end{theorem}
 
-\begin{proof}
+
+**Proof**
 Assume $u_1, u_2$ both solves the boundary value problem, then let $w = u_1 - u_2$, then we have
 $$
 \begin{cases} -\Delta w = 0 &\text{ in $U$} \\ w = 0 &\text{ in $\pl U$} \end{cases}
 $$
 
 then by maximum principle, $\max_{\pl U} w = \max_{\pl \bar{U}} w = 0$, i.e $u_1=u_2$.
-\end{proof}
+
+QED.
 
 
-\subsection{Smoothness}
+### Smoothness
 
 A nice thing about harmonic functions is that they are smooth!
 
-\begin{theorem}
+**Theorem**
 If $u \in C(U)$ satisfies the mean-value property for each ball $B(x,r) \in U$, then $u \in C^\infty(U)$.
-\end{theorem}
+
 
 
 The proof of this theorem requires some knowledge on mollifiers, so before the proof we shall spend some time on mollifiers.
 
-\begin{definition}
+**Definition**
 Define a smooth function $\eta \in C^\infty(\mathbb{R}^n)$ by
+
 $$
 \eta(x) = \begin{cases} C\exp\Big( \frac{1}{|x|^2-1} \Big) & |x|<1 \\ 0 & |x| \geq 1 \end{cases}
 $$
 
 for some constant $C>0$ so that $\int_{\mathbb{R}^n} \eta dx=1$. Then for each $\epsilon>0$, set
+
 $$
 \eta_\epsilon(x) = \frac{1}{\epsilon^n} \eta\Big( \frac{x}{\epsilon} \Big).
 $$
 
 We call $\eta$ the standard mollifier, the functions $\eta_\epsilon$ are $C^\infty$ as well.
-\end{definition}
 
-\begin{definition}
+
+**Definition**
 Denote $U_\epsilon = \{ x \in U | \text{ dist}(x,\pl U) > \epsilon \}$, if a function $f: U \to \mathbb{R}$ is locally integrable, its mollification is defined by
+
 $$
 f^\epsilon = \int_U \eta_\epsilon(x-y) f(y) dy
 $$
+
 for $x\in U_\epsilon$.
-\end{definition}
+
 
 Now we prove the theorem:
 
-\begin{proof}
+**Proof**
 Let $\eta$ be the standard mollifier, set $u^\epsilon = \eta_\epsilon * u $ in $U_\epsilon$, we first show $u^\epsilon \in C^\infty$, which is left as an exercise to the reader. Then to show $u$ is smooth, we will show in fact $u \equiv u^\epsilon$ on $U_\epsilon$ for each $\epsilon>0$. Let $x \in U_\epsilon$, then we know the support of $\eta_\epsilon(x-y)$ as a function of $y$ is given by $\{ y: |x-y| < \epsilon \}$, and trhus we have
 
+$$
 \begin{align*}
 u^\epsilon(x) 
 &= \frac{1}{\epsilon^n} \int_{B(x,\epsilon)} \eta\left( \frac{|x-y|}{\epsilon} \right) u(y)dy\\
@@ -399,93 +464,108 @@ u^\epsilon(x)
 &= u(x) \int_{B(0,\epsilon)} \eta_\epsilon dy\\
 &= u(x).
 \end{align*}
+$$
 so $u \in C^\infty(U_\epsilon)$ for all $\epsilon>0$.
-\end{proof}
 
+QED.
 
-\subsection{Liouville's Theorem}
+### Liouville's Theorem
 
-\begin{theorem}
+**Theorem**
 If $u : \mathbb{R}^n \to \mathbb{R}$ is harmonic and bounded (either from above or below), then $u$ is constant.
-\end{theorem}
+
 
 To prove Liouville's theorem, we first introduce a technical lemma for estimating the derivatives of harmonic functions:
 
-\begin{lemma}
+**Lemma**
 Assume $u$ is harmonic in $U$, then for multi-index $\alpha = 1$,
+
 $$
 | D^\alpha u(x_0) | \leq \frac{n}{\alpha(n)} \cdot\left( \frac{2}{r} \right)^{n+1} \cdot||u||_{L^1(B(x_0,r))}.
 $$
 for each ball $B(x_0,r) \in U$.
-\end{lemma}
 
-\begin{proof}
+
+**Proof**
 Let $x_0 \in U$ and $B(x,r) \subset U$. Since $u_{x_i}$ is also harmonic, then use mean-value property we have
+
+$$
 \begin{align*}
 |u_{x_i}(x_0) | &= \Bigg| \frac{2^n}{\alpha(n) r^n}\int_{B(x_0,\frac{r}{2})} u_{x_i}(y) dy \Bigg|\\
 &= \Bigg| \frac{2^n}{\alpha(n)r^n} \int_{\pl B(x_0,\frac{r}{2})} u(y) \nu^i dS(y) \Bigg|\\
 &= \Bigg|\frac{2n}{r} \fint_{\pl B(x_0,\frac{r}{2})} u(y) \nu^i dS(y) \Bigg|\\
 &\leq \frac{2n}{r} ||u||_{L^\infty(\pl B(x_0,r/2))}.
 \end{align*}
+$$
 
 Now for $u(x_0)$, note that
+
 $$
 |u(x_0)| = \Bigg|\frac{2^n}{\alpha(n) r^n} \int_{B(x_0,\frac{r}{2})} u(y) dy \Bigg|\leq \frac{2^n}{\alpha(n) r^n} ||u||_{L^1(B(x_0,r))}.
 $$
 
 Hence we have
+
 $$
 |D^\alpha u(x_0)| \leq \frac{2n}{r} ||u||_{L^\infty(\pl B(x_0,r/2))} \leq \left( \frac{2}{r} \right)^{n+1} \cdot\frac{n}{\alpha(n)} ||u||_{L^1(B(x_0,r))}.
 $$
-\end{proof}
+
+QED.
 
 We now prove Liouville's theorem:
 
-\begin{proof}
+**Proof**
 Fix $x_0 \in \mathbb{R}^n$ and $r>0$, we have
 $$
 |Du(x_0)| \leq \frac{n}{\alpha(n)} \left( \frac{2}{r} \right)^{n+1} \cdot || u ||_{L^1(B(x_0,r))} \leq \frac{n}{\alpha(n)} \left( \frac{2}{r} \right)^{n+1} \cdot ||u||_{L^\infty(\mathbb{R}^n)} \overset{r \to \infty}{\to} 0.
 $$
 which means $u$ is a constant.
-\end{proof}
 
-\begin{theorem}
+QED.
+
+**Theorem**
 Let $f \in C_C^2(\mathbb{R}^n)$ and $n \geq 3$, then any bounded solution of $-\Delta u  =f$ in $\mathbb{R}^n$ has the form
 $$
 u(x) = \int_{\mathbb{R}^n} \Phi(x-y) f(y) dy + C
 $$
 for some constant $C$.
-\end{theorem}
 
 
-\begin{proof}
+**Proof**
 If $u'$ is another solution, then $u - u'$ is a constant by Liouville's theorem.
-\end{proof}
+
+QED.
 
 
-\subsection{Harnack's Inequality}
+### Harnack's Inequality
 
 We write $V\subset\subset U$ to denote $V \subset \bar{V} \subset U$ and $\bar{V}$ is compact, we say $V$ is compactly contained in $U$.
 
-\begin{theorem}
+**Theorem**
 For each connected open set $V \subset\subset U$, there exists a positive constant $C$ depending only on $V$ such that
+
 $$
 \sup_V u \leq C \inf_V u
 $$
+
 for all non-negative harmonic functions $u$ in $U$. In particular
+
 $$
 \frac{1}{C} u(y) \leq u(x) \leq Cu(y)
 $$
-for all $x,y \in V$.
-\end{theorem}
 
-\begin{proof}
+for all $x,y \in V$.
+
+
+**Proof**
 Consider a ball $B(a,r) \subset U$, and let $x,y \in B(a,\frac{1}{4}r)$, we first claim that $B(x,\frac{1}{4}r) \subset B(y,\frac{3}{4}r) \subset B(a,r)$. Then we use mean value property and we have
+
 $$
 u(x) = \fint_{B(x,\frac{1}{4}r)} u(z) dz \leq \fint_{B(\frac{3}{4}r,y)} u(z)dz = 3^n u(y).
 $$
 
 Now since $V$ is compact so there exists a finite cover of balls $\{ B_i \}_{i=1}^M$ where $B_i \equiv B(a_i,r_i) \subset U$. Then for any $x,y \in V$, we may find an ordered subcover $B_{i1},\cdots B_{i\ell}$ such that $x \in B_{i1}$, $y \in B_{i\ell}$ and $B_{ij} \cap B_{ij+1} \neq \varnothing$, and the previous conclusion holds. Then we have a chain of inequalities:
+
 $$
 u(x) \leq 3^n u(x_1) \leq \cdots \leq 3^{n\ell} u(y) \leq 3^{nM} u(y)
 $$
@@ -494,169 +574,41 @@ $$
 \sup_V u \leq C \inf_V u
 $$
 where $C$ is a constant only depend on $V$.
-\end{proof}
 
-\subsection{Convergence Theorems}
+QED.
+
+### Convergence Theorems
 
 In this section we shall discuss some convergence theorems for harmonic functions:
 
-\begin{theorem}
+**Theorem**
 (Weierstrass Convergence Theorem) If a sequence of harmonic functions $\{ h_n \}$ converges locally uniformly on $U$, then the limit $h = \lim_{n\to\infty} h_n$ is also harmonic on $U$, furthermore the derivatives converge locally uniformly as well, i.e $\lim_{n\to\infty} D_{x_i} h_n = D_{x_i} h$.
-\end{theorem}
 
-\begin{proof}
+
+**Proof**
 Let $K \subset U$ be compact, we choose a larger compact set $\tilde{K}$ and $r:= \text{dist}(K,\mathbb{R}^n/\tilde{K}) >0$, we use the derivative estimate to get
 $$
 | D^\alpha h_{l}(a) - D^\alpha h_k(a) | \leq \frac{C}{r^{|\alpha|}} \sup_{\tilde{K}} |h_l - h_k |
 $$
 
 and from the uniform convergence of $\{ h_n \}$ on $\tilde{K}$, and we see that $ \{D^\alpha h_n \}$ is a Cauchy sequence on $K$, thus uniformly convergent on $K$, and locally uniformly convergent on $U$. We can also show that $\lim_{n\to\infty} D^\alpha h_n = D^\alpha h$ locally uniformly on $U$ for all index $\alpha$. In particular we have $\Delta h = \lim_{n \to \infty} \Delta h_n$ and hence $h$ is harmonic.
-\end{proof}
+
+QED.
 
 
-\begin{theorem}
+**Theorem**
 (Harnack Convergence Theorem) Consider an increasing sequence of harmonic functions $\{ h_n \}_{n=1}^\infty$ on $U \subset \mathbb{R}^n$, then either $\lim_{n\to\infty} h_n = \infty$ or it converge locally uniformaly to a harmonic function. In particular, if $\exists x_0 \in U$ such that $\lim_{n\to\infty} h_n(x_0) \neq \infty$, then we may conclude locally uniform convergence.
-\end{theorem}
 
 
-\begin{proof}
+
+**Proof**
 Assume $x_0 \in U$ such that $\lim_{n\to\infty} h(x_0) \neq \infty$. For all $k \leq l$, $K$ compact, and $x_0 \in K \in U$, we have $h_l - h_k$ as a non-negative harmonic function, and hence by Harnack's inequality,
 $$
 \max_K (h_l - h_k) \leq C \min_{K} (h_l - h_k) \leq C(h_l(x_0) - h_k(x_0))
 $$
 which implies the uniform Cauchy property of $\{ h_n \}$ on $K$, and hence locally uniform convergence is achieved. We now let $\lim_{n \to \infty} h_n = h$ and it remains to show $h$ is harmonic, which follows from Weierstrass convergence theorem.
 
-\end{proof}
 
-
-\section{Green's Function}
-
-Assume $U \subset \mathbb{R}^n$ open and bounded, in this section, we will derive a general representation formula for Poisson's equation subject to the boundary condition
-$$
-\begin{cases} -\Delta u = f & \text{ in $U$} \\ u = g & \text{ on $\pl U$} \end{cases}.
-$$
-
-Recall the Gauss-Green theorem introduced in the previous section, we will derive a corollary of Gauss-Green theorem:
-
-\begin{corollary}
-Let $u,v \in C^2(\bar{U})$, then:\\
-
-(\romannumeral 1) $\displaystyle{\int_U \Delta u dx = \int_{\pl U} \frac{\pl u}{\pl \nu} dS}$\\
-
-(\romannumeral 2) $\displaystyle{\int_U Dv \cdot Du dx = -\int_U u \Delta v dx + \int_{\pl U} \frac{\pl v}{\pl \nu} u dS}$\\
-
-(\romannumeral 3) $\displaystyle{\int_U u\Delta v - v\Delta u dx = \int_{\pl U} u \frac{\pl v}{\pl \nu} - v \frac{\pl u}{\pl \nu} dS}$\\
-
-where $\nu$ is the outward pointing normal unit vector field on $\pl U$.
-\end{corollary}
-
-\begin{proof}
-For (\romannumeral 1), recall the integration by parts formula states that
-$$
-\int_U u' v = -\int_U u v' + \int_{\pl U} uv \cdot \nu dS
-$$
-
-by letting $v \equiv 1$, then we will have (\romannumeral 1). As for (\romannumeral 2), (\romannumeral 3), let $v = Du$.
-\end{proof}
-
-Let $x\in U$, $B(x,\epsilon) \subset U$, define $V_\epsilon = U / B(x,\epsilon)$, then by corollary (\romannumeral 3) and the fact that $\Delta\Phi(x-y) = 0, x\neq y$, we have
-
-$$
-\int_{V_\epsilon} \Phi(y-x) \Delta u(y) dy = \int_{\pl V_\epsilon} \Phi(y-x) \frac{\pl u}{\pl \nu} - u(y) \frac{\pl \Phi}{\pl \nu} dS(y).
-$$
-
-From the proof of the fundamental solution to Poisson's equation, we claimed that
-$$
-u(x) = \lim_{\epsilon \to 0} -\int_{\pl B(x,\epsilon)} \frac{\pl\Phi}{\pl \nu}(y-x) u(y) dS(y)
-$$
-
-where $\nu$ is the outward normal unit vector on $\pl B(x,\epsilon)$, (the minus sign is because in Poisson's equation, $\nu$ is the inward normal), also 
-\begin{align*}
-\int_{\pl V_\epsilon} \frac{\pl \Phi}{\pl \nu} (y-x)u(y) dS(y) &= \int_{\pl U} \frac{\pl \Phi}{\pl \nu} (y-x)u(y) dS(y) - \int_{\pl B(x,\epsilon)} \frac{\pl \Phi}{\pl \nu}(y-x) u(y) dS(y)\\
-&= \int_{\pl U} \frac{\pl\Phi}{\pl\nu}(y-x)u(y)dS(y) + u(x)
-\end{align*}
-
-when $\epsilon \to 0$. Similarly,
-\begin{align*}
- \int_{\pl V_\epsilon} \Phi(y-x) \frac{\pl u}{\pl \nu} dS(y) &= \int_{\pl U} \Phi(y-x) \frac{\pl u}{\pl \nu} dS(y) - \int_{\pl B(x,\epsilon)} \Phi(y-x) \frac{\pl u}{\pl \nu} dS(y)\\
- \end{align*}
-
- and
- $$
-\Bigg|\int_{\pl B(x,\epsilon)} \Phi(y-x) \frac{\pl u}{\pl \nu} dS(y) \Bigg|\leq C||u||_{L^\infty(\pl B(x,\epsilon))} \cdot\Bigg| \int_{\pl B(x,\epsilon)} \Phi(y-x) dS(y) \Bigg| \overset{\epsilon \to 0}{\to} 0
- $$
-
-as we have shown previously. So combine all the result above and set $\epsilon \to 0$ we have
-\begin{align*}
-\int_U \Phi(y-x) \Delta u(y) dy = \int_{\pl U} \Phi(y-x) \frac{\pl u}{\pl \nu} dS(y) - \int_{\pl U} \frac{\pl\Phi}{\pl\nu}(y-x)u(y)dS(y) - u(x)
-\end{align*}
-
-which means we have
-$$
-u(x) = \int_{\pl U} \Phi(y-x) \frac{\pl u}{\pl \nu} dS(y) - \int_{\pl U} \frac{\pl\Phi}{\pl\nu}(y-x)u(y)dS(y) - \int_U \Phi(y-x) \Delta u(y) dy
-$$
-
-
-for any point $x \in U$ and any function $u \in C^2(\bar{U})$. So now we would be able to solve $u$ directly if we already know the value of $\Delta u$ in $u$ and $u, \frac{\pl u}{\pl \nu}$ on $\pl U$ since $\Phi$ is totally known to us. We can actually further rewrite the above term. For a fixed $x$, we introduce the following corrector function $\phi^x = \phi^x(y)$ defined by
-$$
-\begin{cases} \Delta \phi^x = 0 &\text{ in $U$} \\ \phi^x = \Phi(y-x)& \text{ on $\pl U$} \end{cases}.
-$$
-
-
-Since $\Delta \phi^x(y) = 0$ so now from (\romannumeral 3) of the above corollary yields
-\begin{align*}
-\int_U \phi^x(y)\Delta u(y)  dy &= \int_{\pl U} \phi^x(y) \frac{\pl u(y)}{\pl \nu} - u(y) \frac{\pl \phi^x(y)}{\pl \nu} dS(y)\\
-&= \int_{\pl U} \Phi(y-x) \frac{\pl u(y)}{\pl \nu} - u(y) \frac{\pl \phi^x(y)}{\pl \nu} dS(y).
-\end{align*}
-
-This motivates the definition of Green's function
-
-\begin{definition}
-The Green's function for the region $U$ is 
-$$
-G(x,y) := \Phi(y-x) - \phi^x(y)
-$$
-for all $x\neq y; x,y \in U$.
-\end{definition}
-
-Then we have
-$$
-u(x) = -\int_{\pl U} u(y) \frac{\pl G}{\pl \nu}(x,y) dS(y) - \int_U G(x,y) \Delta u(y) dy
-$$
-
-where
-$$
-\frac{\pl G}{\pl \nu} (x,y) = D_y G(x,y) \nu(y)
-$$
-
-is the outer normal derivative of $G$ w.r.t $y$. Here the nice thing is that we no longer have $\frac{\pl u}{\pl \nu}$. If we use the condition on $u$ such that $-\Delta u = f$ in $U$ and $u = g$ in $\pl U$, we would have the representation formula using Green's function:
-
-\begin{theorem}
-If $u \in C^2(\bar{U})$ solves the problem $\begin{cases} -\Delta u = f & \text{ in $U$} \\ u = g & \text{ on $\pl U$} \end{cases}$, then
-$$
-u(x) = -\int_{\pl U} g(y) \frac{\pl G}{\pl \nu}(x,y) dS(y) + \int_U f(y) G(x,y) dy
-$$
-for all $x \in U$.
-\end{theorem}
-
-
-\begin{theorem}
-Green's function is symmetric, i.e for all $x\neq y; x,y \in U$, $G(x,y) = G(y,x)$.
-\end{theorem}
-
-\begin{proof}
-Fix $x,y \in U, x\neq y$, define $v(z) = G(x,z), w(z) = G(y,z)$ where $z \in U$. Then by definition $v(z),w(z)$ are both harmonic hence $\Delta w(z) = \Delta v(z) = 0$ when $x \neq z; y \neq z$, and also $w(z) = v(z) = 0$ on $\pl U$. A typical confusion is that some might here use maximal principle to conclude $w(z) = 0, v(z) = 0$ on $U$, but note that we have $-\Delta w(z) = f, -\Delta v(z) = f$ are not harmonic! We now apply Green's identity on $V = U - B(x,\epsilon) \cup B(y,\epsilon)$ and hence by (\romannumeral 3) of the above corollary we have
-$$
-\int_{\pl B(x,\epsilon)} \frac{\pl v}{\pl \nu} w - \frac{\pl w}{\pl \nu} v dS(z) = \int_{\pl B(y,\epsilon)} \frac{\pl w}{\pl \nu} v - \frac{\pl v}{\pl \nu}w dS(z)
-$$
-
-where $\nu$ is the inward pointing unit normal vector field on $\pl B(x,\epsilon) \cup \pl B(y,\epsilon)$. Now
-$$
-\Bigg| \int_{\pl B(x,\epsilon)} \frac{\pl w}{\pl \nu} v dS \Bigg| \leq C||w||_{L^\infty(\pl B(x,\epsilon))} \cdot\Bigg|  \int_{\pl B(x,\epsilon)} v dS\Bigg| \overset{\epsilon \to 0}{\to} 0,
-$$
-
-\end{proof}
-
-
+QED.
 
 
