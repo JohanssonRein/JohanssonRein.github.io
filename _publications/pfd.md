@@ -362,7 +362,7 @@ x + y + 2z & = 1\\
 $$
 
 $$
-\begin{cases}}
+\begin{cases}
 x + y - 2z &= -3\\
 2x + y + 2z & = 0\\
 -x - y + 4z & = 4
