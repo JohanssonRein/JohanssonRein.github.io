@@ -465,6 +465,7 @@ u^\epsilon(x)
 &= u(x).
 \end{align*}
 $$
+
 so $u \in C^\infty(U_\epsilon)$ for all $\epsilon>0$.
 
 QED.
