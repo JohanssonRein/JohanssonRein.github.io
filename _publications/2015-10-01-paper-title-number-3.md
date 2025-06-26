@@ -14,44 +14,44 @@ citation: 'Jiajun Zhang, (2024) Conditional Probability and Bayes Theorem'
 # Conditional Probability
 
 **Definition**
-Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then we define $\P(A \vert H)$ to be the probability of $A$ given that $H$ occurs, known as the conditional probability of $A$ given $H$.
+Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then we define $\mathbb{P}(A \vert H)$ to be the probability of $A$ given that $H$ occurs, known as the conditional probability of $A$ given $H$.
 
 
 **Example:** We may think of rolling a fair dice: If no condition is given, then the probability that number $3$ will face up is just $\displaystyle{\frac{1}{6}}$, but what if we given the condition that the number face up is odd? Then based on this assumption, the probability that number $3$ will face up is $\displaystyle{\frac{1}{3}}$.\\
 
-But how do we actually compute $\P(A \vert H)$? Think about this: By the construction of conditional probability, $\P(A \vert H)$ should somehow proportional to $\P(A \cap H)$, because $\P(A \vert H)$ is an event in $\P(A \cap H)$. We denote by $\P(A \vert H) = k \P(A \cap H)$ for some $k$, now consider $\P(H \vert H) = k \P(H \cap H)$, we conclude that $1 = k \P(H)$, so we have $k = \displaystyle{\frac{1}{\P(H)}}$.\\
+But how do we actually compute $\mathbb{P}(A \vert H)$? Think about this: By the construction of conditional probability, $\mathbb{P}(A \vert H)$ should somehow proportional to $\mathbb{P}(A \cap H)$, because $\mathbb{P}(A \vert H)$ is an event in $\mathbb{P}(A \cap H)$. We denote by $\mathbb{P}(A \vert H) = k \mathbb{P}(A \cap H)$ for some $k$, now consider $\mathbb{P}(H \vert H) = k \mathbb{P}(H \cap H)$, we conclude that $1 = k \mathbb{P}(H)$, so we have $k = \displaystyle{\frac{1}{\mathbb{P}(H)}}$.\\
 
 **Theorem
 Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then the conditional probability of $A$ given $H$ is given by
 
 $$
-\P(A \vert H) = \frac{\P(A \cap H)}{\P(H)}
+\mathbb{P}(A \vert H) = \frac{\mathbb{P}(A \cap H)}{\mathbb{P}(H)}
 $$
 
 
-If $\P(A \vert H) = \P(A)$, by theorem 8 we can further conclude $\P(A \cap H) = \P(A) \P(H)$.\\
+If $\mathbb{P}(A \vert H) = \mathbb{P}(A)$, by theorem 8 we can further conclude $\mathbb{P}(A \cap H) = \mathbb{P}(A) \mathbb{P}(H)$.\\
 
 Conditional probability is also a probability measure, it satisfies all the axioms of a probability measure.\\
 
 **Corollary
 Let $B$, $\{ H_n \}_{n=1}^{+\infty}$ be events, then\\
 
-1. $\P(B | B) = 1$;\\
+1. $\mathbb{P}(B | B) = 1$;\\
 
-2. $\P(H | B) = 1 - \P(H^C | B)$;\\
+2. $\mathbb{P}(H | B) = 1 - \mathbb{P}(H^C | B)$;\\
 
-3. If $H_1,H_2,\cdots$ are disjoint, then $\displaystyle{\P \left( \bigcup_{n=1}^{+\infty} H_n \Bigg\vert B\right) = \sum_{i=1}^n \P(H_n | B) }$.
+3. If $H_1,H_2,\cdots$ are disjoint, then $\displaystyle{\mathbb{P} \left( \bigcup_{n=1}^{+\infty} H_n \Bigg\vert B\right) = \sum_{i=1}^n \mathbb{P}(H_n | B) }$.
 
 
 **Definition
-Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then we say $A,H$ are independent, if $\P(A \cap H) = \P(A) \P(H)$, i.e, the occurence of $A$ does not depend on $H$.
+Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then we say $A,H$ are independent, if $\mathbb{P}(A \cap H) = \mathbb{P}(A) \mathbb{P}(H)$, i.e, the occurence of $A$ does not depend on $H$.
 
 
 **Corollary
 Let $(\Omega,\mathcal{F})$ be the sample space, and $A_1,A_2,\cdots,A_n \in \Omega$, then
 
 $$
-\P\left( \bigcap_{j=1}^n A_j \right) = \prod_{i=1}^n \P \left( A_i \Bigg\vert \bigcap_{j=1}^{i-1} A_j \right)
+\mathbb{P}\left( \bigcap_{j=1}^n A_j \right) = \mathbb{P}rod_{i=1}^n \mathbb{P} \left( A_i \Bigg\vert \bigcap_{j=1}^{i-1} A_j \right)
 $$
 
 
@@ -59,13 +59,13 @@ $$
 We have
 
 $$
-\P \left( \bigcap_{j=1}^n A_j \right) = \P \left( A_j \bigcap \left( \bigcap_{i=1}^{j-1} A_i \right) \right) = \P \left( \bigcap_{i=1}^{n-1} A_j \right) \P \left( A_j \Bigg\vert \bigcap_{i=1}^{j-1} A_i \right),
+\mathbb{P} \left( \bigcap_{j=1}^n A_j \right) = \mathbb{P} \left( A_j \bigcap \left( \bigcap_{i=1}^{j-1} A_i \right) \right) = \mathbb{P} \left( \bigcap_{i=1}^{n-1} A_j \right) \mathbb{P} \left( A_j \Bigg\vert \bigcap_{i=1}^{j-1} A_i \right),
 $$
 
-and we may perform the same step on $ \P \left( \bigcap_{i=1}^{n-1} A_j \right)$, and we will eventually reach
+and we may perform the same step on $ \mathbb{P} \left( \bigcap_{i=1}^{n-1} A_j \right)$, and we will eventually reach
 
 $$
-\P\left( \bigcap_{j=1}^n A_j \right) = \prod_{i=1}^n \P \left( A_i \Bigg\vert \bigcap_{j=1}^{i-1} A_j \right)
+\mathbb{P}\left( \bigcap_{j=1}^n A_j \right) = \mathbb{P}rod_{i=1}^n \mathbb{P} \left( A_i \Bigg\vert \bigcap_{j=1}^{i-1} A_j \right)
 $$
 
 **QED.
@@ -77,10 +77,10 @@ A sequence  $\{ H_n \}$ of events in $\mathcal{F}$ is called a partition of $\Om
 
 **Theorem
 (Law of Total Probability)
-Let $\{H_n \}$ be a partition of $\Omega$, $\P(H_i) \geq 0$, then $\forall B \in \mathcal{F}$, we have
+Let $\{H_n \}$ be a partition of $\Omega$, $\mathbb{P}(H_i) \geq 0$, then $\forall B \in \mathcal{F}$, we have
 
 $$
-\P(B) = \sum_{n=1}^{\infty} \P(B \vert H_n) \P(H_n)
+\mathbb{P}(B) = \sum_{n=1}^{\infty} \mathbb{P}(B \vert H_n) \mathbb{P}(H_n)
 $$
 
 
@@ -89,19 +89,19 @@ We know that $B = B \cap \Omega = B \cap \bigcup_{n=1}^{\infty} H_n = \bigcup_{n
 
 $$
 \begin{align*}
-\P(B) &= \P \left( \bigcup_{n=1}^{\infty} B \cap H_n \right)\\
-& = \sum_{n=1}^{\infty} \P(B \cap H_n), \text{since $B\cap H_n$'s are disjoint} \\
-& = \sum_{n=1}^{\infty} \P(B \vert H_n) \P(H_n)
+\mathbb{P}(B) &= \mathbb{P} \left( \bigcup_{n=1}^{\infty} B \cap H_n \right)\\
+& = \sum_{n=1}^{\infty} \mathbb{P}(B \cap H_n), \text{since $B\cap H_n$'s are disjoint} \\
+& = \sum_{n=1}^{\infty} \mathbb{P}(B \vert H_n) \mathbb{P}(H_n)
 \end{align*}
 $$
 
 **QED.
 
 **Theorem
-(Bayes Theorem) Let $\{ H_n \}$ be a partition of $\Omega$, $\P(H_n) > 0$. Suppose $B \in \mathcal{F}$ with $P(B) > 0$, then
+(Bayes Theorem) Let $\{ H_n \}$ be a partition of $\Omega$, $\mathbb{P}(H_n) > 0$. Suppose $B \in \mathcal{F}$ with $P(B) > 0$, then
 
 $$
-\P(H_k \vert B) = \frac{\displaystyle{\P(H_k)P(B \vert H_k)}}{\displaystyle{\sum_{i=1}^{\infty} P(H_i) \P(B \vert H_i)}}
+\mathbb{P}(H_k \vert B) = \frac{\displaystyle{\mathbb{P}(H_k)P(B \vert H_k)}}{\displaystyle{\sum_{i=1}^{\infty} P(H_i) \mathbb{P}(B \vert H_i)}}
 $$
 
 
@@ -109,8 +109,8 @@ $$
 We know that
 $$
 \begin{align*}
-\P(H_k \vert B) &= \frac{\P(H_k \cap B)}{\P(B)}\\
-&= \frac{\P(B \vert H_k ) \P(H_k)}{\P(B)},
+\mathbb{P}(H_k \vert B) &= \frac{\mathbb{P}(H_k \cap B)}{\mathbb{P}(B)}\\
+&= \frac{\mathbb{P}(B \vert H_k ) \mathbb{P}(H_k)}{\mathbb{P}(B)},
 \end{align*}
 $$
 
@@ -127,17 +127,17 @@ $\bullet$ The probability that the test result is negative (suggests that the pe
 Now a random person gets tested for the disease and the result is positive. What is the probability that the person has the disease?
 
 
-**Solution:** Let $A$ to be the event that the person has the disease and we know that $\P(A) = 0.0001$ and $\P(A^C) = 0.9999$ (The person does not have the disease); Let $H$ to be the event that the test is positive, ($H^C)$ to be the event that the test is negative). Based on what the problem is given, we know that
+**Solution:** Let $A$ to be the event that the person has the disease and we know that $\mathbb{P}(A) = 0.0001$ and $\mathbb{P}(A^C) = 0.9999$ (The person does not have the disease); Let $H$ to be the event that the test is positive, ($H^C)$ to be the event that the test is negative). Based on what the problem is given, we know that
 
 $$
-\P( H \vert A^C) = 0.02 ; \P(H^C \vert A) = 0.01
+\mathbb{P}( H \vert A^C) = 0.02 ; \mathbb{P}(H^C \vert A) = 0.01
 $$
 
-and we aim to find $\P( A \vert H)$, thus using Bayes theorem, we have
+and we aim to find $\mathbb{P}( A \vert H)$, thus using Bayes theorem, we have
 
 $$
 \begin{align*}
-\P(A \vert H) =& \frac{\P(H \vert A) \P(A)}{\P(H \vert A) \P(A) + \P(H \vert A^C) \P(A^C)}\\
+\mathbb{P}(A \vert H) =& \frac{\mathbb{P}(H \vert A) \mathbb{P}(A)}{\mathbb{P}(H \vert A) \mathbb{P}(A) + \mathbb{P}(H \vert A^C) \mathbb{P}(A^C)}\\
 & = \frac{(1-0.01) \times 0.0001}{(1-0.01) \times 0.0001 + 0.02 \times (1-0.0001)} \\
 & = 0.0049.
 \end{align*}
@@ -159,41 +159,41 @@ To start with, we define: $R$ to be the event that it is rainy; $T$ to be the ev
 (a) We aim to find
 
 $$
-\P(R^C \cap T \cap L^C)
+\mathbb{P}(R^C \cap T \cap L^C)
 $$
 
 Then, 
 
 $$
-\P(R^C \cap T \cap L^C) = \frac{2}{3} \times \frac{1}{4} \times \frac{3}{4} = \frac{1}{8}.
+\mathbb{P}(R^C \cap T \cap L^C) = \frac{2}{3} \times \frac{1}{4} \times \frac{3}{4} = \frac{1}{8}.
 $$
 
-(b) Denote $\P(L)$ to be the probability that Bob will be late, then we may apply the law of total probability:
+(b) Denote $\mathbb{P}(L)$ to be the probability that Bob will be late, then we may apply the law of total probability:
 
 $$
-\P(L) = \P(L \vert R \cap T) \P(R \cap T) + \P(L \vert R^c \cap T^C) \P(R^C \cap T^C) + \P(L \vert R^C \vert T) \P(R^C \cap T) + \P(L \vert R \cap T^C) \P(R \cap T^C)
+\mathbb{P}(L) = \mathbb{P}(L \vert R \cap T) \mathbb{P}(R \cap T) + \mathbb{P}(L \vert R^c \cap T^C) \mathbb{P}(R^C \cap T^C) + \mathbb{P}(L \vert R^C \vert T) \mathbb{P}(R^C \cap T) + \mathbb{P}(L \vert R \cap T^C) \mathbb{P}(R \cap T^C)
 $$
 
 And we are given that
 
 $$
-\P(L \vert R \cap T) = \frac{1}{2} ; \P(L \vert R^C \cap T^C ) = \frac{1}{8} ; \P(L \vert R^C \cap T) = \P(L \vert R \cap T^C) = \frac{1}{4}
+\mathbb{P}(L \vert R \cap T) = \frac{1}{2} ; \mathbb{P}(L \vert R^C \cap T^C ) = \frac{1}{8} ; \mathbb{P}(L \vert R^C \cap T) = \mathbb{P}(L \vert R \cap T^C) = \frac{1}{4}
 $$
 
 Also we may use conditional probability to solve that
 
 $$
 \begin{align*}
-\P(R \cap T) &= \P(T \vert R) \P(R) = \frac{1}{2} \times \frac{1}{3} = \frac{1}{6} \\
-\P(R^C \cap T^C) &= \P(T^C \vert R^C) \P(R^C)= (1-\P(T \vert R^C))\P(R^C) = \frac{3}{4} \times \frac{2}{3} = \frac{1}{2}\\
-\P(R^C \cap T) &= \P(T \vert R^C) \P(R^C) = \frac{1}{4} \times \frac{2}{3} = \frac{1}{6}\\
-\P(R \cap T^C) &= \P(T^C \vert R) \P(R) = (1 - \P(T \vert R))\P(R) = \frac{1}{2} \times \frac{1}{3} = \frac{1}{6} 
+\mathbb{P}(R \cap T) &= \mathbb{P}(T \vert R) \mathbb{P}(R) = \frac{1}{2} \times \frac{1}{3} = \frac{1}{6} \\
+\mathbb{P}(R^C \cap T^C) &= \mathbb{P}(T^C \vert R^C) \mathbb{P}(R^C)= (1-\mathbb{P}(T \vert R^C))\mathbb{P}(R^C) = \frac{3}{4} \times \frac{2}{3} = \frac{1}{2}\\
+\mathbb{P}(R^C \cap T) &= \mathbb{P}(T \vert R^C) \mathbb{P}(R^C) = \frac{1}{4} \times \frac{2}{3} = \frac{1}{6}\\
+\mathbb{P}(R \cap T^C) &= \mathbb{P}(T^C \vert R) \mathbb{P}(R) = (1 - \mathbb{P}(T \vert R))\mathbb{P}(R) = \frac{1}{2} \times \frac{1}{3} = \frac{1}{6} 
 \end{align*}
 $$
 
 Thus we have
 $$
-\P(L) = \frac{1}{2} \times \frac{1}{6} + \frac{1}{8} \times \frac{1}{2} + \frac{1}{4} \times \frac{1}{6} + \frac{1}{4} \times \frac{1}{6} \approx 0.2292.
+\mathbb{P}(L) = \frac{1}{2} \times \frac{1}{6} + \frac{1}{8} \times \frac{1}{2} + \frac{1}{4} \times \frac{1}{6} + \frac{1}{4} \times \frac{1}{6} \approx 0.2292.
 $$
 
 
