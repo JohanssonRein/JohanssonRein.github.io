@@ -33,14 +33,15 @@ If $\mathbb{P}(A \vert H) = \mathbb{P}(A)$, by theorem 8 we can further conclude
 
 Conditional probability is also a probability measure, it satisfies all the axioms of a probability measure.
 
-**Corollary
+**Corollary**
 Let $B$, $\{ H_n \}_{n=1}^{+\infty}$ be events, then
 
-1. $\mathbb{P}(B | B) = 1$;
+$$\mathbb{P}(B | B) = 1$$;
 
-2. $\mathbb{P}(H | B) = 1 - \mathbb{P}(H^C | B)$;
+$$\mathbb{P}(H | B) = 1 - \mathbb{P}(H^C | B)$$;
 
-3. If $H_1,H_2,\cdots$ are disjoint, then $\displaystyle{\mathbb{P} \left( \bigcup_{n=1}^{+\infty} H_n \Bigg\vert B\right) = \sum_{i=1}^n \mathbb{P}(H_n | B) }$.
+If $H_1,H_2,\cdots$ are disjoint, then 
+$$\displaystyle{\mathbb{P} \left( \bigcup_{n=1}^{+\infty} H_n \Bigg\vert B\right) = \sum_{i=1}^n \mathbb{P}(H_n | B) }$$.
 
 
 **Definition
