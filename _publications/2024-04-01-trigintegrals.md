@@ -176,6 +176,8 @@ Exercise 7 : Evaluate the integral $\int_0^a \frac{1}{(a^2 + x^2)^{3/2}} dx.$
 
 Exercise 8 : Evaluate the integral $\int \frac{x}{\sqrt{3-2x-x^2}} dx.$
 
+$\displaystyle{\int f(x)dx}$
+
 
 
 
