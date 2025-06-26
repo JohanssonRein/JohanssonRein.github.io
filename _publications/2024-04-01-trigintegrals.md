@@ -156,9 +156,10 @@ $\int \frac{2\sec^2(y)}{4\tan^2(y)(2\sec(y))}dy$, which is
 $\frac{1}{4}\int \frac{\sec(y)}{\tan^2(y)}dy$, if we let 
 $\tan(y) = \sin(y) / \cos(y)$ and $\sec(y) = 1 / \cos(y)$, we will get 
 $\frac{1}{4}\int \frac{\cos(y)}{\sin^2(y)}dy$, and we can achieve this 
-by another u-sub, let $u = \sin(y)$ thus we get 
+by another u-sub, let $u = \sin(y)$ thus we get
+
 $\frac{1}{4}\int \frac{\cos(y)}{\sin^2(y)}dy = 
-\frac{1}{4} \int \frac{1}{u^2}du}$, 
+\frac{1}{4} \int \frac{1}{u^2}du$, 
 which we get 
 $ 
 \frac{1}{4} \int \frac{1}{u^2}du = -\frac{1}{4}\csc(y) + C$, then 
