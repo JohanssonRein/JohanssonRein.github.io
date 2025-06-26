@@ -258,7 +258,7 @@ $$
 also $n\alpha(n)\epsilon^{n-1}$ is the surface area of the ball $\partial B(0,\epsilon)$, so
 
 $$
-K_{\epsilon} = -\frac{1}{n\alpha(n)\epsilon^{n-1}} \int_{\partial B(0,\epsilon)} f(x-y) dS(y) = -\fint_{\partial B(0,\epsilon)} f(y) dS(y) \to -f(x)
+K_{\epsilon} = -\frac{1}{n\alpha(n)\epsilon^{n-1}} \int_{\partial B(0,\epsilon)} f(x-y) dS(y) = -⨍_{\partial B(0,\epsilon)} f(y) dS(y) \to -f(x)
 $$
 
 as $\epsilon \to 0$. Since we have shown that $I_\epsilon, L_\epsilon$ are all bounded by terms of $\epsilon$ so by setting $\epsilon \to 0$ they will vanish as well. Hence we have
@@ -281,17 +281,17 @@ For a harmonic function $u$, its value $u(x)$ is equal to the average $u$ over b
 Let $U \in \mathbb{R}^n$ open, if $u(x_1,\cdots,x_n) \in C^2(U)$ is harmonic then for each ball $B(x,r) \in U$, 
 
 $$
-u(x) = \fint_{\partial B(x,r)} u(y) dS(y) = \fint_{B(x,r)} u(y)dy
+u(x) = ⨍_{\partial B(x,r)} u(y) dS(y) = ⨍_{B(x,r)} u(y)dy
 $$
 
 where
 
 $$
-\fint_{\partial B(x,r)} u(y) dS(y) = \frac{1}{n\alpha(n) r^{n-1}} \int_{\partial B(x,r)} u(y) dS(y),
+⨍_{\partial B(x,r)} u(y) dS(y) = \frac{1}{n\alpha(n) r^{n-1}} \int_{\partial B(x,r)} u(y) dS(y),
 $$
 
 $$
-\fint_{B(x,r)} u(y) dy = \frac{1}{\alpha(n) r^n} \int_{B(x,r)}u(y) dy
+⨍_{B(x,r)} u(y) dy = \frac{1}{\alpha(n) r^n} \int_{B(x,r)}u(y) dy
 $$
 
 $\alpha(n)$ is the volume of the unit ball in $\mathbb{R}^n$ and $n\alpha(n)$ is the surface area of the unit ball in $\mathbb{R}^n$.
@@ -301,22 +301,22 @@ $\alpha(n)$ is the volume of the unit ball in $\mathbb{R}^n$ and $n\alpha(n)$ is
 Let $u(x_1,\cdots,x_n) \in C^2(U)$ be harmonic, and define
 
 $$
-\phi(r) = \begin{cases} \displaystyle{\fint_{\partial B(x,r)} u(y) dS(y)} & r>0 \\\\u(x) & r = 0\end{cases}.
+\phi(r) = \begin{cases} \displaystyle{⨍_{\partial B(x,r)} u(y) dS(y)} & r>0 \\\\u(x) & r = 0\end{cases}.
 $$
 
 If $u$ is a smooth function (we later will show all harmonic functions are smooth), then $\lim_{r \to 0} \phi(r) = u(x)$ and hence $\phi$ is continuous. Note that by change of variables, we have
 
 $$
-\phi(r) = \fint_{\partial B(0,1)} u(x+rz)dS(z)
+\phi(r) = ⨍_{\partial B(0,1)} u(x+rz)dS(z)
 $$
 
 and we take the derivative of $\phi(r)$:
 
 $$
 \begin{align*}
-\phi'(r) &= \fint_{\partial B(0,1)} \nabla u(x+rz) \cdot zdS(z)\\
-&=\fint_{\partial B(x,r)} \nabla u(y) \cdot \frac{y-x}{r} dS(y)\\
-&= \fint_{\partial B(x,r)} \frac{\partial u}{\partial \nu}(y) dS(y)\\
+\phi'(r) &= ⨍_{\partial B(0,1)} \nabla u(x+rz) \cdot zdS(z)\\
+&=⨍_{\partial B(x,r)} \nabla u(y) \cdot \frac{y-x}{r} dS(y)\\
+&= ⨍_{\partial B(x,r)} \frac{\partial u}{\partial \nu}(y) dS(y)\\
 &=\frac{1}{n\alpha(n)r^{n-1}} \int_{\partial B(x,r)} \frac{\partial u}{\partial \nu}(y)dS(y)\\
 &= \frac{1}{n\alpha(n)r^{n-1}} \int_{B(x,r)} \nabla (\nabla u) dy\\
 &= \frac{1}{n\alpha(n) r^{n-1}} \int_{B(x,r)} \Delta u(y) dy \equiv 0.
@@ -326,7 +326,7 @@ $$
 which means $\phi$ is a constant function, and hence we have 
 
 $$
-u(x) = \fint_{\partial B(x,r)} u(y)dS(y).
+u(x) = ⨍_{\partial B(x,r)} u(y)dS(y).
 $$
 
 Furthermore we have
@@ -347,7 +347,7 @@ Another result is the converse to mean-value property:
 If $u \in C^2(U)$ satisfies
 
 $$
-u(x) = \fint_{\partial B(x,r)} u dS
+u(x) = ⨍_{\partial B(x,r)} u dS
 $$
 
 for each ball $B(x,r) \in U$, then $u$ is harmonic.
@@ -356,7 +356,7 @@ for each ball $B(x,r) \in U$, then $u$ is harmonic.
 Suppose $\Delta u \neq 0$, then $\exists B(x,r) \in U$ such that $\Delta u > 0$ say, but then
 
 $$
-\phi'(r) = \frac{1}{n\alpha(n)r^{n-1}} \int_{\partial B(x,r)}\Delta u dS = \frac{r}{n}\fint_{B(x,r)} \Delta u(y) dy >0
+\phi'(r) = \frac{1}{n\alpha(n)r^{n-1}} \int_{\partial B(x,r)}\Delta u dS = \frac{r}{n}⨍_{B(x,r)} \Delta u(y) dy >0
 $$
 which contradicts the fact that $\phi$ is a constant function.
 
@@ -379,13 +379,13 @@ A nice property of harmonic functions is that if $u$ is harmonic on a bounded do
 We will prove the second statement since the first followed from the second. Suppose $\exists x_0 \in U$ such that $u(x_0) = \max_{\bar{U}} u(x) \equiv M$. Then $\forall r \in (0,\text{dist}(x_0,\partial U))$, the mean-value property states that
 
 $$
-M = u(x_0) = \fint_{B(x_0,r)} u(y) dy
+M = u(x_0) = ⨍_{B(x_0,r)} u(y) dy
 $$
 
 by taking the ''average'' around the maximum $x_0$, we would except
 
 $$
-\fint_{B(x_0,r)} u(y) dy \leq M
+⨍_{B(x_0,r)} u(y) dy \leq M
 $$
 
 and such will hold only if $u \equiv M$ within $B(x_0,r)$, and $u(y) = M$.
@@ -493,7 +493,7 @@ $$
 \begin{align*}
 |u_{x_i}(x_0) | &= \Bigg| \frac{2^n}{\alpha(n) r^n}\int_{B(x_0,\frac{r}{2})} u_{x_i}(y) dy \Bigg|\\
 &= \Bigg| \frac{2^n}{\alpha(n)r^n} \int_{\partial B(x_0,\frac{r}{2})} u(y) \nu^i dS(y) \Bigg|\\
-&= \Bigg|\frac{2n}{r} \fint_{\partial B(x_0,\frac{r}{2})} u(y) \nu^i dS(y) \Bigg|\\
+&= \Bigg|\frac{2n}{r} ⨍_{\partial B(x_0,\frac{r}{2})} u(y) \nu^i dS(y) \Bigg|\\
 &\leq \frac{2n}{r} ||u||_{L^\infty(\partial B(x_0,r/2))}.
 \end{align*}
 $$
@@ -561,7 +561,7 @@ for all $x,y \in V$.
 Consider a ball $B(a,r) \subset U$, and let $x,y \in B(a,\frac{1}{4}r)$, we first claim that $B(x,\frac{1}{4}r) \subset B(y,\frac{3}{4}r) \subset B(a,r)$. Then we use mean value property and we have
 
 $$
-u(x) = \fint_{B(x,\frac{1}{4}r)} u(z) dz \leq \fint_{B(\frac{3}{4}r,y)} u(z)dz = 3^n u(y).
+u(x) = ⨍_{B(x,\frac{1}{4}r)} u(z) dz \leq ⨍_{B(\frac{3}{4}r,y)} u(z)dz = 3^n u(y).
 $$
 
 Now since $V$ is compact so there exists a finite cover of balls $\{ B_i \}_{i=1}^M$ where $B_i \equiv B(a_i,r_i) \subset U$. Then for any $x,y \in V$, we may find an ordered subcover $B_{i1},\cdots B_{i\ell}$ such that $x \in B_{i1}$, $y \in B_{i\ell}$ and $B_{ij} \cap B_{ij+1} \neq \varnothing$, and the previous conclusion holds. Then we have a chain of inequalities:
