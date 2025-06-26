@@ -86,15 +86,15 @@ author:
 publication_category:
   books:
     title: 'Books'
- statistics:
+  statistics:
     title: 'Statistics'    
- calculus:
+  calculus:
     title: 'Calculus'
- differentialequations:
+  differentialequations:
     title: 'Differential Equations'
- probability:
+  probability:
     title: 'Probability' 
- linearalgebra:
+  linearalgebra:
     title: 'Linear Algebra'
 
 # Site Settings
