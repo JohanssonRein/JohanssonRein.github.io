@@ -21,7 +21,7 @@ Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then we define
 
 But how do we actually compute $\mathbb{P}(A \vert H)$? Think about this: By the construction of conditional probability, $\mathbb{P}(A \vert H)$ should somehow proportional to $\mathbb{P}(A \cap H)$, because $\mathbb{P}(A \vert H)$ is an event in $\mathbb{P}(A \cap H)$. We denote by $\mathbb{P}(A \vert H) = k \mathbb{P}(A \cap H)$ for some $k$, now consider $\mathbb{P}(H \vert H) = k \mathbb{P}(H \cap H)$, we conclude that $1 = k \mathbb{P}(H)$, so we have $k = \displaystyle{\frac{1}{\mathbb{P}(H)}}$.
 
-**Theorem
+**Theorem**
 Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then the conditional probability of $A$ given $H$ is given by
 
 $$
@@ -44,11 +44,11 @@ If $H_1,H_2,\cdots$ are disjoint, then
 $$\displaystyle{\mathbb{P} \left( \bigcup_{n=1}^{+\infty} H_n \Bigg\vert B\right) = \sum_{i=1}^n \mathbb{P}(H_n | B) }$$.
 
 
-**Definition
+**Definition**
 Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then we say $A,H$ are independent, if $\mathbb{P}(A \cap H) = \mathbb{P}(A) \mathbb{P}(H)$, i.e, the occurence of $A$ does not depend on $H$.
 
 
-**Corollary
+**Corollary**
 Let $(\Omega,\mathcal{F})$ be the sample space, and $A_1,A_2,\cdots,A_n \in \Omega$, then
 
 $$
@@ -56,7 +56,7 @@ $$
 $$
 
 
-\**Proof
+**Proof**
 We have
 
 $$
@@ -69,14 +69,14 @@ $$
 \mathbb{P}\left( \bigcap_{j=1}^n A_j \right) = \mathbb{P}rod_{i=1}^n \mathbb{P} \left( A_i \Bigg\vert \bigcap_{j=1}^{i-1} A_j \right)
 $$
 
-**QED.
+**QED.**
 
 **Definition
 A sequence  $\{ H_n \}$ of events in $\mathcal{F}$ is called a partition of $\Omega$ if $H_i \cap H_j = \varnothing, i \neq j$ and $\displaystyle{\bigcup_{n=1}^{\infty} H_n = \Omega}$.
 
 
 
-**Theorem
+**Theorem**
 (Law of Total Probability)
 Let $\{H_n \}$ be a partition of $\Omega$, $\mathbb{P}(H_i) \geq 0$, then $\forall B \in \mathcal{F}$, we have
 
@@ -85,7 +85,7 @@ $$
 $$
 
 
-**Proof
+**Proof**
 We know that $B = B \cap \Omega = B \cap \bigcup_{n=1}^{\infty} H_n = \bigcup_{n=1}^{\infty} B \cap H_n$, thus
 
 $$
@@ -96,9 +96,9 @@ $$
 \end{align*}
 $$
 
-**QED.
+**QED.**
 
-**Theorem
+**Theorem**
 (Bayes Theorem) Let $\{ H_n \}$ be a partition of $\Omega$, $\mathbb{P}(H_n) > 0$. Suppose $B \in \mathcal{F}$ with $P(B) > 0$, then
 
 $$
@@ -106,7 +106,7 @@ $$
 $$
 
 
-\**Proof
+**Proof**
 We know that
 $$
 \begin{align*}
@@ -116,10 +116,10 @@ $$
 $$
 
 and this follows from the result in theorem 9.
-**QED.
+**QED.**
 
 
-\textbf{Example:} A certain disease affects about $1$ out of $10,000$ people. There is a test to check whether the person has the disease. The test is quite accurate, in particular we know that :
+**Example:** A certain disease affects about $1$ out of $10,000$ people. There is a test to check whether the person has the disease. The test is quite accurate, in particular we know that :
 
 $\bullet$ The probability that the test result is positive (suggests that the person has the disease), given that the person does not have the disease is only $0.02$;
 
