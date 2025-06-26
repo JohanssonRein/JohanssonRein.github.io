@@ -199,7 +199,19 @@ $$
 \int_{B(0,\epsilon)} \log |y| dy = \int_0^\epsilon \int_0^{2\pi} \log|r| rd\theta dr = \epsilon^2\log |\epsilon|
 $$
 
-so we have $\big|I_{\epsilon}\big| < C\epsilon^2 \big|\log \epsilon\big|$ for some constant $C$ . When $n\geq 3$, similarly we can show that $\big|I_{\epsilon}\big| < C\epsilon$, hence the term $I_{\epsilon}$ is bounded in terms of arbitrary $\epsilon$. Now for $J_{\epsilon}$, first note that $\Delta_x f(x-y) = \Delta_y f(x-y)$, we have
+so we have 
+
+$$
+\Big|I_{\epsilon}\Big| < C\epsilon^2 \Big|\log \epsilon\Big|
+$$ 
+
+for some constant $C$ . When $n\geq 3$, similarly we can show that 
+
+$$
+\Big|I_{\epsilon}\Big| < C\epsilon
+$$
+
+hence the term $I_{\epsilon}$ is bounded in terms of arbitrary $\epsilon$. Now for $J_{\epsilon}$, first note that $\Delta_x f(x-y) = \Delta_y f(x-y)$, we have
 
 $$
 J_\epsilon = \int_{\mathbb{R}^n/B(0,\epsilon)} \Phi(y) \Delta_y f(x-y)dy.
@@ -249,7 +261,19 @@ K_\epsilon &= \int_{\mathbb{R}^n/B(0,\epsilon)} \Delta \Phi(y) f(x-y)dy - \int_{
 \end{align*}
 $$
 
-Since $D\Phi(y) = \frac{-1}{n\alpha(n)} \frac{y}{\big|y\big|^n}$ when $y\neq 0$ and $\nu = -y/\big|y\big| = -y/\epsilon$ on $\partial B(0,\epsilon)$, so we will have
+Since 
+
+$$
+D\Phi(y) = \frac{-1}{n\alpha(n)} \frac{y}{\Big|y\Big|^n}
+$$
+
+when 
+
+$$
+y\neq 0$ and $\nu = -y/\Big|y\Big| = -y/\epsilon
+$$
+
+on $\partial B(0,\epsilon)$, so we will have
 
 $$
 \nu D\Phi(y) = \frac{1}{n\alpha(n)\epsilon^{n-1}}
