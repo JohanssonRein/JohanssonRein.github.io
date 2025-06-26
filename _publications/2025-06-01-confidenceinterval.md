@@ -1,7 +1,7 @@
 ---
 title: "Statistics Series 2: Confidence Interval"
 collection: publications
-category: manuscripts
+category: statistics
 permalink: /publication/2025-06-01-confidenceinterval
 excerpt: 'In this article we will talk about confidence interval'
 date: 2025-06-01
