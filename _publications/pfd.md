@@ -353,6 +353,7 @@ $\bullet$ Practice Exercises
 
 
 2. Try to solve the following systems of linear equations, using Gauss - Elimination.
+   
 $$
 \begin{cases}
 x + y + z &= 2\\
