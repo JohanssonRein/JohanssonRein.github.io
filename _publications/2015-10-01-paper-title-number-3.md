@@ -89,8 +89,8 @@ We know that $B = B \cap \Omega = B \cap \bigcup_{n=1}^{\infty} H_n = \bigcup_{n
 
 $$
 \begin{align*}
-\mathbb{P}(B) &= \mathbb{P} \left( \bigcup_{n=1}^{\infty} B \cap H_n \right)
-& = \sum_{n=1}^{\infty} \mathbb{P}(B \cap H_n), \text{since $B\cap H_n$'s are disjoint} 
+\mathbb{P}(B) &= \mathbb{P} \left( \bigcup_{n=1}^{\infty} B \cap H_n \right)\\
+& = \sum_{n=1}^{\infty} \mathbb{P}(B \cap H_n), \text{since $B\cap H_n$'s are disjoint}\\ 
 & = \sum_{n=1}^{\infty} \mathbb{P}(B \vert H_n) \mathbb{P}(H_n)
 \end{align*}
 $$
@@ -109,7 +109,7 @@ $$
 We know that
 $$
 \begin{align*}
-\mathbb{P}(H_k \vert B) &= \frac{\mathbb{P}(H_k \cap B)}{\mathbb{P}(B)}
+\mathbb{P}(H_k \vert B) &= \frac{\mathbb{P}(H_k \cap B)}{\mathbb{P}(B)}\\
 &= \frac{\mathbb{P}(B \vert H_k ) \mathbb{P}(H_k)}{\mathbb{P}(B)},
 \end{align*}
 $$
@@ -137,8 +137,8 @@ and we aim to find $\mathbb{P}( A \vert H)$, thus using Bayes theorem, we have
 
 $$
 \begin{align*}
-\mathbb{P}(A \vert H) =& \frac{\mathbb{P}(H \vert A) \mathbb{P}(A)}{\mathbb{P}(H \vert A) \mathbb{P}(A) + \mathbb{P}(H \vert A^C) \mathbb{P}(A^C)}
-& = \frac{(1-0.01) \times 0.0001}{(1-0.01) \times 0.0001 + 0.02 \times (1-0.0001)} 
+\mathbb{P}(A \vert H) =& \frac{\mathbb{P}(H \vert A) \mathbb{P}(A)}{\mathbb{P}(H \vert A) \mathbb{P}(A) + \mathbb{P}(H \vert A^C) \mathbb{P}(A^C)}\\
+& = \frac{(1-0.01) \times 0.0001}{(1-0.01) \times 0.0001 + 0.02 \times (1-0.0001)}\\
 & = 0.0049.
 \end{align*}
 $$
@@ -184,9 +184,9 @@ Also we may use conditional probability to solve that
 
 $$
 \begin{align*}
-\mathbb{P}(R \cap T) &= \mathbb{P}(T \vert R) \mathbb{P}(R) = \frac{1}{2} \times \frac{1}{3} = \frac{1}{6} 
-\mathbb{P}(R^C \cap T^C) &= \mathbb{P}(T^C \vert R^C) \mathbb{P}(R^C)= (1-\mathbb{P}(T \vert R^C))\mathbb{P}(R^C) = \frac{3}{4} \times \frac{2}{3} = \frac{1}{2}
-\mathbb{P}(R^C \cap T) &= \mathbb{P}(T \vert R^C) \mathbb{P}(R^C) = \frac{1}{4} \times \frac{2}{3} = \frac{1}{6}
+\mathbb{P}(R \cap T) &= \mathbb{P}(T \vert R) \mathbb{P}(R) = \frac{1}{2} \times \frac{1}{3} = \frac{1}{6}\\
+\mathbb{P}(R^C \cap T^C) &= \mathbb{P}(T^C \vert R^C) \mathbb{P}(R^C)= (1-\mathbb{P}(T \vert R^C))\mathbb{P}(R^C) = \frac{3}{4} \times \frac{2}{3} = \frac{1}{2}\\
+\mathbb{P}(R^C \cap T) &= \mathbb{P}(T \vert R^C) \mathbb{P}(R^C) = \frac{1}{4} \times \frac{2}{3} = \frac{1}{6}\\
 \mathbb{P}(R \cap T^C) &= \mathbb{P}(T^C \vert R) \mathbb{P}(R) = (1 - \mathbb{P}(T \vert R))\mathbb{P}(R) = \frac{1}{2} \times \frac{1}{3} = \frac{1}{6} 
 \end{align*}
 $$
