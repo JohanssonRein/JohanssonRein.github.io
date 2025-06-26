@@ -52,7 +52,7 @@ $$
 
 QED.
 
-Given this, we seek for radial solutions which takes the form $u(x) = v(r)$ where $r = |x|$. Denote $r = (x_1^2+\cdots+x_n^2)^{1/2}$, let $x\neq 0$, then we see that
+Given this, we seek for radial solutions which takes the form $u(x) = v(r)$ where $r = |x|$ .  Denote $r = (x_1^2+\cdots+x_n^2)^{1/2}$, let $x\neq 0$, then we see that
 
 $$
 \frac{\partial r}{\partial x_i} = (x_1^2+\cdots+x_n^2)^{-1/2} x_i = \frac{x_i}{r}
