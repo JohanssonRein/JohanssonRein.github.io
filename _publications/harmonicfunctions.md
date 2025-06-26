@@ -249,7 +249,7 @@ K_\epsilon &= \int_{\mathbb{R}^n/B(0,\epsilon)} \Delta \Phi(y) f(x-y)dy - \int_{
 \end{align*}
 $$
 
-Since $D\Phi(y) = \frac{-1}{n\alpha(n)} \frac{y}{|y|^n}$ when $y\neq 0$ and $\nu = -y/|y| = -y/\epsilon$ on $\partial B(0,\epsilon)$, so we will have
+Since $D\Phi(y) = \frac{-1}{n\alpha(n)} \frac{y}{\big|y\big|^n}$ when $y\neq 0$ and $\nu = -y/\big|y\big| = -y/\epsilon$ on $\partial B(0,\epsilon)$, so we will have
 
 $$
 \nu D\Phi(y) = \frac{1}{n\alpha(n)\epsilon^{n-1}}
