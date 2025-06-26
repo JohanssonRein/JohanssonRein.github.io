@@ -199,8 +199,8 @@ $$
 3 & &2 & &-1 &| &2\\
 -2 & &0 & &0 &| &-1
 \end{bmatrix}
-
 $$
+
 In this form, we do not write the unknowns, as it is easier to perform operations, we only write the coefficients. On each row,
 it represents one equation, and the coefficients are ordered, column $i$ represents the coefficients for $x_i$ and 
 row $j$ represents the $j$th equation. On the left of the vertical bar are the coefficients, namely $a_{ij}$ and on the right 
@@ -360,6 +360,7 @@ x + y + 2z & = 1\\
 2x + y - z & = 4
 \end{cases}
 $$
+
 $$
 \begin{cases}}
 x + y - 2z &= -3\\
