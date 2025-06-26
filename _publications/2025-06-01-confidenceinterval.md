@@ -1,5 +1,5 @@
 ---
-title: "Statistics Series 2: Confidence Interval"
+title: "Confidence Interval"
 collection: publications
 category: statistics
 permalink: /publication/2025-06-01-confidenceinterval
