@@ -105,8 +105,8 @@ The function defined by
 
 $$
 \Phi(x) = \begin{cases} -\frac{1}{2\pi} \log |x| & n=2 \\ \frac{1}{n(n-2)\alpha(n)} \cdot \frac{1}{|x|^{n-2}} & n\geq 3 \end{cases}
-
 $$
+
 is the fundamental solution to Laplace's equation $\Delta u = 0$ for all $x \in \mathbb{R}^n / \{ 0 \}$ where $\alpha(n)$ denotes the volume of the unit ball in $\mathbb{R}^n$.
 
 
