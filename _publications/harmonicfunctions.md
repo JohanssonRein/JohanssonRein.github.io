@@ -11,8 +11,9 @@ venue: 'Summer'
 citation: 'Jiajun Zhang, (2025). Harmonic Functions'
 ---
 
+#Laplace's Equations and Harmonic Functions
 
-\section{Fundamental Solutions}
+##Fundamental Solutions of Harmonic Functions
 
 \begin{definition}
 Let $u(x_1,\cdots,x_n): U \subset \mathbb{R}^n \to \mathbb{R}$ be a unknown function, the Laplacian of the function is defined by
