@@ -18,7 +18,7 @@ citation: 'Jiajun Zhang, (2025). Harmonic Functions'
 **Definition**
 Let $u(x_1,\cdots,x_n): U \subset \mathbb{R}^n \to \mathbb{R}$ be a unknown function, the Laplacian of the function is defined by
 $$
-\Delta u = \sum_{i=1}^n \frac{\pl^2 u}{\pl x_i^2}.
+\Delta u = \sum_{i=1}^n \frac{\partial^2 u}{\partial x_i^2}.
 $$
 Laplace equation is of the form
 $$
@@ -55,7 +55,7 @@ QED.
 Given this, we seek for radial solutions which takes the form $u(x) = v(r)$ where $r = |x|$. Denote $r = (x_1^2+\cdots+x_n^2)^{1/2}$, let $x\neq 0$, then we see that
 
 $$
-\frac{\pl r}{\pl x_i} = (x_1^2+\cdots+x_n^2)^{-1/2} x_i = \frac{x_i}{r}
+\frac{\partial r}{\partial x_i} = (x_1^2+\cdots+x_n^2)^{-1/2} x_i = \frac{x_i}{r}
 $$
 
 and by Chain rule we have
@@ -152,15 +152,15 @@ then denote $e_i$ as the unit vector in $i$th position of $x = (x_1,\cdots,x_n)$
 
 $$
 \begin{align*}
-\frac{\pl u}{\pl x_i}(x) = \lim_{h \to 0} \frac{u(x+he_i) - u(x)}{h} &=  \int_{\mathbb{R}^n} \Phi(y) \cdot \lim_{h \to 0}\left[ \frac{f(x+he_i - y) - f(x-y)}{h} \right] dy
-&=\int_{\mathbb{R}^n} \Phi(y)\cdot \frac{\pl f}{\pl x_i}(x-y)dy.
+\frac{\partial u}{\partial x_i}(x) = \lim_{h \to 0} \frac{u(x+he_i) - u(x)}{h} &=  \int_{\mathbb{R}^n} \Phi(y) \cdot \lim_{h \to 0}\left[ \frac{f(x+he_i - y) - f(x-y)}{h} \right] dy
+&=\int_{\mathbb{R}^n} \Phi(y)\cdot \frac{\partial f}{\partial x_i}(x-y)dy.
 \end{align*}
 $$
 
 Similarly one can show
 
 $$
-\frac{\pl u}{\pl x_i \pl x_j}(x) = \int_{\mathbb{R}^n} \Phi(y) \cdot \frac{\pl^2 f}{\pl x_i \pl x_j}(x-y)dy.
+\frac{\partial u}{\partial x_i \partial x_j}(x) = \int_{\mathbb{R}^n} \Phi(y) \cdot \frac{\partial^2 f}{\partial x_i \partial x_j}(x-y)dy.
 $$
 
 Since $f \in C_C^2(\mathbb{R}^n)$, the second partial derivative is continuous w.r.t $x$, hence $u \in C^2(\mathbb{R}^n)$.
@@ -209,10 +209,10 @@ To compute this integral, we need some technical lemmas:
 
 **Lemma**
 (Gauss-Green Theorem)
-Let $u(x_1,\cdots,x_n) \in C^1(\overline{U})$, let $\nu = (\nu_1,\cdots,\nu_n)$ be the outward pointing unit normal vector field of $U$ defined on $\pl U$ then
+Let $u(x_1,\cdots,x_n) \in C^1(\overline{U})$, let $\nu = (\nu_1,\cdots,\nu_n)$ be the outward pointing unit normal vector field of $U$ defined on $\partial U$ then
 
 $$
-\int_U u_{x_i} dx = \int_{\pl U} u \nu_i dS.
+\int_U u_{x_i} dx = \int_{\partial U} u \nu_i dS.
 $$
 
 
@@ -223,7 +223,7 @@ We can use this lemma to further derive an integration by parts formula:
 Let $u,v \in C^1(\overline{U})$, then
 
 $$
-\int_U u_{x_i} v dx = -\int_U u v_{x_i} dx + \int_{\pl U} uv \nu^i d S.
+\int_U u_{x_i} v dx = -\int_U u v_{x_i} dx + \int_{\partial U} uv \nu^i d S.
 $$
 
 
@@ -231,34 +231,34 @@ $$
 Then we may rewrite $J_\epsilon$ as
 
 $$
-J_{\epsilon} = -\int_{\mathbb{R}^n / B(0,\epsilon)} D\Phi(y) \cdot D_y f(x-y) dy + \int_{\pl B(0,\epsilon)} \Phi(y) \nu Df(x-y) dS(y)
+J_{\epsilon} = -\int_{\mathbb{R}^n / B(0,\epsilon)} D\Phi(y) \cdot D_y f(x-y) dy + \int_{\partial B(0,\epsilon)} \Phi(y) \nu Df(x-y) dS(y)
 $$
 
 where $\nu$ is the inward pointing unit normal vector field. We now denote the first term by $K_\epsilon$ and the second term by $L_\epsilon$, then using the same technique as we did for $I_\epsilon$, we can check that
 
 $$
-|L_\epsilon| \leq C||D f||_{L^\infty(\mathbb{R}^n)} \int_{\pl B(0,\epsilon)} |\Phi(y)| dS(y) \leq \begin{cases} C\epsilon|\log \epsilon| & n=2 \\ C\epsilon & n\geq 3 \end{cases}
+|L_\epsilon| \leq C||D f||_{L^\infty(\mathbb{R}^n)} \int_{\partial B(0,\epsilon)} |\Phi(y)| dS(y) \leq \begin{cases} C\epsilon|\log \epsilon| & n=2 \\ C\epsilon & n\geq 3 \end{cases}
 $$
 
 hence $L_{\epsilon}$ is also bounded in terms of $\epsilon$. We again perform integration by parts in $K_{\epsilon}$, and we have
 
 $$
 \begin{align*}
-K_\epsilon &= \int_{\mathbb{R}^n/B(0,\epsilon)} \Delta \Phi(y) f(x-y)dy - \int_{\pl B(0,\epsilon)} \nu D\Phi(y) f(x-y) dS(y)\\
-&=-\int_{\pl B(0,\epsilon)} \nu D\Phi(y) f(x-y)dS(y).
+K_\epsilon &= \int_{\mathbb{R}^n/B(0,\epsilon)} \Delta \Phi(y) f(x-y)dy - \int_{\partial B(0,\epsilon)} \nu D\Phi(y) f(x-y) dS(y)\\
+&=-\int_{\partial B(0,\epsilon)} \nu D\Phi(y) f(x-y)dS(y).
 \end{align*}
 $$
 
-Since $D\Phi(y) = \frac{-1}{n\alpha(n)} \frac{y}{|y|^n}$ when $y\neq 0$ and $\nu = -y/|y| = -y/\epsilon$ on $\pl B(0,\epsilon)$, so we will have
+Since $D\Phi(y) = \frac{-1}{n\alpha(n)} \frac{y}{|y|^n}$ when $y\neq 0$ and $\nu = -y/|y| = -y/\epsilon$ on $\partial B(0,\epsilon)$, so we will have
 
 $$
 \nu D\Phi(y) = \frac{1}{n\alpha(n)\epsilon^{n-1}}
 $$
 
-also $n\alpha(n)\epsilon^{n-1}$ is the surface area of the ball $\pl B(0,\epsilon)$, so
+also $n\alpha(n)\epsilon^{n-1}$ is the surface area of the ball $\partial B(0,\epsilon)$, so
 
 $$
-K_{\epsilon} = -\frac{1}{n\alpha(n)\epsilon^{n-1}} \int_{\pl B(0,\epsilon)} f(x-y) dS(y) = -\fint_{\pl B(0,\epsilon)} f(y) dS(y) \to -f(x)
+K_{\epsilon} = -\frac{1}{n\alpha(n)\epsilon^{n-1}} \int_{\partial B(0,\epsilon)} f(x-y) dS(y) = -\fint_{\partial B(0,\epsilon)} f(y) dS(y) \to -f(x)
 $$
 
 as $\epsilon \to 0$. Since we have shown that $I_\epsilon, L_\epsilon$ are all bounded by terms of $\epsilon$ so by setting $\epsilon \to 0$ they will vanish as well. Hence we have
@@ -274,20 +274,20 @@ QED.
 
 ### Mean Value Property
 
-For a harmonic function $u$, its value $u(x)$ is equal to the average $u$ over both the boundary $\pl B(x,r)$ and the ball $B(x,r)$ as long as $B(x,r) \in U$.
+For a harmonic function $u$, its value $u(x)$ is equal to the average $u$ over both the boundary $\partial B(x,r)$ and the ball $B(x,r)$ as long as $B(x,r) \in U$.
 
 
 **Theorem**
 Let $U \in \mathbb{R}^n$ open, if $u(x_1,\cdots,x_n) \in C^2(U)$ is harmonic then for each ball $B(x,r) \in U$, 
 
 $$
-u(x) = \fint_{\pl B(x,r)} u(y) dS(y) = \fint_{B(x,r)} u(y)dy
+u(x) = \fint_{\partial B(x,r)} u(y) dS(y) = \fint_{B(x,r)} u(y)dy
 $$
 
 where
 
 $$
-\fint_{\pl B(x,r)} u(y) dS(y) = \frac{1}{n\alpha(n) r^{n-1}} \int_{\pl B(x,r)} u(y) dS(y),
+\fint_{\partial B(x,r)} u(y) dS(y) = \frac{1}{n\alpha(n) r^{n-1}} \int_{\partial B(x,r)} u(y) dS(y),
 $$
 
 $$
@@ -301,23 +301,23 @@ $\alpha(n)$ is the volume of the unit ball in $\mathbb{R}^n$ and $n\alpha(n)$ is
 Let $u(x_1,\cdots,x_n) \in C^2(U)$ be harmonic, and define
 
 $$
-\phi(r) = \begin{cases} \displaystyle{\fint_{\pl B(x,r)} u(y) dS(y)} & r>0 \\\\u(x) & r = 0\end{cases}.
+\phi(r) = \begin{cases} \displaystyle{\fint_{\partial B(x,r)} u(y) dS(y)} & r>0 \\\\u(x) & r = 0\end{cases}.
 $$
 
 If $u$ is a smooth function (we later will show all harmonic functions are smooth), then $\lim_{r \to 0} \phi(r) = u(x)$ and hence $\phi$ is continuous. Note that by change of variables, we have
 
 $$
-\phi(r) = \fint_{\pl B(0,1)} u(x+rz)dS(z)
+\phi(r) = \fint_{\partial B(0,1)} u(x+rz)dS(z)
 $$
 
 and we take the derivative of $\phi(r)$:
 
 $$
 \begin{align*}
-\phi'(r) &= \fint_{\pl B(0,1)} \nabla u(x+rz) \cdot zdS(z)\\
-&=\fint_{\pl B(x,r)} \nabla u(y) \cdot \frac{y-x}{r} dS(y)\\
-&= \fint_{\pl B(x,r)} \frac{\pl u}{\pl \nu}(y) dS(y)\\
-&=\frac{1}{n\alpha(n)r^{n-1}} \int_{\pl B(x,r)} \frac{\pl u}{\pl \nu}(y)dS(y)\\
+\phi'(r) &= \fint_{\partial B(0,1)} \nabla u(x+rz) \cdot zdS(z)\\
+&=\fint_{\partial B(x,r)} \nabla u(y) \cdot \frac{y-x}{r} dS(y)\\
+&= \fint_{\partial B(x,r)} \frac{\partial u}{\partial \nu}(y) dS(y)\\
+&=\frac{1}{n\alpha(n)r^{n-1}} \int_{\partial B(x,r)} \frac{\partial u}{\partial \nu}(y)dS(y)\\
 &= \frac{1}{n\alpha(n)r^{n-1}} \int_{B(x,r)} \nabla (\nabla u) dy\\
 &= \frac{1}{n\alpha(n) r^{n-1}} \int_{B(x,r)} \Delta u(y) dy \equiv 0.
 \end{align*}
@@ -326,14 +326,14 @@ $$
 which means $\phi$ is a constant function, and hence we have 
 
 $$
-u(x) = \fint_{\pl B(x,r)} u(y)dS(y).
+u(x) = \fint_{\partial B(x,r)} u(y)dS(y).
 $$
 
 Furthermore we have
 
 $$
 \begin{align*}
-\int_{B(x,r)} u(y) dy &= \int_0^r\left( \int_{\pl B(x,s)} u dS \right)ds\\
+\int_{B(x,r)} u(y) dy &= \int_0^r\left( \int_{\partial B(x,s)} u dS \right)ds\\
 &=u(x) \int_0^r n\alpha(n) s^{n-1} ds\\
 &=\alpha(n) r^n u(x).
 \end{align*}
@@ -347,7 +347,7 @@ Another result is the converse to mean-value property:
 If $u \in C^2(U)$ satisfies
 
 $$
-u(x) = \fint_{\pl B(x,r)} u dS
+u(x) = \fint_{\partial B(x,r)} u dS
 $$
 
 for each ball $B(x,r) \in U$, then $u$ is harmonic.
@@ -356,7 +356,7 @@ for each ball $B(x,r) \in U$, then $u$ is harmonic.
 Suppose $\Delta u \neq 0$, then $\exists B(x,r) \in U$ such that $\Delta u > 0$ say, but then
 
 $$
-\phi'(r) = \frac{1}{n\alpha(n)r^{n-1}} \int_{\pl B(x,r)}\Delta u dS = \frac{r}{n}\fint_{B(x,r)} \Delta u(y) dy >0
+\phi'(r) = \frac{1}{n\alpha(n)r^{n-1}} \int_{\partial B(x,r)}\Delta u dS = \frac{r}{n}\fint_{B(x,r)} \Delta u(y) dy >0
 $$
 which contradicts the fact that $\phi$ is a constant function.
 
@@ -370,13 +370,13 @@ A nice property of harmonic functions is that if $u$ is harmonic on a bounded do
 **Theorem**
 (Strong Maximum Principle) Suppose $u \in C^2(U) \cap C(\overline{U})$ is harmonic within $U$, then
 
-1. $\max_{\overline{U}} u = \max_{\pl U} u$;\\
+1. $\max_{\overline{U}} u = \max_{\partial U} u$;\\
 
 2. Furthermore, if $U$ is connected and there exists a point $x_0 \in U$ such that $u(x_0) = \max_{\overline{U}} u$, then $u$ is constant within $U$.
 
 
 **Proof**
-We will prove the second statement since the first followed from the second. Suppose $\exists x_0 \in U$ such that $u(x_0) = \max_{\bar{U}} u(x) \equiv M$. Then $\forall r \in (0,\text{dist}(x_0,\pl U))$, the mean-value property states that
+We will prove the second statement since the first followed from the second. Suppose $\exists x_0 \in U$ such that $u(x_0) = \max_{\bar{U}} u(x) \equiv M$. Then $\forall r \in (0,\text{dist}(x_0,\partial U))$, the mean-value property states that
 
 $$
 M = u(x_0) = \fint_{B(x_0,r)} u(y) dy
@@ -395,20 +395,20 @@ QED.
 An important application of maximum principle is establishing the uniqueness of solutions to certain boundary value problems for Poisson's equation.
 
 **Theorem**
-Let $g \in C(\pl U), f\in C(U)$, then there exists at most one solution $u \in C^2(U) \cap C(\bar{U})$ of the boundary value problem
+Let $g \in C(\partial U), f\in C(U)$, then there exists at most one solution $u \in C^2(U) \cap C(\bar{U})$ of the boundary value problem
 
 $$
-\begin{cases} -\Delta u = f & \text{ in $U$} \\ u =g & \text{ on $\pl U$} \end{cases}
+\begin{cases} -\Delta u = f & \text{ in $U$} \\ u =g & \text{ on $\partial U$} \end{cases}
 $$
 
 
 **Proof**
 Assume $u_1, u_2$ both solves the boundary value problem, then let $w = u_1 - u_2$, then we have
 $$
-\begin{cases} -\Delta w = 0 &\text{ in $U$} \\ w = 0 &\text{ in $\pl U$} \end{cases}
+\begin{cases} -\Delta w = 0 &\text{ in $U$} \\ w = 0 &\text{ in $\partial U$} \end{cases}
 $$
 
-then by maximum principle, $\max_{\pl U} w = \max_{\pl \bar{U}} w = 0$, i.e $u_1=u_2$.
+then by maximum principle, $\max_{\partial U} w = \max_{\partial \bar{U}} w = 0$, i.e $u_1=u_2$.
 
 QED.
 
@@ -441,7 +441,7 @@ We call $\eta$ the standard mollifier, the functions $\eta_\epsilon$ are $C^\inf
 
 
 **Definition**
-Denote $U_\epsilon = \{ x \in U | \text{ dist}(x,\pl U) > \epsilon \}$, if a function $f: U \to \mathbb{R}$ is locally integrable, its mollification is defined by
+Denote $U_\epsilon = \{ x \in U | \text{ dist}(x,\partial U) > \epsilon \}$, if a function $f: U \to \mathbb{R}$ is locally integrable, its mollification is defined by
 
 $$
 f^\epsilon = \int_U \eta_\epsilon(x-y) f(y) dy
@@ -459,7 +459,7 @@ $$
 \begin{align*}
 u^\epsilon(x) 
 &= \frac{1}{\epsilon^n} \int_{B(x,\epsilon)} \eta\left( \frac{|x-y|}{\epsilon} \right) u(y)dy\\
-&=\frac{1}{\epsilon^n} \int_0^\epsilon \eta\left( \frac{r}{\epsilon} \right) \left( \int_{\pl B(x,r)} u dS \right) dr\\
+&=\frac{1}{\epsilon^n} \int_0^\epsilon \eta\left( \frac{r}{\epsilon} \right) \left( \int_{\partial B(x,r)} u dS \right) dr\\
 &=\frac{1}{\epsilon^n} u(x) \int_0^\epsilon \eta\left( \frac{r}{\epsilon} \right) n\alpha(n) r^{n-1} dr\\
 &= u(x) \int_{B(0,\epsilon)} \eta_\epsilon dy\\
 &= u(x).
@@ -492,9 +492,9 @@ Let $x_0 \in U$ and $B(x,r) \subset U$. Since $u_{x_i}$ is also harmonic, then u
 $$
 \begin{align*}
 |u_{x_i}(x_0) | &= \Bigg| \frac{2^n}{\alpha(n) r^n}\int_{B(x_0,\frac{r}{2})} u_{x_i}(y) dy \Bigg|\\
-&= \Bigg| \frac{2^n}{\alpha(n)r^n} \int_{\pl B(x_0,\frac{r}{2})} u(y) \nu^i dS(y) \Bigg|\\
-&= \Bigg|\frac{2n}{r} \fint_{\pl B(x_0,\frac{r}{2})} u(y) \nu^i dS(y) \Bigg|\\
-&\leq \frac{2n}{r} ||u||_{L^\infty(\pl B(x_0,r/2))}.
+&= \Bigg| \frac{2^n}{\alpha(n)r^n} \int_{\partial B(x_0,\frac{r}{2})} u(y) \nu^i dS(y) \Bigg|\\
+&= \Bigg|\frac{2n}{r} \fint_{\partial B(x_0,\frac{r}{2})} u(y) \nu^i dS(y) \Bigg|\\
+&\leq \frac{2n}{r} ||u||_{L^\infty(\partial B(x_0,r/2))}.
 \end{align*}
 $$
 
@@ -507,7 +507,7 @@ $$
 Hence we have
 
 $$
-|D^\alpha u(x_0)| \leq \frac{2n}{r} ||u||_{L^\infty(\pl B(x_0,r/2))} \leq \left( \frac{2}{r} \right)^{n+1} \cdot\frac{n}{\alpha(n)} ||u||_{L^1(B(x_0,r))}.
+|D^\alpha u(x_0)| \leq \frac{2n}{r} ||u||_{L^\infty(\partial B(x_0,r/2))} \leq \left( \frac{2}{r} \right)^{n+1} \cdot\frac{n}{\alpha(n)} ||u||_{L^1(B(x_0,r))}.
 $$
 
 QED.
