@@ -17,9 +17,9 @@ citation: 'Jiajun Zhang, (2024) Conditional Probability and Bayes Theorem'
 Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then we define $\mathbb{P}(A \vert H)$ to be the probability of $A$ given that $H$ occurs, known as the conditional probability of $A$ given $H$.
 
 
-**Example:** We may think of rolling a fair dice: If no condition is given, then the probability that number $3$ will face up is just $\displaystyle{\frac{1}{6}}$, but what if we given the condition that the number face up is odd? Then based on this assumption, the probability that number $3$ will face up is $\displaystyle{\frac{1}{3}}$.\\
+**Example:** We may think of rolling a fair dice: If no condition is given, then the probability that number $3$ will face up is just $\displaystyle{\frac{1}{6}}$, but what if we given the condition that the number face up is odd? Then based on this assumption, the probability that number $3$ will face up is $\displaystyle{\frac{1}{3}}$.
 
-But how do we actually compute $\mathbb{P}(A \vert H)$? Think about this: By the construction of conditional probability, $\mathbb{P}(A \vert H)$ should somehow proportional to $\mathbb{P}(A \cap H)$, because $\mathbb{P}(A \vert H)$ is an event in $\mathbb{P}(A \cap H)$. We denote by $\mathbb{P}(A \vert H) = k \mathbb{P}(A \cap H)$ for some $k$, now consider $\mathbb{P}(H \vert H) = k \mathbb{P}(H \cap H)$, we conclude that $1 = k \mathbb{P}(H)$, so we have $k = \displaystyle{\frac{1}{\mathbb{P}(H)}}$.\\
+But how do we actually compute $\mathbb{P}(A \vert H)$? Think about this: By the construction of conditional probability, $\mathbb{P}(A \vert H)$ should somehow proportional to $\mathbb{P}(A \cap H)$, because $\mathbb{P}(A \vert H)$ is an event in $\mathbb{P}(A \cap H)$. We denote by $\mathbb{P}(A \vert H) = k \mathbb{P}(A \cap H)$ for some $k$, now consider $\mathbb{P}(H \vert H) = k \mathbb{P}(H \cap H)$, we conclude that $1 = k \mathbb{P}(H)$, so we have $k = \displaystyle{\frac{1}{\mathbb{P}(H)}}$.
 
 **Theorem
 Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then the conditional probability of $A$ given $H$ is given by
@@ -29,16 +29,16 @@ $$
 $$
 
 
-If $\mathbb{P}(A \vert H) = \mathbb{P}(A)$, by theorem 8 we can further conclude $\mathbb{P}(A \cap H) = \mathbb{P}(A) \mathbb{P}(H)$.\\
+If $\mathbb{P}(A \vert H) = \mathbb{P}(A)$, by theorem 8 we can further conclude $\mathbb{P}(A \cap H) = \mathbb{P}(A) \mathbb{P}(H)$.
 
-Conditional probability is also a probability measure, it satisfies all the axioms of a probability measure.\\
+Conditional probability is also a probability measure, it satisfies all the axioms of a probability measure.
 
 **Corollary
-Let $B$, $\{ H_n \}_{n=1}^{+\infty}$ be events, then\\
+Let $B$, $\{ H_n \}_{n=1}^{+\infty}$ be events, then
 
-1. $\mathbb{P}(B | B) = 1$;\\
+1. $\mathbb{P}(B | B) = 1$;
 
-2. $\mathbb{P}(H | B) = 1 - \mathbb{P}(H^C | B)$;\\
+2. $\mathbb{P}(H | B) = 1 - \mathbb{P}(H^C | B)$;
 
 3. If $H_1,H_2,\cdots$ are disjoint, then $\displaystyle{\mathbb{P} \left( \bigcup_{n=1}^{+\infty} H_n \Bigg\vert B\right) = \sum_{i=1}^n \mathbb{P}(H_n | B) }$.
 
@@ -89,8 +89,8 @@ We know that $B = B \cap \Omega = B \cap \bigcup_{n=1}^{\infty} H_n = \bigcup_{n
 
 $$
 \begin{align*}
-\mathbb{P}(B) &= \mathbb{P} \left( \bigcup_{n=1}^{\infty} B \cap H_n \right)\\
-& = \sum_{n=1}^{\infty} \mathbb{P}(B \cap H_n), \text{since $B\cap H_n$'s are disjoint} \\
+\mathbb{P}(B) &= \mathbb{P} \left( \bigcup_{n=1}^{\infty} B \cap H_n \right)
+& = \sum_{n=1}^{\infty} \mathbb{P}(B \cap H_n), \text{since $B\cap H_n$'s are disjoint} 
 & = \sum_{n=1}^{\infty} \mathbb{P}(B \vert H_n) \mathbb{P}(H_n)
 \end{align*}
 $$
@@ -109,7 +109,7 @@ $$
 We know that
 $$
 \begin{align*}
-\mathbb{P}(H_k \vert B) &= \frac{\mathbb{P}(H_k \cap B)}{\mathbb{P}(B)}\\
+\mathbb{P}(H_k \vert B) &= \frac{\mathbb{P}(H_k \cap B)}{\mathbb{P}(B)}
 &= \frac{\mathbb{P}(B \vert H_k ) \mathbb{P}(H_k)}{\mathbb{P}(B)},
 \end{align*}
 $$
@@ -137,8 +137,8 @@ and we aim to find $\mathbb{P}( A \vert H)$, thus using Bayes theorem, we have
 
 $$
 \begin{align*}
-\mathbb{P}(A \vert H) =& \frac{\mathbb{P}(H \vert A) \mathbb{P}(A)}{\mathbb{P}(H \vert A) \mathbb{P}(A) + \mathbb{P}(H \vert A^C) \mathbb{P}(A^C)}\\
-& = \frac{(1-0.01) \times 0.0001}{(1-0.01) \times 0.0001 + 0.02 \times (1-0.0001)} \\
+\mathbb{P}(A \vert H) =& \frac{\mathbb{P}(H \vert A) \mathbb{P}(A)}{\mathbb{P}(H \vert A) \mathbb{P}(A) + \mathbb{P}(H \vert A^C) \mathbb{P}(A^C)}
+& = \frac{(1-0.01) \times 0.0001}{(1-0.01) \times 0.0001 + 0.02 \times (1-0.0001)} 
 & = 0.0049.
 \end{align*}
 $$
@@ -184,9 +184,9 @@ Also we may use conditional probability to solve that
 
 $$
 \begin{align*}
-\mathbb{P}(R \cap T) &= \mathbb{P}(T \vert R) \mathbb{P}(R) = \frac{1}{2} \times \frac{1}{3} = \frac{1}{6} \\
-\mathbb{P}(R^C \cap T^C) &= \mathbb{P}(T^C \vert R^C) \mathbb{P}(R^C)= (1-\mathbb{P}(T \vert R^C))\mathbb{P}(R^C) = \frac{3}{4} \times \frac{2}{3} = \frac{1}{2}\\
-\mathbb{P}(R^C \cap T) &= \mathbb{P}(T \vert R^C) \mathbb{P}(R^C) = \frac{1}{4} \times \frac{2}{3} = \frac{1}{6}\\
+\mathbb{P}(R \cap T) &= \mathbb{P}(T \vert R) \mathbb{P}(R) = \frac{1}{2} \times \frac{1}{3} = \frac{1}{6} 
+\mathbb{P}(R^C \cap T^C) &= \mathbb{P}(T^C \vert R^C) \mathbb{P}(R^C)= (1-\mathbb{P}(T \vert R^C))\mathbb{P}(R^C) = \frac{3}{4} \times \frac{2}{3} = \frac{1}{2}
+\mathbb{P}(R^C \cap T) &= \mathbb{P}(T \vert R^C) \mathbb{P}(R^C) = \frac{1}{4} \times \frac{2}{3} = \frac{1}{6}
 \mathbb{P}(R \cap T^C) &= \mathbb{P}(T^C \vert R) \mathbb{P}(R) = (1 - \mathbb{P}(T \vert R))\mathbb{P}(R) = \frac{1}{2} \times \frac{1}{3} = \frac{1}{6} 
 \end{align*}
 $$
