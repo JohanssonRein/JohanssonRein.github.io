@@ -199,7 +199,7 @@ $$
 \int_{B(0,\epsilon)} \log |y| dy = \int_0^\epsilon \int_0^{2\pi} \log|r| rd\theta dr = \epsilon^2\log |\epsilon|
 $$
 
-so we have $|I_{\epsilon}| < C\epsilon^2 |\log \epsilon|$ for some constant $C$ . When $n\geq 3$, similarly we can show that $|I_{\epsilon}| < C\epsilon$, hence the term $I_{\epsilon}$ is bounded in terms of arbitrary $\epsilon$. Now for $J_{\epsilon}$, first note that $\Delta_x f(x-y) = \Delta_y f(x-y)$, we have
+so we have $\big|I_{\epsilon}\big| < C\epsilon^2 \big|\log \epsilon\big|$ for some constant $C$ . When $n\geq 3$, similarly we can show that $\big|I_{\epsilon}\big| < C\epsilon$, hence the term $I_{\epsilon}$ is bounded in terms of arbitrary $\epsilon$. Now for $J_{\epsilon}$, first note that $\Delta_x f(x-y) = \Delta_y f(x-y)$, we have
 
 $$
 J_\epsilon = \int_{\mathbb{R}^n/B(0,\epsilon)} \Phi(y) \Delta_y f(x-y)dy.
