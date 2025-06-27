@@ -118,7 +118,7 @@ Again, we have the following propositions:
 
 **Corollary**
 
-*  $\sigma(\mathcal{C}) = \bigcap \left\{ \mathcal{F} : \mathcal{C} \subset \mathcal{F} \right\}$ for all $\sigma$-algebra $\mathcal{F}$
+*  $\sigma(\mathcal{C}) = \bigcap \{ \mathcal{F} : \mathcal{C} \subset \mathcal{F} \}$ for all $\sigma$-algebra $\mathcal{F}$
 
 *  If $\mathcal{C}$ itself is a $\sigma$-algebra, then $\sigma(\mathcal{C}) = \mathcal{C}$
 
