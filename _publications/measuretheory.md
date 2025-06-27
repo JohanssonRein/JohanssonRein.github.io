@@ -592,7 +592,7 @@ $$
 **Theorem**
 (Continuity of $\mathbb{P}$)
 
-Let $\{ A_n \}}$ be a sequence of non-increasing events in $\mathcal{F}$, i.e $A_{n+1} \subset A_n$, then
+Let $\{ A_n \}$ be a sequence of non-increasing events in $\mathcal{F}$, i.e $A_{n+1} \subset A_n$, then
 
 $$
 \mathbb{P}(\lim_{n \to \infty} A_n) = \lim_{n \to \infty} \mathbb{P}(A_n) = \mathbb{P} \left( \bigcap_{n=1}^{\infty} A_n \right)
