@@ -380,13 +380,13 @@ $$
 **Example:**  Suppose $X \sim N(0,1)$ where
 
 $$
-f_X(x) = \frac{1}{\sqrt{2\pi i}} e^{-\frac{x^2}{2}}
+f_X(x) = \frac{1}{\sqrt{2\pi }} e^{-\frac{x^2}{2}}
 $$
 
 Where $X$ satisfies normal distribution, which general form is
 
 $$
-X \sim N(\mu,\sigma^2), f_X(x) = \frac{1}{\sqrt{2\pi i} \sigma} e^{-\frac{(x-\mu)^2}{2\sigma^2}},
+X \sim N(\mu,\sigma^2), f_X(x) = \frac{1}{\sqrt{2\pi } \sigma} e^{-\frac{(x-\mu)^2}{2\sigma^2}},
 $$
 
 then what is  $F_Y$, where $Y =\vert X \vert$?
@@ -394,7 +394,7 @@ then what is  $F_Y$, where $Y =\vert X \vert$?
 **Solution:** As from above, we know that
 
 $$
-F_Y(y) = F_X(y) - F_X(-y) = \int_{-\infty}^y \frac{1}{\sqrt{2\pi i}} e^{-\frac{x^2}{2}} dx - \int_{-\infty}^{-y} \frac{1}{\sqrt{2\pi i}} e^{-\frac{x^2}{2}} dx.
+F_Y(y) = F_X(y) - F_X(-y) = \int_{-\infty}^y \frac{1}{\sqrt{2\pi }} e^{-\frac{x^2}{2}} dx - \int_{-\infty}^{-y} \frac{1}{\sqrt{2\pi }} e^{-\frac{x^2}{2}} dx.
 $$
 
 **Theorem**
@@ -411,7 +411,7 @@ $$
 thus
 
 $$
-f_Y(y) = \frac{1}{\sqrt{2\pi i}} e^{-\frac{y^2}{2}} + \frac{1}{\sqrt{2\pi i}} e^{-\frac{(-y)^2}{2}} = \sqrt{\frac{2}{\pi i}} e^{-\frac{y^2}{2}}.
+f_Y(y) = \frac{1}{\sqrt{2\pi }} e^{-\frac{y^2}{2}} + \frac{1}{\sqrt{2\pi }} e^{-\frac{(-y)^2}{2}} = \sqrt{\frac{2}{\pi }} e^{-\frac{y^2}{2}}.
 $$
 
 **Example:** Suppose $X \sim Poisson(\lambda)$, given by $\displaystyle{\mathbb{P}(X = k) := \frac{e^{-\lambda} \lambda^k}{k!}}$ where $k \in \mathbb{N}_0, \lambda >0$. Now suppose $Y = X^2 + 3$, then 
@@ -466,33 +466,33 @@ And that completes the proof.
 **Example:** Given that
 
 $$
-X \sim f_X(x) = \begin{cases} \displaystyle{\frac{2x}{\pi i^2} : 0 < x < \pi i} \\ \\0 : \text{otherwise} \end{cases}
+X \sim f_X(x) = \begin{cases} \displaystyle{\frac{2x}{\pi^2} : 0 < x < \pi } \\ \\0 : \text{otherwise} \end{cases}
 $$
 
 Let $Y = \sin(X)$, then find the probability density function of $Y$.
 
 **Solution:** Let $Y =\sin(X) = g(X)$, we have
 
-$\mathbb{P}(Y \leq y) = \mathbb{P}(\sin(x) \leq y) = \mathbb{P}(x \in (0,x_1) \cap x \in (x_2,\pi i) )$ where $x_1 = \sin^{-1}(y) , x_2 = \pi i - \sin^{-1}(y)$. Thus we have
+$\mathbb{P}(Y \leq y) = \mathbb{P}(\sin(x) \leq y) = \mathbb{P}(x \in (0,x_1) \cap x \in (x_2,\pi ) )$ where $x_1 = \sin^{-1}(y) , x_2 = \pi  - \sin^{-1}(y)$. Thus we have
 
 $$
 \begin{align*}
-\mathbb{P}(Y \leq y) &= \mathbb{P}(x \in (0, x_1)) + \mathbb{P}(x\in (x_2,\pi i)) \\
-& = \int_0^{x_1} f_X(x) dx + \int_{x_2}^{\pi i} f_X(x) dx \\
-& = \left( \frac{x_1}{\pi i} \right)^2 + 1 - \left( \frac{x_2}{\pi i} \right)^2
+\mathbb{P}(Y \leq y) &= \mathbb{P}(x \in (0, x_1)) + \mathbb{P}(x\in (x_2,\pi )) \\
+& = \int_0^{x_1} f_X(x) dx + \int_{x_2}^{\pi } f_X(x) dx \\
+& = \left( \frac{x_1}{\pi } \right)^2 + 1 - \left( \frac{x_2}{\pi } \right)^2
 \end{align*}
 $$
 
 So we have
 
 $$
-h_Y(y) = \frac{d}{dy} F_Y(y) = \frac{d}{dy} \mathbb{P}(Y \leq y) = \frac{d}{dy} \left[ \left( \frac{\sin^{-1}(x_1)}{\pi i} \right)^2 + 1 - \left( \frac{\sin^{-1}(x_2)}{\pi i} \right)^2 \right]
+h_Y(y) = \frac{d}{dy} F_Y(y) = \frac{d}{dy} \mathbb{P}(Y \leq y) = \frac{d}{dy} \left[ \left( \frac{\sin^{-1}(x_1)}{\pi } \right)^2 + 1 - \left( \frac{\sin^{-1}(x_2)}{\pi } \right)^2 \right]
 $$
 
 and which simplifies to
 
 $$
-h_Y(y) = \begin{cases} \displaystyle{\frac{2}{\pi i \sqrt{1-y^2}}} : 0<y<1 \\ \\0 : \text{otherwise} \end{cases}.
+h_Y(y) = \begin{cases} \displaystyle{\frac{2}{\pi  \sqrt{1-y^2}}} : 0<y<1 \\ \\0 : \text{otherwise} \end{cases}.
 $$
 
 
