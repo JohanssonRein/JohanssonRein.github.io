@@ -1,5 +1,5 @@
 ---
-title: "Some Discrete Random Variables"
+title: "5. Some Discrete Random Variables"
 collection: publications
 category: probability
 permalink: /publication/discretedis
