@@ -14,7 +14,6 @@ In this page, you may find several notes on different mathematics topics, notes 
   <p><em>This is just a meme</em></p>
 </div>
 
-
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
@@ -23,23 +22,18 @@ In this page, you may find several notes on different mathematics topics, notes 
 
 <!-- New style rendering if publication categories are defined -->
 {% for category in site.publication_category %}
-  {% assign title_shown = false %}
-  {% for post in site.publications reversed %}
-    {% if post.category != category[0] %}
-      {% continue %}
-    {% endif %}
-    {% unless title_shown %}
+  {% assign filtered_posts = site.publications | where: "category", category[0] | sort: "order" %}
+  {% if filtered_posts.size > 0 %}
 <details>
   <summary><h2 style="display: inline;">{{ category[1].title }}</h2></summary>
   <hr />
-      {% assign title_shown = true %}
-    {% endunless %}
-    {% include archive-single.html %}
-  {% endfor %}
-  {% if title_shown %}
+    {% for post in filtered_posts %}
+      {% include archive-single.html %}
+    {% endfor %}
 </details>
   {% endif %}
 {% endfor %}
+
 
 
 
