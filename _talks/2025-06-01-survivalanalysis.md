@@ -10,3 +10,5 @@ location: "Montreal, QC, Canada"
 ---
 
 This is a series of conference focusing on survival analysis organised by me during Summer 2025. 
+
+[Download Schedule (PDF)](/files/SurvivalAnalysisTalk1.pdf)
