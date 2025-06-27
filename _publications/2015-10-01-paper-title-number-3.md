@@ -5,6 +5,7 @@ category: probability
 permalink: /publication/bayes
 excerpt: 'We will investigate conditional probability and Bayes theorem.'
 date: 2024-10-01
+order: 2
 venue: 'Fall'
 #slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
 #paperurl: 'http://academicpages.github.io/files/paper3.pdf'
