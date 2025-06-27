@@ -2,6 +2,7 @@
 title: "Moments, Generating Functions and Inequalities"
 collection: publications
 category: probability
+order: 3
 permalink: /publication/moments
 excerpt: 'We will investigate moments of a random variable, and generating functions, and some inequalities related to moments.'
 date: 2024-09-20
