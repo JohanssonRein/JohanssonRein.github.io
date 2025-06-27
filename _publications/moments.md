@@ -224,14 +224,14 @@ We will mainly study one special case, that is when $k=2$:
 
 **Definition**
 
-Let $X$ be a random variable, if $\mathbb{E}(X^2)$ exists, we denote $\mathbb{E}(X - \mathbb{E}(X))^2$ to be the variance of $X$, written as $\sigma_X^2 = \Var(X) = \mathbb{E}(x - \mu_X)^2$.
+Let $X$ be a random variable, if $\mathbb{E}(X^2)$ exists, we denote $\mathbb{E}(X - \mathbb{E}(X))^2$ to be the variance of $X$, written as $\sigma_X^2 = \mathbf{Var}(X) = \mathbb{E}(x - \mu_X)^2$.
 
 
 *Remark:*  We know that
 
 $$
 \begin{align*}
-\Var(X) &= \mathbb{E}[(x - \mu_x)^2]\\
+\mathbf{Var}(X) &= \mathbb{E}[(x - \mu_x)^2]\\
 &=\mathbb{E}[X^2 - 2X\mu_X + \mu_X^2]\\
 &=\mathbb{E}(x^2) -2\mu_X\mathbb{E}(X) + \mu_X^2\\
 &=\mathbb{E}(X^2) - (\mathbb{E}(X))^2
@@ -243,7 +243,7 @@ $$
 Let $X$ be a random variable, $a,b \in \mathbb{R}$. Then 
 
 $$
-\Var(aX+b) = a^2\Var(X)
+\mathbf{Var}(aX+b) = a^2\mathbf{Var}(X)
 $$
 
 
@@ -253,10 +253,10 @@ $$
 Let $X$ be a random variable and $\mathbb{E} \vert X \vert^2 < +\infty$, then define
 
 $$
-Z = \frac{X - \mathbb{E}(X)}{\sqrt{\Var(X)}} = \frac{X - \mu_X}{\sigma_X}
+Z = \frac{X - \mathbb{E}(X)}{\sqrt{\mathbf{Var}(X)}} = \frac{X - \mu_X}{\sigma_X}
 $$
 
-to be the standardized random variable, and $\mathbb{E}(Z) = 0, \Var(Z) = 1$.
+to be the standardized random variable, and $\mathbb{E}(Z) = 0, \mathbf{Var}(Z) = 1$.
 
 
 
@@ -334,7 +334,7 @@ $$
 and
 
 $$
-\Var(X) = \mathbb{E}(X^2) - [\mathbb{E}(X)]^2 = \lambda.
+\mathbf{Var}(X) = \mathbb{E}(X^2) - [\mathbb{E}(X)]^2 = \lambda.
 $$
 
 
@@ -569,7 +569,7 @@ $$
 
 **Corollary**
 
-Let $h(x) = (x - \mu_X)^2, \mathbb{E}psilon = k^2 \sigma_X^2$ where $\mu_X = \mathbb{E}(X)$ and $\sigma_X^2 = \Var(X)$, then
+Let $h(x) = (x - \mu_X)^2, \mathbb{E}psilon = k^2 \sigma_X^2$ where $\mu_X = \mathbb{E}(X)$ and $\sigma_X^2 = \mathbf{Var}(X)$, then
 
 $$
 \mathbb{P} \{ \vert X - \mu_X \vert \geq k \sigma_X \} \leq \frac{1}{k^2}
@@ -591,7 +591,7 @@ it will also result in another inequality:
 If $X$ is any random variable, then for any $b>0$ we have
 
 $$
-\mathbb{P}\{ \vert X - \mathbb{E}(X) \vert \geq b \} \leq \frac{\Var(X)}{b^2}
+\mathbb{P}\{ \vert X - \mathbb{E}(X) \vert \geq b \} \leq \frac{\mathbf{Var}(X)}{b^2}
 $$
 
 
@@ -688,7 +688,7 @@ $$
 
 **Corollary**
 
-Let $X$ be a random variable with $\mathbb{E}(X) = 0$ and $\Var(X) = \sigma_X^2$, then
+Let $X$ be a random variable with $\mathbb{E}(X) = 0$ and $\mathbf{Var}(X) = \sigma_X^2$, then
 
 $$
 \mathbb{P}(X \geq x) \leq \frac{\sigma_X^2}{\sigma_X^2 + x^2} : x >0
