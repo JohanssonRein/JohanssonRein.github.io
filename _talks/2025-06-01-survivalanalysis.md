@@ -15,7 +15,7 @@ location: "Montreal, QC, Canada"
   <img src="/images/HazardSmoothedEstimates.png" alt="Poster" width="500"/>
 </p>
 
-<br>
+
 
 # Overview
 
