@@ -24,18 +24,16 @@ This is a series of conference focusing on survival analysis organised by me dur
 
 # First Talk
 
-## Time & Location: 
+* Time & Location: 
 
-### June 30th, 2025, 12:00pm - 13:00 pm; Both in person (Burnside 1B36) and online (via discord group)
+  * June 30th, 2025, 12:00pm - 13:00 pm; Both in person (Burnside 1B36) and online (via discord group)
+    
+* Description of the first talk:
+  
+  * An overview of survival analysis
+  * Introducing basic properties of survival data: Censoring and Truncation;
+  * A parametric way to estimate survival features by likelihood and MLE methods, with adjustment for censored data.
 
-## Description of the first talk:
-
-### An overview of survival analysis
-
-### Introducing basic properties of survival data: Censoring and Truncation;
-
-### A parametric way to estimate survival features by likelihood and MLE methods, with adjustment for censored data.
-
-## The slides can be found [here](/files/SurvivalAnalysisTalk1.pdf)
+* The slides can be found [here](/files/SurvivalAnalysisTalk1.pdf)
 
 
