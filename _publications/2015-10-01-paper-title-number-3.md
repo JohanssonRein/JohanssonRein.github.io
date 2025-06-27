@@ -14,6 +14,7 @@ citation: 'Jiajun Zhang, (2024) Conditional Probability and Bayes Theorem'
 # Conditional Probability
 
 **Definition**
+
 Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then we define $\mathbb{P}(A \vert H)$ to be the probability of $A$ given that $H$ occurs, known as the conditional probability of $A$ given $H$.
 
 
@@ -22,6 +23,7 @@ Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then we define
 But how do we actually compute $\mathbb{P}(A \vert H)$? Think about this: By the construction of conditional probability, $\mathbb{P}(A \vert H)$ should somehow proportional to $\mathbb{P}(A \cap H)$, because $\mathbb{P}(A \vert H)$ is an event in $\mathbb{P}(A \cap H)$. We denote by $\mathbb{P}(A \vert H) = k \mathbb{P}(A \cap H)$ for some $k$, now consider $\mathbb{P}(H \vert H) = k \mathbb{P}(H \cap H)$, we conclude that $1 = k \mathbb{P}(H)$, so we have $k = \displaystyle{\frac{1}{\mathbb{P}(H)}}$.
 
 **Theorem**
+
 Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then the conditional probability of $A$ given $H$ is given by
 
 $$
@@ -34,21 +36,31 @@ If $\mathbb{P}(A \vert H) = \mathbb{P}(A)$, by theorem 8 we can further conclude
 Conditional probability is also a probability measure, it satisfies all the axioms of a probability measure.
 
 **Corollary**
+
 Let $B$, $\{ H_n \}_{n=1}^{+\infty}$ be events, then
 
-$$\mathbb{P}(B | B) = 1$$;
+$$
+\mathbb{P}(B \big| B) = 1
+$$;
 
-$$\mathbb{P}(H | B) = 1 - \mathbb{P}(H^C | B)$$;
+$$
+\mathbb{P}(H \big| B) = 1 - \mathbb{P}(H^C \big| B)
+$$;
 
 If $H_1,H_2,\cdots$ are disjoint, then 
-$$\displaystyle{\mathbb{P} \left( \bigcup_{n=1}^{+\infty} H_n \Bigg\vert B\right) = \sum_{i=1}^n \mathbb{P}(H_n | B) }$$.
+
+$$
+\displaystyle{\mathbb{P} \left( \bigcup_{n=1}^{+\infty} H_n \Bigg\vert B\right) = \sum_{i=1}^n \mathbb{P}(H_n | B) }
+$$.
 
 
 **Definition**
+
 Let $(\Omega,\mathcal{F})$ be the sample space, $A,H \in \Omega$, then we say $A,H$ are independent, if $\mathbb{P}(A \cap H) = \mathbb{P}(A) \mathbb{P}(H)$, i.e, the occurence of $A$ does not depend on $H$.
 
 
 **Corollary**
+
 Let $(\Omega,\mathcal{F})$ be the sample space, and $A_1,A_2,\cdots,A_n \in \Omega$, then
 
 $$
@@ -72,11 +84,13 @@ $$
 **QED.**
 
 **Definition
+
 A sequence  $\{ H_n \}$ of events in $\mathcal{F}$ is called a partition of $\Omega$ if $H_i \cap H_j = \varnothing, i \neq j$ and $\displaystyle{\bigcup_{n=1}^{\infty} H_n = \Omega}$.
 
 
 
 **Theorem**
+
 (Law of Total Probability)
 Let $\{H_n \}$ be a partition of $\Omega$, $\mathbb{P}(H_i) \geq 0$, then $\forall B \in \mathcal{F}$, we have
 
@@ -99,6 +113,7 @@ $$
 **QED.**
 
 **Theorem**
+
 (Bayes Theorem) Let $\{ H_n \}$ be a partition of $\Omega$, $\mathbb{P}(H_n) > 0$. Suppose $B \in \mathcal{F}$ with $P(B) > 0$, then
 
 $$
