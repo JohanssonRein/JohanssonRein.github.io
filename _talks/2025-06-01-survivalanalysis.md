@@ -12,8 +12,8 @@ location: "Montreal, QC, Canada"
 <br>
 
 <figure style="text-align: center;">
-  <img src="/images/HazardSmoothedEstimates.png" alt="Survival Analysis Poster" width="500">
-  <figcaption><em>Figure: A smoothed estimator of the hazard function using Epanechnikov kernels</em></figcaption>
+  <img src="/images/HazardSmoothedEstimates.png" alt="Survival Analysis Poster" width="450">
+  <figcaption><em>Figure: A smoothed estimator of the hazard function using Epanechnikov kernels, with different bandwidths</em></figcaption>
 </figure>
 
 
