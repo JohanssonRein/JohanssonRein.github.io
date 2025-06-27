@@ -3,6 +3,7 @@ title: "Basic Measure Theory and Probability Axioms"
 collection: publications
 category: probability
 permalink: /publication/measuretheory
+order: 1
 excerpt: 'We will investigate conditional probability and Bayes theorem.'
 date: 2024-09-10
 venue: 'Fall'
