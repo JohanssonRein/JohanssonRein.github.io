@@ -5,7 +5,7 @@ category: probability
 permalink: /publication/continuousdis
 excerpt: 'We will investigate some famous continuous random variables'
 date: 2024-09-20
-order: 5
+order: 6
 venue: 'Fall'
 #slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
 #paperurl: 'http://academicpages.github.io/files/paper3.pdf'
