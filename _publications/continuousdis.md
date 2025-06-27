@@ -194,18 +194,18 @@ Left as an exercise for the reader.
 To find the distribution function of the standard normal distribution, we need to integrate the PDF function. In particular we define
 
 $$
-F_Z(x) = \mathbb{P}hi(x) = \mathbb{P}(Z \leq x) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^x \exp\left\{ -\frac{u^2}{2} \right\}.
+F_Z(x) = \Phi(x) = \mathbb{P}(Z \leq x) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^x \exp\left\{ -\frac{u^2}{2} \right\}.
 $$
 
-And based on that, here are some properties of the $\mathbb{P}hi$ function:
+And based on that, here are some properties of the $\Phi$ function:
 
-* $\lim_{x \to +\infty} \mathbb{P}hi(x) = 1, \lim_{x \to -\infty} \mathbb{P}hi(x) = 0$;
+* $\lim_{x \to +\infty} \Phi(x) = 1, \lim_{x \to -\infty} \Phi(x) = 0$;
 
-* $\mathbb{P}hi(0) = \displaystyle{\frac{1}{2}}$;
+* $\Phi(0) = \displaystyle{\frac{1}{2}}$;
 
-* $\mathbb{P}hi(-x) = 1 - \mathbb{P}hi(x), \text{for all $x \in \mathbb{R}$}$.
+* $\Phi(-x) = 1 - \Phi(x), \text{for all $x \in \mathbb{R}$}$.
 
-Indeed, $\mathbb{P}hi(x)$ is a distribution function.
+Indeed, $\Phi(x)$ is a distribution function.
 
 
 In general, we can obtain any normal random variable variable by shifting and scaling a standard normal random variable. In particular, define
@@ -242,7 +242,7 @@ $$
 F_X(x) &= \mathbb{P}(X \leq x) \\
 & = \mathbb{P}(\sigma Z + \mu \leq x), \hspace{0.5cm} \text{where $Z \sim N(0,1)$}\\
 &= \mathbb{P}\left( Z \leq \frac{x-\mu}{\sigma} \right)\\
-&= \mathbb{P}hi \left( \frac{x-\mu}{\sigma} \right).
+&= \Phi \left( \frac{x-\mu}{\sigma} \right).
 \end{align*}
 $$
 
@@ -257,7 +257,7 @@ $$
 If $X$ is a normal random variable with mean $\mu$ and variance $\sigma^2$, $X \sim N(\mu,\sigma^2)$, then
 
 $$
-\mathbb{P}(a \leq X \leq b) = \mathbb{P}hi\left( \frac{b-\mu}{\sigma}\right) - \mathbb{P}hi \left( \frac{a-\mu}{\sigma} \right).
+\mathbb{P}(a \leq X \leq b) = \Phi\left( \frac{b-\mu}{\sigma}\right) - \Phi \left( \frac{a-\mu}{\sigma} \right).
 $$
 
 
