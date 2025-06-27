@@ -131,27 +131,27 @@ If $X,Y$ are random variables, then so is $X+Y$.
 
 **Definition**
 
-Let $(\Omega, \mathcal{F})$ be a sample space with a probability $\P$, then the space $(\Omega, \mathcal{F}, \P)$ is called a probability space.
+Let $(\Omega, \mathcal{F})$ be a sample space with a probability $\mathbb{P}$, then the space $(\Omega, \mathcal{F}, \mathbb{P})$ is called a probability space.
 
 
 **Theorem**
-The random variable $X$ defined on the probability space $(\Omega, \mathcal{F},\P)$ can be mapped to another probability space $(\mathbb{R}, \mathfrak{B}{\mathbb{R}}, Q)$ by another probability function $Q$ defined by:
+The random variable $X$ defined on the probability space $(\Omega, \mathcal{F},\mathbb{P})$ can be mapped to another probability space $(\mathbb{R}, \mathfrak{B}{\mathbb{R}}, Q)$ by another probability function $Q$ defined by:
 
 $$
-\forall B \in \mathfrak{B}_{\mathbb{R}} : Q(B) = \P\{ X^{-1}(B) \} = \P \{ \omega : X(\omega) \in B \}
+\forall B \in \mathfrak{B}_{\mathbb{R}} : Q(B) = \mathbb{P}\{ X^{-1}(B) \} = \mathbb{P} \{ \omega : X(\omega) \in B \}
 $$
 
-We call $Q = \P(X^{-1})$ the probability distribution of $X$.
+We call $Q = \mathbb{P}(X^{-1})$ the probability distribution of $X$.
 
 
 **Proof**
 
-To prove that $Q$ is a probability, we just need to verify all 3 axioms from definition $7$. Clearly $Q(B) \geq 0, \forall B \in \mathfrak{B}_{\mathbb{R}}$, and $Q(\mathbb{R}) = \P(X \in \mathbb{R}) = \P(\Omega) = 1$, also
+To prove that $Q$ is a probability, we just need to verify all 3 axioms from definition $7$. Clearly $Q(B) \geq 0, \forall B \in \mathfrak{B}_{\mathbb{R}}$, and $Q(\mathbb{R}) = \mathbb{P}(X \in \mathbb{R}) = \mathbb{P}(\Omega) = 1$, also
 
 $$
 \begin{align*}
-Q \left( \sum_{i=1}^{\infty} B_i \right) = \P \{ X^{-1} \left( \sum_{i=1}^{\infty} B_i \right) \} &= \P \{ \sum_{i=1}^{\infty} X^{-1}(B_i) \} \\
-& = \sum_{i=1}^{\infty} \P(X^{-1}(B_i)) = \sum_{i=1}^{\infty} Q(B_i)
+Q \left( \sum_{i=1}^{\infty} B_i \right) = \mathbb{P} \{ X^{-1} \left( \sum_{i=1}^{\infty} B_i \right) \} &= \mathbb{P} \{ \sum_{i=1}^{\infty} X^{-1}(B_i) \} \\
+& = \sum_{i=1}^{\infty} \mathbb{P}(X^{-1}(B_i)) = \sum_{i=1}^{\infty} Q(B_i)
 \end{align*}
 $$
 
@@ -174,10 +174,10 @@ is called a distribution function.
 
 **Definition**
 
-Let $X$ be a random variable defined on $(\Omega,\mathcal{F},\P)$, define a point function $F$ on $\mathbb{R}$ by:
+Let $X$ be a random variable defined on $(\Omega,\mathcal{F},\mathbb{P})$, define a point function $F$ on $\mathbb{R}$ by:
 
 $$
-\forall x \in \mathbb{R} : F(x) = Q((-\infty,x]) = \P\{ \omega : X(\omega) \leq x \}
+\forall x \in \mathbb{R} : F(x) = Q((-\infty,x]) = \mathbb{P}\{ \omega : X(\omega) \leq x \}
 $$
 
 We call $F$ the distribution function of the random variable $X$.
@@ -204,17 +204,17 @@ Now, we will study two types of random variable and their distribution function.
 
 **Definition**
 
-A random variable $X$ defined on $(\Omega,\mathcal{F},\P)$ is said to be of the discrete type, if there exists a countable set $M \subset \mathbb{R}$ such that $\P(X \in M) = 1$, and the points of $M$ which have positive values are called jump points.
+A random variable $X$ defined on $(\Omega,\mathcal{F},\mathbb{P})$ is said to be of the discrete type, if there exists a countable set $M \subset \mathbb{R}$ such that $\mathbb{P}(X \in M) = 1$, and the points of $M$ which have positive values are called jump points.
 
 
 We know that all the singletons are Borel sets, thus $\{ X \in E\}$ is an event.
 
 **Definition**
 
-The collection of numbers $\{ p_i \}$ satisfying $\P\{ X = x_i \} = p_i \geq 0$ for all $i$ and $\sum_i p_i = 1$ is called the probability mass function (PMF) of the random variable $X$, and the distribution function of $X$ is given by
+The collection of numbers $\{ p_i \}$ satisfying $\mathbb{P}\{ X = x_i \} = p_i \geq 0$ for all $i$ and $\sum_i p_i = 1$ is called the probability mass function (PMF) of the random variable $X$, and the distribution function of $X$ is given by
 
 $$
-F(x) = \P \{ X \leq x \} = \sum_{x_i \leq x} p_i
+F(x) = \mathbb{P} \{ X \leq x \} = \sum_{x_i \leq x} p_i
 $$
 
 
@@ -245,7 +245,7 @@ The other type of random variable is those without jump points.
 
 **Definition**
 
-Let $X$ be a random variable defined on $(\Omega, \mathcal{F}, \P)$ with distribution function $F$, then $X$ is said to be of the continuous type if $F$ is absolutely continuous, i.e there exists a non-negative function $f(x)$ such that
+Let $X$ be a random variable defined on $(\Omega, \mathcal{F}, \mathbb{P})$ with distribution function $F$, then $X$ is said to be of the continuous type if $F$ is absolutely continuous, i.e there exists a non-negative function $f(x)$ such that
 
 $$
 \forall x \in \mathbb{R} : F(x) = \int_{-\infty}^x f(t) dt
@@ -264,7 +264,7 @@ $$
 
 Let $X$ be a random variable of the continuous type with probability density function $f$, then $\forall B \in \mathfrak{B}{\mathbb{R}}$, we have
 $$
-\P(B) = \int_{B} f(t) dt
+\mathbb{P}(B) = \int_{B} f(t) dt
 $$
 
 
@@ -295,7 +295,7 @@ So $F$ is non-decreasing. Furthermore $F$ is continuous (hence right-continuous)
 Let $X$ be a random variable, then
 
 $$
-\P(x = a) := \lim_{t \to a^-} \P\{ t < x \leq a \}
+\mathbb{P}(x = a) := \lim_{t \to a^-} \mathbb{P}\{ t < x \leq a \}
 $$
 
 
@@ -340,7 +340,7 @@ $$
 f_c(x) = \frac{dF_c(x)}{dx} = \begin{cases} 1 : 0<x<1 \\ 0 :\text{otherwise} \end{cases}
 $$
 
-and $F_d(x)$ is the distribution function of $X$ degenerate at $x=0$, i.e $F_d(x) = \P(x = 0) = 1$.
+and $F_d(x)$ is the distribution function of $X$ degenerate at $x=0$, i.e $F_d(x) = \mathbb{P}(x = 0) = 1$.
 
 # Functions of Random Variables
 
@@ -361,7 +361,7 @@ We let $Y = g(X)$, then $F_Y(y) :=  \{ g(X) \leq y \} = \{ X \in g^{-1}((-\infty
 **Solution:**  We know that
 
 $$
-F_Y(y) = \P(Y \leq y) = \P( \vert x \vert \leq y) = \P(-y \leq x \leq y)
+F_Y(y) = \mathbb{P}(Y \leq y) = \mathbb{P}( \vert x \vert \leq y) = \mathbb{P}(-y \leq x \leq y)
 $$
 
 If $X$ is of the continuous type, then we have
@@ -379,13 +379,13 @@ $$
 **Example:**  Suppose $X \sim N(0,1)$ where
 
 $$
-f_X(x) = \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}}
+f_X(x) = \frac{1}{\sqrt{2\mathbb{P}i}} e^{-\frac{x^2}{2}}
 $$
 
 Where $X$ satisfies normal distribution, which general form is
 
 $$
-X \sim N(\mu,\sigma^2), f_X(x) = \frac{1}{\sqrt{2\pi} \sigma} e^{-\frac{(x-\mu)^2}{2\sigma^2}},
+X \sim N(\mu,\sigma^2), f_X(x) = \frac{1}{\sqrt{2\mathbb{P}i} \sigma} e^{-\frac{(x-\mu)^2}{2\sigma^2}},
 $$
 
 then what is  $F_Y$, where $Y =\vert X \vert$?
@@ -393,7 +393,7 @@ then what is  $F_Y$, where $Y =\vert X \vert$?
 **Solution:** As from above, we know that
 
 $$
-F_Y(y) = F_X(y) - F_X(-y) = \int_{-\infty}^y \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}} dx - \int_{-\infty}^{-y} \frac{1}{\sqrt{2\pi}} e^{-\frac{x^2}{2}} dx.
+F_Y(y) = F_X(y) - F_X(-y) = \int_{-\infty}^y \frac{1}{\sqrt{2\mathbb{P}i}} e^{-\frac{x^2}{2}} dx - \int_{-\infty}^{-y} \frac{1}{\sqrt{2\mathbb{P}i}} e^{-\frac{x^2}{2}} dx.
 $$
 
 **Theorem**
@@ -410,13 +410,13 @@ $$
 thus
 
 $$
-f_Y(y) = \frac{1}{\sqrt{2\pi}} e^{-\frac{y^2}{2}} + \frac{1}{\sqrt{2\pi}} e^{-\frac{(-y)^2}{2}} = \sqrt{\frac{2}{\pi}} e^{-\frac{y^2}{2}}.
+f_Y(y) = \frac{1}{\sqrt{2\mathbb{P}i}} e^{-\frac{y^2}{2}} + \frac{1}{\sqrt{2\mathbb{P}i}} e^{-\frac{(-y)^2}{2}} = \sqrt{\frac{2}{\mathbb{P}i}} e^{-\frac{y^2}{2}}.
 $$
 
-**Example:** Suppose $X \sim Poisson(\lambda)$, given by $\displaystyle{\P(X = k) := \frac{e^{-\lambda} \lambda^k}{k!}}$ where $k \in \mathbb{N}_0, \lambda >0$. Now suppose $Y = X^2 + 3$, then 
+**Example:** Suppose $X \sim Poisson(\lambda)$, given by $\displaystyle{\mathbb{P}(X = k) := \frac{e^{-\lambda} \lambda^k}{k!}}$ where $k \in \mathbb{N}_0, \lambda >0$. Now suppose $Y = X^2 + 3$, then 
 
 $$
-\P(Y =y) = \P(g(x) = y) = \P(x = \sqrt{y-3}) = \frac{e^{-\lambda} \lambda^{\sqrt{y-3}}}{(\sqrt{y-3})!}.
+\mathbb{P}(Y =y) = \mathbb{P}(g(x) = y) = \mathbb{P}(x = \sqrt{y-3}) = \frac{e^{-\lambda} \lambda^{\sqrt{y-3}}}{(\sqrt{y-3})!}.
 $$
 
 **Theorem**
@@ -436,15 +436,15 @@ $\alpha = \min \{ g(-\infty), g(+\infty) \} ; \beta = \max\{ g(-\infty), g(+\inf
 Suppose $g'(x) >0$, then $g$ is continuous and strictly increasing, thus $\lim \alpha, \beta$ exists (possibly infinity), and its inverse $x = g^{-1}(y)$ also exists, differentiable, continuous and strictly increasing. The distribution function of $Y$ for $\alpha < y < \beta$ is given by
 
 $$
-\P(Y \leq y) = \P(X \leq g^{-1}(y))
+\mathbb{P}(Y \leq y) = \mathbb{P}(X \leq g^{-1}(y))
 $$
 
 The probability density function of $g$ is obtained by differentiation:
 
 $$
 \begin{align*}
-h_Y(y) = \frac{d}{dy} F_Y(y) &= \frac{d}{dy} \P(Y \leq y) \\
-&= \frac{d}{dy} \P(X \leq g^{-1}(y)) \\
+h_Y(y) = \frac{d}{dy} F_Y(y) &= \frac{d}{dy} \mathbb{P}(Y \leq y) \\
+&= \frac{d}{dy} \mathbb{P}(X \leq g^{-1}(y)) \\
 &= \frac{d}{dy} F_X(g^{-1}(y)) \\
 &= f_X(g^{-1}(y)) \cdot \frac{d}{dy} g^{-1}(y)
 \end{align*}
@@ -465,33 +465,33 @@ And that completes the proof.
 **Example:** Given that
 
 $$
-X \sim f_X(x) = \begin{cases} \displaystyle{\frac{2x}{\pi^2} : 0 < x < \pi} \\ \\0 : \text{otherwise} \end{cases}
+X \sim f_X(x) = \begin{cases} \displaystyle{\frac{2x}{\mathbb{P}i^2} : 0 < x < \mathbb{P}i} \\ \\0 : \text{otherwise} \end{cases}
 $$
 
 Let $Y = \sin(X)$, then find the probability density function of $Y$.
 
 **Solution:** Let $Y =\sin(X) = g(X)$, we have
 
-$\P(Y \leq y) = \P(\sin(x) \leq y) = \P(x \in (0,x_1) \cap x \in (x_2,\pi) )$ where $x_1 = \sin^{-1}(y) , x_2 = \pi - \sin^{-1}(y)$. Thus we have
+$\mathbb{P}(Y \leq y) = \mathbb{P}(\sin(x) \leq y) = \mathbb{P}(x \in (0,x_1) \cap x \in (x_2,\mathbb{P}i) )$ where $x_1 = \sin^{-1}(y) , x_2 = \mathbb{P}i - \sin^{-1}(y)$. Thus we have
 
 $$
 \begin{align*}
-\P(Y \leq y) &= \P(x \in (0, x_1)) + \P(x\in (x_2,\pi)) \\
-& = \int_0^{x_1} f_X(x) dx + \int_{x_2}^{\pi} f_X(x) dx \\
-& = \left( \frac{x_1}{\pi} \right)^2 + 1 - \left( \frac{x_2}{\pi} \right)^2
+\mathbb{P}(Y \leq y) &= \mathbb{P}(x \in (0, x_1)) + \mathbb{P}(x\in (x_2,\mathbb{P}i)) \\
+& = \int_0^{x_1} f_X(x) dx + \int_{x_2}^{\mathbb{P}i} f_X(x) dx \\
+& = \left( \frac{x_1}{\mathbb{P}i} \right)^2 + 1 - \left( \frac{x_2}{\mathbb{P}i} \right)^2
 \end{align*}
 $$
 
 So we have
 
 $$
-h_Y(y) = \frac{d}{dy} F_Y(y) = \frac{d}{dy} \P(Y \leq y) = \frac{d}{dy} \left[ \left( \frac{\sin^{-1}(x_1)}{\pi} \right)^2 + 1 - \left( \frac{\sin^{-1}(x_2)}{\pi} \right)^2 \right]
+h_Y(y) = \frac{d}{dy} F_Y(y) = \frac{d}{dy} \mathbb{P}(Y \leq y) = \frac{d}{dy} \left[ \left( \frac{\sin^{-1}(x_1)}{\mathbb{P}i} \right)^2 + 1 - \left( \frac{\sin^{-1}(x_2)}{\mathbb{P}i} \right)^2 \right]
 $$
 
 and which simplifies to
 
 $$
-h_Y(y) = \begin{cases} \displaystyle{\frac{2}{\pi \sqrt{1-y^2}}} : 0<y<1 \\ \\0 : \text{otherwise} \end{cases}.
+h_Y(y) = \begin{cases} \displaystyle{\frac{2}{\mathbb{P}i \sqrt{1-y^2}}} : 0<y<1 \\ \\0 : \text{otherwise} \end{cases}.
 $$
 
 
