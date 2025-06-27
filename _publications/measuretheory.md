@@ -397,22 +397,22 @@ Here is an example to illustrate this: Suppose we are tossing a coin, and we den
 (Kolmogorov's Axioms)
 
 
-Let $(\Omega,\mathcal{F})$ be a sample space and a set function $\P : \mathcal{F} \longrightarrow \mathbb{R}$ is called a probability measure (or simply probability) if it satisfies:\\
+Let $(\Omega,\mathcal{F})$ be a sample space and a set function $\mathbb{P} : \mathcal{F} \longrightarrow \mathbb{R}$ is called a probability measure (or simply probability) if it satisfies:\\
 
-\textcircled{1} $\P(A) \geq 0$ for all $A \in \mathcal{F}$;\\
+\textcircled{1} $\mathbb{P}(A) \geq 0$ for all $A \in \mathcal{F}$;\\
 
-\textcircled{2} $\P(\Omega) = 1$;\\
+\textcircled{2} $\mathbb{P}(\Omega) = 1$;\\
 
-\textcircled{3} Let $\{ A_j \}_1^{\infty}$ be a sequence of disjoint sets where $A_j \in \mathcal{F}$, then $\displaystyle{\P \left( \bigcup_{i=1}^{\infty} A_i \right) = \sum_{i =1}^{\infty} \P(A_i)}$.
+\textcircled{3} Let $\{ A_j \}_1^{\infty}$ be a sequence of disjoint sets where $A_j \in \mathcal{F}$, then $\displaystyle{\mathbb{P} \left( \bigcup_{i=1}^{\infty} A_i \right) = \sum_{i =1}^{\infty} \mathbb{P}(A_i)}$.
 
-
-
-**Corollary**
-$\P$ is monotone and substrative, i.e if $A,B \in \mathcal{F}$ with $A \subset B$, then $\P(A) \leq \P(B)$.
 
 
 **Corollary**
-If $A \in \mathcal{F}$, then $\P(A) = 1 - \P(A^C)$.
+$\mathbb{P}$ is monotone and substrative, i.e if $A,B \in \mathcal{F}$ with $A \subset B$, then $\mathbb{P}(A) \leq \mathbb{P}(B)$.
+
+
+**Corollary**
+If $A \in \mathcal{F}$, then $\mathbb{P}(A) = 1 - \mathbb{P}(A^C)$.
 
 
 Now we will introduce an important theorem in probability:
@@ -423,32 +423,32 @@ Now we will introduce an important theorem in probability:
 Let $A_1,A_2,\cdots,A_n \in \mathcal{F}$, then
 
 $$
-\P \left( \bigcup_{k=1}^n A_k \right) = \sum_{k=1}^{n} \P(A_k) - \sum_{k_1<k_2}\P(A_{k_1} \cap A_{k_2}) + \cdots + (-1)^{n+1} \sum_{k_1<\cdots<k_n} \P(A_{k_1} \cap \cdots \cap  A_{k_n})
+\mathbb{P} \left( \bigcup_{k=1}^n A_k \right) = \sum_{k=1}^{n} \mathbb{P}(A_k) - \sum_{k_1<k_2}\mathbb{P}(A_{k_1} \cap A_{k_2}) + \cdots + (-1)^{n+1} \sum_{k_1<\cdots<k_n} \mathbb{P}(A_{k_1} \cap \cdots \cap  A_{k_n})
 $$
 
 
 **Proof**
  We will first consider some special cases, let's say $n=2$, then we have
 $$
-\P(A_1 \cup A_2) = \P(A_1) + \P(A_2) - \P(A_1 \cap A_2).
+\mathbb{P}(A_1 \cup A_2) = \mathbb{P}(A_1) + \mathbb{P}(A_2) - \mathbb{P}(A_1 \cap A_2).
 $$
 
 Similarly, consider $n=3$, then we have
 $$
 \begin{align*}
-\P(A_1 \cup A_2 \cup A_3) &= \P(A_1) + \P(A_2) + \P(A_3)\\
-& -\P(A_1 \cap A_2) - \P(A_2 \cap A_3) - \P(A_1 \cap A_3) \\
-& + \P(A_1 \cap A_2 \cap A_3)
+\mathbb{P}(A_1 \cup A_2 \cup A_3) &= \mathbb{P}(A_1) + \mathbb{P}(A_2) + \mathbb{P}(A_3)\\
+& -\mathbb{P}(A_1 \cap A_2) - \mathbb{P}(A_2 \cap A_3) - \mathbb{P}(A_1 \cap A_3) \\
+& + \mathbb{P}(A_1 \cap A_2 \cap A_3)
 \end{align*}
 $$
 
 So when $n=2$ or $n=3$, it is already proven according to the construction we did using Venn diagram. Now we perform the induction on $n$, assume it holds for some number $N (N>3)$, then say
 $$
-\P \left( \bigcup_{i=1}^{N+1} A_i \right) = \P \left( \left[ \bigcup_{i=1}^N A_i \right] \bigcup A_{N+1} \right)
+\mathbb{P} \left( \bigcup_{i=1}^{N+1} A_i \right) = \mathbb{P} \left( \left[ \bigcup_{i=1}^N A_i \right] \bigcup A_{N+1} \right)
 $$
 Denote $\left[ \bigcup_{i=1}^N A_i \right] = B$, then we have
 $$
-\P \left( \bigcup_{i=1}^{N+1} A_i \right) = \P(B) + \P(A_{N+1}) - \P(B \cap A_{N+1})
+\mathbb{P} \left( \bigcup_{i=1}^{N+1} A_i \right) = \mathbb{P}(B) + \mathbb{P}(A_{N+1}) - \mathbb{P}(B \cap A_{N+1})
 $$
 **QED**
 
@@ -460,7 +460,7 @@ The principle of inclusion and exculsion also leads us to another theorem:
 
 Given $n$ events $A_1,A_2,\cdots,A_n \in \mathcal{F}, (n>1)$, then 
 $$
-\sum_{k=1}^n \P(A_k) - \sum_{i<j} \P(A_i \cap A_j) \leq \P \left( \sum_{k=1}^n A_k \right) \leq \sum_{k=1}^n \P(A_k)
+\sum_{k=1}^n \mathbb{P}(A_k) - \sum_{i<j} \mathbb{P}(A_i \cap A_j) \leq \mathbb{P} \left( \sum_{k=1}^n A_k \right) \leq \sum_{k=1}^n \mathbb{P}(A_k)
 $$
 
 
@@ -473,17 +473,17 @@ The proof is basically the same idea as above, reader should try to prove this b
 
 Suppose $A,B \in \mathcal{F}$, then
 $$
-\P(A \cap B) \geq 1 - \P(A^C) - \P(B^C)
+\mathbb{P}(A \cap B) \geq 1 - \mathbb{P}(A^C) - \mathbb{P}(B^C)
 $$
 
 
 **Proof**
 $$
 \begin{align*}
-\P(A \cap B) &= 1 - \P((A \cap B)^C) \\
-&= 1 - \P(A^C \cup B^C)\\
-&= 1 - (\P(A^C) + \P(B^C) - \P(A^C \cap B^C))\\
-&\geq 1 - \P(A^C) - \P(B^C)
+\mathbb{P}(A \cap B) &= 1 - \mathbb{P}((A \cap B)^C) \\
+&= 1 - \mathbb{P}(A^C \cup B^C)\\
+&= 1 - (\mathbb{P}(A^C) + \mathbb{P}(B^C) - \mathbb{P}(A^C \cap B^C))\\
+&\geq 1 - \mathbb{P}(A^C) - \mathbb{P}(B^C)
 \end{align*}
 $$
 **QED**
@@ -492,7 +492,7 @@ $$
 **Corollary**
 Let $\{ A_j \}_{j=1}^{\infty}$ be a sequence of events, then 
 $$
-\P \left(\bigcap_{j=1}^{\infty} A_j \right) \geq 1 - \sum_{j=1}^{\infty} \P(A_j^C)
+\mathbb{P} \left(\bigcap_{j=1}^{\infty} A_j \right) \geq 1 - \sum_{j=1}^{\infty} \mathbb{P}(A_j^C)
 $$
 
 
@@ -504,20 +504,20 @@ This proof can be achieved by induction, using the results in theorem 4.
 **Theorem**
 (The implicative rule)
 
-If $A_1,A_2,A_3 \in \mathcal{F}$ and $A_1 \cap A_2 \subset A_3$, i.e $A_1,A_2$ implies $A_3$, then $\P(A_3^C) \leq \P(A_1^C) + \P(A_2^C)$.
+If $A_1,A_2,A_3 \in \mathcal{F}$ and $A_1 \cap A_2 \subset A_3$, i.e $A_1,A_2$ implies $A_3$, then $\mathbb{P}(A_3^C) \leq \mathbb{P}(A_1^C) + \mathbb{P}(A_2^C)$.
 
 
 
 **Proof**
-By monotoncity of probability, we have $\P(A_1 \cap A_2) \leq \P(A_3)$, i.e $\P((A_1 \cap A_2)^C) \geq \P(A_3^C)$, that is $\P(A_1^C \cap A_2^C) \geq \P(A_3^C)$, by inclusion and exculsion formula, we have $\P(A_1^C) + \P(A_2^C) - P(A_1^C \cap A_2^C) \geq \P(A_3^C)$, given that the probability is always non-negative, we then conclude that $\P(A_3^C) \leq \P(A_1^C) + \P(A_2^C)$.
+By monotoncity of probability, we have $\mathbb{P}(A_1 \cap A_2) \leq \mathbb{P}(A_3)$, i.e $\mathbb{P}((A_1 \cap A_2)^C) \geq \mathbb{P}(A_3^C)$, that is $\mathbb{P}(A_1^C \cap A_2^C) \geq \mathbb{P}(A_3^C)$, by inclusion and exculsion formula, we have $\mathbb{P}(A_1^C) + \mathbb{P}(A_2^C) - P(A_1^C \cap A_2^C) \geq \mathbb{P}(A_3^C)$, given that the probability is always non-negative, we then conclude that $\mathbb{P}(A_3^C) \leq \mathbb{P}(A_1^C) + \mathbb{P}(A_2^C)$.
 **QED**
 
 **Theorem**
-(Continuity of $\P$)
+(Continuity of $\mathbb{P}$)
 
 Let $\{ A_n \}_{n=1}^{\infty}$ be a sequence of non-decreasing events in $\mathcal{F}$, i.e $A_n \subset A_{n+1}$, then
 $$
-\P(\lim_{n \to \infty} A_n) = \lim_{n \to \infty} \P(A_n) = \P \left( \bigcup_{n=1}^{\infty} A_n \right)
+\mathbb{P}(\lim_{n \to \infty} A_n) = \lim_{n \to \infty} \mathbb{P}(A_n) = \mathbb{P} \left( \bigcup_{n=1}^{\infty} A_n \right)
 $$
 
 
@@ -526,27 +526,27 @@ Let $A = \bigcup_{j=1}^{\infty} A_j$, then $A$ can be written as $A = A_n \bigcu
 
 $$
 \begin{align*}
-\P(A) &= \P(A_n) + \sum_{j=n}^{\infty} \P(A_{j+1} \backslash A_j) \\
-& = \P(A_n) + \sum_{j=n}^{\infty}  \left( \P(A_{j+1}) - \P(A_j) \right)
+\mathbb{P}(A) &= \mathbb{P}(A_n) + \sum_{j=n}^{\infty} \mathbb{P}(A_{j+1} \backslash A_j) \\
+& = \mathbb{P}(A_n) + \sum_{j=n}^{\infty}  \left( \mathbb{P}(A_{j+1}) - \mathbb{P}(A_j) \right)
 \end{align*}
 $$
 Now taking $n \to \infty$:
 
 $$
 \begin{align*}
-\P(A) &= \lim_{n \to \infty} \left[ \P(A_n) + \sum_{j=n}^{\infty} (\P(A_{j+1}) - P(A_j) ) \right] \\
-&= \lim_{n \to \infty} A_n + \lim_{n \to \infty} \left[ \sum_{j=n}^{\infty} \P(A_{j+1}) - \P(A_j) \right]\\
-&= \lim_{n \to \infty} \P(A_n)
+\mathbb{P}(A) &= \lim_{n \to \infty} \left[ \mathbb{P}(A_n) + \sum_{j=n}^{\infty} (\mathbb{P}(A_{j+1}) - P(A_j) ) \right] \\
+&= \lim_{n \to \infty} A_n + \lim_{n \to \infty} \left[ \sum_{j=n}^{\infty} \mathbb{P}(A_{j+1}) - \mathbb{P}(A_j) \right]\\
+&= \lim_{n \to \infty} \mathbb{P}(A_n)
 \end{align*}
 $$
 **QED**
 
 **Theorem**
-(Continuity of $\P$)
+(Continuity of $\mathbb{P}$)
 
 Let $\{ A_n \}_{n=1}^{\infty}$ be a sequence of non-increasing events in $\mathcal{F}$, i.e $A_{n+1} \subset A_n$, then
 $$
-\P(\lim_{n \to \infty} A_n) = \lim_{n \to \infty} \P(A_n) = \P \left( \bigcap_{n=1}^{\infty} A_n \right)
+\mathbb{P}(\lim_{n \to \infty} A_n) = \lim_{n \to \infty} \mathbb{P}(A_n) = \mathbb{P} \left( \bigcap_{n=1}^{\infty} A_n \right)
 $$
 
 
