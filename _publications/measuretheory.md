@@ -158,6 +158,7 @@ $$
 &\mathfrak{B}{\mathbb{R}} := \sigma( \lbrace [a,b] : a,b \in \mathbb{R}, a < b \rbrace )\\
 &\mathfrak{B}{\mathbb{R}} := \sigma( \lbrace (-\infty,c) : c \in \mathbb{Q} )\\
 &\mathfrak{B}{\mathbb{R}} := \sigma( \lbrace (c,+\infty) : c \in \mathbb{Q} )
+\end{align*}
 $$
 
 I shall illustrate why those are indeed equal. Let's just take a look at \textcircled{2}, we need to show
