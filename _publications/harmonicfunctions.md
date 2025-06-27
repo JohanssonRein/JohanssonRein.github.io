@@ -152,7 +152,7 @@ then denote $e_i$ as the unit vector in $i$th position of $x = (x_1,\cdots,x_n)$
 
 $$
 \begin{align*}
-\frac{\partial u}{\partial x_i}(x) = \lim_{h \to 0} \frac{u(x+he_i) - u(x)}{h} &=  \int_{\mathbb{R}^n} \Phi(y) \cdot \lim_{h \to 0}\left[ \frac{f(x+he_i - y) - f(x-y)}{h} \right] dy
+\frac{\partial u}{\partial x_i}(x) = \lim_{h \to 0} \frac{u(x+he_i) - u(x)}{h} &=  \int_{\mathbb{R}^n} \Phi(y) \cdot \lim_{h \to 0}\left[ \frac{f(x+he_i - y) - f(x-y)}{h} \right] dy\\
 &=\int_{\mathbb{R}^n} \Phi(y)\cdot \frac{\partial f}{\partial x_i}(x-y)dy.
 \end{align*}
 $$
