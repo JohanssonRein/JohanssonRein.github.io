@@ -66,7 +66,7 @@ $$
 **Example:** Let $X$ be an random variable with probability density function defined by
 
 $$
-f_X(x) = \begin{cases} \displaystyle{\frac{2}{x^3}} : x \geq 1 \\ \\ 0 : x < 1 \mathbb{E} \end{cases}.
+f_X(x) = \begin{cases} \displaystyle{\frac{2}{x^3}} : x \geq 1 \\ \\ 0 : x < 1  \end{cases}.
 $$
 
 Then
@@ -355,7 +355,7 @@ $$
 
 **Example:** For each of the following random variables, find the MGF:
 
-(a) $X$ is a discrete random variable with pmf $P_{X}(k) = \begin{cases} \frac{1}{3} : k=1 \\ \frac{2}{3} : k=2\mathbb{E}\end{cases}$;\\
+(a) $X$ is a discrete random variable with pmf $P_{X}(k) = \begin{cases} \frac{1}{3} : k=1 \\ \frac{2}{3} : k=2\end{cases}$;\\
 
 (b) $Y$ is a $Uniform(0,1)$ random variable.
 
@@ -378,7 +378,7 @@ $$
 **Example:** Suppose $X \sim \mathbb{E}xp(\lambda), \lambda > 0$ which is given by
 
 $$
-f_X(x) = \begin{cases} \lambda e^{-\lambda x} : x > 0 \\ 0 : \text{otherwise} \mathbb{E}\end{cases}
+f_X(x) = \begin{cases} \lambda e^{-\lambda x} : x > 0 \\ 0 : \text{otherwise} \end{cases}
 $$
 
 In this case
@@ -393,7 +393,7 @@ $$
 and
 
 $$
-M_X(s) = \begin{cases} \displaystyle{\frac{\lambda}{\lambda - s} : s < \lambda }\\ \\ \text{\scshape{Does Not Exist} } : s \geq \lambda \mathbb{E}\end{cases}.
+M_X(s) = \begin{cases} \displaystyle{\frac{\lambda}{\lambda - s} : s < \lambda }\\ \\ \text{\scshape{Does Not Exist} } : s \geq \lambda \end{cases}.
 $$
 
 We will introduce two theorems, however we will omit the proof:
@@ -623,7 +623,7 @@ and define $\tau^2 = \mathbb{E}(X - \nu)^2$, then we have
 
 $$
 \mathbb{P}_r \{ \vert X - \nu \vert  \geq \mathbb{E}psilon \} \leq \begin{cases} 
-\displaystyle{\frac{4\tau^2}{9\mathbb{E}psilon^2} : \mathbb{E}psilon \geq \frac{2}{\sqrt{3}} \tau} \\ \\ \displaystyle{1 - \frac{\mathbb{E}psilon}{\tau \sqrt{3}} : \mathbb{E}psilon < \frac{2}{\sqrt{3}} \tau} \mathbb{E}\end{cases}
+\displaystyle{\frac{4\tau^2}{9\mathbb{E}psilon^2} : \mathbb{E}psilon \geq \frac{2}{\sqrt{3}} \tau} \\ \\ \displaystyle{1 - \frac{\mathbb{E}psilon}{\tau \sqrt{3}} : \mathbb{E}psilon < \frac{2}{\sqrt{3}} \tau} \end{cases}
 $$
 
 
@@ -635,7 +635,7 @@ Let $X \sim f$ where $f$ is uni modal and define $\xi^2 = \mathbb{E}[(x - \alpha
 $$
 \mathbb{P}_r \{ \vert X -\alpha \vert \geq \mathbb{E}psilon \} \leq \begin{cases}
 \displaystyle{\frac{4\xi^2}{9\mathbb{E}psilon^2} : \mathbb{E}psilon \geq \sqrt{\frac{8}{3}} \xi} \\ \\
-\displaystyle{\frac{4\xi^2}{3\mathbb{E}psilon^2} - \frac{1}{3} : \mathbb{E}psilon < \sqrt{\frac{8}{3}} \xi} \mathbb{E}\end{cases}
+\displaystyle{\frac{4\xi^2}{3\mathbb{E}psilon^2} - \frac{1}{3} : \mathbb{E}psilon < \sqrt{\frac{8}{3}} \xi}\end{cases}
 $$
 
 
@@ -718,5 +718,5 @@ $$
 \mathbb{E}\vert X + Y \vert^r \leq C_r [ \mathbb{E}\vert X \vert^r + \mathbb{E}\vert Y \vert^r]
 $$
 
-where $C_r = \begin{cases} 1 : 0 \leq r \leq 1 \\ 2^{r-1} : r > 1 \mathbb{E}\end{cases}$.
+where $C_r = \begin{cases} 1 : 0 \leq r \leq 1 \\ 2^{r-1} : r > 1 \end{cases}$.
 
