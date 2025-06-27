@@ -184,10 +184,10 @@ Let $X$ be a random variable satisfying $\lim_{n \to \infty} n^{\alpha} \mathbb{
 
 **Proof**
 
-Given any $\mathbb{E}psilon >0$, we can always choose a large enough $N$ such that $\forall n \geq N$,
+Given any $\epsilon >0$, we can always choose a large enough $N$ such that $\forall n \geq N$,
 
 $$
-\mathbb{P} \{ \vert x \vert > n \} < \frac{\mathbb{E}psilon}{n^{\alpha}},
+\mathbb{P} \{ \vert x \vert > n \} < \frac{\epsilon}{n^{\alpha}},
 $$
 
 and 
@@ -209,7 +209,7 @@ Now we have
 $$
 \begin{align*}
 \mathbb{E}\vert X \vert^{\beta} &\leq \beta \int_0^{N} x^{\beta-1} dx + \beta \int_{N}^{\infty} x^{\beta-1} \mathbb{P} \{ \vert X \vert > x \} dx\\
-& \leq N^{\beta} + \beta \mathbb{E}psilon \int_N^{\infty} x^{\beta-\alpha-1} dx < +\infty.
+& \leq N^{\beta} + \beta \epsilon \int_N^{\infty} x^{\beta-\alpha-1} dx < +\infty.
 \end{align*}
 
 **QED**
@@ -535,24 +535,24 @@ We shall discuss several moments inequalities in this section.
 **Theorem**
 (Markov's Inequality)
 
-Let $h(x)$ be a non-negative function of a random variable $X$, if $\mathbb{E}(X)$ exists, then for every $\mathbb{E}psilon >0$, we have
+Let $h(x)$ be a non-negative function of a random variable $X$, if $\mathbb{E}(X)$ exists, then for every $\epsilon >0$, we have
 
 $$
-\mathbb{P}\{ h(x) \geq \mathbb{E}psilon \} \leq \frac{\mathbb{E}[h(x)]}{\mathbb{E}psilon}
+\mathbb{P}\{ h(x) \geq \epsilon \} \leq \frac{\mathbb{E}[h(x)]}{\epsilon}
 $$
 
 
 
 **Proof**
 
-Define $A:=\{ x : h(x) \geq \mathbb{E}psilon\}$ then define $f_X(x)$ to be the probability density function, then we have
+Define $A:=\{ x : h(x) \geq \epsilon\}$ then define $f_X(x)$ to be the probability density function, then we have
 
 $$
 \begin{align*}
 \mathbb{E}[h(x)] & = \int_{\mathbb{R}} h(x) f_X(x)dx\\
 &= \int_A h(x) f_X(x) dx + \int_{A^C} h(x) f_X(x) dx\\
-&\geq \int_A \mathbb{E}psilon f_X(x) dx + \int_{A^C} h(x) f_X(x)dx\\
-&\geq \mathbb{E}psilon \mathbb{P}\{ h(x) \geq \mathbb{E}psilon \}
+&\geq \int_A \epsilon f_X(x) dx + \int_{A^C} h(x) f_X(x)dx\\
+&\geq \epsilon \mathbb{P}\{ h(x) \geq \epsilon \}
 \end{align*}
 $$
 
@@ -560,7 +560,7 @@ $$
 
 **Corollary**
 
-Let $h(x) = \vert x \vert^r, \mathbb{E}psilon = k^r$ where $r>0,k>0$, then
+Let $h(x) = \vert x \vert^r, \epsilon = k^r$ where $r>0,k>0$, then
 
 $$
 \mathbb{P}\{ \vert X \vert \geq k \} \leq \frac{\mathbb{E}\vert X \vert^r}{k^r}
@@ -569,7 +569,7 @@ $$
 
 **Corollary**
 
-Let $h(x) = (x - \mu_X)^2, \mathbb{E}psilon = k^2 \sigma_X^2$ where $\mu_X = \mathbb{E}(X)$ and $\sigma_X^2 = \mathbf{Var}(X)$, then
+Let $h(x) = (x - \mu_X)^2, \epsilon = k^2 \sigma_X^2$ where $\mu_X = \mathbb{E}(X)$ and $\sigma_X^2 = \mathbf{Var}(X)$, then
 
 $$
 \mathbb{P} \{ \vert X - \mu_X \vert \geq k \sigma_X \} \leq \frac{1}{k^2}
@@ -622,20 +622,20 @@ $$
 and define $\tau^2 = \mathbb{E}(X - \nu)^2$, then we have
 
 $$
-\mathbb{P}_r \{ \vert X - \nu \vert  \geq \mathbb{E}psilon \} \leq \begin{cases} 
-\displaystyle{\frac{4\tau^2}{9\mathbb{E}psilon^2} : \mathbb{E}psilon \geq \frac{2}{\sqrt{3}} \tau} \\ \\ \displaystyle{1 - \frac{\mathbb{E}psilon}{\tau \sqrt{3}} : \mathbb{E}psilon < \frac{2}{\sqrt{3}} \tau} \end{cases}
+\mathbb{P}_r \{ \vert X - \nu \vert  \geq \epsilon \} \leq \begin{cases} 
+\displaystyle{\frac{4\tau^2}{9\epsilon^2} : \epsilon \geq \frac{2}{\sqrt{3}} \tau} \\ \\ \displaystyle{1 - \frac{\epsilon}{\tau \sqrt{3}} : \epsilon < \frac{2}{\sqrt{3}} \tau} \end{cases}
 $$
 
 
 **Corollary**
 (Vysochanskij–Petunin Inequality)
 
-Let $X \sim f$ where $f$ is uni modal and define $\xi^2 = \mathbb{E}[(x - \alpha)^2]$ for any $\alpha \in \mathbb{R}$, then $\forall \mathbb{E}psilon >0$, we have
+Let $X \sim f$ where $f$ is uni modal and define $\xi^2 = \mathbb{E}[(x - \alpha)^2]$ for any $\alpha \in \mathbb{R}$, then $\forall \epsilon >0$, we have
 
 $$
-\mathbb{P}_r \{ \vert X -\alpha \vert \geq \mathbb{E}psilon \} \leq \begin{cases}
-\displaystyle{\frac{4\xi^2}{9\mathbb{E}psilon^2} : \mathbb{E}psilon \geq \sqrt{\frac{8}{3}} \xi} \\ \\
-\displaystyle{\frac{4\xi^2}{3\mathbb{E}psilon^2} - \frac{1}{3} : \mathbb{E}psilon < \sqrt{\frac{8}{3}} \xi}\end{cases}
+\mathbb{P}_r \{ \vert X -\alpha \vert \geq \epsilon \} \leq \begin{cases}
+\displaystyle{\frac{4\xi^2}{9\epsilon^2} : \epsilon \geq \sqrt{\frac{8}{3}} \xi} \\ \\
+\displaystyle{\frac{4\xi^2}{3\epsilon^2} - \frac{1}{3} : \epsilon < \sqrt{\frac{8}{3}} \xi}\end{cases}
 $$
 
 
