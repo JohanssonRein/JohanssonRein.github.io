@@ -26,7 +26,7 @@ This is a series of conference focusing on survival analysis organised by me dur
 
 * Time & Location: 
 
-  * June 30th, 2025, 12:00pm - 13:00 pm; Both in person (Burnside 1B36) and online (via discord group)
+  * June 30th, 2025, 12:00 - 13:00; Both in person (Burnside 1B36) and online (via discord group)
     
 * Description of the first talk:
   
