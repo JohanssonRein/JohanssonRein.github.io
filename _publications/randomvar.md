@@ -3,7 +3,7 @@ title: "Random Variables and Distributions"
 collection: publications
 category: probability
 permalink: /publication/randomvar
-order: 2
+order: 3
 excerpt: 'We will investigate random variables and its density function, probability distribution.'
 date: 2024-09-15
 venue: 'Fall'
