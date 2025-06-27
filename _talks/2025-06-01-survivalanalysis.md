@@ -9,11 +9,13 @@ date: 2025-06-01
 location: "Montreal, QC, Canada"
 ---
 
+<br>
+
 <p align="center">
-  <img src="/images/HazardSmoothedEstimates.png" alt="Poster" width="400"/>
+  <img src="/images/HazardSmoothedEstimates.png" alt="Poster" width="500"/>
 </p>
 
-<br><br>
+<br>
 
 # Overview
 
