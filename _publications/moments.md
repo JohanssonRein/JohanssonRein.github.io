@@ -211,6 +211,7 @@ $$
 \mathbb{E}\vert X \vert^{\beta} &\leq \beta \int_0^{N} x^{\beta-1} dx + \beta \int_{N}^{\infty} x^{\beta-1} \mathbb{P} \{ \vert X \vert > x \} dx\\
 & \leq N^{\beta} + \beta \epsilon \int_N^{\infty} x^{\beta-\alpha-1} dx < +\infty.
 \end{align*}
+$$
 
 **QED**
 
