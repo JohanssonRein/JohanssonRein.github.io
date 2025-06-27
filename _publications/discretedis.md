@@ -3,7 +3,7 @@ title: "Some Discrete Random Variables"
 collection: publications
 category: probability
 permalink: /publication/discretedis
-order: 4
+order: 5
 excerpt: 'We will investigate some famous discrete random variables'
 date: 2024-09-25
 venue: 'Fall'
