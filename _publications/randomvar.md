@@ -1,5 +1,5 @@
 ---
-title: "Random Variables and Distributions"
+title: "3. Random Variables and Distributions"
 collection: publications
 category: probability
 permalink: /publication/randomvar
