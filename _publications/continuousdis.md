@@ -68,7 +68,7 @@ $$
 
 # Exponential Distribution
 
-The exponential distribution is one of the widely used continuous distributions. It is often used to model the time elapsed between events. We will now mathematically define the exponential distribution, and derive its mean and expected value. Then we will develop the intuition for the distribution and discuss several interesting properties that it has.\\
+The exponential distribution is one of the widely used continuous distributions. It is often used to model the time elapsed between events. We will now mathematically define the exponential distribution, and derive its mean and expected value. Then we will develop the intuition for the distribution and discuss several interesting properties that it has.
 
 **Definition**
 
@@ -224,7 +224,7 @@ $$
 \mathbf{Var}(X) = \sigma^2 \mathbf{Var}(Z) = \sigma^2.
 $$
 
-And we say that $X$ is a normal random variable with mean $\mu$ and variance $\sigma^2$. We write $X \sim N(\mu,\sigma^2)$.\\
+And we say that $X$ is a normal random variable with mean $\mu$ and variance $\sigma^2$. We write $X \sim N(\mu,\sigma^2)$.
 
 **Definition**
 
@@ -263,7 +263,7 @@ $$
 
 
 
-An important property of the normal distribution is that a linear transformation of a normal random variable is itself a normal random variable.\\
+An important property of the normal distribution is that a linear transformation of a normal random variable is itself a normal random variable.
 
 **Theorem**
 
@@ -283,7 +283,7 @@ This follows trivially from the arguments shown above.
 
 # Gamma Distribution
 
-The gamma distribution is another widely used distribution. Its importance is largely due to its relation to exponential and normal distributions. Before introducing the gamma random variable, we need to introduce the gamma function.\\
+The gamma distribution is another widely used distribution. Its importance is largely due to its relation to exponential and normal distributions. Before introducing the gamma random variable, we need to introduce the gamma function.
 
 **Definition**
 
