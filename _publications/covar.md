@@ -151,9 +151,9 @@ $$
 
   $$
 \begin{align*}
-\Cov(X_i - \overline{X}, \overline{X}) &= \Cov(X_i, \overline{X}) - \Cov(\overline{X}, \overline{X}) \\
-&= \Cov \left( X_i, \frac{1}{n} \sum_{j=1}^n X_j \right) - \Var(\overline{X}) \\
-& = \frac{1}{n} \sum_{j=1}^n \Cov(X_i,X_j) - \frac{\sigma^2}{n}\\
+\mathbf{Cov}(X_i - \overline{X}, \overline{X}) &= \mathbf{Cov}(X_i, \overline{X}) - \mathbf{Cov}(\overline{X}, \overline{X}) \\
+&= \mathbf{Cov} \left( X_i, \frac{1}{n} \sum_{j=1}^n X_j \right) - \Var(\overline{X}) \\
+& = \frac{1}{n} \sum_{j=1}^n \mathbf{Cov}(X_i,X_j) - \frac{\sigma^2}{n}\\
 & = \frac{\sigma^2}{n} - \frac{\sigma^2}{n} \\
 &=0.
 \end{align*}
