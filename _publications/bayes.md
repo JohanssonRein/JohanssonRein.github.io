@@ -1,5 +1,5 @@
 ---
-title: "2. Conditional Probability and Bayes Theorem"
+title: "Conditional Probability and Bayes Theorem"
 collection: publications
 category: probability
 permalink: /publication/bayes
