@@ -1,5 +1,5 @@
 ---
-title: "6. Some Continuous Random Variables"
+title: "Some Continuous Random Variables"
 collection: publications
 category: probability
 permalink: /publication/continuousdis
