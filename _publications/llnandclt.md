@@ -165,10 +165,10 @@ $$
 converges in distribution to the standard normal random variable as $n$ goes to infinity, that is
 
 $$
-\lim_{n \to +\infty} \mathbb{P}\{ Z_n \leq x \} = \mathbb{P}hi(x) , \hspace{0.4cm} \forall x \in \mathbb{R}
+\lim_{n \to +\infty} \mathbb{P}\{ Z_n \leq x \} = \Phi(x) , \hspace{0.4cm} \forall x \in \mathbb{R}
 $$
 
-where $\mathbb{P}hi(x)$ is the standard normal CDF.
+where $\Phi(x)$ is the standard normal CDF.
 </div>
 
 
@@ -279,14 +279,14 @@ is approximately standard normal, thus to find $\mathbb{P}\{ y_1 \leq Y \leq Y_2
 $$
 \begin{align*}
 \mathbb{P}\{ y_1 \leq Y \leq Y_2 \} &= \mathbb{P} \left( \frac{y_1 - n \mu}{\sigma \sqrt{n}} \leq \frac{Y - n \mu}{\sigma \sqrt{n}} \leq \frac{y_2 - n \mu}{\sigma \sqrt{n}} \right) \\
-& \approx \mathbb{P}hi \left( \frac{y_2 - n \mu}{\sigma \sqrt{n}} \right) - \mathbb{P}hi \left( \frac{y_1 - n \mu}{\sigma \sqrt{n}} \right).
+& \approx \Phi \left( \frac{y_2 - n \mu}{\sigma \sqrt{n}} \right) - \Phi \left( \frac{y_1 - n \mu}{\sigma \sqrt{n}} \right).
 \end{align*}
 $$
 
-where $\mathbb{P}hi$ is the standard normal CDF given by
+where $\Phi$ is the standard normal CDF given by
 
 $$
-\mathbb{P}hi(x) = \int_{-\infty}^x \frac{1}{\sqrt{2\pi}} e^{-\frac{y^2}{2}} dy
+\Phi(x) = \int_{-\infty}^x \frac{1}{\sqrt{2\pi}} e^{-\frac{y^2}{2}} dy
 $$
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
@@ -317,7 +317,7 @@ $$
 By CLT, $\displaystyle{\frac{Y-n\mu}{\sigma\sqrt{n}}}$ is approximately standard normal, so we can write
 
 $$
-\mathbb{P}(90 < Y < 110) \approx \mathbb{P}hi(\sqrt{2}) - \mathbb{P}hi(-\sqrt{2}) = 0.8427.
+\mathbb{P}(90 < Y < 110) \approx \Phi(\sqrt{2}) - \Phi(-\sqrt{2}) = 0.8427.
 $$
   </div>
 </details>
@@ -355,7 +355,7 @@ $$
 \begin{align*}
 \mathbb{P}\{ Y > 120\} & = \mathbb{P} \left\{ \frac{Y - n\mu}{\sigma \sqrt{n}} > \frac{120 - n \mu}{\sigma \sqrt{n}}\right\} \\
 &= \mathbb{P}\left\{ \frac{Y - n\mu}{\sigma\sqrt{n}} > \frac{120-100}{90} \right\} \\
-&\approx 1 - \mathbb{P}hi\left(\frac{20}{\sqrt{90}} \right)\\
+&\approx 1 - \Phi\left(\frac{20}{\sqrt{90}} \right)\\
 &= 0.0175.
 \end{align*}
 $$
