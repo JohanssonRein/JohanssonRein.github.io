@@ -243,17 +243,12 @@ $$
  **Example:** Consider two random variables $X$ and $Y$ with joint probability mass function given by
 
 
-\begin{tabular}{ |c|c|c|c|} 
- \hline
- & $Y=2$ & $Y=4$ & $Y=5$\\
- \hline
- $X=1$ & $\frac{1}{12}$ & $\frac{1}{24}$ & $\frac{1}{24}$\\
- \hline
- $X=2$ & $\frac{1}{6}$ & $\frac{1}{12}$ & $\frac{1}{8} $\\
- \hline
- $X=3$ & $\frac{1}{4}$ & $\frac{1}{8}$ & $\frac{1}{12}$\\ 
- \hline
-\end{tabular}
+|           | $Y=2$           | $Y=4$           | $Y=5$           |
+|-----------|-----------------|-----------------|-----------------|
+| $X=1$     | $\frac{1}{12}$  | $\frac{1}{24}$  | $\frac{1}{24}$  |
+| $X=2$     | $\frac{1}{6}$   | $\frac{1}{12}$  | $\frac{1}{8}$   |
+| $X=3$     | $\frac{1}{4}$   | $\frac{1}{8}$   | $\frac{1}{12}$  |
+
 
 
 Find : (a) $\mathbb{P}\{ X \leq 2, Y \leq 4\}$ ; (b) The marginal probability mass functions of $X$ and $Y$; (c) $\mathbb{P}\{ Y =2 \vert X =1\}$ ; (d) Are $X,Y$ independent?
