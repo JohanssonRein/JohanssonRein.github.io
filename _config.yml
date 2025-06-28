@@ -87,7 +87,10 @@ publication_category:
   books:
     title: 'Books'
   statistics:
-    title: 'Statistics'    
+    title: 'Statistics'
+    description: >
+     This set of notes will feature the necessary and elementry knowledges of mathematical statistics, including basic theories of random samples, like sufficiency, completeness, etc. ; point estimation with different methods: Bayesian, Method of Moments, MLE, UMVUE; Confidence Interval and Hypothesis Testing.
+     It can be used as a good reference for MATH 357 (Honors Statistics) or MATH 324 (Statistics) for McGill University students.
   calculus:
     title: 'Calculus'
   differentialequations:
