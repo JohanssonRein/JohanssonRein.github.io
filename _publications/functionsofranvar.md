@@ -104,8 +104,7 @@ $$
 And we have
 
 $$
-f_{U,V}(u,v) = \begin{cases} \displaystyle{\frac{ue^{-\frac{u^2}{2}}}{\pi \sqrt{u^2 - v^2}} :  \vert v \vert < u} \\ \\ \text{\scshape{Does Not Exist}}: \text{otherwise} \end{cases}
-$$
+f_{U,V}(u,v) = \begin{cases} \displaystyle{\frac{ue^{-\frac{u^2}{2}}}{\pi \sqrt{u^2 - v^2}} :  \vert v \vert < u} \\ \\  \text{Does Not Exist}: \text{otherwise} \end{cases}
 
 
 Now we will find the distribution restricted to $U$ only, and we have
@@ -225,8 +224,10 @@ $$
 f_{X_1,X_2}(x_1,x_2) &= 1 \cdot \frac{U_1}{2\pi} = \frac{1}{2\pi} e^{-\frac{x_1^2 + x_2^2}{2}} \\
 & = \left( \frac{1}{\sqrt{2\pi}} e^{-x_1^2/2} \right)\left( \frac{1}{\sqrt{2\pi}} e^{-x_2^2/2} \right).
 \end{align*}
-And thus we have $X_1, X_2 \sim N(0,1)$, the standard normal distribution.
 $$
+
+And thus we have $X_1, X_2 \sim N(0,1)$, the standard normal distribution.
+
 </div>
 
 
