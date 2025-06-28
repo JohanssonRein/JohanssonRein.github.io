@@ -24,20 +24,25 @@ In this page, you may find several notes on different mathematics topics, notes 
 {% for category in site.publication_category %}
   {% assign filtered_posts = site.publications | where: "category", category[0] | sort: "order" %}
   {% if filtered_posts.size > 0 %}
-<details>
-  <summary>
-    <h2 style="display: inline;">{{ category[1].title }}</h2>
-  </summary>
+
+  <h2>{{ category[1].title }}</h2>
   {% if category[1].description %}
-    <p style="margin: 0.5em 0 0 0; font-size: 0.95em; color: #555;">{{ category[1].description | markdownify }}</p>
+    <p style="margin: 0 0 1em 0; font-size: 0.95em; color: #555;">
+      {{ category[1].description | markdownify }}
+    </p>
   {% endif %}
-  <hr />
-  {% for post in filtered_posts %}
-    {% include archive-single.html %}
-  {% endfor %}
-</details>
+
+  <details>
+    <summary style="cursor: pointer;">Show notes</summary>
+    <hr />
+    {% for post in filtered_posts %}
+      {% include archive-single.html %}
+    {% endfor %}
+  </details>
+
   {% endif %}
 {% endfor %}
+
 
 
 
