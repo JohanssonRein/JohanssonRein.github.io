@@ -22,11 +22,12 @@ $$
 </div>
 
 
+
 <div style="background-color: #ffd6e8; padding: 1em; border-left: 6px solid #ff66b2; border-radius: 8px; margin: 1em 0;">
   <strong>Corollary.</strong> If $X,Y$ are independent, then $\mathbf{Cov}(X,Y) = 0$.
 </div>
 
-
+<br><br>
 
 <details style="margin-top: 1em;">
     <summary style="font-weight: bold; color: #444; cursor: pointer;">Click to show/hide proof</summary>
@@ -81,6 +82,8 @@ $$
 -1 \leq \rho(X,Y) \leq 1
 $$
 </div>
+
+<br><br>
 
 <details style="margin-top: 1em;">
     <summary style="font-weight: bold; color: #444; cursor: pointer;">Click to show/hide proof</summary>
@@ -138,6 +141,8 @@ $$
 \overline{X} = \frac{\sum_{i=1}^n X_i}{n}.
 $$
 
+<br><br>
+
  <details style="margin-top: 1em;">
     <summary style="font-weight: bold; color: #444; cursor: pointer;">Click to show/hide solution</summary>
     <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
@@ -167,6 +172,7 @@ $$
 $$
 </div>
 
+<br><br>
 
 <details style="margin-top: 1em;">
   <summary style="font-weight: bold; color: #444; cursor: pointer;">
@@ -223,6 +229,7 @@ It shows that shifting and re-scaling of random variables does not change the co
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Example.</strong>  $N$ people sit around a round table ($N>5$). Each person will toss a fair coin. Anyone whose outcome is different from his/her two neighbors will receive a present. Let $X$ be the number of people who receives presents, find $\mathbb{E} X$ and $\mathbf{Var} X$.
 
+<br><br>
 
 <details style="margin-top: 1em;">
     <summary style="font-weight: bold; color: #444; cursor: pointer;">Click to show/hide solution</summary>
@@ -260,6 +267,8 @@ $$
 $$
 where $C_r = \begin{cases} 1: 0 \leq r \leq 1 \\ 2^{r-1} : r>1 \end{cases}$.
 </div>
+
+<br><br>
 
 <details style="margin-top: 1em;">
   <summary style="font-weight: bold; color: #444; cursor: pointer;">
