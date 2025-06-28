@@ -49,6 +49,8 @@ $$
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Example.</strong>  Suppose $Y_1,Y_2 \sim N(0,1)$ are independent random variables, find the probability density function of $\sqrt{Y_1^2 + Y_2^2}$.
 
+  <br><br>
+
 <details style="margin-top: 1em;">
     <summary style="font-weight: bold; color: #444; cursor: pointer;">Click to show/hide solution</summary>
     <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
@@ -137,6 +139,8 @@ Let's see another example:
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Example.</strong>  Suppose $X_1,X_2,X_3 \sim N(0,1)$ are independent standard normal random variables, and let $Y_1 = X_1+X_2+X_3, Y_2 = X_1-X_2, Y_3 = X_1-X_3$, find the joint density function of $Y_1,Y_2,Y_3$.
 
+  <br><br>
+
   <details style="margin-top: 1em;">
     <summary style="font-weight: bold; color: #444; cursor: pointer;">Click to show/hide solution</summary>
     <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
@@ -182,6 +186,8 @@ Another example:
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Example.</strong>  Suppose $U_1,U_2$ are random variables uniformly distributed on $(0,1)$, find the distribution function for $X_1$ and $X_2$ where $X_1 = \sin(2 \pi U_2) \sqrt{-2\ln(U_1)}, X_2 = \cos(2\pi U_2) \sqrt{-2 \ln(U_1)}$.
+
+  <br><br>
 
   <details style="margin-top: 1em;">
     <summary style="font-weight: bold; color: #444; cursor: pointer;">Click to show/hide solution</summary>
