@@ -73,7 +73,7 @@ $$
     If $\mathbf{Var}(X) = \sigma^2 < +\infty$, then we may apply Chebyshev's inequality directly:
 
 $$
-\P\{ \vert \overline{X} - \mu \vert \geq \epsilon \} \leq \frac{\mathbf{Var}(\overline{X})}{\epsilon^2} = \frac{\mathbf{Var}(X)}{n \epsilon^2} \to 0, \text{as $n \to +\infty$}.
+\mathbb{P}\{ \vert \overline{X} - \mu \vert \geq \epsilon \} \leq \frac{\mathbf{Var}(\overline{X})}{\epsilon^2} = \frac{\mathbf{Var}(X)}{n \epsilon^2} \to 0, \text{as $n \to +\infty$}.
 $$
 
   </div>
