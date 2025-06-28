@@ -17,7 +17,7 @@ citation: 'Jiajun Zhang, (2024) Multiple and Independent Random Variables'
 
 **Definition**
 
-The vector $\mathbf{X} = (X_1,X_2,\cdots,X_n)$ defined on $(\Omega,\mathcal{F},\P)$ into $\mathbb{R}^n$ by
+The vector $\mathbf{X} = (X_1,X_2,\cdots,X_n)$ defined on $(\Omega,\mathcal{F},\mathbb{P})$ into $\mathbb{R}^n$ by
 
 $$
 \mathbf{X}(\omega) = \{ X_1(\omega),X_2(\omega),\cdots,X_n(\omega) \}, \omega \in \Omega
@@ -30,7 +30,7 @@ is called an $n$-dimensional random variable if the inverse image of every $n$-d
 Let $\mathbf{X} = (X_1,X_2,\cdots,X_n)$ be a vector of random variables, and $\vec x = (x_1,x_2,\cdots,x_n)$, we define
 
 $$
-F_{\mathbf{X}}(\vec x) = \P\{ X_1 \leq x_1 ; X_2 \leq x_2; \cdots; X_n \leq x_n \}
+F_{\mathbf{X}}(\vec x) = \mathbb{P}\{ X_1 \leq x_1 ; X_2 \leq x_2; \cdots; X_n \leq x_n \}
 $$
 
 
@@ -45,10 +45,11 @@ And we claim the following:
 * $F_{\mathbf{X}} (+\infty,+\infty,\cdots,+\infty) = 1$;\\
 
 * Let $n=2$, $\forall \epsilon_1,\epsilon_2 >0$, we have
-* 
+ 
 $$
 F_{\mathbf{X}} (x_1 + \epsilon , x_2 + \epsilon) - F_{\mathbf{X}}(x_1+\epsilon,x_2) - F_{\mathbf{X}} (x_1,x_2+\epsilon_2) + F_{\mathbf{X}}(x_1,x_2) \geq 0
 $$
+
 This idea can also be generalized for $n\geq 2$.
 
 For better notation and simplification, we will discuss the case when $n=2$ from now on.
@@ -58,7 +59,7 @@ For better notation and simplification, we will discuss the case when $n=2$ from
 A $2$-dimensional random variable $(X,Y)$ is said to be of the discrete type if it takes on pairs of values belonging to a countable set $A$ with probability $1$. We define $ p_{ij} = (x_i,y_j)$ for every pair, and define
 
 $$
-p_{ij} = \P\{ X = x_i ; Y = y_j \}
+p_{ij} = \mathbb{P}\{ X = x_i ; Y = y_j \}
 $$
 
 to be the joint probability mass function of $(X,Y)$, the distribution function is given by
@@ -102,13 +103,13 @@ If $f$ is a non-negative function satisfying $\displaystyle{\int_{-\infty}^{+\in
 Suppose a $2$-dimensional random variable $(X,Y)$, assume it is of the continuous type, then we define
 
 $$
-F_1(x) = \P(X_1 \leq x) = F(x,+\infty) = \lim_{y \to \infty} F(x,y)
+F_1(x) = \mathbb{P}(X_1 \leq x) = F(x,+\infty) = \lim_{y \to \infty} F(x,y)
 $$
 
 and
 
 $$
-\lim_{y \to \infty} F(x,y) = \lim_{y \to \infty} \P \{ X \leq x, Y \leq y \}.
+\lim_{y \to \infty} F(x,y) = \lim_{y \to \infty} \mathbb{P} \{ X \leq x, Y \leq y \}.
 $$
 
 Likewise,
@@ -120,7 +121,7 @@ $$
 and
 
 $$
-\lim_{x \to \infty} F(x,y) = \lim_{x \to \infty} \P\{ X \leq x , Y \leq y \}
+\lim_{x \to \infty} F(x,y) = \lim_{x \to \infty} \mathbb{P}\{ X \leq x , Y \leq y \}
 $$
 
 Also we have
@@ -138,13 +139,13 @@ F(x ,+\infty) = \sum \sum_{(i,j)\in B} p_{ij}, \hspace{0.2cm} B = \{ (i,j) : X_i
 $$
 
 $$
-f_1(x_i) = \P(X = x_i) = \sum_{j=1}^{+\infty} \P(X = x_i), Y = y_j) = \sum_{j=1}^{+\infty} p_{ij} = p_{i \cdot}
+f_1(x_i) = \mathbb{P}(X = x_i) = \sum_{j=1}^{+\infty} \mathbb{P}(X = x_i), Y = y_j) = \sum_{j=1}^{+\infty} p_{ij} = p_{i \cdot}
 $$
 
 Likewise,
 
 $$
-f_2(y_j) = \P(Y = y_j) = \sum_{i=1}^{+\infty} p_{ij} = p_{\cdot j}
+f_2(y_j) = \mathbb{P}(Y = y_j) = \sum_{i=1}^{+\infty} p_{ij} = p_{\cdot j}
 $$
 
 Likewise, $p_{i \cdot}$ is called the marginal probability mass function of $X$, and $p_{\cdot j}$ is called the marginal probability mass function of $Y$.
@@ -155,7 +156,7 @@ $$
 f_{X,Y}(x,y) = \begin{cases} \frac{1}{\pi R^2} : x^2 + y^2 \leq R^2 \\ 0: \text{otherwise} \end{cases}
 $$
 
-Compute the marginal density functions of $X,Y$; compute the probability that $D$, the distance from the origin of the point selected, is less than or equal to $a$, where $a$ is a given constant. Finally find $\E(D)$.\\
+Compute the marginal density functions of $X,Y$; compute the probability that $D$, the distance from the origin of the point selected, is less than or equal to $a$, where $a$ is a given constant. Finally find $\mathbb{E}(D)$.\\
 
 **Solution:** The marginal distribution of $X$ is given by
 
@@ -179,7 +180,7 @@ Since the distace is always non-negative, thus we have
 
 $$
 \begin{align*}
-\P\{  \sqrt{X^2 + Y^2} \leq a \} &= \P\{ X^2 + Y^2 \leq a^2 \} \\
+\mathbb{P}\{  \sqrt{X^2 + Y^2} \leq a \} &= \mathbb{P}\{ X^2 + Y^2 \leq a^2 \} \\
 &= \iint_{x^2 + y^2 \leq a^2} f(x,y) dxdy\\
 & = \frac{1}{\pi R^2} \iint_{x^2+y^2 \leq a^2} dxdy\\
 & = \frac{\pi a^2}{\pi R^2} \\
@@ -196,18 +197,13 @@ $$
 Hence
 
 $$
-\E D = \frac{2}{R^2} \int_0^R a^2 da = \frac{2R}{3}
+\mathbb{E} D = \frac{2}{R^2} \int_0^R a^2 da = \frac{2R}{3}
 $$
 
 
 
 
-
-
-
-
-
-\textbf{Example:} Suppose $(X,Y)$ be jointly distributed with joint probability density function given by $f(x,y) = 2, 0<x<y<1$, and $f(x,y) = 0$ otherwise. Then we have
+**Example:** Suppose $(X,Y)$ be jointly distributed with joint probability density function given by $f(x,y) = 2, 0<x<y<1$, and $f(x,y) = 0$ otherwise. Then we have
 
 $$
 f_1(x) = \int_x^1 2 dy = \begin{cases} 2-2x, 0<x<1 \\ 0,\text{otherwise} \end{cases}
@@ -219,10 +215,10 @@ $$
 
 **Definition**
 
-Let $(X,Y)$ be a random variable of the discrete type, if $\P(Y = y_j) >0$, the function
+Let $(X,Y)$ be a random variable of the discrete type, if $\mathbb{P}(Y = y_j) >0$, the function
 
 $$
-p_{i \vert j} = \P(X = x_i \vert Y = y_j) = \frac{\P(X=x_i, Y = y_j)}{\P(Y = y_j)}
+p_{i \vert j} = \mathbb{P}(X = x_i \vert Y = y_j) = \frac{\mathbb{P}(X=x_i, Y = y_j)}{\mathbb{P}(Y = y_j)}
 $$
 
 for a fixed $j$ is known as the conditional probability mass function of $X$ given $Y = y_j$, a similar definition can also be given on $Y$
@@ -235,16 +231,16 @@ p_{i \vert j} = \frac{p_{ij}}{p_{\cdot j}}
 $$
 
 $$
-F_{X \vert Y} (x,y) = \P(X \leq x \vert Y = y) = \frac{\P(X \leq x, Y = y)}{\P(Y=y)}
+F_{X \vert Y} (x,y) = \mathbb{P}(X \leq x \vert Y = y) = \frac{\mathbb{P}(X \leq x, Y = y)}{\mathbb{P}(Y=y)}
 $$
 
 For a continuous random variable, we have
 
 $$
 \begin{align*}
-F_{X \vert Y} (x \vert y) &= \P (X \leq x \vert Y = y) \\
-& = \lim_{\epsilon \to 0+} \P (X \leq x \vert Y \in (y - \epsilon, y + \epsilon)) \\
-& = \lim_{\epsilon \to 0+} \frac{\P(X \leq x , Y \in (y-\epsilon, y+\epsilon))}{\P(Y \in (y - \epsilon, y+\epsilon))}\\
+F_{X \vert Y} (x \vert y) &= \mathbb{P} (X \leq x \vert Y = y) \\
+& = \lim_{\epsilon \to 0+} \mathbb{P} (X \leq x \vert Y \in (y - \epsilon, y + \epsilon)) \\
+& = \lim_{\epsilon \to 0+} \frac{\mathbb{P}(X \leq x , Y \in (y-\epsilon, y+\epsilon))}{\mathbb{P}(Y \in (y - \epsilon, y+\epsilon))}\\
 & = \lim_{\epsilon \to 0+} \left(  \frac{\displaystyle{\int_{-\infty}^x \int_{y-\epsilon}^{y+\epsilon} f(u,v) dudv}}{\displaystyle{\int_{y-\epsilon}^{y+\epsilon} f_2(v) dv}} \right)\\
 & = \frac{\displaystyle{\int_{-\infty}^x f(u,y) du}}{f_2(y)} = 
 \int_{-\infty}^x \frac{f(u,y)}{f_2(y)}du
@@ -264,12 +260,13 @@ is called the conditional probability density function of the random variable of
 The conditional probability distribution function for a random variable of the continuous type $X$ given $Y =y$ is given by
 
 $$
-F_{X \vert Y} (x \vert y) = \lim_{\epsilon \to 0^+} \P\{ X \leq x \vert Y \in (y-\epsilon,y+\epsilon] \}
+F_{X \vert Y} (x \vert y) = \lim_{\epsilon \to 0^+} \mathbb{P}\{ X \leq x \vert Y \in (y-\epsilon,y+\epsilon] \}
 $$
 
 
 
 **Theorem**
+
 Let $f$ be the joint probability density function of a random variable $(X,Y)$ of the continuous type. Let $f_2(y)$ be the marginal probability density function of $Y$. At every point $(x,y)$ which $f$ is continuous and $f_2(Y) >0$ and also continuous, the conditional probability density function of $X$ given $Y = y$ is given by
 
 $$
@@ -314,11 +311,11 @@ $$
 Now we also need to care about the bounds, since they might be tricky:
 
 $$
-\P \left\{ Y \geq \frac{1}{2} \Bigg\vert x = \frac{1}{2} \right\} = \int_{\frac{1}{2}}^1 \frac{1}{1 - \frac{1}{2}} dy = 1
+\mathbb{P} \left\{ Y \geq \frac{1}{2} \Bigg\vert x = \frac{1}{2} \right\} = \int_{\frac{1}{2}}^1 \frac{1}{1 - \frac{1}{2}} dy = 1
 $$
 
 $$
-\P\left\{ X \geq \frac{1}{3} \Bigg\vert y = \frac{2}{3} \right\} = \int_{\frac{1}{3}}^{\frac{2}{3}} \frac{1}{\frac{2}{3}}dx = \frac{1}{2}.
+\mathbb{P}\left\{ X \geq \frac{1}{3} \Bigg\vert y = \frac{2}{3} \right\} = \int_{\frac{1}{3}}^{\frac{2}{3}} \frac{1}{\frac{2}{3}}dx = \frac{1}{2}.
 $$
 
 
@@ -329,7 +326,7 @@ $$
 Given $X = \{ x_1,x_2,\cdots\}, Y = \{ x_1, x_2,\cdots \}$, we say that $X,Y$ are independent, if 
 
 $$
-\P(X = x_i , Y = y_j ) = \P(X = x_i) \P(Y = y_j)
+\mathbb{P}(X = x_i , Y = y_j ) = \mathbb{P}(X = x_i) \mathbb{P}(Y = y_j)
 $$
 
 for all $x_i \in X ,y_j \in Y$.
@@ -352,14 +349,14 @@ Let $X,Y$ be independent random variables, then we have $F_{Y \vert X}(y \vert x
 **Solution:** If we let $X,Y$ denote, respectively the time past $12$ that the man an the woman arrive, then $X,Y$ are independent random variables and each of which is uniformly distributed over $[0,60]$. The desired probability is given by
 
 $$
-\P\{ X + 10 < Y \} + \P\{ Y + 10 < X\}
+\mathbb{P}\{ X + 10 < Y \} + \mathbb{P}\{ Y + 10 < X\}
 $$
 
-And by symmetry, is just $2\P\{ X + 10 < Y\}$, thus we have
+And by symmetry, is just $2\mathbb{P}\{ X + 10 < Y\}$, thus we have
 
 $$
 \begin{align*}
-2\P\{ X+10<Y\} &= 2 \iint_{x+10<y} f(x,y) dxdy \\
+2\mathbb{P}\{ X+10<Y\} &= 2 \iint_{x+10<y} f(x,y) dxdy \\
 &= 2 \iint_{x+10<y} f_X(x) f_Y(y) dxdy\\
 & = 2 \int_{10}^{60} \int_{0}^{y-10} \left( \frac{1}{60} \right)^2 dxdy\\
 & = \frac{25}{36}.
@@ -378,131 +375,185 @@ A table is ruled with equidistant parallel lines with a distance $D$ apart. A ne
 **Solution:** 
 
 Let $X$ be the distance from the middle point of the needle to the nearest parallel line, and $\theta$ be the angle of the needle and the projected line of length $X$. Then by the construction, the needle will intersect the line if and only if
+
 $$
 \frac{X}{\cos(\theta)} < \frac{L}{2}
 $$
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\linewidth]{Screen Shot 2024-11-17 at 9.22.19 AM.png}
-    \caption{The graph illustrating when the needle will intersect}
-    \label{fig:enter-label}
-\end{figure}
 
 And we see that $X \in [0,D/2]$ and $\theta \in [0,\pi/2]$, so we may assume that they are independent, and uniformly distributed throughout their ranges, hence we have
+
+$$
 \begin{align*}
-\P \left\{ X < \frac{L}{2}\cos(\theta) \right\} &= \iint_{x < \frac{L}{2} \cos(y)} f_X(x) f_{\theta}{y} dxdy \\
+\mathbb{P} \left\{ X < \frac{L}{2}\cos(\theta) \right\} &= \iint_{x < \frac{L}{2} \cos(y)} f_X(x) f_{\theta}{y} dxdy \\
 & = \frac{4}{\pi D} \int_0^{\pi/2} \int_{0}^{\frac{L}{2} \cos(y)} dxdy\\
 & = \frac{2L}{\pi D}.
 \end{align*}
+$$
 
-\textbf{Example 3:} If random variables $X,Y,Z$ are independent and uniformly distributed over $[0,1]$, compute $\P \{ X \geq YZ \}$.\\
+**Example:** If random variables $X,Y,Z$ are independent and uniformly distributed over $[0,1]$, compute $\mathbb{P} \{ X \geq YZ \}$.
 
-\textbf{Solution:} Since
+**Solution:** 
+
+Since
+
 $$
 f_{X,Y,Z} (x,y,z) = f_X(x) f_Y(y)f_Z(z) = 1, \hspace{0.1cm} (x,y,z) \in [0,1]^3,
 $$
+
 so we have
+
+$$
 \begin{align*}
-\P\{ X \geq YZ \} &= \iiint_{x \geq yz} f_{X,Y,Z}(x,y,z) dxdydz \\
+\mathbb{P}\{ X \geq YZ \} &= \iiint_{x \geq yz} f_{X,Y,Z}(x,y,z) dxdydz \\
 &= \int_{0}^1 \int_0^1 \int_{yz}^1 dxdydz\\
 &=\frac{3}{4}.
 \end{align*}
+$$
 
 Suppose $X,Y$ are independent random variables, we also want to find the probability distribution of $X+Y$. We have
+
+$$
 \begin{align*}
-F_{X+Y}(a) &= \P\{ X + Y \leq a\}\\
+F_{X+Y}(a) &= \mathbb{P}\{ X + Y \leq a\}\\
 &=\iint_{x+y\leq a} f_X(x) f_Y(y) dxdy\\
 &= \int_{-\infty}^{+\infty} \int_{-\infty}^{a-y} f_X(x) f_Y(y) dxdy\\
 & = \int_{-\infty}^{+\infty} \int_{-\infty}^{a-y} f_X(x) dx f_Y(y)dy\\
 &= \int_{-\infty}^{+\infty} F_X(a-y) f_Y(y)dy
 \end{align*}
+$$
 
 The cumulative distribution function $F_{X+Y}$ is called the convolution of the distributions $F_X$ and $F_Y$, by differentiating the equation, we get
+
 $$
 f_{X+Y}(a) = \int_{-\infty}^{+\infty} f_X(a-y) f_Y(y) dy
 $$
 
 
-\textbf{Example 4:} Suppose $X,Y$ are independent random variables both uniformly distributed on $[0,1]$, find the probability density function of $X+Y$.\\
+**Example:** Suppose $X,Y$ are independent random variables both uniformly distributed on $[0,1]$, find the probability density function of $X+Y$.
 
-\textbf{Solution:} We know that
+**Solution:** We know that
+
 $$
 f_X(a) = f_Y(a) = \begin{cases} 1, 0<a<1 \\ 0, \text{otherwise} \end{cases},
 $$
+
 so we have
+
 $$
 f_{X+Y}(a) = \int_0^1 f_X(a-y) f_Y(y) dy = \int_0^1 f_X(a-y) dy
 $$
+
 For $0 \leq a \leq 1$, we have
+
 $$
 f_{X+Y}(a) = \int_0^a dy = a
 $$
+
 and for $1 \leq a \leq 2$, we have
+
 $$
 f_{X+Y}(a) = \int_{a-1}^1 dy = 2-a
 $$
+
 Hence
+
 $$
 f_{X+Y}(a) = \begin{cases} a, 0 \leq a \leq 1 \\ 2 - a , 1<a<2 \\ 0, \text{otherwise} \end{cases}.
 $$
 
 **Corollary**
-Suppose $X_1,X_2,\cdots,X_n$ are independent random variables uniformly distributed on $[0,1]$, and let $F_n(x) = \P\{ X_1 + X_2 + \cdots +X_n \leq x \}$, then 
+
+Suppose $X_1,X_2,\cdots,X_n$ are independent random variables uniformly distributed on $[0,1]$, and let $F_n(x) = \mathbb{P}\{ X_1 + X_2 + \cdots +X_n \leq x \}$, then 
+
 $$
 F_n(x) = \frac{x^n}{n!}, \hspace{0.2cm} \text{when $0 \leq x \leq 1$}
 $$
-\end{corollary}
+
 
 **Proof**
-This can be done by using induction.
-\end{proof}
 
-Based on example $4$, what is the expected number of $n$ such that $X_1+X_2+\cdots+X_n >1$? That is, we want to find
+This can be done by using induction.
+
+**QED**
+
+Based on example above, what is the expected number of $n$ such that $X_1+X_2+\cdots+X_n >1$? That is, we want to find
+
 $$
 N := \min \{ n : X_1 + X_2+ \cdots+X_n > 1 \}
 $$
+
 Note that $N > n$ if and only if $X_1+X_2+\cdots+X_n \leq 1$, so
+
 $$
-\P\{ N > n\} = F_n(1) = \frac{1}{n!}, \hspace{0.2cm} n>0,
+\mathbb{P}\{ N > n\} = F_n(1) = \frac{1}{n!}, \hspace{0.2cm} n>0,
 $$
+
 thus
+
 $$
-\P\{ N = n\} = \P\{ N > n-1\} - \P\{ N >n\} = \frac{1}{(n-1)!} - \frac{1}{n!} = \frac{n-1}{n!}
+\mathbb{P}\{ N = n\} = \mathbb{P}\{ N > n-1\} - \mathbb{P}\{ N >n\} = \frac{1}{(n-1)!} - \frac{1}{n!} = \frac{n-1}{n!}
 $$
+
 Therefore 
+
 $$
-\E(N) = \sum_{n=1}^{+\infty} \frac{n(n-1)}{n!} = \sum_{n=2}^{+\infty} \frac{1}{(n-2)!} = e.
+\mathbb{E}(N) = \sum_{n=1}^{+\infty} \frac{n(n-1)}{n!} = \sum_{n=2}^{+\infty} \frac{1}{(n-2)!} = e.
 $$
 
 
 
 The sum of the independent random variables can also be calculated using moment generating functions. Suppose $X_1,X_2,\cdots,X_n$ are $n$ independent random variables and
+
 $$
 Y = X_1+X_2+\cdots+X_n
 $$
+
 Then
+
+$$
 \begin{align*}
-M_Y(s) &= \E[ e^{sY} ] \\
-& = \E[ e^{s(X_1+\cdots+X_n)}]\\
-&= \E[ e^{sX_1} e^{sX_2} \cdots e^{sX_n}\\
-&= \E[e^{sX_1}] \cdots \E[e^{sX_n}]\\
+M_Y(s) &= \mathbb{E}[ e^{sY} ] \\
+& = \mathbb{E}[ e^{s(X_1+\cdots+X_n)}]\\
+&= \mathbb{E}[ e^{sX_1} e^{sX_2} \cdots e^{sX_n}\\
+&= \mathbb{E}[e^{sX_1}] \cdots \mathbb{E}[e^{sX_n}]\\
 &= M_{X_1}(s) \cdots M_{X_n}(s).
 \end{align*}
+$$
 
-This important application can be used to find the moment generating function for a binomial random variable. Suppose $X \sim Binomial(n,p)$, then we know that 
+This important application can be used to find the moment generating function for a binomial random variable. Suppose $X \sim Binomial(n,p)$, then we know that
+
 $$
 X = X_1+X_2+\cdots+X_n
 $$
+
 where $X_i \sim Bernoulli(p)$, thus
+
 $$
 M_X(s) = M_{X_1}(s) \cdots M_{X_n}(s)
 $$
+
 where
+
 $$
-M_{X_i}(s) = \E[e^{sX_i}] = pe^s + 1-p
+M_{X_i}(s) = \mathbb{E}[e^{sX_i}] = pe^s + 1-p
 $$
+
 So 
+
 $$
 M_X(s) = (pe^s+1-p)^n.
 $$
+
+
+
+
+
+
+
+
+
+
+
+
+
