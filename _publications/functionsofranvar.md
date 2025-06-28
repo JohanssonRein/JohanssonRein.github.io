@@ -105,7 +105,7 @@ And we have
 
 $$
 f_{U,V}(u,v) = \begin{cases} \displaystyle{\frac{ue^{-\frac{u^2}{2}}}{\pi \sqrt{u^2 - v^2}} :  \vert v \vert < u} \\ \\  \text{Does Not Exist}: \text{otherwise} \end{cases}
-
+$$
 
 Now we will find the distribution restricted to $U$ only, and we have
 
