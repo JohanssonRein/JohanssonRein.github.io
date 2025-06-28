@@ -282,7 +282,8 @@ $$
 \vert a + b \vert^r \leq C_r [ \vert a \vert^r + \vert b \vert^r ].
 $$
 
-**QED**
+</div>
+</div>details>
 
 <div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
   <strong>Theorem.</strong> (Hölder's Inequality)
