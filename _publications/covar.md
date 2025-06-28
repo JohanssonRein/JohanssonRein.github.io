@@ -44,13 +44,13 @@ So we have $\mathbb{E}(XY) = \mathbb{E}(X)\mathbb{E}(Y)$, which finishes the pro
 <div style="background-color: #ffd6e8; padding: 1em; border-left: 6px solid #ff66b2; border-radius: 8px; margin: 1em 0;">
   <strong>Corollary.</strong> We also have the following propositions for covariance:
 
-* $\mathbf{Cov}(Y,X) = \mathbf{Cov}(X,Y)$;
+1. $\mathbf{Cov}(Y,X) = \mathbf{Cov}(X,Y)$;
 
-* $\mathbf{Cov}(X,X) = \mathbf{Var}(X)$;
+2. $\mathbf{Cov}(X,X) = \mathbf{Var}(X)$;
 
-* $\mathbf{Cov}(aX,Y) = a \mathbf{Cov}(X,Y)$;
+3. $\mathbf{Cov}(aX,Y) = a \mathbf{Cov}(X,Y)$;
 
-* $\displaystyle{\mathbf{Cov} \left( \sum_{i=1}^n X_i, \sum_{j=1}^m Y_j \right) = \sum_{i=1}^n \sum_{j=1}^m \mathbf{Cov}(X_i,Y_j)}$
+4. $\displaystyle{\mathbf{Cov} \left( \sum_{i=1}^n X_i, \sum_{j=1}^m Y_j \right) = \sum_{i=1}^n \sum_{j=1}^m \mathbf{Cov}(X_i,Y_j)}$
 </div>
 
 
@@ -123,8 +123,8 @@ value of $\rho(X, Y)$ indicates that $Y$ tends to increase when $X$ does, wherea
   
 $$
 \mathbf{Cov}(X_i - \overline{X}, \overline{X}) = 0
-
 $$
+
 where $\overline{X}$ is called the sample mean, denoted by
 
 $$
@@ -238,6 +238,7 @@ where $C_r = \begin{cases} 1: 0 \leq r \leq 1 \\ 2^{r-1} : r>1 \end{cases}$.
 **Proof:**
 
 This follows from the fact that 
+
 $$
 \vert a + b \vert^r \leq C_r [ \vert a \vert^r + \vert b \vert^r ].
 $$
