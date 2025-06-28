@@ -118,8 +118,8 @@ and the cumulative distribution function of $X_{(j)}$ is given by
 
 $$
 F_{X_{(j)}}(y) = \frac{n!}{(n-j)!(j-1)!} \int_{-\infty}^y [F(x)]^{j-1} [1-F(x)]^{n-j}f(x)dx
-
 $$
+
 However by definition we also have
 
 $$
