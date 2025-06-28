@@ -2,7 +2,7 @@
 title: "Multiple and Independent Random Variables"
 collection: publications
 category: probability
-permalink: /publication/multiranvar.md
+permalink: /publication/multiranvar
 excerpt: 'We will investigate multiple random variables and independent random variables'
 date: 2024-09-25
 order: 7
