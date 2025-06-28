@@ -96,7 +96,7 @@ publication_category:
     title: 'Probability'
     description: >
      This set of notes will feature a undergraduate level, introductory level class to probability theory. Where elementry measure theory will be introduced but still covers all aspects of probability theory. This set of notes are at the same level for MATH 356 (Honors Probability) 
-     in McGill University and can be used as a good reference for self study. It can also be used for MATH 323 (Probability) when ignoring some higher-level topics. All the notes are separated from ([my own notes here](files/Intro_to_Probability.pdf)) and the reader can check for this full notes 
+     in McGill University and can be used as a good reference for self study. It can also be used for MATH 323 (Probability) when ignoring some higher-level topics. All the notes are separated from ([my own notes here](files/Intro_to_probability.pdf)) and the reader can check for this full notes 
      for further reference.
   linearalgebra:
     title: 'Linear Algebra'
