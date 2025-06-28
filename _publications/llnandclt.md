@@ -12,6 +12,8 @@ venue: 'Fall'
 citation: 'Jiajun Zhang, (2024) Laws of Large Numbers and Central Limit Theorem'
 --- 
 
+
+
 # Law of Large Numbers
 
 The law of large numbers has a very central role in probability and statistics. It states that if you repeat an experiment independently a large number of times and average the result, what you obtain should be close to the expected value. There are two main versions of the law of large numbers. They are called the weak and strong laws of the large numbers. The difference between them is mostly theoretical. In this section, we state and prove the weak law of large numbers (WLLN).  Before discussing the WLLN, let us define the sample mean.
