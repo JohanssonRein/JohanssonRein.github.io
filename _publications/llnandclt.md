@@ -3,7 +3,7 @@ title: "Laws of Large Numbers and Central Limit Theorem"
 collection: publications
 category: probability
 permalink: /publication/llnandclt
-excerpt: 'We will investigate 'Laws of Large Numbers and Central Limit Theorem'
+excerpt: 'We will investigate Laws of Large Numbers and Central Limit Theorem'
 date: 2024-10-15
 order: 12
 venue: 'Fall'
