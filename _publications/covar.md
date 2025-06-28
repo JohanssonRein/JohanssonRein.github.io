@@ -50,7 +50,7 @@ So we have $\mathbb{E}(XY) = \mathbb{E}(X)\mathbb{E}(Y)$, which finishes the pro
 
 * $\mathbf{Cov}(aX,Y) = a \mathbf{Cov}(X,Y)$;
 
-* $\displaystyle{\Cov \left( \sum_{i=1}^n X_i, \sum_{j=1}^m Y_j \right) = \sum_{i=1}^n \sum_{j=1}^m \Cov(X_i,Y_j)}$
+* $\displaystyle{\mathbf{Cov} \left( \sum_{i=1}^n X_i, \sum_{j=1}^m Y_j \right) = \sum_{i=1}^n \sum_{j=1}^m \mathbf{Cov}(X_i,Y_j)}$
 </div>
 
 
@@ -59,7 +59,7 @@ So we have $\mathbb{E}(XY) = \mathbb{E}(X)\mathbb{E}(Y)$, which finishes the pro
 The proofs are left as an exercise. One important remark is that we have
 
 $$
-\mathbf{Var}\left( \sum_{i=1}^n X_i \right) = \sum_{i=1}^n \mathbf{Var}(X_i) + 2 \sum \sum_{i<j} \Cov(X_i,X_j).
+\mathbf{Var}\left( \sum_{i=1}^n X_i \right) = \sum_{i=1}^n \mathbf{Var}(X_i) + 2 \sum \sum_{i<j} \mathbf{Cov}(X_i,X_j).
 $$
 
 
@@ -67,7 +67,7 @@ $$
   <strong>Definition.</strong> The correlation of two random variables $X,Y$ denoted by $\rho(X,Y)$, is defined as long as $\mathbf{Var}(X), \mathbf{Var}(Y)$ is positive, is defined by
   
 $$
-\rho(X,Y) = \frac{\Cov(X,Y)}{\sqrt{\mathbf{Var}(X) \mathbf{Var}(Y)}}
+\rho(X,Y) = \frac{\mathbf{Cov}(X,Y)}{\sqrt{\mathbf{Var}(X) \mathbf{Var}(Y)}}
 $$
 </div>
 
@@ -86,7 +86,7 @@ Suppose $X,Y$ have variances given by $\sigma_x^2, \sigma_y^2$ respectively, the
 $$
 \begin{align*}
 0 &\leq \mathbf{Var} \left( \frac{X}{\sigma_x} + \frac{Y}{\sigma_y} \right)\\
-&= \frac{\mathbf{Var}(X)}{\sigma_x^2} + \frac{\mathbf{Var}(Y)}{\sigma_y^2} + \frac{2 \Cov(X,Y)}{\sigma_x \sigma_y} \\
+&= \frac{\mathbf{Var}(X)}{\sigma_x^2} + \frac{\mathbf{Var}(Y)}{\sigma_y^2} + \frac{2 \mathbf{Cov}(X,Y)}{\sigma_x \sigma_y} \\
 & = 2[1 + \rho(X,Y)]
 \end{align*}
 $$
@@ -102,7 +102,7 @@ On the other hand,
 $$
 \begin{align*}
 0 &\leq \mathbf{Var} \left( \frac{X}{\sigma_x} - \frac{Y}{\sigma_y} \right)\\
-&= \frac{\mathbf{Var}(X)}{\sigma_x^2} + \frac{\mathbf{Var}(Y)}{\sigma_y^2}  -\frac{2 \Cov(X,Y)}{\sigma_x \sigma_y} \\
+&= \frac{\mathbf{Var}(X)}{\sigma_x^2} + \frac{\mathbf{Var}(Y)}{\sigma_y^2}  -\frac{2 \mathbf{Cov}(X,Y)}{\sigma_x \sigma_y} \\
 & = 2[1 - \rho(X,Y)]
 \end{align*}
 $$
@@ -122,7 +122,7 @@ value of $\rho(X, Y)$ indicates that $Y$ tends to increase when $X$ does, wherea
   <strong>Example.</strong>  Let $X_1,X_2,\cdots,X_n$ be independent and identically distributed random variables having variance $\sigma^2$, show that
   
 $$
-\Cov(X_i - \overline{X}, \overline{X}) = 0
+\mathbf{Cov}(X_i - \overline{X}, \overline{X}) = 0
 
 $$
 where $\overline{X}$ is called the sample mean, denoted by
@@ -135,9 +135,9 @@ $$
 
 $$
 \begin{align*}
-\Cov(X_i - \overline{X}, \overline{X}) &= \Cov(X_i, \overline{X}) - \Cov(\overline{X}, \overline{X}) \\
-&= \Cov \left( X_i, \frac{1}{n} \sum_{j=1}^n X_j \right) - \mathbf{Var}(\overline{X}) \\
-& = \frac{1}{n} \sum_{j=1}^n \Cov(X_i,X_j) - \frac{\sigma^2}{n}\\
+\mathbf{Cov}(X_i - \overline{X}, \overline{X}) &= \mathbf{Cov}(X_i, \overline{X}) - \mathbf{Cov}(\overline{X}, \overline{X}) \\
+&= \mathbf{Cov} \left( X_i, \frac{1}{n} \sum_{j=1}^n X_j \right) - \mathbf{Var}(\overline{X}) \\
+& = \frac{1}{n} \sum_{j=1}^n \mathbf{Cov}(X_i,X_j) - \frac{\sigma^2}{n}\\
 & = \frac{\sigma^2}{n} - \frac{\sigma^2}{n} \\
 &=0.
 \end{align*}
@@ -186,10 +186,10 @@ So
 
 $$
 \begin{align*}
-\rho(X',Y') & = \frac{\Cov(X',Y')}{\sigma_{X'} \sigma_{Y'}}\\
+\rho(X',Y') & = \frac{\mathbf{Cov}(X',Y')}{\sigma_{X'} \sigma_{Y'}}\\
 & = \frac{\mathbb{E}[(X' - \mu_{X'})(Y' - \mu_{Y'})]}{\sigma_{X'} \sigma_{Y'}} \\
-& = \frac{ac \Cov(X,Y)}{\sigma_{X'} \sigma_{Y'}}\\
-& = \frac{ac\Cov(X,Y)}{(a\sigma_X)(c\sigma_Y)} \\
+& = \frac{ac \mathbf{Cov}(X,Y)}{\sigma_{X'} \sigma_{Y'}}\\
+& = \frac{ac\mathbf{Cov}(X,Y)}{(a\sigma_X)(c\sigma_Y)} \\
 & = \rho(X,Y).
 \end{align*}
 $$
@@ -270,7 +270,7 @@ $$
   <strong>Corollary.</strong> Let $X,Y$ be random variables, then
   
 $$
-\vert \Cov(X,Y) \vert \leq \sigma_{X} \cdot \sigma_{Y}
+\vert \mathbf{Cov}(X,Y) \vert \leq \sigma_{X} \cdot \sigma_{Y}
 $$
 
 where we define
