@@ -27,9 +27,12 @@ $$
 </div>
 
 
-**Proof:**
 
-Since $X,Y$ are independent, so for any functions $h,g$, we have
+<details style="margin-top: 1em;">
+    <summary style="font-weight: bold; color: #444; cursor: pointer;">Click to show/hide proof</summary>
+    <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+      <strong>Proof.</strong><br>
+      Since $X,Y$ are independent, so for any functions $h,g$, we have
   
 $$
 \mathbb{E}\{ g(X)h(Y) \} = \mathbb{E}\{ g(X) \} \mathbb{E}\{ h(Y) \}
@@ -37,7 +40,8 @@ $$
 
 So we have $\mathbb{E}(XY) = \mathbb{E}(X)\mathbb{E}(Y)$, which finishes the proof.
 
-**QED**
+  </div>
+  </details>
 
 
 
@@ -52,7 +56,6 @@ So we have $\mathbb{E}(XY) = \mathbb{E}(X)\mathbb{E}(Y)$, which finishes the pro
 
 4. $\displaystyle{\mathbf{Cov} \left( \sum_{i=1}^n X_i, \sum_{j=1}^m Y_j \right) = \sum_{i=1}^n \sum_{j=1}^m \mathbf{Cov}(X_i,Y_j)}$
 </div>
-
 
 
 
@@ -79,9 +82,11 @@ $$
 $$
 </div>
 
-**Proof:**
-
-Suppose $X,Y$ have variances given by $\sigma_x^2, \sigma_y^2$ respectively, then on the one hand,
+<details style="margin-top: 1em;">
+    <summary style="font-weight: bold; color: #444; cursor: pointer;">Click to show/hide proof</summary>
+    <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+      <strong>Proof.</strong><br>
+     Suppose $X,Y$ have variances given by $\sigma_x^2, \sigma_y^2$ respectively, then on the one hand,
 
 $$
 \begin{align*}
@@ -112,8 +117,10 @@ implying that
 $$
 \rho(X,Y) \leq 1.
 $$
+  </div>
+  </details>
 
-**QED**
+
 
 The correlation coefficient is a measure of the degree of linearity between $X$ and $Y$. A value of $\rho(X,Y)$ near $+1$ or $-1$ indicates a high degree of linearity between $X$ and $Y$, whereas a value near $0$ indicates that such linearity is absent. A positive
 value of $\rho(X, Y)$ indicates that $Y$ tends to increase when $X$ does, whereas a negative value indicates that $Y$ tends to decrease when $X$ increases. If $\rho(X,Y) = 0$, then $X$ and $Y$ are said to be uncorrelated.
@@ -131,17 +138,24 @@ $$
 \overline{X} = \frac{\sum_{i=1}^n X_i}{n}.
 $$
 
-Solution: We have
+ <details style="margin-top: 1em;">
+    <summary style="font-weight: bold; color: #444; cursor: pointer;">Click to show/hide solution</summary>
+    <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+      <strong>Solution.</strong><br>
+      We have
 
-$$
+  $$
 \begin{align*}
-\mathbf{Cov}(X_i - \overline{X}, \overline{X}) &= \mathbf{Cov}(X_i, \overline{X}) - \mathbf{Cov}(\overline{X}, \overline{X}) \\
-&= \mathbf{Cov} \left( X_i, \frac{1}{n} \sum_{j=1}^n X_j \right) - \mathbf{Var}(\overline{X}) \\
-& = \frac{1}{n} \sum_{j=1}^n \mathbf{Cov}(X_i,X_j) - \frac{\sigma^2}{n}\\
+\Cov(X_i - \overline{X}, \overline{X}) &= \Cov(X_i, \overline{X}) - \Cov(\overline{X}, \overline{X}) \\
+&= \Cov \left( X_i, \frac{1}{n} \sum_{j=1}^n X_j \right) - \Var(\overline{X}) \\
+& = \frac{1}{n} \sum_{j=1}^n \Cov(X_i,X_j) - \frac{\sigma^2}{n}\\
 & = \frac{\sigma^2}{n} - \frac{\sigma^2}{n} \\
 &=0.
 \end{align*}
 $$
+    </div>
+  </details>
+
 </div>
 
 
@@ -154,8 +168,13 @@ $$
 </div>
 
 
-**Proof**
-If we denote $\mu_X = \mathbb{E} X, \mu_Y = \mathbb{E} Y$, then we have
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide proof
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Proof.</strong><br>
+    If we denote $\mu_X = \mathbb{E} X, \mu_Y = \mathbb{E} Y$, then we have
 
 $$
 \mathbb{E} X' = a\mathbb{E} X + b = a \mu_X + b
@@ -194,19 +213,22 @@ $$
 \end{align*}
 $$
 
-**QED**
+</div>
+</details>
+
 
 It shows that shifting and re-scaling of random variables does not change the correlation.
-
 
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Example.</strong>  $N$ people sit around a round table ($N>5$). Each person will toss a fair coin. Anyone whose outcome is different from his/her two neighbors will receive a present. Let $X$ be the number of people who receives presents, find $\mathbb{E} X$ and $\mathbf{Var} X$.
 
 
-Solution:
-
-Number those $N$ people from $1$ to $N$, let $X_i$ be the random variable defined as
+<details style="margin-top: 1em;">
+    <summary style="font-weight: bold; color: #444; cursor: pointer;">Click to show/hide solution</summary>
+    <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+      <strong>Solution.</strong><br>
+     Number those $N$ people from $1$ to $N$, let $X_i$ be the random variable defined as
 
 $$
 X_i = \begin{cases} 1:\text{if the person receives the present} \\ 0: \text{otherwise} \end{cases}
@@ -223,6 +245,10 @@ and then by linearity we have
 $$
 \mathbb{E} X = \mathbb{E} X_1 + \cdots +\mathbb{E} X_n = \frac{N}{4}.
 $$
+
+The variance is left as an exercise.
+    </div>
+  </details>
 </div>
 
 
@@ -235,10 +261,13 @@ $$
 where $C_r = \begin{cases} 1: 0 \leq r \leq 1 \\ 2^{r-1} : r>1 \end{cases}$.
 </div>
 
-
-**Proof:**
-
-This follows from the fact that 
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide proof
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Proof.</strong><br>
+    This follows from the fact that 
 
 $$
 \vert a + b \vert^r \leq C_r [ \vert a \vert^r + \vert b \vert^r ].
@@ -264,6 +293,9 @@ If we take $p=q=2$, we will get a special case of Hölder's inequality, which is
 $$
 \mathbb{E} \vert X Y \vert \leq \sqrt{\mathbb{E}\vert X \vert^2} \cdot \sqrt{\mathbb{E}\vert Y \vert^2}
 $$
+  </div>
+</details>
+
 </div>
 
 
