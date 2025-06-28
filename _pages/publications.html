@@ -27,15 +27,14 @@ In this page, you may find several notes on different mathematics topics, notes 
 <details>
   <summary>
     <h2 style="display: inline;">{{ category[1].title }}</h2>
-    {% if category[1].description %}
-      <p style="margin: 0.5em 0 0 0; font-size: 0.95em; color: #555;">{{ category[1].description | markdownify }}</p>
-    {% endif %}
   </summary>
+  {% if category[1].description %}
+    <p style="margin: 0.5em 0 0 0; font-size: 0.95em; color: #555;">{{ category[1].description | markdownify }}</p>
+  {% endif %}
   <hr />
-
-    {% for post in filtered_posts %}
-      {% include archive-single.html %}
-    {% endfor %}
+  {% for post in filtered_posts %}
+    {% include archive-single.html %}
+  {% endfor %}
 </details>
   {% endif %}
 {% endfor %}
