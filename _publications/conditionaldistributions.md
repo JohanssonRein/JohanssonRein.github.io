@@ -242,7 +242,7 @@ $$
 
  **Example:** Consider two random variables $X$ and $Y$ with joint probability mass function given by
 
-$$
+
 \begin{tabular}{ |c|c|c|c|} 
  \hline
  & $Y=2$ & $Y=4$ & $Y=5$\\
@@ -254,7 +254,7 @@ $$
  $X=3$ & $\frac{1}{4}$ & $\frac{1}{8}$ & $\frac{1}{12}$\\ 
  \hline
 \end{tabular}
-$$
+
 
 Find : (a) $\mathbb{P}\{ X \leq 2, Y \leq 4\}$ ; (b) The marginal probability mass functions of $X$ and $Y$; (c) $\mathbb{P}\{ Y =2 \vert X =1\}$ ; (d) Are $X,Y$ independent?
 
