@@ -43,7 +43,7 @@ Since for any permutation $(i_1,i_2,\cdots,i_n) \in S_n$,
 
 $$
 \begin{align*}
-&\P \left\{ x_{i_1} - \frac{\epsilon}{2} < X_1 < x_{i_1} + \frac{\epsilon}{2}, \cdots,x_{i_n} < X_n < x_{i_n} + \frac{\epsilon}{2} \right\}\\
+&\mathbb{P} \left\{ x_{i_1} - \frac{\epsilon}{2} < X_1 < x_{i_1} + \frac{\epsilon}{2}, \cdots,x_{i_n} < X_n < x_{i_n} + \frac{\epsilon}{2} \right\}\\
 &\approx \epsilon^n f_{X_1,X_2,\cdots,X_n}(x_{i_1}, x_{i_2}, \cdots, x_{i_n})\\
 &= \epsilon^n f(x_1) \cdots f(x_n)
 \end{align*}
@@ -54,7 +54,7 @@ it follows that for $x_1 < x_2 < \cdots < x_n$,
 
 $$
 \begin{align*}
-&\P \left\{ x_1 - \frac{\epsilon}{2} < X_{(1)} < x_1 + \frac{\epsilon}{2}, \cdots,x_n < X_{(n)} < x_n + \frac{\epsilon}{2} \right\}\\
+&\mathbb{P} \left\{ x_1 - \frac{\epsilon}{2} < X_{(1)} < x_1 + \frac{\epsilon}{2}, \cdots,x_n < X_{(n)} < x_n + \frac{\epsilon}{2} \right\}\\
 & \approx n! \epsilon^n f(x_1) \cdots f(x_n)
 \end{align*}
 $$
@@ -71,7 +71,7 @@ $$
 **Solution:** Assume the the positions of the $3$ people are independent and uniformly distributed over the road, if $X_i$ denote the position of the $i$th person, the desired probability is given by
 
 $$
-\P \{ X_{(i)} > X_{(i-1)} + d, i = 2,3 \}
+\mathbb{P} \{ X_{(i)} > X_{(i-1)} + d, i = 2,3 \}
 $$
 
 and we have
@@ -84,7 +84,7 @@ Thus
 
 $$
 \begin{align*}
-\P\{ X_{(i)} > X_{(i-1)} + d, i =2,3 \} &= \iiint_{x_i > x_{j-1}+d} f_{X_{(1)}, X_{(2)}, X_{(3)}} (x_1,x_2,x_3) dx_1dx_2dx_3 \\
+\mathbb{P}\{ X_{(i)} > X_{(i-1)} + d, i =2,3 \} &= \iiint_{x_i > x_{j-1}+d} f_{X_{(1)}, X_{(2)}, X_{(3)}} (x_1,x_2,x_3) dx_1dx_2dx_3 \\
 & = 3! \int_0^{1-2d} \int_{x_1+d}^{1-d} \int_{x_2+d}^1 dx_3dx_2dx_1\\
 &= (1-2d)^3
 \end{align*}
@@ -124,7 +124,7 @@ However by definition we also have
 
 $$
 \begin{align*}
-F_{X_{(j)}}(y) = \P\{ X_{(j)} \leq y \} &= \P\{ \text{$j$ or more of the $X_i$'s are less or equal than $y$} \} \\
+F_{X_{(j)}}(y) = \mathbb{P}\{ X_{(j)} \leq y \} &= \mathbb{P}\{ \text{$j$ or more of the $X_i$'s are less or equal than $y$} \} \\
 & = \sum_{k=j}^n \binom{n}{k} [F(y)]^k [1-F(y)]^{n-k}
 \end{align*}
 $$
@@ -147,7 +147,7 @@ is called the range of the observed random variables. If the random variables $X
 
 $$
 \begin{align*}
-\P\{ R \leq a\} & = \P \{ X_{(n)} - X_{(1)} \leq a \} \\
+\mathbb{P}\{ R \leq a\} & = \mathbb{P} \{ X_{(n)} - X_{(1)} \leq a \} \\
 & = \iint_{x_n -x_1 \leq a} f_{X_{(1)}, X_{(n)}}(x_1,x_n) dx_1dx_n\\
 & = \int_{-\infty}^{+\infty} \int_{x_1}^{x_1+a} \frac{n!}{(n-2)!} [F(x_n) - F(x_1)]^{n-2} f(x_1)f(x_n) dx_ndx_1 
 \end{align*}
@@ -162,14 +162,14 @@ $$
 Thus
 
 $$
-\P\{ R \leq a\} = n \int_{-\infty}^{+\infty} [F(x_1+a) - F(x_1)]^{n-1} f(x_1)dx_1
+\mathbb{P}\{ R \leq a\} = n \int_{-\infty}^{+\infty} [F(x_1+a) - F(x_1)]^{n-1} f(x_1)dx_1
 $$
 
 In the case when $X_i$'s are all uniformly distributed on $(0,1)$, for $0<a<1$, we have
 
 $$
 \begin{align*}
-\P\{ R < a\} & = n \int_0^1 [F(x_1+a) - F(x_1)]^{n-1} f(x_1)dx_1\\
+\mathbb{P}\{ R < a\} & = n \int_0^1 [F(x_1+a) - F(x_1)]^{n-1} f(x_1)dx_1\\
 &= n \int_0^{1-a} a^{n-1} dx_1 + n \int_{1-a}^1 (1-x_1)^{n-1}dx_1\\
 & n(1-a)^{n-1} + a^n
 \end{align*}
@@ -193,7 +193,7 @@ That is, the range of $n$ independent uniform $(0,1)$ random variables is a beta
   <strong>Definition.</strong> The random variables $X_1,X_2,\cdots,X_n$ are said to be exchangeable if, for every permutation $\pi(i_1,i_2,\cdots,i_n) \in S_n$, we have
 
 $$
-\P \{ X_{i_1} \leq x_1, X_{i_2} \leq x_2, \cdots, X_{i_n} \leq x_n \} = \P\{ X_1 = x_1, X_2 = x_2, \cdots, X_n = x_n \}
+\mathbb{P} \{ X_{i_1} \leq x_1, X_{i_2} \leq x_2, \cdots, X_{i_n} \leq x_n \} = \mathbb{P}\{ X_1 = x_1, X_2 = x_2, \cdots, X_n = x_n \}
 $$
 
 That is, the $n$ random variables are exchangeable if their joint distribution is the same no matter in which order the variables are observed.
@@ -210,7 +210,7 @@ $$
 If $X_i$'s are discrete, this is equivalent to say
 
 $$
-\P\{ X_1=x_1, X_2=x_2, X_3 = x_3,X_4 = x_4 \} = \P\{ X_3 = x_1, X_1 = x_2,X_2 = x_3,X_4 = x_4\}
+\mathbb{P}\{ X_1=x_1, X_2=x_2, X_3 = x_3,X_4 = x_4 \} = \mathbb{P}\{ X_3 = x_1, X_1 = x_2,X_2 = x_3,X_4 = x_4\}
 $$
 
 **Example:** Suppose we have an urn containing $1$ red ball and $2$ white balls, draw out balls one at a time and without replacement, and note the color. Define
@@ -224,15 +224,15 @@ Then the random variables $X_1,X_2,X_3$ are exchangeable.
 To see this, we compute the followings:
 
 $$
-\P(X_1 = 1, X_2 = 0, X_3 = 0) = \frac{1}{3} \cdot 1 \cdot 1 = \frac{1}{3}
+\mathbb{P}(X_1 = 1, X_2 = 0, X_3 = 0) = \frac{1}{3} \cdot 1 \cdot 1 = \frac{1}{3}
 $$
 
 $$
-\P(X_1 = 0, X_2 = 1, X_3 = 0) = \frac{2}{3} \cdot \frac{1}{2} \cdot 1 = \frac{1}{3}
+\mathbb{P}(X_1 = 0, X_2 = 1, X_3 = 0) = \frac{2}{3} \cdot \frac{1}{2} \cdot 1 = \frac{1}{3}
 $$
 
 $$
-\P(X_1 = 0, X_2 = 0, X_3 = 1) = \frac{2}{3} \cdot \frac{1}{2} \cdot 1 = \frac{1}{3}
+\mathbb{P}(X_1 = 0, X_2 = 0, X_3 = 1) = \frac{2}{3} \cdot \frac{1}{2} \cdot 1 = \frac{1}{3}
 $$
 Since they are all the same, so we say $X_1, X_2, X_3$ are exchangeable.
 
@@ -289,11 +289,11 @@ To see this, we begin with an illustration that we will later generalize, note t
 
 $$
 \begin{align*}
-& \P(X_1=1,X_2=1,X_3=0,X_4=1,X_5=0) \\=  &\frac{R_0}{R_0+W_0} \cdot \frac{R_0+c}{R_0+W_0+c} \cdot \frac{W_0}{R_0+W_0+2c} \cdot \frac{R_0+2c}{R_0+W_0+3c} \cdot \frac{W_0 +c}{R_0+W_0+4c}
+& \mathbb{P}(X_1=1,X_2=1,X_3=0,X_4=1,X_5=0) \\=  &\frac{R_0}{R_0+W_0} \cdot \frac{R_0+c}{R_0+W_0+c} \cdot \frac{W_0}{R_0+W_0+2c} \cdot \frac{R_0+2c}{R_0+W_0+3c} \cdot \frac{W_0 +c}{R_0+W_0+4c}
 \end{align*}
 $$
 
-Fix any positive integer $n$ and consider the sequence $X_1,X_2,\cdots,X_n$, we want to give an general expression for $\P(X_1=x_1,X_2=x_2,\cdots,X_n = x_n)$, from the particular case illustrated above, it is easy to see that the denominator of this more general case will be
+Fix any positive integer $n$ and consider the sequence $X_1,X_2,\cdots,X_n$, we want to give an general expression for $\mathbb{P}(X_1=x_1,X_2=x_2,\cdots,X_n = x_n)$, from the particular case illustrated above, it is easy to see that the denominator of this more general case will be
 
 $$
 (R_0+W_0)(R_0+W_0+c)(R_0+W_0+2c)\cdots(R_0+W_0+(n-1)c)
@@ -305,7 +305,7 @@ If $\sum x_i = n$ (all balls drawn are red), we have
 
 $$
 \begin{align*}
-&\P(X_1 = x_1, X_2 = x_2, \cdots, X_n = x_n) \\ &= \frac{R_0(R_0+c)(R_0+2c)\cdots(R_0 + c(\sum x_i -1))}{(R_0+W_0)(R_0+W_0+c)(R_0+W_0+2c)\cdots(R_0+W_0+(n-1)c)}
+&\mathbb{P}(X_1 = x_1, X_2 = x_2, \cdots, X_n = x_n) \\ &= \frac{R_0(R_0+c)(R_0+2c)\cdots(R_0 + c(\sum x_i -1))}{(R_0+W_0)(R_0+W_0+c)(R_0+W_0+2c)\cdots(R_0+W_0+(n-1)c)}
 \end{align*}
 $$
 
@@ -313,7 +313,7 @@ and if $\sum x_i = 0$ (all balls drawn are white), we have
 
 $$
 \begin{align*}
-&\P(X_1 = x_1, X_2 = x_2,\cdots X_n = x_n) \\ &=
+&\mathbb{P}(X_1 = x_1, X_2 = x_2,\cdots X_n = x_n) \\ &=
 \frac{W_0(W_0+c)(W_0+2c)\cdots(W_0+c(n - \sum x_i -1))}{(R_0+W_0) (R_0+W_0+c)(R_0+W_0+2c)\cdots(R_0+W_0+(n-1)c)}
 \end{align*}
 $$
@@ -322,7 +322,7 @@ If $0<\sum x_i < n$, we have
 
 $$
 \begin{align*}
-&\P(X_1 = x, X_2 = x_2,\cdots, X_n = x_n) \\ &=
+&\mathbb{P}(X_1 = x, X_2 = x_2,\cdots, X_n = x_n) \\ &=
 \frac{R_0(R_0+c)(R_0+2c)\cdots(R_0 + c(\sum x_i -1))\cdot W_0(W_0+c)(W_0+2c)\cdots(W_0+c(n - \sum x_i -1))}{(R_0+W_0)(R_0+W_0+c)(R_0+W_0+2c)\cdots(R_0+W_0+(n-1)c)}
 \end{align*}
 $$
