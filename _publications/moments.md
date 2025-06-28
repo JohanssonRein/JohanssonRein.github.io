@@ -1,5 +1,5 @@
 ---
-title: "4. Moments, Generating Functions and Inequalities"
+title: "Moments, Generating Functions and Inequalities"
 collection: publications
 category: probability
 order: 4
