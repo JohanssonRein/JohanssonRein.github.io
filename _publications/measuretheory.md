@@ -1,5 +1,5 @@
 ---
-title: "1. Basic Measure Theory and Probability Axioms"
+title: "Basic Measure Theory and Probability Axioms"
 collection: publications
 category: probability
 permalink: /publication/measuretheory
