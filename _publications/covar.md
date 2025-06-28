@@ -131,7 +131,7 @@ $$
 \overline{X} = \frac{\sum_{i=1}^n X_i}{n}.
 $$
 
-**Solution:** We have
+Solution: We have
 
 $$
 \begin{align*}
@@ -203,7 +203,8 @@ It shows that shifting and re-scaling of random variables does not change the co
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Example.</strong>  $N$ people sit around a round table ($N>5$). Each person will toss a fair coin. Anyone whose outcome is different from his/her two neighbors will receive a present. Let $X$ be the number of people who receives presents, find $\mathbb{E} X$ and $\mathbf{Var} X$.
 
-**Solution:**
+
+Solution:
 
 Number those $N$ people from $1$ to $N$, let $X_i$ be the random variable defined as
 
