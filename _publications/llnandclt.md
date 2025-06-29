@@ -138,6 +138,7 @@ $$
 
 
 So we have
+
 $$
 \frac{1}{n} \sum_{i=1}^n X_i^2 \overset{P}{\to} \sigma^2+\mu^2 \hspace{0.5cm} \text{and} \hspace{0.5cm} \overline{X}_n^2 \overset{P}{\to} \mu^2
 $$
@@ -261,12 +262,13 @@ Y = X_1 + X_2 + \cdots + X_n.
 $$
 
 *  Find $\mathbb{E} Y$ and $\mathbf{Var}(Y)$ by noting that
-* 
+  
 $$
 \mathbb{E} Y = n \mu , \mathbf{Var}(Y) = n \sigma^2
 
 $$
-where $\mu = \mathbb{E} X_i$ and $\sigma^2 = \mathbf{Var}(X_i)$.
+where $\mu = \mathbb{E} X_i$ and $\sigma^2 = \mathbf{Var}(X_i)
+$$
 
 * According to CLT, conclude that
   
