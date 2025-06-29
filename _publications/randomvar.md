@@ -16,59 +16,59 @@ citation: 'Jiajun Zhang, (2024) Random Variables and Distributions'
 
 # Random Variables
 
-**Definition**
-
-Let $(\Omega,\mathcal{F})$ be a sample space, suppose $X$ is a finite, singled valued function that maps $\Omega$ into $\mathbb{R}$, then $X$ is a random variable if
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> Let $(\Omega,\mathcal{F})$ be a sample space, suppose $X$ is a finite, singled valued function that maps $\Omega$ into $\mathbb{R}$, then $X$ is a random variable if
 
 $$
 \forall B \in \mathfrak{B}_{\mathbb{R}} : X^{-1}(B) := \{ \omega \in X : X(\omega) \in B \} \in \mathcal{F}
 $$
+</div>
+
+
 
 
 That is, $X$ is a random variable if the inverse image under $X$ of all Borel sets in $\mathbb{R}$ are events in $\mathcal{F}$. As we mentioned earlier, we don't need to check all Borel sets in $\mathbb{R}$ (e.g open sets, closed sets, half open half closed sets), we can just check some specific sets.
 
-**Theorem**
 
-$X$ is a random variable if and only if $\forall x \in \mathbb{R}$, we have
+
+<div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
+  <strong>Theorem.</strong> $X$ is a random variable if and only if $\forall x \in \mathbb{R}$, we have
 
 $$
 \{ \omega : X(\omega) \leq x \} \in \mathcal{F}
 $$
 
-
-**Proof**
-
-It is trivial because we know that $\mathfrak{B}_{\mathbb{R}} := \sigma( (a,b])$.
-
-**QED**
+</div>
 
 
-**Corollary**
+<div style="background-color: #fff9cc; padding: 1em; border-left: 6px solid #ffeb3b; border-radius: 8px; margin: 1em 0;">
+  <strong>Proof.</strong> It is trivial because we know that $\mathfrak{B}_{\mathbb{R}} := \sigma( (a,b])$.
+</div>
 
-If $X$ is a random variable, then $\forall a,b,c \in \mathbb{R}$, the following sets:
+
+<div style="background-color: #ffd6e8; padding: 1em; border-left: 6px solid #ff66b2; border-radius: 8px; margin: 1em 0;">
+  <strong>Corollary.</strong> If $X$ is a random variable, then $\forall a,b,c \in \mathbb{R}$, the following sets:
 
 $$
 \{ X = c \} ; \{ a < X < b \} ; \{ a \leq X \leq b \} ; \{ a \leq X < b \} ;\{ X < c \};\cdots
 $$
 
 are all events in $\mathcal{F}$.
+</div>
 
 
-**Proof**
-
-Again, it is trivial by the construction of the Borel $\sigma$ field on $\mathbb{R}$.
-
-**QED**
+<div style="background-color: #fff9cc; padding: 1em; border-left: 6px solid #ffeb3b; border-radius: 8px; margin: 1em 0;">
+  <strong>Proof.</strong> Again, it is trivial by the construction of the Borel $\sigma$ field on $\mathbb{R}$.
+</div>
 
 
-**Theorem**
+<div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
+  <strong>Theorem.</strong> If $X$ is a random variable, then so is $Y = aX + b$, $a,b \in \mathbb{R}$.
+</div>
 
-If $X$ is a random variable, then so is $Y = aX + b$, $a,b \in \mathbb{R}$.
 
-
-**Proof**
-
-For any given $x$, consider the set
+<div style="background-color: #fff9cc; padding: 1em; border-left: 6px solid #ffeb3b; border-radius: 8px; margin: 1em 0;">
+  <strong>Proof.</strong> For any given $x$, consider the set
 
 $$
 \{ \omega : aX(\omega) + b \leq x \}
@@ -83,14 +83,18 @@ $$
 
 $\bullet$ If $a>0$, then we have $\{ X(\omega) \leq \displaystyle{\frac{x-b}{a}} \} \in \mathcal{F}$;
 
+<br>
+
 $\bullet$ If $a < 0$, then we have $\{ X(\omega) \geq \displaystyle{\frac{x-b}{a}} \} \in \mathcal{F}$;
+
+<br>
 
 $\bullet$ If $a = 0$, then then $\{ \omega : aX(\omega) \leq x - b \} = \begin{cases} \{ \Omega \} : x - b \geq 0 \\ \varnothing : x - b < 0 \end{cases} \in \mathcal{F}$.
 
+<br>
+
 Thus $Y =aX+b$ is also a random variable.
-
-**QED**
-
+</div>
 
 
 
@@ -120,34 +124,35 @@ $$
 
 and thus $X$ is a random variable.
 
-**Corollary**
 
-If $X,Y$ are random variables, then so is $X+Y$.
-
+<div style="background-color: #ffd6e8; padding: 1em; border-left: 6px solid #ff66b2; border-radius: 8px; margin: 1em 0;">
+  <strong>Corollary.</strong> If $X,Y$ are random variables, then so is $X+Y$.
+</div>
 
 
 
 
 # Probability Distribution of Random Variable
 
-**Definition**
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> Let $(\Omega, \mathcal{F})$ be a sample space with a probability $\mathbb{P}$, then the space $(\Omega, \mathcal{F}, \mathbb{P})$ is called a probability space.
+</div>
 
-Let $(\Omega, \mathcal{F})$ be a sample space with a probability $\mathbb{P}$, then the space $(\Omega, \mathcal{F}, \mathbb{P})$ is called a probability space.
 
-
-**Theorem**
-The random variable $X$ defined on the probability space $(\Omega, \mathcal{F},\mathbb{P})$ can be mapped to another probability space $(\mathbb{R}, \mathfrak{B}{\mathbb{R}}, Q)$ by another probability function $Q$ defined by:
+<div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
+  <strong>Theorem.</strong> The random variable $X$ defined on the probability space $(\Omega, \mathcal{F},\mathbb{P})$ can be mapped to another probability space $(\mathbb{R}, \mathfrak{B}{\mathbb{R}}, Q)$ by another probability function $Q$ defined by:
 
 $$
 \forall B \in \mathfrak{B}_{\mathbb{R}} : Q(B) = \mathbb{P}\{ X^{-1}(B) \} = \mathbb{P} \{ \omega : X(\omega) \in B \}
 $$
 
 We call $Q = \mathbb{P}(X^{-1})$ the probability distribution of $X$.
+</div>
 
 
-**Proof**
 
-To prove that $Q$ is a probability, we just need to verify all 3 axioms from definition $7$. Clearly $Q(B) \geq 0, \forall B \in \mathfrak{B}_{\mathbb{R}}$, and $Q(\mathbb{R}) = \mathbb{P}(X \in \mathbb{R}) = \mathbb{P}(\Omega) = 1$, also
+<div style="background-color: #fff9cc; padding: 1em; border-left: 6px solid #ffeb3b; border-radius: 8px; margin: 1em 0;">
+  <strong>Proof.</strong> To prove that $Q$ is a probability, we just need to verify all 3 axioms from definition $7$. Clearly $Q(B) \geq 0, \forall B \in \mathfrak{B}_{\mathbb{R}}$, and $Q(\mathbb{R}) = \mathbb{P}(X \in \mathbb{R}) = \mathbb{P}(\Omega) = 1$, also
 
 $$
 \begin{align*}
@@ -156,13 +161,11 @@ Q \left( \sum_{i=1}^{\infty} B_i \right) = \mathbb{P} \{ X^{-1} \left( \sum_{i=1
 \end{align*}
 $$
 
-**QED**
+</div>
 
 
-
-**Definition**
-
-A real valued function $F$ defined on $\mathbb{R}$ that is non-decreasing, right continuous and satisfies
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> A real valued function $F$ defined on $\mathbb{R}$ that is non-decreasing, right continuous and satisfies
 
 $$
 F(-\infty) = 0, F(+\infty = 1)
@@ -170,12 +173,13 @@ $$
 
 is called a distribution function.
 
+</div>
 
 
 
-**Definition**
 
-Let $X$ be a random variable defined on $(\Omega,\mathcal{F},\mathbb{P})$, define a point function $F$ on $\mathbb{R}$ by:
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> Let $X$ be a random variable defined on $(\Omega,\mathcal{F},\mathbb{P})$, define a point function $F$ on $\mathbb{R}$ by:
 
 $$
 \forall x \in \mathbb{R} : F(x) = Q((-\infty,x]) = \mathbb{P}\{ \omega : X(\omega) \leq x \}
@@ -183,40 +187,47 @@ $$
 
 We call $F$ the distribution function of the random variable $X$.
 
+</div>
+
 
 It is not hard to verify that $F$ defined as above is indeed a distribution function.
 
 
 
-**Theorem**
-
-Given a probability $Q$ on $(\mathbb{R}, \mathfrak{B}_{\mathbb{R}})$, there exists a distinct distribution function $F$ such that
+<div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
+  <strong>Theorem.</strong> Given a probability $Q$ on $(\mathbb{R}, \mathfrak{B}_{\mathbb{R}})$, there exists a distinct distribution function $F$ such that
 
 $$
 \forall x \in \mathbb{R}  : Q((-\infty,x]) = F(x)
 $$
 
+</div>
 
-**Proof**
-Omitted.
 
 
 Now, we will study two types of random variable and their distribution function.
 
-**Definition**
 
-A random variable $X$ defined on $(\Omega,\mathcal{F},\mathbb{P})$ is said to be of the discrete type, if there exists a countable set $M \subset \mathbb{R}$ such that $\mathbb{P}(X \in M) = 1$, and the points of $M$ which have positive values are called jump points.
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> A random variable $X$ defined on $(\Omega,\mathcal{F},\mathbb{P})$ is said to be of the discrete type, if there exists a countable set $M \subset \mathbb{R}$ such that $\mathbb{P}(X \in M) = 1$, and the points of $M$ which have positive values are called jump points.
+
+</div>
+
+
 
 
 We know that all the singletons are Borel sets, thus $\{ X \in E\}$ is an event.
 
-**Definition**
-
-The collection of numbers $\{ p_i \}$ satisfying $\mathbb{P}\{ X = x_i \} = p_i \geq 0$ for all $i$ and $\sum_i p_i = 1$ is called the probability mass function (PMF) of the random variable $X$, and the distribution function of $X$ is given by
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> The collection of numbers $\{ p_i \}$ satisfying $\mathbb{P}\{ X = x_i \} = p_i \geq 0$ for all $i$ and $\sum_i p_i = 1$ is called the probability mass function (PMF) of the random variable $X$, and the distribution function of $X$ is given by
 
 $$
 F(x) = \mathbb{P} \{ X \leq x \} = \sum_{x_i \leq x} p_i
 $$
+
+</div>
+
+
 
 
 We can use the indicator function $\mathbb{I}$ to further rewrite the definition, we now have
@@ -237,16 +248,20 @@ $$
 F(x) = \sum_i p_i \epsilon(x - x_i)
 $$
 
-**Theorem**
 
-Let $\{ p_k \}$ be a collection of non-negative real numbers such that $\sum_{k} p_k = 1$, then $\{ p_k \}$ is the probability mass function (PMF) for some random variable $X$.
+<div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
+  <strong>Theorem.</strong> Let $\{ p_k \}$ be a collection of non-negative real numbers such that $\sum_{k} p_k = 1$, then $\{ p_k \}$ is the probability mass function (PMF) for some random variable $X$.
+</div>
+
+
 
 
 The other type of random variable is those without jump points.
 
-**Definition**
 
-Let $X$ be a random variable defined on $(\Omega, \mathcal{F}, \mathbb{P})$ with distribution function $F$, then $X$ is said to be of the continuous type if $F$ is absolutely continuous, i.e there exists a non-negative function $f(x)$ such that
+
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> Let $X$ be a random variable defined on $(\Omega, \mathcal{F}, \mathbb{P})$ with distribution function $F$, then $X$ is said to be of the continuous type if $F$ is absolutely continuous, i.e there exists a non-negative function $f(x)$ such that
 
 $$
 \forall x \in \mathbb{R} : F(x) = \int_{-\infty}^x f(t) dt
@@ -261,6 +276,10 @@ $$
 F'(x) = \frac{dF(x)}{dx} = f(x)
 $$
 
+</div>
+
+
+
 **Theorem**
 
 Let $X$ be a random variable of the continuous type with probability density function $f$, then $\forall B \in \mathfrak{B}{\mathbb{R}}$, we have
@@ -270,14 +289,14 @@ $$
 
 
 
-**Theorem**
+<div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
+  <strong>Theorem.</strong> Every non-negative real function $f$ that is integrable over $\mathbb{R}$ and satisfies $\displaystyle{\int_{-\infty}^{+\infty} f(x) dx = 1}$ is the probability density function for some random variable $X$
+</div>
 
-Every non-negative real function $f$ that is integrable over $\mathbb{R}$ and satisfies $\displaystyle{\int_{-\infty}^{+\infty} f(x) dx = 1}$ is the probability density function for some random variable $X$.
 
 
-**Proof**
-
-We need to find such a $F$, where
+<div style="background-color: #fff9cc; padding: 1em; border-left: 6px solid #ffeb3b; border-radius: 8px; margin: 1em 0;">
+  <strong>Proof.</strong> We need to find such a $F$, where
 $$
 F(x) = \int_{-\infty}^x f(t)dt
 $$
@@ -287,22 +306,27 @@ F(x_2) = \int_{-\infty}^{x_1} f(t) dt + \int_{x_1}^{x_2} f(t) dt \geq \int_{-\in
 $$
 So $F$ is non-decreasing. Furthermore $F$ is continuous (hence right-continuous), thus that finishes the proof.
 
-**qed**
+</div>
 
 
 
-**Theorem**
 
-Let $X$ be a random variable, then
+<div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
+  <strong>Theorem.</strong> Let $X$ be a random variable, then
 
 $$
 \mathbb{P}(x = a) := \lim_{t \to a^-} \mathbb{P}\{ t < x \leq a \}
 $$
+</div>
+
+
+
 
 
 Now let's look at some examples:
 
-* Example 1:  Suppose a random variable $X$ is distributed according to $f_X(x)$, written as $X \sim f_X(x)$, satisfies
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  Suppose a random variable $X$ is distributed according to $f_X(x)$, written as $X \sim f_X(x)$, satisfies
   
 $$
 X \sim f_X(x) = \begin{cases} x : 0<x\leq 1 \\ 2 - x : 1 < x \leq 2 \\ 0 : \text{otherwise} \end{cases}
@@ -310,19 +334,34 @@ $$
 
 Find the distribution function $F$.
 
-**Solution:** First we know that $\displaystyle{\int_{\mathbb{R}} f_X(x) dx = 1}$. By definition, $F(x)$ is given by
+<br>
+
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+   First we know that $\displaystyle{\int_{\mathbb{R}} f_X(x) dx = 1}$. By definition, $F(x)$ is given by
 
 $$
 F(x) = \int_{-\infty}^x f(t) dt = \begin{cases} 0 : x \leq 0 \\ \\ \displaystyle{\int_0^x t dt = \frac{1}{2}x^2 : 0 < x \leq 1} \\ \\ \displaystyle{\int_{0}^1 tdt + \int_1^x (2-t)dt = 2x - \frac{1}{2}x^2 - 1 : 1 < x \leq 2 : 1 < x \leq 2} \\ \\ 1 : x > 2 \end{cases}
 $$
 
+  </div>
+</details>
 
-* Example 2: Suppose $X$ is a random variable whose distribution function is given by
-* 
+
+</div>
+
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong> Suppose $X$ is a random variable whose distribution function is given by
+
 $$
 F(x) = \begin{cases} 0 : x <0 \\ \frac{1}{2} : x = 0 \\ \frac{1}{2} + \frac{1}{2}x : 0<x<1 \\ 1 : x \geq 1 \end{cases}
-
 $$
+                                                                                       
 Then we notice that there is a jump point at $x=0$, so we may not differentiate directly, instead we write $F(x)$ as
 
 $$
@@ -343,23 +382,36 @@ $$
 
 and $F_d(x)$ is the distribution function of $X$ degenerate at $x=0$, i.e $F_d(x) = \mathbb{P}(x = 0) = 1$.
 
+</div>
+
+
+
 # Functions of Random Variables
 
-**Theorem**
 
-Suppose $X$ is a random variable, let $g$ be a Borel measurable function on $\mathbb{R}$, then $Y = g(X)$ is also a random variable.
+<div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
+  <strong>Theorem.</strong> Suppose $X$ is a random variable, let $g$ be a Borel measurable function on $\mathbb{R}$, then $Y = g(X)$ is also a random variable.
+
+</div>
+
+<div style="background-color: #fff9cc; padding: 1em; border-left: 6px solid #ffeb3b; border-radius: 8px; margin: 1em 0;">
+  <strong>Proof.</strong> We let $Y = g(X)$, then $F_Y(y) :=  \{ g(X) \leq y \} = \{ X \in g^{-1}((-\infty,y] )\}$, which is measurable.
+</div>
 
 
-**Proof**
 
-We let $Y = g(X)$, then $F_Y(y) :=  \{ g(X) \leq y \} = \{ X \in g^{-1}((-\infty,y] )\}$, which is measurable.
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  Suppose $X$ is a random variable with distribution function $F_X$, then what about $Y = \vert X \vert$?
 
-**QED**
+<br>
 
-
-**Example:** Suppose $X$ is a random variable with distribution function $F_X$, then what about $Y = \vert X \vert$?
-
-**Solution:**  We know that
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+     We know that
 
 $$
 F_Y(y) = \mathbb{P}(Y \leq y) = \mathbb{P}( \vert x \vert \leq y) = \mathbb{P}(-y \leq x \leq y)
@@ -377,7 +429,14 @@ $$
 F_Y(y) = F_X(y) - F_X(-y^-), \text{since $X$ has a jump discontinuity at $-y$}.
 $$
 
-**Example:**  Suppose $X \sim N(0,1)$ where
+  </div>
+</details>
+
+</div>
+
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  Suppose $X \sim N(0,1)$ where
 
 $$
 f_X(x) = \frac{1}{\sqrt{2\pi }} e^{-\frac{x^2}{2}}
@@ -391,18 +450,28 @@ $$
 
 then what is  $F_Y$, where $Y =\vert X \vert$?
 
-**Solution:** As from above, we know that
+<br>
+
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    As from above, we know that
 
 $$
 F_Y(y) = F_X(y) - F_X(-y) = \int_{-\infty}^y \frac{1}{\sqrt{2\pi }} e^{-\frac{x^2}{2}} dx - \int_{-\infty}^{-y} \frac{1}{\sqrt{2\pi }} e^{-\frac{x^2}{2}} dx.
 $$
 
-**Theorem**
 
-If $X$ is a continuous random variable and $g$ is differentiable, then $g(X)$ is also a continuous random variable.
+<div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
+  <strong>Theorem.</strong> If $X$ is a continuous random variable and $g$ is differentiable, then $g(X)$ is also a continuous random variable.
+</div>
 
 
-Back to example 2, we then have
+
+Back to the previous, we then have
 
 $$
 f_Y(y) = \frac{dF_Y(y)}{dy} = \frac{dF_X(y)}{dy} - \frac{dF_X(-y)}{dy} = f_x(y) + f_X(-y),
@@ -414,15 +483,24 @@ $$
 f_Y(y) = \frac{1}{\sqrt{2\pi }} e^{-\frac{y^2}{2}} + \frac{1}{\sqrt{2\pi }} e^{-\frac{(-y)^2}{2}} = \sqrt{\frac{2}{\pi }} e^{-\frac{y^2}{2}}.
 $$
 
-**Example:** Suppose $X \sim Poisson(\lambda)$, given by $\displaystyle{\mathbb{P}(X = k) := \frac{e^{-\lambda} \lambda^k}{k!}}$ where $k \in \mathbb{N}_0, \lambda >0$. Now suppose $Y = X^2 + 3$, then 
+  </div>
+</details>
+
+</div>
+ 
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  Suppose $X \sim Poisson(\lambda)$, given by $\displaystyle{\mathbb{P}(X = k) := \frac{e^{-\lambda} \lambda^k}{k!}}$ where $k \in \mathbb{N}_0, \lambda >0$. Now suppose $Y = X^2 + 3$, then 
 
 $$
 \mathbb{P}(Y =y) = \mathbb{P}(g(x) = y) = \mathbb{P}(x = \sqrt{y-3}) = \frac{e^{-\lambda} \lambda^{\sqrt{y-3}}}{(\sqrt{y-3})!}.
 $$
+</div>
 
-**Theorem**
 
-Let $X$ be a random variable of the continuous type, with probability density function $f$. Let $g(x)$ be differentiable, and $\vert g'(x) \vert >0$ for all $x$, then $Y = g(X)$ is also a random variable of the continuous type with probability density function given by
+
+<div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
+  <strong>Theorem.</strong> Let $X$ be a random variable of the continuous type, with probability density function $f$. Let $g(x)$ be differentiable, and $\vert g'(x) \vert >0$ for all $x$, then $Y = g(X)$ is also a random variable of the continuous type with probability density function given by
 
 $$
 h_Y(y) = \begin{cases} \displaystyle{f_X(g^{-1}(y)) \cdot \Bigg\vert \frac{d}{dy} g^{-1}(y) \Bigg\vert : \alpha < y < \beta} \\ \\ 0 : \text{otherwise} \end{cases}
@@ -430,11 +508,13 @@ $$
 
 where
 $\alpha = \min \{ g(-\infty), g(+\infty) \} ; \beta = \max\{ g(-\infty), g(+\infty) \}$.
+</div>
 
 
 
-**Proof**
-Suppose $g'(x) >0$, then $g$ is continuous and strictly increasing, thus $\lim \alpha, \beta$ exists (possibly infinity), and its inverse $x = g^{-1}(y)$ also exists, differentiable, continuous and strictly increasing. The distribution function of $Y$ for $\alpha < y < \beta$ is given by
+
+<div style="background-color: #fff9cc; padding: 1em; border-left: 6px solid #ffeb3b; border-radius: 8px; margin: 1em 0;">
+  <strong>Proof.</strong> Suppose $g'(x) >0$, then $g$ is continuous and strictly increasing, thus $\lim \alpha, \beta$ exists (possibly infinity), and its inverse $x = g^{-1}(y)$ also exists, differentiable, continuous and strictly increasing. The distribution function of $Y$ for $\alpha < y < \beta$ is given by
 
 $$
 \mathbb{P}(Y \leq y) = \mathbb{P}(X \leq g^{-1}(y))
@@ -459,11 +539,14 @@ $$
 
 And that completes the proof.
 
-**QED**
+</div>
 
 
 
-**Example:** Given that
+
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  Given that
 
 $$
 X \sim f_X(x) = \begin{cases} \displaystyle{\frac{2x}{\pi^2} : 0 < x < \pi } \\ \\0 : \text{otherwise} \end{cases}
@@ -471,7 +554,16 @@ $$
 
 Let $Y = \sin(X)$, then find the probability density function of $Y$.
 
-**Solution:** Let $Y =\sin(X) = g(X)$, we have
+
+<br>
+
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    Let $Y =\sin(X) = g(X)$, we have
 
 $\mathbb{P}(Y \leq y) = \mathbb{P}(\sin(x) \leq y) = \mathbb{P}(x \in (0,x_1) \cap x \in (x_2,\pi ) )$ where $x_1 = \sin^{-1}(y) , x_2 = \pi  - \sin^{-1}(y)$. Thus we have
 
@@ -494,5 +586,14 @@ and which simplifies to
 $$
 h_Y(y) = \begin{cases} \displaystyle{\frac{2}{\pi  \sqrt{1-y^2}}} : 0<y<1 \\ \\0 : \text{otherwise} \end{cases}.
 $$
+
+  </div>
+</details>
+
+
+
+</div>
+
+
 
 
