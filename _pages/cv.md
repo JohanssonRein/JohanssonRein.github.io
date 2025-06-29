@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * Bachelor of Science in Honors Applied Mathematics, McGill University, 2022-2026
-  * Undergraduate Research Thesis: Analysing Incident and Prevalent Cohort Survival Data (2025)
+  * Undergraduate Research Thesis: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf)
 
 
 Work experience
