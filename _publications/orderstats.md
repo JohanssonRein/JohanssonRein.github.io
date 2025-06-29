@@ -66,9 +66,18 @@ f_{X_{(1)},\cdots,X_{(n)}} (x_1,x_2,\cdots,x_n) = n! f(x_1) f(x_2) \cdots f(x_n)
 $$
 
 
-**Example:** Along a $1$ mile long road are $3$ people "distributed at random". Find the probability that no $2$ people are less than a distance of $d$ miles apart when $d \leq \frac{1}{2} $.
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  Along a $1$ mile long road are $3$ people "distributed at random". Find the probability that no $2$ people are less than a distance of $d$ miles apart when $d \leq \frac{1}{2} $.
+</div>
 
-**Solution:** Assume the the positions of the $3$ people are independent and uniformly distributed over the road, if $X_i$ denote the position of the $i$th person, the desired probability is given by
+
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    Assume the the positions of the $3$ people are independent and uniformly distributed over the road, if $X_i$ denote the position of the $i$th person, the desired probability is given by
 
 $$
 \mathbb{P} \{ X_{(i)} > X_{(i-1)} + d, i = 2,3 \}
@@ -96,6 +105,9 @@ $$
 [1-(n-1)d]^n, \hspace{0.2cm} \text{when} \hspace{0.2cm} d \leq \frac{1}{n-1}
 $$
 
+  </div>
+</details>
+ 
 The density function of the $j$th order statistic $X_{(j)}$ can be obtained either by integrating the joint density function or by direct reasoning as follows: In order for $X_{(j)}$ to equal $x$, it is necessary for $j-1$ of the $n$ values $X_1,\cdots,X_n$ to be less than $x$ and $n-j$ of them to be greater than $x$, and $1$ of them to equal $x$. Now the probability density that any given set of $j-1$ of the $X_i$'s are less than $x$, another given set of $n-j$ are all greater than $x$, and the remaining value is equal to $x$ equals
 
 $$
@@ -184,8 +196,6 @@ $$
 That is, the range of $n$ independent uniform $(0,1)$ random variables is a beta random variable with parameters $n-1,2$. 
 
 
-**Exercise:** Let $(X,Y)$ denote a random point in the plane, and assume that the rectangular coordinates $X,Y$ are independent standard normal random variables. We are interested in the joint distribution of $R,\Theta$, the polar coordinate representation of $(x,y)$
-
 
 # Exchangeable Random Variables
 
@@ -213,15 +223,24 @@ $$
 \mathbb{P}\{ X_1=x_1, X_2=x_2, X_3 = x_3,X_4 = x_4 \} = \mathbb{P}\{ X_3 = x_1, X_1 = x_2,X_2 = x_3,X_4 = x_4\}
 $$
 
-**Example:** Suppose we have an urn containing $1$ red ball and $2$ white balls, draw out balls one at a time and without replacement, and note the color. Define
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong> Suppose we have an urn containing $1$ red ball and $2$ white balls, draw out balls one at a time and without replacement, and note the color. Define
 
 $$
 X_i = \begin{cases} 1, \hspace{0.2cm} \text{if the $i$th ball is red} \\ 0, \hspace{0.2cm} \text{otherwise} \end{cases}
 
 
-Then the random variables $X_1,X_2,X_3$ are exchangeable.
+Then show that the random variables $X_1,X_2,X_3$ are exchangeable.
+</div>
+ 
 
-To see this, we compute the followings:
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    To see this, we compute the followings:
 
 $$
 \mathbb{P}(X_1 = 1, X_2 = 0, X_3 = 0) = \frac{1}{3} \cdot 1 \cdot 1 = \frac{1}{3}
@@ -235,29 +254,46 @@ $$
 \mathbb{P}(X_1 = 0, X_2 = 0, X_3 = 1) = \frac{2}{3} \cdot \frac{1}{2} \cdot 1 = \frac{1}{3}
 $$
 Since they are all the same, so we say $X_1, X_2, X_3$ are exchangeable.
+  </div>
+</details>
+
+
+
 
 <div style="background-color: #ffd6e8; padding: 1em; border-left: 6px solid #ff66b2; border-radius: 8px; margin: 1em 0;">
   <strong>Corollary.</strong> Suppose that $X_1,X_2,\cdots, X_n$ are independent and identically distributed (iid), then $X_1,X_2,\cdots, X_n$ are exchangeable.
 </div>
 
-**Proof:**
-Let $f$ be the probability density function for any of the $X_i$, then by definition we have
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide proof
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Proof.</strong><br>
+   Let $f$ be the probability density function for any of the $X_i$, then by definition we have
 
 $$
 f_{X_1,X_2,\cdots,X_n}(x_1,x_2,\cdots,x_n) \overset{iid}{=} f(x_1)\cdot f(x_2)\cdots f(x_n)
 $$
 
 Thus $R.H.S$ can be arranged in any order as desired.
+  </div>
+</details>
 
-**QED**
+
 
 <div style="background-color: #ffd6e8; padding: 1em; border-left: 6px solid #ff66b2; border-radius: 8px; margin: 1em 0;">
   <strong>Corollary.</strong> Exchangeable random variables are identically distributed.
 
 </div>
 
-**Proof:**
-consider the continuous interchangeable random variables $X_1,X_2,\cdots, X_n$, and by the generalized Fubini's theorem, it's clear that
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide proof
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Proof.</strong><br>
+    consider the continuous interchangeable random variables $X_1,X_2,\cdots, X_n$, and by the generalized Fubini's theorem, it's clear that
 
 $$
 \begin{align*}
@@ -269,23 +305,33 @@ $$
 Thus it also holds for any permutation $\pi \in S_n$, and
 thus we conclude that $f_{X_1}(x_1) = f_{X_2}(x_2) = \cdots = f_{X_n}(x_n)$
 
-**QED**
+  </div>
+</details>
+
+
 
 <div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
   <strong>Definition.</strong> The random variables $X_1,X_2,\cdots$ in an infinite sequence are said to be exchangeable if the finite collection $X_1,X_2,\cdots,X_n$ are exchangeable for any finite $n \geq 1$.
 </div>
 
 
-
-**Example:** (Pólya’s Urn) Suppose we have an urn containing $R_0$ red balls and $W_0$ white balls, and $c \geq 0$ be a fixed integer. We draw a ball, note the color, replace the ball and put an additional $c$ balls of that color in the urn as well. Rinse and repeat. Define
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example  (Pólya’s Urn) .</strong> Suppose we have an urn containing $R_0$ red balls and $W_0$ white balls, and $c \geq 0$ be a fixed integer. We draw a ball, note the color, replace the ball and put an additional $c$ balls of that color in the urn as well. Rinse and repeat. Define
 
 $$
 X_i = \begin{cases} 1, \hspace{0.2cm} \text{if the $i$th ball is red} \\ 0, \hspace{0.2cm} \text{otherwise} \end{cases}
 $$
 
-Then the infinite sequence of random variables $X_1,X_2,\cdots,X_n$ are exchangeable.
+Then show that the infinite sequence of random variables $X_1,X_2,\cdots,X_n$ are exchangeable.
+</div>
 
-To see this, we begin with an illustration that we will later generalize, note that
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    To see this, we begin with an illustration that we will later generalize, note that
 
 $$
 \begin{align*}
@@ -328,10 +374,24 @@ $$
 $$
 
 In all cases, the probability is a function of $\sum x_i$ and not the individual positions of the $1$'s and $0$'s that make up the $x_i$, thus we say $X_1,X_2,\cdots, X_n$ are exchangeable.
+  </div>
+</details>
 
-**Example:** Let $X_1,X_2,\cdots,X_n$ be independent uniform $(0,1)$ random variables and denote their order statistics by $X_{(1)}, X_{(2)},\cdots,X_{(n)}$, that is $X_{(j)}$ is the $j$ th smallest of $X_1,X_2,\cdots, X_n$. Also denote $Y_1 = X_{(1)}, Y_i = X_{(i)} - X_{(i-1)}$, show that $Y_1, Y_2,\cdots,Y_n$ are exchangeable.\\
 
-**Solution:** The transformations yield that
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  Let $X_1,X_2,\cdots,X_n$ be independent uniform $(0,1)$ random variables and denote their order statistics by $X_{(1)}, X_{(2)},\cdots,X_{(n)}$, that is $X_{(j)}$ is the $j$ th smallest of $X_1,X_2,\cdots, X_n$. Also denote $Y_1 = X_{(1)}, Y_i = X_{(i)} - X_{(i-1)}$, show that $Y_1, Y_2,\cdots,Y_n$ are exchangeable.
+
+</div>
+
+
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    The transformations yield that
 
 $$
 x_i = y_1 + y_2 + \cdots + y_i
@@ -350,6 +410,11 @@ f_{Y_1,Y_2,\cdots,Y_n}(y_1,y_2,\cdots,y_n) = n!
 $$
 
 Because the preceding joint density is a symmetric function of $y_1,y_2,\cdots,y_n$, we see that the random variables are exchangeable.
+  </div>
+</details>
+
+
+ 
 
 
 
