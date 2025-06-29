@@ -81,22 +81,30 @@ The conditional expectation and variance are defined by replacing the PDF by con
 * $\displaystyle{\mathbf{Var}(X \vert A) = \mathbb{E}[X^2 \vert A] - (\mathbb{E}[X \vert A])^2}$.
 
 
-**Example:** Let $X \sim Exponential(1)$, i.e
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  Let $X \sim Exponential(1)$, i.e
 
 $$
 f_X(x) = \begin{cases} \lambda e^{-\lambda x} : x \geq 0 \\ 0 : \text{otherwise} \end{cases}
 $$
 
 where $\lambda = 1$ in this case. Find : 1. The conditional PDF and CDF of $X$ given $X>1$; 2. $\mathbb{E}[X \vert X>1]$; 3. $\mathbf{Var}(X \vert X>1)$.
+</div>
 
-**Solution:**
 
-1. : Let $A$ be the event that $X>1$, then
-2. 
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution:.</strong><br>
+    1. : Let $A$ be the event that $X>1$, then
+   
 $$
 \mathbb{P}(A) = \int_1^{+\infty} e^{-x} dx = \frac{1}{e}.
-
 $$
+
 thus
 
 $$
@@ -136,6 +144,9 @@ Thus
 $$
 \mathbf{Var}(X \vert X>1) = \mathbb{E}[X^2 \vert X>1] - (\mathbb{E}[X \vert X>1])^2 = 1.
 $$
+  </div>
+</details>
+
 
 
 
@@ -175,15 +186,25 @@ p_{X\vert Y}(x \vert y) &= \mathbb{P}\{ X = x \vert Y = y\}\\
 \end{align*}
 $$
 
-**Example:** Suppose that $p(x,y)$, the joint probability mass function of $X$ and $Y$, is given by
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  Suppose that $p(x,y)$, the joint probability mass function of $X$ and $Y$, is given by
 
 $$
 p(0,0) = 0.4 , p(0,1) = 2,p(1,0) = 0.1,p(1,1) = 0.3
 $$
 
 Then find the conditional probability mass function of $X$ given that $Y = 1$.
+</div>
 
-**Solution:** We first note that
+
+
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    We first note that
 
 $$
 p_Y(1) = \sum_x p(x,1) = p(0,1) + p(1,1) = 0.5
@@ -201,10 +222,17 @@ $$
 p_{X \vert Y}(1\vert 1) = \frac{p(1,1)}{p_Y(1)} = \frac{3}{5}.
 $$
 
+  </div>
+</details>
 
-**Example:**  If $X,Y$ are independent Poisson random variables with respective parameters $\lambda_1$ and $\lambda_2$, calculate the conditional distribution of $X$ given that $X+Y = n$.
 
-**Solution:** We calculate the conditional probability mass function of $X$ given that $X+Y =n$ as follows:
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  If $X,Y$ are independent Poisson random variables with respective parameters $\lambda_1$ and $\lambda_2$, calculate the conditional distribution of $X$ given that $X+Y = n$.
+</div>
+
+
+ We calculate the conditional probability mass function of $X$ given that $X+Y =n$ as follows:
 
 $$
 \begin{align*}
@@ -214,7 +242,13 @@ $$
 \end{align*}
 $$
 
-Recall that $X + Y$ has a Poisson distribution with parameter $\lambda_1+\lambda_2$, we see that the preceding equals
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    Recall that $X + Y$ has a Poisson distribution with parameter $\lambda_1+\lambda_2$, we see that the preceding equals
 
 $$
 \begin{align*}
@@ -225,11 +259,23 @@ $$
 $$
 
 In other words, the conditional distribution of $X$ given that $X+Y=n$ is the binomial distribution with parameters $n$ and $\lambda_1 / (\lambda_1+\lambda_2)$.
+  </div>
+</details>
 
 
-**Example:** Consider $n$ independent trails, with each trail being a success with a probability $p$. Given a total of $k$ success, show that all possible orderings of the $k$ successes and $n-k$ failures are equally likely.
 
-**Solution:** We want to show that given a total of $k$ success, each of the $\binom{n}{k}$ possible orderings of $k$ success and $n-k$ failures is equally likely. Let $X$ denote the number of successes, and consider any ordering of $k$ success and $n-k$ failures, say $\vec o = (s,s,f,f,\cdots,f)$, then
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  Consider $n$ independent trails, with each trail being a success with a probability $p$. Given a total of $k$ success, show that all possible orderings of the $k$ successes and $n-k$ failures are equally likely.
+</div>
+
+
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    We want to show that given a total of $k$ success, each of the $\binom{n}{k}$ possible orderings of $k$ success and $n-k$ failures is equally likely. Let $X$ denote the number of successes, and consider any ordering of $k$ success and $n-k$ failures, say $\vec o = (s,s,f,f,\cdots,f)$, then
 
 $$
 \begin{align*}
@@ -239,8 +285,12 @@ $$
 & = \frac{1}{\binom{n}{k}}.
 \end{align*}
 $$
+  </div>
+</details>
 
- **Example:** Consider two random variables $X$ and $Y$ with joint probability mass function given by
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong> Consider two random variables $X$ and $Y$ with joint probability mass function given by
 
 
 |           | $Y=2$           | $Y=4$           | $Y=5$           |
@@ -252,10 +302,17 @@ $$
 
 
 Find : (a) $\mathbb{P}\{ X \leq 2, Y \leq 4\}$ ; (b) The marginal probability mass functions of $X$ and $Y$; (c) $\mathbb{P}\{ Y =2 \vert X =1\}$ ; (d) Are $X,Y$ independent?
+</div>
+ 
 
-**Solution:**
 
-(a) : By definition, we have
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    (a) : By definition, we have
 
 $$
 \begin{align*}
@@ -331,12 +388,25 @@ $$
 $$
 
 Which means this pair does not satisfy equation $(*)$, thus they are not independent.
+  </div>
+</details>
 
-**Example:** Suppose that the number of customers visiting a fast food restaurant in a given day is $N \sim Poisson(\lambda)$. Further assume that each customer purchases a drink with probability $p$, independently from other customers and independently from the value $N$. Let $X$ be the number of customers who purchase drinks, let $Y$ be the number of customer that do not purchase drinks, so $X+Y = N$. Find : (a) The marginal PMFs of $X$ and $Y$; (b) The joint PMF of $X$ and $Y$; (c) Are $X$ and $Y$ independent? (d) Find $\mathbb{E}[X^2 Y^2]$.
 
-**Solution:**
 
-(a) : Based on what we are given, clearly
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  Suppose that the number of customers visiting a fast food restaurant in a given day is $N \sim Poisson(\lambda)$. Further assume that each customer purchases a drink with probability $p$, independently from other customers and independently from the value $N$. Let $X$ be the number of customers who purchase drinks, let $Y$ be the number of customer that do not purchase drinks, so $X+Y = N$. Find : (a) The marginal PMFs of $X$ and $Y$; (b) The joint PMF of $X$ and $Y$; (c) Are $X$ and $Y$ independent? (d) Find $\mathbb{E}[X^2 Y^2]$.
+
+</div>
+
+
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+   (a) : Based on what we are given, clearly
 
 $$
 X \vert (N = n) \sim Binomial(n,p) ; Y \vert (N = n) \sim Binomial(n,1-p)
@@ -360,10 +430,24 @@ and thus we conclude that
 $$
 X \sim Poisson(\lambda p) ; Y \sim Poisson(\lambda(1-p))
 $$
+  </div>
+</details>
 
-**Example:** Suppose tossing a coin with $\mathbb{P}(H) = p$, repeatedly toss the coin until there are two consecutive heads. Let $X$ denote the total number of coin tosses, find $\mathbb{E} X$.\\
 
-**Solution:** Suppose $\mathbb{E} X = \mu$, we first condition on the result of the first toss, then
+
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong> Suppose tossing a coin with $\mathbb{P}(H) = p$, repeatedly toss the coin until there are two consecutive heads. Let $X$ denote the total number of coin tosses, find $\mathbb{E} X$.
+</div>
+ 
+
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    Suppose $\mathbb{E} X = \mu$, we first condition on the result of the first toss, then
 
 $$
 \mu = \mathbb{E} X = \mathbb{E}[ X \vert H] \mathbb{P}(H) + \mathbb{E}[X \vert T]\mathbb{P}(T) = \mathbb{E}[X \vert H] p + (1+\mu)(1-p).
@@ -397,17 +481,22 @@ $$
 \mathbb{E} X = \frac{1+p}{p^2}.
 $$
 
+  </div>
+</details>
+ 
 
 
 # Continuous Conditional Distribution
 
-**Definition**
-
-If $X,Y$ have a joint probability density function $f(x,y)$, then the conditional probability density function of $X$ given that $Y =y$ is defined, for all values of $y$ such that $f_Y(y)>0$, by
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> If $X,Y$ have a joint probability density function $f(x,y)$, then the conditional probability density function of $X$ given that $Y =y$ is defined, for all values of $y$ such that $f_Y(y)>0$, by
 
 $$
 f_{X \vert Y}(x \vert y)=\frac{f(x,y)}{f_Y(y)}
 $$
+
+</div>
+
 
 
 
@@ -485,17 +574,24 @@ $$
 
 
 
-**Example:** Let $X,Y$ be jointly distributed as 
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong> Let $X,Y$ be jointly distributed as 
 
 $$
 f_{XY}(x,y) = \begin{cases} \frac{x^2}{4} + \frac{y^2}{6} + \frac{xy}{6} : 0\leq x \leq 1, 0 \leq y \leq 2 \\ \\ 0 :\text{otherwise} \end{cases}
 $$
 
 Find : 1.The conditional PDF of $X$ given $Y = y$ where $0 \leq y \leq 2$; 2. $\mathbb{P}\{ X < 0.5 \vert Y = y \}$ ; 3. $\mathbb{E}[X \vert Y=1]$; 4. $\mathbf{Var}(X \vert Y=1)$.
+</div>
+ 
 
-**Solution:**
-
-1: We first compute $f_Y(y)$, given by
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    1: We first compute $f_Y(y)$, given by
    
 $$
 f_Y(y) = \int_{-\infty}^{+\infty} f_{X,Y}(x,y) dx = \int_{0}^1 \frac{x^2}{4} + \frac{y^2}{4} + \frac{xy}{6} dx = \frac{1}{12} + \frac{y^2}{4} + \frac{y}{12}.
@@ -559,9 +655,13 @@ $$
 \end{align*}
 $$
 
+  </div>
+</details>
 
 
-**Example:** The joint density function of $X$ and $Y$ is given by
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  The joint density function of $X$ and $Y$ is given by
 
 $$
 f(x,y) = \begin{cases} x(2-x-y) : (x,y) \in (0,1)^2 \\ 0 : \text{otherwise} \end{cases}
@@ -569,7 +669,15 @@ $$
 
 Compute the conditional density of $X$ given that $Y  =y$, $0<y<1$.
 
-**Solution:** For $(x,y) \in (0,1)^2$, we have
+</div>
+
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    For $(x,y) \in (0,1)^2$, we have
 
 $$
 \begin{align*}
@@ -611,3 +719,6 @@ $$
 
 If $X$ and $Y$ are independent continuous random variables, the conditional density of $X$ given that $Y=y$ is just the unconditional density of $X$. 
 
+  </div>
+</details>
+ 
