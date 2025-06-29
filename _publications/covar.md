@@ -152,7 +152,7 @@ $$
   $$
 \begin{align*}
 \mathbf{Cov}(X_i - \overline{X}, \overline{X}) &= \mathbf{Cov}(X_i, \overline{X}) - \mathbf{Cov}(\overline{X}, \overline{X}) \\
-&= \mathbf{Cov} \left( X_i, \frac{1}{n} \sum_{j=1}^n X_j \right) - \Var(\overline{X}) \\
+&= \mathbf{Cov} \left( X_i, \frac{1}{n} \sum_{j=1}^n X_j \right) - \mathbf{Var}(\overline{X}) \\
 & = \frac{1}{n} \sum_{j=1}^n \mathbf{Cov}(X_i,X_j) - \frac{\sigma^2}{n}\\
 & = \frac{\sigma^2}{n} - \frac{\sigma^2}{n} \\
 &=0.
@@ -283,7 +283,7 @@ $$
 $$
 
 </div>
-</div>details>
+</div></details>
 
 <div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
   <strong>Theorem.</strong> (Hölder's Inequality)
@@ -297,16 +297,18 @@ $$
 If we take $p=q=2$, we will get a special case of Hölder's inequality, which is known as the Cauchy-Schwarz inequality.
 </div>
 
+
+
 <div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
   <strong>Theorem.</strong> Let $X,Y$ be random variables, then
   
 $$
 \mathbb{E} \vert X Y \vert \leq \sqrt{\mathbb{E}\vert X \vert^2} \cdot \sqrt{\mathbb{E}\vert Y \vert^2}
 $$
-  </div>
-</details>
-
 </div>
+  
+
+
 
 
 
