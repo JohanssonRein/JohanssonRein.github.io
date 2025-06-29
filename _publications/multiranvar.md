@@ -15,9 +15,8 @@ citation: 'Jiajun Zhang, (2024) Multiple and Independent Random Variables'
 # Multiple Random Variables
 
 
-**Definition**
-
-The vector $\mathbf{X} = (X_1,X_2,\cdots,X_n)$ defined on $(\Omega,\mathcal{F},\mathbb{P})$ into $\mathbb{R}^n$ by
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> The vector $\mathbf{X} = (X_1,X_2,\cdots,X_n)$ defined on $(\Omega,\mathcal{F},\mathbb{P})$ into $\mathbb{R}^n$ by
 
 $$
 \mathbf{X}(\omega) = \{ X_1(\omega),X_2(\omega),\cdots,X_n(\omega) \}, \omega \in \Omega
@@ -33,8 +32,12 @@ $$
 F_{\mathbf{X}}(\vec x) = \mathbb{P}\{ X_1 \leq x_1 ; X_2 \leq x_2; \cdots; X_n \leq x_n \}
 $$
 
+</div>
 
-And we claim the following:
+
+
+
+And we claim the following properties:
 
 * $F_{\mathbf{X}}$ is non-decreasing in every argument $x_1,x_2,\cdots,x_n$;
 
@@ -54,9 +57,10 @@ This idea can also be generalized for $n\geq 2$.
 
 For better notation and simplification, we will discuss the case when $n=2$ from now on.
 
-**Definition**
 
-A $2$-dimensional random variable $(X,Y)$ is said to be of the discrete type if it takes on pairs of values belonging to a countable set $A$ with probability $1$. We define $ p_{ij} = (x_i,y_j)$ for every pair, and define
+
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> A $2$-dimensional random variable $(X,Y)$ is said to be of the discrete type if it takes on pairs of values belonging to a countable set $A$ with probability $1$. We define $ p_{ij} = (x_i,y_j)$ for every pair, and define
 
 $$
 p_{ij} = \mathbb{P}\{ X = x_i ; Y = y_j \}
@@ -68,19 +72,22 @@ $$
 F(x,y) = \sum_{(i,j) \in B} p_{ij}, \hspace{0.2cm} B = \{ (i,j) : x_i \leq x; y_j \leq y \}
 $$
 
+</div>
+
 
 
 We also give the definition for the continuous type:
 
-**Definition**
-
-A $2$-dimensional random variable $(X,Y)$ is said to be of the continuous type if there exists a non-negative function $f$, such that for every pair $(x,y) \in \mathbb{R}^2$, we have
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> A $2$-dimensional random variable $(X,Y)$ is said to be of the continuous type if there exists a non-negative function $f$, such that for every pair $(x,y) \in \mathbb{R}^2$, we have
 
 $$
 F(x,y) = \int_{-\infty}^x \int_{-\infty}^y f(x,y) dudv
 $$
 
 where $F(x,y)$ is the distribution function of $(X,Y)$ and $f$ is the joint probability density function of $(X,Y)$.
+</div>
+
 
 
 We know that $f(x,y) \geq 0$, also
@@ -95,9 +102,12 @@ $$
 \frac{\partial^2 F(x,y)}{\partial x \partial y} = f(x,y)
 $$
 
-**Theorem**
 
-If $f$ is a non-negative function satisfying $\displaystyle{\int_{-\infty}^{+\infty} \int_{-\infty}^{+\infty} f(x,y) dxdy = 1}$, then $f$ is the joint probability density function for some random variable.
+
+<div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
+  <strong>Theorem.</strong> If $f$ is a non-negative function satisfying $\displaystyle{\int_{-\infty}^{+\infty} \int_{-\infty}^{+\infty} f(x,y) dxdy = 1}$, then $f$ is the joint probability density function for some random variable.
+</div>
+
 
 
 Suppose a $2$-dimensional random variable $(X,Y)$, assume it is of the continuous type, then we define
@@ -150,15 +160,28 @@ $$
 
 Likewise, $p_{i \cdot}$ is called the marginal probability mass function of $X$, and $p_{\cdot j}$ is called the marginal probability mass function of $Y$.
 
-**Example:** Consider a circle of radius $R$ centered at the origin. A point is randomly chosen on the circle, and we say the the point is uniformly distributed within the circle. That is, assume the point has coordinates $(x,y)$, then the joint distribution of the random variable $X,Y$ is given by
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong> Consider a circle of radius $R$ centered at the origin. A point is randomly chosen on the circle, and we say the the point is uniformly distributed within the circle. That is, assume the point has coordinates $(x,y)$, then the joint distribution of the random variable $X,Y$ is given by
 
 $$
 f_{X,Y}(x,y) = \begin{cases} \frac{1}{\pi R^2} : x^2 + y^2 \leq R^2 \\ 0: \text{otherwise} \end{cases}
 $$
 
-Compute the marginal density functions of $X,Y$; compute the probability that $D$, the distance from the origin of the point selected, is less than or equal to $a$, where $a$ is a given constant. Finally find $\mathbb{E}(D)$.\\
+Compute the marginal density functions of $X,Y$; compute the probability that $D$, the distance from the origin of the point selected, is less than or equal to $a$, where $a$ is a given constant. Finally find $\mathbb{E}(D)$.
 
-**Solution:** The marginal distribution of $X$ is given by
+
+
+<br>
+
+
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+     The marginal distribution of $X$ is given by
 
 $$
 \begin{align*}
@@ -200,9 +223,16 @@ $$
 \mathbb{E} D = \frac{2}{R^2} \int_0^R a^2 da = \frac{2R}{3}
 $$
 
+  </div>
+</details>
 
 
-**Example:** Suppose $(X,Y)$ be jointly distributed with joint probability density function given by $f(x,y) = 2, 0<x<y<1$, and $f(x,y) = 0$ otherwise. Then we have
+</div>
+ 
+
+
+
+Suppose $(X,Y)$ be jointly distributed with joint probability density function given by $f(x,y) = 2, 0<x<y<1$, and $f(x,y) = 0$ otherwise. Then we have
 
 $$
 f_1(x) = \int_x^1 2 dy = \begin{cases} 2-2x, 0<x<1 \\ 0,\text{otherwise} \end{cases}
@@ -212,9 +242,11 @@ $$
 f_2(y)  = \int_0^y 2 dx = \begin{cases} 2y, 0<y<1 \\ 0, \text{otherwise} \end{cases}
 $$
 
-**Definition**
 
-Let $(X,Y)$ be a random variable of the discrete type, if $\mathbb{P}(Y = y_j) >0$, the function
+
+
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> Let $(X,Y)$ be a random variable of the discrete type, if $\mathbb{P}(Y = y_j) >0$, the function
 
 $$
 p_{i \vert j} = \mathbb{P}(X = x_i \vert Y = y_j) = \frac{\mathbb{P}(X=x_i, Y = y_j)}{\mathbb{P}(Y = y_j)}
@@ -222,6 +254,9 @@ $$
 
 for a fixed $j$ is known as the conditional probability mass function of $X$ given $Y = y_j$, a similar definition can also be given on $Y$
 for a fixed $x_i$
+</div>
+
+
 
 By definition, we also have
 
@@ -252,27 +287,32 @@ $$
 f_{X \vert Y} (x,y) = \frac{f(x,y)}{f_2(y)}
 $$
 
-is called the conditional probability density function of the random variable of the continuous type.\\
+is called the conditional probability density function of the random variable of the continuous type.
 
-**Definition**
 
-The conditional probability distribution function for a random variable of the continuous type $X$ given $Y =y$ is given by
+
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> he conditional probability distribution function for a random variable of the continuous type $X$ given $Y =y$ is given by
 
 $$
 F_{X \vert Y} (x \vert y) = \lim_{\epsilon \to 0^+} \mathbb{P}\{ X \leq x \vert Y \in (y-\epsilon,y+\epsilon] \}
 $$
+</div>
 
 
 
-**Theorem**
 
-Let $f$ be the joint probability density function of a random variable $(X,Y)$ of the continuous type. Let $f_2(y)$ be the marginal probability density function of $Y$. At every point $(x,y)$ which $f$ is continuous and $f_2(Y) >0$ and also continuous, the conditional probability density function of $X$ given $Y = y$ is given by
+<div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
+  <strong>Theorem.</strong> Let $f$ be the joint probability density function of a random variable $(X,Y)$ of the continuous type. Let $f_2(y)$ be the marginal probability density function of $Y$. At every point $(x,y)$ which $f$ is continuous and $f_2(Y) >0$ and also continuous, the conditional probability density function of $X$ given $Y = y$ is given by
 
 $$
 f_{X \vert Y}(x \vert y) = \frac{f(x,y)}{f_2(y)}
 $$
 
 and the same idea applies for $f_{Y \vert X}(y \vert x)$.
+</div>
+
+
 
 
 Note that 
@@ -287,9 +327,12 @@ $$
 F_1(x) = \int_{-\infty}^{+\infty} \left[ \int_{-\infty}^x f(u,y) du \right] dy = \int_{-\infty}^{+\infty} f_2(y) F_{X \vert Y}(x \vert y) dy
 $$
 
-where $F_1(x)$ is the marginal distribution function of $X$.\\
+where $F_1(x)$ is the marginal distribution function of $X$.
 
-**Example:** Consider random variable $(X,Y)$ which has a joint distribution function given by
+
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  Consider random variable $(X,Y)$ which has a joint distribution function given by
 
 $$
 f(x,y) = \begin{cases} 2, 0<x<y<1 \\ 0, \text{otherwise} \end{cases}
@@ -316,13 +359,14 @@ $$
 $$
 \mathbb{P}\left\{ X \geq \frac{1}{3} \Bigg\vert y = \frac{2}{3} \right\} = \int_{\frac{1}{3}}^{\frac{2}{3}} \frac{1}{\frac{2}{3}}dx = \frac{1}{2}.
 $$
+</div>
+
 
 
 # Independent Random Variables
 
-
-**Definition**
-Given $X = \{ x_1,x_2,\cdots\}, Y = \{ x_1, x_2,\cdots \}$, we say that $X,Y$ are independent, if 
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> Given $X = \{ x_1,x_2,\cdots\}, Y = \{ x_1, x_2,\cdots \}$, we say that $X,Y$ are independent, if 
 
 $$
 \mathbb{P}(X = x_i , Y = y_j ) = \mathbb{P}(X = x_i) \mathbb{P}(Y = y_j)
@@ -336,16 +380,33 @@ We can also say that $X,Y$ are independent if and only if
 $$
 F(x,y) = F_1(x) F_2(y) \hspace{0.2cm} \text{for all $(x,y) \in \mathbb{R}^2$}
 $$
-
-**Corollary**
-Let $X,Y$ be independent random variables, then we have $F_{Y \vert X}(y \vert x) = F_Y(y)$ for all $y$ and $F_{X \vert Y}(x \vert y) = F_X(x)$ for all $x$.
+</div>
 
 
 
+<div style="background-color: #ffd6e8; padding: 1em; border-left: 6px solid #ff66b2; border-radius: 8px; margin: 1em 0;">
+  <strong>Corollary.</strong> Let $X,Y$ be independent random variables, then we have $F_{Y \vert X}(y \vert x) = F_Y(y)$ for all $y$ and $F_{X \vert Y}(x \vert y) = F_X(x)$ for all $x$.
+</div>
 
-**Example:** A man and a woman decide to meet at a certain location. If each of them independently arrives at a time uniformly distributed between 12 noon and 1 P.M., find the probability that the first to arrive has to wait longer than 10 minutes.
 
-**Solution:** If we let $X,Y$ denote, respectively the time past $12$ that the man an the woman arrive, then $X,Y$ are independent random variables and each of which is uniformly distributed over $[0,60]$. The desired probability is given by
+
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  A man and a woman decide to meet at a certain location. If each of them independently arrives at a time uniformly distributed between 12 noon and 1 P.M., find the probability that the first to arrive has to wait longer than 10 minutes
+
+
+ <br>
+
+ <!-- Example Block -->
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong> Suppose \(X_1, X_2, X_3 \sim N(0,1)\) are independent...
+
+  <!-- Collapsible Solution -->
+  <details style="margin-top: 1em;">
+    <summary style="font-weight: bold; color: #444; cursor: pointer;">Click to show/hide solution</summary>
+    <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+      <strong>Solution.</strong><br>
+      **Solution:** If we let $X,Y$ denote, respectively the time past $12$ that the man an the woman arrive, then $X,Y$ are independent random variables and each of which is uniformly distributed over $[0,60]$. The desired probability is given by
 
 $$
 \mathbb{P}\{ X + 10 < Y \} + \mathbb{P}\{ Y + 10 < X\}
@@ -361,19 +422,34 @@ $$
 & = \frac{25}{36}.
 \end{align*}
 $$
+    </div>
+  </details>
+</div>
 
-**Example 2: (Buffon's Needle Problem)**
+</div>
 
-A table is ruled with equidistant parallel lines with a distance $D$ apart. A needle of length $L$ where $L \leq D$ is randomly thrown on the table. What is the probability that the needle will intersect one of the lines (the other probability will be that the needle will be completely contained in the strip between two lines)?
 
-<div style="text-align: center;">
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example. (Buffon's Needle Problem).</strong> A table is ruled with equidistant parallel lines with a distance $D$ apart. A needle of length $L$ where $L \leq D$ is randomly thrown on the table. What is the probability that the needle will intersect one of the lines (the other probability will be that the needle will be completely contained in the strip between two lines)?
+
+  <br>
+
+  <div style="text-align: center;">
   <img src="/images/buffon.png" alt="McGill" width="400">
   <p><em>Figure: The Buffon's neddle problem</em></p>
 </div>
 
-**Solution:** 
 
-Let $X$ be the distance from the middle point of the needle to the nearest parallel line, and $\theta$ be the angle of the needle and the projected line of length $X$. Then by the construction, the needle will intersect the line if and only if
+<br>
+
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+   Let $X$ be the distance from the middle point of the needle to the nearest parallel line, and $\theta$ be the angle of the needle and the projected line of length $X$. Then by the construction, the needle will intersect the line if and only if
 
 $$
 \frac{X}{\cos(\theta)} < \frac{L}{2}
@@ -390,11 +466,27 @@ $$
 \end{align*}
 $$
 
-**Example:** If random variables $X,Y,Z$ are independent and uniformly distributed over $[0,1]$, compute $\mathbb{P} \{ X \geq YZ \}$.
+  </div>
+</details>
 
-**Solution:** 
 
-Since
+</div>
+
+
+
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  If random variables $X,Y,Z$ are independent and uniformly distributed over $[0,1]$, compute $\mathbb{P} \{ X \geq YZ \}$.
+
+  <br>
+
+  <details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+    Since
 
 $$
 f_{X,Y,Z} (x,y,z) = f_X(x) f_Y(y)f_Z(z) = 1, \hspace{0.1cm} (x,y,z) \in [0,1]^3,
@@ -427,11 +519,26 @@ The cumulative distribution function $F_{X+Y}$ is called the convolution of the 
 $$
 f_{X+Y}(a) = \int_{-\infty}^{+\infty} f_X(a-y) f_Y(y) dy
 $$
+  </div>
+</details>
 
 
-**Example:** Suppose $X,Y$ are independent random variables both uniformly distributed on $[0,1]$, find the probability density function of $X+Y$.
+</div>
 
-**Solution:** We know that
+
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Example.</strong>  Suppose $X,Y$ are independent random variables both uniformly distributed on $[0,1]$, find the probability density function of $X+Y$.
+
+
+<br>
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+     We know that
 
 $$
 f_X(a) = f_Y(a) = \begin{cases} 1, 0<a<1 \\ 0, \text{otherwise} \end{cases},
@@ -460,21 +567,30 @@ Hence
 $$
 f_{X+Y}(a) = \begin{cases} a, 0 \leq a \leq 1 \\ 2 - a , 1<a<2 \\ 0, \text{otherwise} \end{cases}.
 $$
+  </div>
+</details>
 
-**Corollary**
 
-Suppose $X_1,X_2,\cdots,X_n$ are independent random variables uniformly distributed on $[0,1]$, and let $F_n(x) = \mathbb{P}\{ X_1 + X_2 + \cdots +X_n \leq x \}$, then 
+</div>
+
+
+<div style="background-color: #ffd6e8; padding: 1em; border-left: 6px solid #ff66b2; border-radius: 8px; margin: 1em 0;">
+  <strong>Corollary.</strong> Suppose $X_1,X_2,\cdots,X_n$ are independent random variables uniformly distributed on $[0,1]$, and let $F_n(x) = \mathbb{P}\{ X_1 + X_2 + \cdots +X_n \leq x \}$, then 
 
 $$
 F_n(x) = \frac{x^n}{n!}, \hspace{0.2cm} \text{when $0 \leq x \leq 1$}
 $$
 
 
-**Proof**
+</div>
 
-This can be done by using induction.
 
-**QED**
+<div style="background-color: #fff9cc; padding: 1em; border-left: 6px solid #ffeb3b; border-radius: 8px; margin: 1em 0;">
+  <strong>Proof.</strong> Proof can be done by induction.
+</div>
+
+
+
 
 Based on example above, what is the expected number of $n$ such that $X_1+X_2+\cdots+X_n >1$? That is, we want to find
 
