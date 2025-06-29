@@ -185,7 +185,7 @@ $$
 Another example:
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
-  <strong>Example.</strong>  (Box-Muller Transform) Suppose $U_1,U_2$ are random variables uniformly distributed on $(0,1)$, find the distribution function for $X_1$ and $X_2$ where
+  <strong>Example (Box-Muller Transform).</strong>  Suppose $U_1,U_2$ are random variables uniformly distributed on $(0,1)$, find the distribution function for $X_1$ and $X_2$ where
   
   $$
   X_1 = \sin(2 \pi U_2) \sqrt{-2\ln(U_1)}, X_2 = \cos(2\pi U_2) \sqrt{-2 \ln(U_1)}
