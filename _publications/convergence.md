@@ -34,9 +34,11 @@ Let $\{ X_n \}$ be a sequence of random variables and $\{ F_n \}$ be the corresp
 
 <div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
   <strong>Definition.</strong> Let $\{ X_n \}$ be a sequence of random variables defined on some probability space $(\Omega,\mathcal{F},\mathbb{P})$, we say that the sequence $\{ X_n \}$ converges in probability to the random variable $X$ if $\forall \epsilon >0$,
+  
 $$
 \lim_{n \to +\infty} \mathbb{P} \{ \vert X_n - X \vert > \epsilon \} = 0
 $$
+
 And we denote by $X_n \overset{P}{\to} X$.
 </div>
 
@@ -44,7 +46,7 @@ And we denote by $X_n \overset{P}{\to} X$.
   <strong>Example.</strong> Let $X$ be a random variable and $X_n = X + Y_n$, where
   
 $$
-\mathbb{E}EY_n = \frac{1}{n} \hspace{0.4cm} \mathbf{Var}(Y_n) = \frac{\sigma^2}{n}
+\mathbb{E}Y_n = \frac{1}{n} \hspace{0.4cm} \mathbf{Var}(Y_n) = \frac{\sigma^2}{n}
 $$
 
 where $\sigma >0$ is a constant. Show that $X_n \overset{P}{\to} X$.
