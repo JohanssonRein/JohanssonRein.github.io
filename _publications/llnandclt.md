@@ -265,10 +265,10 @@ $$
   
 $$
 \mathbb{E} Y = n \mu , \mathbf{Var}(Y) = n \sigma^2
+$$
 
-$$
-where $\mu = \mathbb{E} X_i$ and $\sigma^2 = \mathbf{Var}(X_i)
-$$
+where $\mu = \mathbb{E} X_i$ and $\sigma^2 = \mathbf{Var}(X_i)$.
+
 
 * According to CLT, conclude that
   
@@ -303,6 +303,7 @@ $$
   <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
     <strong>Solution.</strong><br>
     Following the steps mentioned above, let
+    
  $$
 Y = X_1 +X_2 + \cdots + X_n
  $$
