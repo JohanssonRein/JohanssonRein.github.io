@@ -90,8 +90,6 @@ f_X(x) = \begin{cases} \lambda e^{-\lambda x} : x \geq 0 \\ 0 : \text{otherwise}
 $$
 
 where $\lambda = 1$ in this case. Find : 1. The conditional PDF and CDF of $X$ given $X>1$; 2. $\mathbb{E}[X \vert X>1]$; 3. $\mathbf{Var}(X \vert X>1)$.
-</div>
-
 
 <details style="margin-top: 1em;">
   <summary style="font-weight: bold; color: #444; cursor: pointer;">
@@ -148,6 +146,10 @@ $$
 </details>
 
 
+</div>
+
+
+
 
 
 
@@ -194,8 +196,6 @@ p(0,0) = 0.4 , p(0,1) = 2,p(1,0) = 0.1,p(1,1) = 0.3
 $$
 
 Then find the conditional probability mass function of $X$ given that $Y = 1$.
-</div>
-
 
 
 <details style="margin-top: 1em;">
@@ -225,14 +225,25 @@ $$
   </div>
 </details>
 
+</div>
+
+
+
+
 
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Example.</strong>  If $X,Y$ are independent Poisson random variables with respective parameters $\lambda_1$ and $\lambda_2$, calculate the conditional distribution of $X$ given that $X+Y = n$.
-</div>
 
 
- We calculate the conditional probability mass function of $X$ given that $X+Y =n$ as follows:
+  <details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+
+We calculate the conditional probability mass function of $X$ given that $X+Y =n$ as follows:
 
 $$
 \begin{align*}
@@ -241,13 +252,6 @@ $$
 &= \frac{\mathbb{P}\{ X =k\} \mathbb{P}\{ Y = n -k \}}{\mathbb{P}\{ X + Y =n \}}.
 \end{align*}
 $$
-
-<details style="margin-top: 1em;">
-  <summary style="font-weight: bold; color: #444; cursor: pointer;">
-    Click to show/hide solution
-  </summary>
-  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
-    <strong>Solution.</strong><br>
     Recall that $X + Y$ has a Poisson distribution with parameter $\lambda_1+\lambda_2$, we see that the preceding equals
 
 $$
@@ -262,14 +266,19 @@ In other words, the conditional distribution of $X$ given that $X+Y=n$ is the bi
   </div>
 </details>
 
+</div>
+
+
+ 
+
+
 
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Example.</strong>  Consider $n$ independent trails, with each trail being a success with a probability $p$. Given a total of $k$ success, show that all possible orderings of the $k$ successes and $n-k$ failures are equally likely.
-</div>
 
 
-<details style="margin-top: 1em;">
+  <details style="margin-top: 1em;">
   <summary style="font-weight: bold; color: #444; cursor: pointer;">
     Click to show/hide solution
   </summary>
@@ -287,6 +296,10 @@ $$
 $$
   </div>
 </details>
+</div>
+
+
+
 
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
@@ -302,11 +315,8 @@ $$
 
 
 Find : (a) $\mathbb{P}\{ X \leq 2, Y \leq 4\}$ ; (b) The marginal probability mass functions of $X$ and $Y$; (c) $\mathbb{P}\{ Y =2 \vert X =1\}$ ; (d) Are $X,Y$ independent?
-</div>
- 
 
-
-<details style="margin-top: 1em;">
+ <details style="margin-top: 1em;">
   <summary style="font-weight: bold; color: #444; cursor: pointer;">
     Click to show/hide solution
   </summary>
@@ -392,15 +402,18 @@ Which means this pair does not satisfy equation $(*)$, thus they are not indepen
 </details>
 
 
+</div>
+ 
+
+
+
+
 
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Example.</strong>  Suppose that the number of customers visiting a fast food restaurant in a given day is $N \sim Poisson(\lambda)$. Further assume that each customer purchases a drink with probability $p$, independently from other customers and independently from the value $N$. Let $X$ be the number of customers who purchase drinks, let $Y$ be the number of customer that do not purchase drinks, so $X+Y = N$. Find : (a) The marginal PMFs of $X$ and $Y$; (b) The joint PMF of $X$ and $Y$; (c) Are $X$ and $Y$ independent? (d) Find $\mathbb{E}[X^2 Y^2]$.
 
-</div>
-
-
-<details style="margin-top: 1em;">
+  <details style="margin-top: 1em;">
   <summary style="font-weight: bold; color: #444; cursor: pointer;">
     Click to show/hide solution
   </summary>
@@ -435,11 +448,31 @@ $$
 
 
 
+ 
+</div>
+
+
+
+
+
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Example.</strong> Suppose tossing a coin with $\mathbb{P}(H) = p$, repeatedly toss the coin until there are two consecutive heads. Let $X$ denote the total number of coin tosses, find $\mathbb{E} X$.
 </div>
  
+
+
+ 
+
+
+# Continuous Conditional Distribution
+
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> If $X,Y$ have a joint probability density function $f(x,y)$, then the conditional probability density function of $X$ given that $Y =y$ is defined, for all values of $y$ such that $f_Y(y)>0$, by
+
+$$
+f_{X \vert Y}(x \vert y)=\frac{f(x,y)}{f_Y(y)}
+$$
 
 <details style="margin-top: 1em;">
   <summary style="font-weight: bold; color: #444; cursor: pointer;">
@@ -483,17 +516,6 @@ $$
 
   </div>
 </details>
- 
-
-
-# Continuous Conditional Distribution
-
-<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
-  <strong>Definition.</strong> If $X,Y$ have a joint probability density function $f(x,y)$, then the conditional probability density function of $X$ given that $Y =y$ is defined, for all values of $y$ such that $f_Y(y)>0$, by
-
-$$
-f_{X \vert Y}(x \vert y)=\frac{f(x,y)}{f_Y(y)}
-$$
 
 </div>
 
@@ -582,8 +604,7 @@ f_{XY}(x,y) = \begin{cases} \frac{x^2}{4} + \frac{y^2}{6} + \frac{xy}{6} : 0\leq
 $$
 
 Find : 1.The conditional PDF of $X$ given $Y = y$ where $0 \leq y \leq 2$; 2. $\mathbb{P}\{ X < 0.5 \vert Y = y \}$ ; 3. $\mathbb{E}[X \vert Y=1]$; 4. $\mathbf{Var}(X \vert Y=1)$.
-</div>
- 
+
 
 <details style="margin-top: 1em;">
   <summary style="font-weight: bold; color: #444; cursor: pointer;">
@@ -659,6 +680,10 @@ $$
 </details>
 
 
+</div>
+ 
+
+
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Example.</strong>  The joint density function of $X$ and $Y$ is given by
@@ -669,7 +694,6 @@ $$
 
 Compute the conditional density of $X$ given that $Y  =y$, $0<y<1$.
 
-</div>
 
 <details style="margin-top: 1em;">
   <summary style="font-weight: bold; color: #444; cursor: pointer;">
@@ -721,4 +745,8 @@ If $X$ and $Y$ are independent continuous random variables, the conditional dens
 
   </div>
 </details>
+
+</div>
+
+
  
