@@ -397,16 +397,11 @@ $$
 
  <br>
 
- <!-- Example Block -->
-<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
-  <strong>Example.</strong> Suppose \(X_1, X_2, X_3 \sim N(0,1)\) are independent...
-
-  <!-- Collapsible Solution -->
   <details style="margin-top: 1em;">
     <summary style="font-weight: bold; color: #444; cursor: pointer;">Click to show/hide solution</summary>
     <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
       <strong>Solution.</strong><br>
-      **Solution:** If we let $X,Y$ denote, respectively the time past $12$ that the man an the woman arrive, then $X,Y$ are independent random variables and each of which is uniformly distributed over $[0,60]$. The desired probability is given by
+       If we let $X,Y$ denote, respectively the time past $12$ that the man an the woman arrive, then $X,Y$ are independent random variables and each of which is uniformly distributed over $[0,60]$. The desired probability is given by
 
 $$
 \mathbb{P}\{ X + 10 < Y \} + \mathbb{P}\{ Y + 10 < X\}
@@ -426,7 +421,6 @@ $$
   </details>
 </div>
 
-</div>
 
 
 
