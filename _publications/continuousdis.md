@@ -55,6 +55,7 @@ $$
 **Proof**
 
 Left as an exercise to the reader.
+
 **QED**
 
 
