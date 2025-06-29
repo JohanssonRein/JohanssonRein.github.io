@@ -303,14 +303,9 @@ $$
 
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
-  <strong>Example.</strong> Consider two random variables $X$ and $Y$ with joint probability mass function given by
+  <strong>Example.</strong> Consider two random variables $X$ and $Y$ with joint probability mass function given below:
 
 
-|           | $Y=2$           | $Y=4$           | $Y=5$           |
-|-----------|-----------------|-----------------|-----------------|
-| $X=1$     | $\frac{1}{12}$  | $\frac{1}{24}$  | $\frac{1}{24}$  |
-| $X=2$     | $\frac{1}{6}$   | $\frac{1}{12}$  | $\frac{1}{8}$   |
-| $X=3$     | $\frac{1}{4}$   | $\frac{1}{8}$   | $\frac{1}{12}$  |
 
 
 
@@ -403,9 +398,14 @@ Which means this pair does not satisfy equation $(*)$, thus they are not indepen
 
 
 </div>
+
+
+|           | $Y=2$           | $Y=4$           | $Y=5$           |
+|-----------|-----------------|-----------------|-----------------|
+| $X=1$     | $\frac{1}{12}$  | $\frac{1}{24}$  | $\frac{1}{24}$  |
+| $X=2$     | $\frac{1}{6}$   | $\frac{1}{12}$  | $\frac{1}{8}$   |
+| $X=3$     | $\frac{1}{4}$   | $\frac{1}{8}$   | $\frac{1}{12}$  |
  
-
-
 
 
 
@@ -446,8 +446,6 @@ $$
   </div>
 </details>
 
-
-
  
 </div>
 
@@ -458,23 +456,8 @@ $$
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Example.</strong> Suppose tossing a coin with $\mathbb{P}(H) = p$, repeatedly toss the coin until there are two consecutive heads. Let $X$ denote the total number of coin tosses, find $\mathbb{E} X$.
-</div>
- 
 
-
- 
-
-
-# Continuous Conditional Distribution
-
-<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
-  <strong>Definition.</strong> If $X,Y$ have a joint probability density function $f(x,y)$, then the conditional probability density function of $X$ given that $Y =y$ is defined, for all values of $y$ such that $f_Y(y)>0$, by
-
-$$
-f_{X \vert Y}(x \vert y)=\frac{f(x,y)}{f_Y(y)}
-$$
-
-<details style="margin-top: 1em;">
+  <details style="margin-top: 1em;">
   <summary style="font-weight: bold; color: #444; cursor: pointer;">
     Click to show/hide solution
   </summary>
@@ -517,6 +500,21 @@ $$
   </div>
 </details>
 
+</div>
+ 
+
+
+ 
+
+
+# Continuous Conditional Distribution
+
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Definition.</strong> If $X,Y$ have a joint probability density function $f(x,y)$, then the conditional probability density function of $X$ given that $Y =y$ is defined, for all values of $y$ such that $f_Y(y)>0$, by
+
+$$
+f_{X \vert Y}(x \vert y)=\frac{f(x,y)}{f_Y(y)}
+$$
 </div>
 
 
