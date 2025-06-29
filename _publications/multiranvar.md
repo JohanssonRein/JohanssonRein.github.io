@@ -36,13 +36,13 @@ $$
 
 And we claim the following:
 
-* $F_{\mathbf{X}}$ is non-decreasing in every argument $x_1,x_2,\cdots,x_n$;\\
+* $F_{\mathbf{X}}$ is non-decreasing in every argument $x_1,x_2,\cdots,x_n$;
 
-* $F_{\mathbf{X}}$ is right continuous in all arguments $x_1,x_2,\cdots,x_n$;\\
+* $F_{\mathbf{X}}$ is right continuous in all arguments $x_1,x_2,\cdots,x_n$;
 
-* $F_{\mathbf{X}} (-\infty,x_2,\cdots,x_n) = F_{\mathbf{X}} (x_1,-\infty,x_3,\cdots,x_n) = \cdots = 0$;\\
+* $F_{\mathbf{X}} (-\infty,x_2,\cdots,x_n) = F_{\mathbf{X}} (x_1,-\infty,x_3,\cdots,x_n) = \cdots = 0$;
 
-* $F_{\mathbf{X}} (+\infty,+\infty,\cdots,+\infty) = 1$;\\
+* $F_{\mathbf{X}} (+\infty,+\infty,\cdots,+\infty) = 1$;
 
 * Let $n=2$, $\forall \epsilon_1,\epsilon_2 >0$, we have
  
@@ -199,7 +199,6 @@ Hence
 $$
 \mathbb{E} D = \frac{2}{R^2} \int_0^R a^2 da = \frac{2R}{3}
 $$
-
 
 
 
