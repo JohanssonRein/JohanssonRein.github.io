@@ -74,9 +74,9 @@ $$
 The conditional expectation and variance are defined by replacing the PDF by conditional PDF in the definitions of expectation and variance. In general for a random variable $x$ and an event $A$, we have the followings:
 
 
-* $\displaystyle{\mathbb{E}[X \vert A] = \int_{-\infty}^{+\infty} x f_{X \vert A}(x) dx}$;\\
+* $\displaystyle{\mathbb{E}[X \vert A] = \int_{-\infty}^{+\infty} x f_{X \vert A}(x) dx}$;
 
-* $\displaystyle{\mathbb{E}[g(x) \vert A] = \int_{-\infty}^{+\infty} g(x) f_{X \vert A}(x) dx}$;\\
+* $\displaystyle{\mathbb{E}[g(x) \vert A] = \int_{-\infty}^{+\infty} g(x) f_{X \vert A}(x) dx}$;
 
 * $\displaystyle{\mathbf{Var}(X \vert A) = \mathbb{E}[X^2 \vert A] - (\mathbb{E}[X \vert A])^2}$.
 
@@ -117,6 +117,8 @@ $$
 
 and $F_{X \vert A}(x) = 0$ otherwise.
 
+<br>
+
 2. : We have
 
  $$
@@ -126,6 +128,8 @@ and $F_{X \vert A}(x) = 0$ otherwise.
 &=2.
 \end{align*}
 $$
+
+<br>
 
 3: We have
 
