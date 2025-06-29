@@ -33,9 +33,9 @@ Let $\{ X_n \}$ be a sequence of random variables and $\{ F_n \}$ be the corresp
 
 
 <div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
-  <strong>Definition.</strong> Let $\{ X_n \}$ be a sequence of random variables defined on some probability space $(\Omega,\mathcal{F},\P)$, we say that the sequence $\{ X_n \}$ converges in probability to the random variable $X$ if $\forall \epsilon >0$,
+  <strong>Definition.</strong> Let $\{ X_n \}$ be a sequence of random variables defined on some probability space $(\Omega,\mathcal{F},\mathbb{P})$, we say that the sequence $\{ X_n \}$ converges in probability to the random variable $X$ if $\forall \epsilon >0$,
 $$
-\lim_{n \to +\infty} \P \{ \vert X_n - X \vert > \epsilon \} = 0
+\lim_{n \to +\infty} \mathbb{P} \{ \vert X_n - X \vert > \epsilon \} = 0
 $$
 And we denote by $X_n \overset{P}{\to} X$.
 </div>
@@ -66,9 +66,9 @@ Then, $\forall \epsilon >0$, we have
 
 $$
 \begin{align*}
-\P\{ \vert X_n - X \vert \geq \epsilon \} & = \P \{ \vert Y_n \vert \geq \epsilon \}\\
-& \leq \P \left\{ \vert Y_n -\mathbb{E} Y_n \vert + \frac{1}{n} \geq \epsilon \right\} \\
-& = \P \left\{ \vert Y_n - \mathbb{E} Y_n \vert \geq \epsilon - \frac{1}{n} \right\} \\
+\mathbb{P}\{ \vert X_n - X \vert \geq \epsilon \} & = \mathbb{P} \{ \vert Y_n \vert \geq \epsilon \}\\
+& \leq \mathbb{P} \left\{ \vert Y_n -\mathbb{E} Y_n \vert + \frac{1}{n} \geq \epsilon \right\} \\
+& = \mathbb{P} \left\{ \vert Y_n - \mathbb{E} Y_n \vert \geq \epsilon - \frac{1}{n} \right\} \\
 & \leq \frac{\mathbf{Var}(Y_n)}{\left( \epsilon - \frac{1}{n} \right)^2} \hspace{2cm} \text{By Chebyshev's Inequality} \\
 & = \frac{\sigma^2}{n \left( \epsilon - \frac{1}{n} \right)^2} \to 0, \hspace{1cm} \text{as $n \to +\infty$}.
 \end{align*}
@@ -84,7 +84,7 @@ Therefore we conclude that $X_n \overset{P}{\to} X$.
 As we mentioned previously, convergence in probability is stronger than convergence in distribution. That is, if $X_n \overset{P}{\to} X$ then $X_n \overset{d}{\to} X$. However the converse is not necessarily true. To see this, let $X_1,X_2,\cdots,X_3$ be a sequence of i.i.d $Bernoulli(0.5)$ random variables, Let also $X \sim Bernoulli(0.5)$ be independent from the $X_i$'s, then $X_n \to X$, however $X_n$ does not converge in probability to $X$ since $\vert X_n - X \vert$ is in fact also a $Bernoulli(0.5)$ random variable and
 
 $$
-\P\{ \vert X_n - X \vert \geq \epsilon \} = 0.5
+\mathbb{P}\{ \vert X_n - X \vert \geq \epsilon \} = 0.5
 $$
 
 A special case in which the converse true is when $X_n \overset{d}{\to} c$ where $c$ is a constant. In this case convergence in distribution implies convergence in probability.
@@ -105,8 +105,8 @@ A special case in which the converse true is when $X_n \overset{d}{\to} c$ where
 
   $$
 \begin{align*}
-\P\{ \vert X_n - c \vert < k \} &= \P \{ -k < X_n - c < k\} \\
-&= \P\{ -k+c < X_n < k+c \}\\
+\mathbb{P}\{ \vert X_n - c \vert < k \} &= \mathbb{P} \{ -k < X_n - c < k\} \\
+&= \mathbb{P}\{ -k+c < X_n < k+c \}\\
 &= F_{X}(k+c) - F_X(-k+c) \\
 &=1
 \end{align*}
@@ -125,7 +125,7 @@ thus $X_n \overset{P}{\to} c$.
   1. $X_n \overset{P}{\to} X \Longleftrightarrow
 X_n - X \overset{P}{\to} 0$;
 
-2.  If $X_n \overset{P}{\to} X$ and $X_n \overset{P}{\to} Y$, then $\P\{ X = Y\} = 1$.
+2.  If $X_n \overset{P}{\to} X$ and $X_n \overset{P}{\to} Y$, then $\mathbb{P}\{ X = Y\} = 1$.
 </div>
 
 
@@ -210,11 +210,11 @@ $$
 
 
 Then, we find out that what we want to show is just $\overline{X}_n \overset{P}{\to} \mathbb{E} X$, to further prove this we consider for any $\epsilon>0$, the term
-$\P \{ \vert \overline{X}_n - \mathbb{E} X \vert >\epsilon \}$, and by Chevbeshev's inequality,
+$\mathbb{P} \{ \vert \overline{X}_n - \mathbb{E} X \vert >\epsilon \}$, and by Chevbeshev's inequality,
 
 $$
 \begin{align*}
-\P\{ \vert \overline{X}_n - \mathbb{E} X \vert > \epsilon \} &\leq \frac{\mathbf{Var}(\overline{X}_n)}{\epsilon^2} \\
+\mathbb{P}\{ \vert \overline{X}_n - \mathbb{E} X \vert > \epsilon \} &\leq \frac{\mathbf{Var}(\overline{X}_n)}{\epsilon^2} \\
 & = \frac{\frac{1}{n} \mathbf{Var}(X)}{\epsilon^2}\\
 & = \frac{\mathbf{Var}(X)}{\epsilon^2} \cdot \frac{1}{n} \to 0, \text{as $n \to +\infty$}.
 \end{align*}
@@ -226,8 +226,8 @@ So we have proved that $\overline{X}_n \overset{P}{\to} 1+\theta$.
 
 $$
 \begin{align*}
-\P \{ \vert Y_n - c \vert < \epsilon \} &= \P\{ -\epsilon < Y_n - c < \epsilon \} \\
-&= \P\{ -\epsilon + c < Y_n < \epsilon + c \} \\
+\mathbb{P} \{ \vert Y_n - c \vert < \epsilon \} &= \mathbb{P}\{ -\epsilon < Y_n - c < \epsilon \} \\
+&= \mathbb{P}\{ -\epsilon + c < Y_n < \epsilon + c \} \\
 &= F_{Y_n}(\epsilon + c) - F_{Y_n}(-\epsilon + c) \\
 & \overset{\text{as $n \to +\infty$}}{\to} 1
 \end{align*}
@@ -239,7 +239,7 @@ Thus we have proved that $Y_n \overset{P}{\to} c$.
 
 $$
 \begin{align*}
-\P(X_0 \geq x) \implies \P(X_1 \geq x, X_2 \geq x, \cdots, X_n \geq x) &= \left( \int_{x}^{+\infty} e^{-(t - \theta)} dt \right)^n \\
+\mathbb{P}(X_0 \geq x) \implies \mathbb{P}(X_1 \geq x, X_2 \geq x, \cdots, X_n \geq x) &= \left( \int_{x}^{+\infty} e^{-(t - \theta)} dt \right)^n \\
 &=e^{-n(x - \theta)}, \text{if $x > \theta$}.
 \end{align*}
 $$
@@ -325,7 +325,7 @@ So Chevbeshev's inequality states that for any $k >0$,
 
 $$
 \begin{align*}
-\P\{ \vert \overline{Y}_n - \mathbb{E} \overline{Y}_n \vert \geq k \} &\leq \frac{\mathbf{Var}(\overline{Y}_n)}{k^2}\\
+\mathbb{P}\{ \vert \overline{Y}_n - \mathbb{E} \overline{Y}_n \vert \geq k \} &\leq \frac{\mathbf{Var}(\overline{Y}_n)}{k^2}\\
 & = \frac{\mathbf{Var}(Y)}{n k^2} \leq \frac{\beta_4}{n k^2} \to 0, \text{as $n \to +\infty$}.
 \end{align*}
 $$
