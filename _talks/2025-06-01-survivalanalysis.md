@@ -30,7 +30,7 @@ This is a series of conference focusing on survival analysis organised by me dur
 
 * Time & Location: 
 
-  * July 7th, 2025, Time and Location TBD
+  * July 9th, 2025, Time and Location TBD
     
 * Description of the second talk:
   
