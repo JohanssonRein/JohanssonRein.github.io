@@ -57,6 +57,16 @@ Teaching
   * McGill University
 
   
-Service and leadership
+Skills
 ======
-* Currently signed in to 43 different slack teams
+* Experiences of working with $\LaTeX$, R.
+* Language Skills: Mandarin (Native); English (Advanced); French (Intermediate)
+
+
+
+
+
+
+
+
+
