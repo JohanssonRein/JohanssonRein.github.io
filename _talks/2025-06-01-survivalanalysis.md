@@ -35,11 +35,11 @@ This is a series of conference focusing on survival analysis organised by me dur
 * Description of the second talk:
   
   * Introducing basic statistical features of non-parametric estimation: Empirical cdf, and convergence;
-  * Earier methods for estimating survival function in a non-parametric family: Life Tables;
   * Kaplan Meier estimator for the survival function, Green's formula, and confidence intervals;
   * Nelson-Aalen estimator for the cumulative hazard function.
+  * A multi-state model and Aalen-Johansen estimator.
 
-* The slides is still under construction.
+* The slides can be found [here](/files/SurvivalAnalysisTalk2.pdf)
 
 ## Conference 3:
 
@@ -49,7 +49,7 @@ This is a series of conference focusing on survival analysis organised by me dur
 
 * Description of the talk:
 
-  * A multi-state model based on Kaplan-Meier estimator, counting processes, stochastic processes and Aalen-Johansen estimator.
+  * Counting processes, martingale theory, stochastic processes and the asymptotic properties of Nelson-Aalen; Kaplan-Meier estimators.
 
 * The slides is still under construction.
 
