@@ -30,7 +30,7 @@ This is a series of conference focusing on survival analysis organised by me dur
 
 * Time & Location: 
 
-  * July 9th, 2025, Time and Location TBD
+  * July 9th, 2025, 12:00 - 13:00; Both in person (Burnside, exact room TBD) and online (via discord group)
     
 * Description of the second talk:
   
