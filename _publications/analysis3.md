@@ -11,3 +11,5 @@ venue: 'Fall'
 #paperurl: 'http://academicpages.github.io/files/paper3.pdf'
 citation: 'Jiajun Zhang, (2024) Honors Analysis 3 Notes'
 ---
+
+You can find the notes [here](/files/Analysis3.pdf)
