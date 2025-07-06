@@ -1,7 +1,7 @@
 ---
 title: "Honors Analysis 3 Notes"
 collection: publications
-category: analysis
+category: realanalysis
 permalink: /publication/analysis3
 excerpt: 'This is a note on analysis'
 date: 2024-10-05
