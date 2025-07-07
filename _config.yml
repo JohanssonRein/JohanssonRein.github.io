@@ -106,7 +106,7 @@ publication_category:
   realanalysis:
     title: 'Real Analysis'
     description: >
-     Here you can find my notes on a higher-level analysis course. It was taught by Prof. Linan Chen at McGill University during Fall 2024. It contains all the necessary and important topics in measure theory, Legesgue integration theory and differentiation theory. It is also a very good 
+     Here you can find my notes on a higher-level analysis course. It was taught by Prof. Linan Chen at McGill University during Fall 2024. It contains all the necessary and important topics in measure theory, Lebesgue integration theory and differentiation theory. It is also a very good 
      reference for advanced probability theory, and you may use this notes as some theorical background for my probability notes listed above.
   ode:
     title: 'Ordinary Differential Equations'
