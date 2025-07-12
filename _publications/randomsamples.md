@@ -93,20 +93,20 @@ are all statistics. But note that $\overline{X}_n - \mu$ is not a statistic, sin
 We would like to discuss some general results:
 
 <div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
-  <strong>Theorem.</strong> Let $X_1,X_2,\cdots,X_n \overset{i.i.d}{\sim} F$ and $g: \mathbb{R} \to \mathbb{R}$ be a Borel measurable function with $\Var(g(X_i)) < +\infty$, then
+  <strong>Theorem.</strong> Let $X_1,X_2,\cdots,X_n \overset{i.i.d}{\sim} F$ and $g: \mathbb{R} \to \mathbb{R}$ be a Borel measurable function with $\mathbf{Var}(g(X_i)) < +\infty$, then
 $$
-\mathbb{E}\left\{ \sum_{i=1}^n g(X_i) \right\} = n \mathbb{E}(g(X_i)) \hspace{0.2cm} \text{and} \hspace{0.2cm} \Var\left\{ \sum_{i=1}^n g(X_i) \right\} = n \mathbb{E}\{ ( g(X_i) - \mathbb{E}(g(X_i)) )^2\}
+\mathbb{E}\left\{ \sum_{i=1}^n g(X_i) \right\} = n \mathbb{E}(g(X_i)) \hspace{0.2cm} \text{and} \hspace{0.2cm} \mathbf{Var}\left\{ \sum_{i=1}^n g(X_i) \right\} = n \mathbb{E}\{ ( g(X_i) - \mathbb{E}(g(X_i)) )^2\}
 $$
 </div>
 
 
 
 <div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
-  <strong>Theorem.</strong> Let $X_1,\cdots,X_n \overset{i.i.d}{\sim} F$, and $\mu = \mathbb{E} X_i, \sigma^2 = \Var(X_i) < +\infty$, then:
+  <strong>Theorem.</strong> Let $X_1,\cdots,X_n \overset{i.i.d}{\sim} F$, and $\mu = \mathbb{E} X_i, \sigma^2 = \mathbf{Var}(X_i) < +\infty$, then:
 
 * $\mathbb{E}(\overline{X}_n) = \mu$;
 
-* $\displaystyle{\Var(\overline{X}_n) = \frac{\sigma^2}{n}}$
+* $\displaystyle{\mathbf{Var}(\overline{X}_n) = \frac{\sigma^2}{n}}$
 
 * $\mathbb{E}(S_n^2) = \sigma^2$, here $\displaystyle{S_n^2 = \frac{1}{n-1} \sum_{i=1}^n (X_i - \overline{X})^2}$
 
@@ -221,7 +221,7 @@ $$
 
 Here are some remarks:
 
-* If $\nu = 1$, it is called a Cauchy distribution, in this case $\mathbb{E} X$ does not exist. In general if $\nu >2$, we have $\mathbb{E} X = 0,\Var(X) = \displaystyle{\frac{\nu}{\nu-2}}$;\\
+* If $\nu = 1$, it is called a Cauchy distribution, in this case $\mathbb{E} X$ does not exist. In general if $\nu >2$, we have $\mathbb{E} X = 0,\mathbf{Var}(X) = \displaystyle{\frac{\nu}{\nu-2}}$;\\
 
 * If $Z \sim N(0,1)$, $V = \chi^2_v$ and $Z,V$ are independent, then
 * 
@@ -290,7 +290,7 @@ From this definition, we may state the weak law of large numbers (WLLN):
 <div style="background-color: #ccffcc; padding: 1em; border-left: 6px solid #33cc33; border-radius: 8px; margin: 1em 0;">
   <strong>Theorem.</strong> (Weak Law of Large Numbers)\\
 
-Let $X_1,\cdots,X_n \overset{i.i.d}{\sim} F$ with $\mathbb{E} X_i = \mu$, and $\Var(X_i) <+\infty$, then $\overline{X}_n \overset{P}{\to} \mu$ as $n \to \infty$.
+Let $X_1,\cdots,X_n \overset{i.i.d}{\sim} F$ with $\mathbb{E} X_i = \mu$, and $\mathbf{Var}(X_i) <+\infty$, then $\overline{X}_n \overset{P}{\to} \mu$ as $n \to \infty$.
 </div>
 
 
@@ -301,10 +301,10 @@ $$
 \lim_{n \to \infty} \mathbb{P}\left\{ \Bigg\vert\frac{1}{n}(X_1+\cdots+X_n) - \mu \Bigg\vert > \epsilon \right\}.
 $$
 
-Since $\mathbb{E} \overline{X}_n = \mu, \Var(\overline{X}_n) = \frac{\sigma^2}{n}$, by Chebyshev's inequality, we have
+Since $\mathbb{E} \overline{X}_n = \mu, \mathbf{Var}(\overline{X}_n) = \frac{\sigma^2}{n}$, by Chebyshev's inequality, we have
 
 $$
-\mathbb{P}\{ |\overline{X}_n - \mu| > \epsilon\} \leq \frac{\Var{\overline{X}_n}}{\epsilon^2} = \frac{\sigma^2}{\epsilon} \frac{1}{n} \to 0, \text{as $n \to \infty$}.
+\mathbb{P}\{ |\overline{X}_n - \mu| > \epsilon\} \leq \frac{\mathbf{Var}{\overline{X}_n}}{\epsilon^2} = \frac{\sigma^2}{\epsilon} \frac{1}{n} \to 0, \text{as $n \to \infty$}.
 $$
 </div>
 
@@ -320,7 +320,7 @@ $$
 
 
 
-The most used application of convergence in distribution is central limit theorem, which states that if we have $X_1,\cdots,X_n \overset{i.i.d}{\sim} F$ and $\mu = \mathbb{E} X_i, \sigma^2 = \Var(X_i) <+ \infty$, then
+The most used application of convergence in distribution is central limit theorem, which states that if we have $X_1,\cdots,X_n \overset{i.i.d}{\sim} F$ and $\mu = \mathbb{E} X_i, \sigma^2 = \mathbf{Var}(X_i) <+ \infty$, then
 
 $$
 \frac{\sqrt{n}(\overline{X}_n - \mu)}{\sigma} \overset{d}{\to} N(0,1)
@@ -353,7 +353,7 @@ $$
 
 
 
-Let $X-1,\cdots,X_n \overset{i.i.d}{\to} F$, $\mu = \mathbb{E} X_i, \sigma^2 = \Var(X_i) < +\infty$, then
+Let $X-1,\cdots,X_n \overset{i.i.d}{\to} F$, $\mu = \mathbb{E} X_i, \sigma^2 = \mathbf{Var}(X_i) < +\infty$, then
 
 $$
 \frac{\sqrt{n}(\overline{X}_n - \mu)}{S_n} \overset{d}{\to} N(0,1), \text{ as $n \to \infty$}.
