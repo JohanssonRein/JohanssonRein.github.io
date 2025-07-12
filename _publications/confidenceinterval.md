@@ -6,7 +6,7 @@ permalink: /publication/confidenceinterval
 excerpt: 'In this article we will talk about confidence interval'
 date: 2025-06-01
 order: 2
-venue: 'Summer'
+venue: 'Winter'
 slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
 paperurl: 'http://academicpages.github.io/files/paper1.pdf'
 bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
