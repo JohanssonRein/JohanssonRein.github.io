@@ -89,7 +89,8 @@ $$
 
 **Remark:** $\displaystyle{\frac{1}{n}\sum_{i=1}^n} (X_i - \overline{X}_n)^2$ is also a good estimator for the variance, but this estimator is biased!
 
-**Example:** Suppose we have $X_1,\cdots,X_n \overset{i.i.d}{\sim} Uniform(0,\theta)$, $\theta>0$ is out target parameter, then the estimator $\hat{\theta}_{n,1} = 2X_3, \hat{\theta}_{n,2} = 2\overline{X}_n$ are all unbiased, but $\hat{\theta}_{n,3} = X_{(n)} := \max_{1 \leq i \leq n}(X_1,\cdots,X_n)$ is biased, since $\mathbb{E}\{\hat{\theta}_{n,3}\} = \frac{n}{n+1}\theta$. A way to correct the bias of $\hat{\theta}_{n,3}$ would be $\hat{\theta}_{n,4} = \frac{n+1}{n} X_{(n)}$.
+**Example:** Suppose we have $X_1,\cdots,X_n \overset{i.i.d}{\sim} Uniform(0,\theta)$, $\theta>0$ is out target parameter, then the estimator $\hat{\theta}{n,1} = 2X_3, \hat{\theta}{n,2} = 2\overline{X}n$ 
+are all unbiased, but $\hat{\theta}{n,3} = X_{(n)} := \max_{1 \leq i \leq n}(X_1,\cdots,X_n)$ is biased, since $\mathbb{E}\{\hat{\theta}{n,3}\} = \frac{n}{n+1}\theta$. A way to correct the bias of $\hat{\theta}{n,3}$ would be $\hat{\theta}{n,4} = \frac{n+1}{n} X_{(n)}$.
 
 As we see from the previous examples, for a parameter $\theta \in \Theta \subset \mathbb{R}^d$ we could come up with unbiased estimators. Another criterion that we could bring into our assessment of an estimator is its variance $\mathbf{Var}_{\theta}\{ \hat{\theta}_n \}$, if exists.
 
