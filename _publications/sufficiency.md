@@ -19,7 +19,7 @@ Often times, our raw data can be very large and long, and it would be inefficien
 </div>
 
 
-In general, the distribution $p_\theta(\vec x \in \mathcal{X} | T(\vec X) = t)$ does not depend on $\theta$.
+In general, the distribution $p_\theta(\vec x \in \mathcal{X} \vert T(\vec X) = t)$ does not depend on $\theta$.
 
 **Example:** Let $X_1,\cdots,X_n \overset{i.i.d}{\sim} Bernoulli(\theta)$, we claim that $T(\vec X) = \displaystyle{\sum_{i=1}^n X_i}$ is a sufficient statistic of $\theta$, this is because
 
