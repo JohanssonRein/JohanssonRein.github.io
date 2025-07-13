@@ -49,7 +49,7 @@ We may come up with many possible estimators for a parameter $\theta$, but how d
 
 
 <div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
-  <strong>Definition.</strong> An estimator $\hat{\theta}_n = \hat{\theta}_n(X_1,\cdots,X_n)$ is an ``unbiased'' estimator of $\theta$ if $\forall \theta \in \Theta$, $\E_{\theta}\{ \hat{\theta}_n \} = \theta$.
+  <strong>Definition.</strong> An estimator $\hat{\theta}_n = \hat{\theta}_n(X_1,\cdots,X_n)$ is an ``unbiased'' estimator of $\theta$ if $\forall \theta \in \Theta$, $\mathbb{E}_{\theta}\{ \hat{\theta}_n \} = \theta$.
 </div>
 
 
@@ -57,13 +57,13 @@ We may come up with many possible estimators for a parameter $\theta$, but how d
 We also define the biased estimator to be
 
 $$
-Bias(\hat{\theta}_n) = \E_{\theta} \{ \hat{\theta}_n \} - \theta.
+Bias(\hat{\theta}_n) = \mathbb{E}_{\theta} \{ \hat{\theta}_n \} - \theta.
 $$
 
 Recall from the previous example where we have $X_1,\cdots,X_n \overset{i.i.d}{\sim} Bernoulli(\theta)$, and the estimators we introduced before, i.e $\overline{X}_n ; \displaystyle{\frac{X_1+X_2}{2}}, X_5$ are all unbiased indeed!
 
 
-**Example:** Suppose we have $X_1,\cdots,X_n \overset{i.i.d}{\sim} F_{\theta}$ where $\theta = \begin{pmatrix} \mu \\ \sigma^2 \end{pmatrix}, \mu = \E X_i, \sigma^2 = \Var(X_i)$, then
+**Example:** Suppose we have $X_1,\cdots,X_n \overset{i.i.d}{\sim} F_{\theta}$ where $\theta = \begin{pmatrix} \mu \\ \sigma^2 \end{pmatrix}, \mu = \mathbb{E} X_i, \sigma^2 = \Var(X_i)$, then
 
 $\bullet$ $\displaystyle{\hat{\mu}_n = \overline{X}_n = \frac{1}{n} \sum_{i=1}^n X_i}$ is an unbiased estimator of $\mu$.
 
@@ -79,8 +79,8 @@ Thus
 
 $$
 \begin{align*}
-\E_{\theta}\{ \hat{\sigma}_n^2\} &= \frac{1}{n-1} \E_{\theta} \left\{ \sum_{i=1}^n X_i^2 - n\overline{X}_n^2 \right\}\\
-&= \frac{1}{n-1} \left\{ \sum_{i=1}^n \E_{\theta}(X_i^2) - n \E_{\theta}(\overline{X}_n^2) \right\}\\
+\mathbb{E}_{\theta}\{ \hat{\sigma}_n^2\} &= \frac{1}{n-1} \mathbb{E}_{\theta} \left\{ \sum_{i=1}^n X_i^2 - n\overline{X}_n^2 \right\}\\
+&= \frac{1}{n-1} \left\{ \sum_{i=1}^n \mathbb{E}_{\theta}(X_i^2) - n \mathbb{E}_{\theta}(\overline{X}_n^2) \right\}\\
 &= \frac{1}{n-1} \left\{ \sum_{i=1}^n (\sigma^2+\mu^2) - n \left[ \frac{\sigma^2}{n} + \mu^2 \right] \right\}\\
 &= \frac{n-1}{n-1}\sigma^2 = \sigma^2.
 \end{align*}
@@ -89,7 +89,7 @@ $$
 
 **Remark:** $\displaystyle{\frac{1}{n}\sum_{i=1}^n} (X_i - \overline{X}_n)^2$ is also a good estimator for the variance, but this estimator is biased!
 
-**Example:** Suppose we have $X_1,\cdots,X_n \overset{i.i.d}{\sim} Uniform(0,\theta)$, $\theta>0$ is out target parameter, then the estimator $\hat{\theta}_{n,1} = 2X_3, \hat{\theta}_{n,2} = 2\overline{X}_n$ are all unbiased, but $\hat{\theta}_{n,3} = X_{(n)} := \max_{1 \leq i \leq n}(X_1,\cdots,X_n)$ is biased, since $\E\{\hat{\theta}_{n,3}\} = \frac{n}{n+1}\theta$. A way to correct the bias of $\hat{\theta}_{n,3}$ would be $\hat{\theta}_{n,4} = \frac{n+1}{n} X_{(n)}$.
+**Example:** Suppose we have $X_1,\cdots,X_n \overset{i.i.d}{\sim} Uniform(0,\theta)$, $\theta>0$ is out target parameter, then the estimator $\hat{\theta}_{n,1} = 2X_3, \hat{\theta}_{n,2} = 2\overline{X}_n$ are all unbiased, but $\hat{\theta}_{n,3} = X_{(n)} := \max_{1 \leq i \leq n}(X_1,\cdots,X_n)$ is biased, since $\mathbb{E}\{\hat{\theta}_{n,3}\} = \frac{n}{n+1}\theta$. A way to correct the bias of $\hat{\theta}_{n,3}$ would be $\hat{\theta}_{n,4} = \frac{n+1}{n} X_{(n)}$.
 
 As we see from the previous examples, for a parameter $\theta \in \Theta \subset \mathbb{R}^d$ we could come up with unbiased estimators. Another criterion that we could bring into our assessment of an estimator is its variance $\Var_{\theta}\{ \hat{\theta}_n \}$, if exists.
 
@@ -98,13 +98,13 @@ In the class of unbiased estimator, we could choose the one that has the smalles
 Another criterion is MSE (Mean Square Error), namely
 
 $$
-MSE_{\theta}(\hat{\theta}_n) = \E_{\theta}[(\hat{\theta}_n^2 - \theta)^2].
+MSE_{\theta}(\hat{\theta}_n) = \mathbb{E}_{\theta}[(\hat{\theta}_n^2 - \theta)^2].
 $$
 
 Note that
 
 $$
-MSE_{\theta}(\hat{\theta}_n) = \E_{\theta}[(\hat{\theta}_n - \E_{\theta}(\hat{\theta}_n) + \E_{\theta}(\hat{\theta}_n)-\theta)^2] = \Var_{\theta}(\hat{\theta}_n) + [Bias(\hat{\theta}_n)]^2.
+MSE_{\theta}(\hat{\theta}_n) = \mathbb{E}_{\theta}[(\hat{\theta}_n - \mathbb{E}_{\theta}(\hat{\theta}_n) + \mathbb{E}_{\theta}(\hat{\theta}_n)-\theta)^2] = \Var_{\theta}(\hat{\theta}_n) + [Bias(\hat{\theta}_n)]^2.
 $$
 
 
