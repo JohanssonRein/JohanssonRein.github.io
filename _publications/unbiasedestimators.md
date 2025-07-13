@@ -2,7 +2,7 @@
 title: "Unbiased Estimators"
 collection: publications
 category: statistics
-permalink: /publication/randomsamples
+permalink: /publication/unbiasedestimators
 order: 2
 excerpt: 'We will investigate some basic theories of unbiased estimators'
 date: 2025-01-15
