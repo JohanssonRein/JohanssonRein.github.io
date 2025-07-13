@@ -33,7 +33,7 @@ Furthermore, if $T(\vec X)$ is complete, then the resulting $\delta(T(\vec X))$ 
 
 **Proof:**
 
-Firstly since $T(\vec X)$ is sufficient, so it is easy to verify $\mathbb{E}\{ U(\vec X | \vec T(\vec X))\}$ does not depend on $\theta$ and is hence a statistic, then
+Firstly since $T(\vec X)$ is sufficient, so it is easy to verify $\mathbb{E}\{ U(\vec X \vert \vec T(\vec X))\}$ does not depend on $\theta$ and is hence a statistic, then
 
 $$
 \mathbb{E}\{ \delta(\vec X)\} = \mathbb{E}\{\mathbb{E}\{U(\vec X|T(\vec X))\}\} = \mathbb{E}\{ U(\vec X)\} = \tau(\theta)
