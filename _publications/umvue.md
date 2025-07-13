@@ -42,7 +42,7 @@ and does not depend on $\theta$. (In this case $Uniform(0,\theta)$ is excluded);
 
 * Furthermore, assume for $\vec x \in \mathcal{S}$, $\theta \in \Theta \subset \mathbb{R}$, $\displaystyle{\frac{d}{d\theta}\log p_{\theta}(\vec x)}$ exists;
 
-* Also, assume for any statistics $h(\vec X)$ with $\mathbb{E}\{ | h(\vec X) | \} < +\infty, \forall \theta \in \Theta$ we have
+* Also, assume for any statistics $h(\vec X)$ with $\mathbb{E}\{ \Big| h(\vec X) \Big| \} < +\infty, \forall \theta \in \Theta$ we have
   
 $$
 \frac{d}{d\theta} \int_{\mathcal{S}} h(\vec x) p_{\theta}(\vec x) d\vec x = \int_{\mathcal{S}} h(\vec x) \frac{d}{d\theta} p_{\theta}(\vec x)d\vec x
@@ -69,7 +69,13 @@ $$
 
 
 
-Here, we denote $I(\theta) = \displaystyle{\mathbb{E}_{\theta}\left\{ \left[ \frac{d}{d\theta} \log p(\theta,\vec x) \right]^2 \right\}}$, it is called the Fisher Information.
+Here, we denote 
+
+$$
+I(\theta) = \displaystyle{\mathbb{E}_{\theta}\left\{ \left[ \frac{d}{d\theta} \log p(\theta,\vec x) \right]^2 \right\}}
+$$
+
+it is called the Fisher Information.
 
 
 <div style="background-color: #fff9cc; padding: 1em; border-left: 6px solid #ffeb3b; border-radius: 8px; margin: 1em 0;">
@@ -228,7 +234,7 @@ for some function $a(\theta)$ and for all $\theta \in \Theta$.
 
 **Example:** 
 
-We say $f_\theta(x)$ belongs to  exponential family \textit{(note that you may find me use $f_\theta(x), f(x,\theta), f(x \Big|\theta)$, they are all the same notation, meaning $\theta$ is our parameter, but the density function is a function of $x$)}, if its density function takes the form
+We say $f_\theta(x)$ belongs to  exponential family (note that you may find me use $f_\theta(x), f(x,\theta), f(x \vert \theta)$, they are all the same notation, meaning $\theta$ is our parameter, but the density function is a function of $x$), if its density function takes the form
 
 $$
 f_\theta(x) = h(x) \cdot c(\theta) \cdot \exp\{ \omega(\theta) \cdot T(x)\}
@@ -255,7 +261,13 @@ $$
 \frac{d}{d\theta} \log p_\theta(\vec x) = n \cdot \frac{c'(\theta)}{c(\theta)} + \omega'(\theta) \cdot \sum_{i=1}^n T(x_i) = \omega'(\theta) \cdot \left\{ \sum_{i=1}^n T(x_i) - \frac{-n c'(\theta)}{c(\theta) \omega'(\theta)}\right\}.
 $$
 
-By the previous theorem, it suffies to check $T(\vec X)$ is unbiased. Using Bartlett's identity, we know that $\displaystyle{\mathbb{E}\left\{ \frac{d}{d\theta} \log p_\theta(\vec x)\right\} = 0}$, which means
+By the previous theorem, it suffies to check $T(\vec X)$ is unbiased. Using Bartlett's identity, we know that 
+
+$$
+\mathbb{E}\left\{ \frac{d}{d\theta} \log p_\theta(\vec x) \right\} = 0
+$$
+
+which means
 
 $$
 \mathbb{E}\left\{ \sum_{i=1}^n T(\vec X_i)\right\} = n \tau(\theta)
@@ -272,7 +284,7 @@ hence $T(\vec X) = \displaystyle{\frac{1}{n} \sum_{i=1}^n T(X_i)}$ is unbiased, 
 
 **Solution:**
 
-1. We rewrite the density of Poisson distribution as
+We rewrite the density of Poisson distribution as
    
 $$
 f(x,\theta) = \frac{e^{-\theta}}{x!} e^{x \log\theta}
@@ -285,7 +297,7 @@ UMVUE(\theta) = \frac{1}{n} \sum_{i=1}^n X_i.
 $$
 
 
-2. By direct computation, we have
+By direct computation, we have
    
 $$
 \frac{d}{d\theta} \log f(x,\theta) = -1 + \frac{x}{\theta}, \frac{d^2}{d\theta^2} \log f(x,\theta) = -\frac{x}{\theta^2}
