@@ -34,21 +34,20 @@ $$
 How do we actually find a UMVUE? There are two ways, one is by Cramér-Rao Lower Bound, one is by Rao-Blackwell \& Lehmann-Scheffé theorem. We first introduce the Cramér-Rao Lower Bound (CRLB). Assume $d=1$, $\Theta \subset \mathbb{R}$, $\vec X \sim p_{\theta}$ (joint pdf / pmf).
 
 * Assume that the family $\{ p_{\theta} : \theta \in \Theta \subset \mathbb{R} \}$ has a common support, i.e
-* 
+  
 $$
 \mathcal{S} := \left\{ \vec x = \begin{pmatrix} x_1 \\ \vdots \\ x_n \end{pmatrix} : p_{\theta}(\vec x) > 0 \right\}
-
 $$
 and does not depend on $\theta$. (In this case $Uniform(0,\theta)$ is excluded);
 
 * Furthermore, assume for $\vec x \in \mathcal{S}$, $\theta \in \Theta \subset \mathbb{R}$, $\displaystyle{\frac{d}{d\theta}\log p_{\theta}(\vec x)}$ exists;
 
 * Also, assume for any statistics $h(\vec X)$ with $\mathbb{E}\{ | h(\vec X) | \} < +\infty, \forall \theta \in \Theta$ we have
-* 
+  
 $$
 \frac{d}{d\theta} \int_{\mathcal{S}} h(\vec x) p_{\theta}(\vec x) d\vec x = \int_{\mathcal{S}} h(\vec x) \frac{d}{d\theta} p_{\theta}(\vec x)d\vec x
-
 $$
+
 whenever the $R.H.S$ is finite.
 
 
@@ -70,8 +69,7 @@ $$
 
 
 
-Here, we denote $I(\theta) = \displaystyle{\mathbb{E}_{\theta}\left\{ \left[ \frac{d}{d\theta} \log p_{\theta}(\vec x) \right]^2 \right\}}$, it is called the Fisher Information.
-
+Here, we denote $I(\theta) = \displaystyle{\mathbb{E}_{\theta}\left\{ \left[ \frac{d}{d\theta} \log p(\theta,\vec x) \right]^2 \right\}}$, it is called the Fisher Information.
 
 
 <div style="background-color: #fff9cc; padding: 1em; border-left: 6px solid #ffeb3b; border-radius: 8px; margin: 1em 0;">
@@ -116,7 +114,7 @@ and hence by Cauchy-Schwarz inequality, we have
 
 $$
 \begin{align*}
-[\tau'(\theta)]^2 & = \Cov^2\left( T(\vec X), \frac{d}{d\theta} \log p_\theta (\vec x) \right)\\
+[\tau'(\theta)]^2 & = \mathbf{Cov}^2\left( T(\vec X), \frac{d}{d\theta} \log p_\theta (\vec x) \right)\\
 & \leq \mathbf{Var}_\theta (T(\vec X)) \cdot \mathbf{Var}_\theta \left( \frac{d}{d\theta} \log p_\theta (\vec x) \right).
 \end{align*}
 $$
@@ -228,7 +226,9 @@ for some function $a(\theta)$ and for all $\theta \in \Theta$.
 
 
 
-**Example:** We say $f_\theta(x)$ belongs to  exponential family \textit{(note that you may find me use $f_\theta(x), f(x,\theta), f(x|\theta)$, they are all the same notation, meaning $\theta$ is our parameter, but the density function is a function of $x$)}, if its density function takes the form
+**Example:** 
+
+We say $f_\theta(x)$ belongs to  exponential family \textit{(note that you may find me use $f_\theta(x), f(x,\theta), f(x \Big|\theta)$, they are all the same notation, meaning $\theta$ is our parameter, but the density function is a function of $x$)}, if its density function takes the form
 
 $$
 f_\theta(x) = h(x) \cdot c(\theta) \cdot \exp\{ \omega(\theta) \cdot T(x)\}
