@@ -78,7 +78,7 @@ Methods of moments estimator may not always exist, since we need to assume the e
 # Bayesian Estimation
 
 
-The idea of Bayesian estimation is to work with conditional probability, and we treat the parameter $\theta$ as another random variable having its owning distribution, called the *prior distribution* of $\theta$, so in this case $p_\theta(\vec x)$ is the conditional distribution given $\theta$, usually denote as $p(\vec x\vert \theta)$.
+The idea of Bayesian estimation is to work with conditional probability, and we treat the parameter $\theta$ as another random variable having its owning distribution, called the *prior distribution* of $\theta$, so in this case $p_\theta(\vec x)$ is the conditional distribution given $\theta$, usually denote as $p(\vec x \vert \theta)$.
 
 
 <div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
@@ -159,7 +159,7 @@ Find the Bayes estimator of $\theta$ under the squared error loss.
 **Solutions:** Recall that the posterior distribution takes the form
 
 $$
-\pi(\theta\vertx) = \frac{p(x\vert\theta)\pi(\theta)}{\displaystyle{\int_\Theta p(x\vert\theta)\pi(\theta)d\theta}}
+\pi(\theta\vert x) = \frac{p(x\vert\theta)\pi(\theta)}{\displaystyle{\int_\Theta p(x\vert\theta)\pi(\theta)d\theta}}
 $$
 
 where
@@ -184,14 +184,14 @@ $$
 so now the posterior distribution is the ratio of what we get, and we can simplify to
 
 $$
-\pi(\theta\vertx) = (n+\alpha) \cdot\left( \frac{1}{\theta}\right)^{n+\alpha+1} \cdot [T(\vec X)]^{-(n+\alpha)}; \theta>T(\vec X).
+\pi(\theta\vert x) = (n+\alpha) \cdot\left( \frac{1}{\theta}\right)^{n+\alpha+1} \cdot [T(\vec X)]^{-(n+\alpha)}; \theta>T(\vec X).
 $$
 
 Now, under the squared error loss, the Bayes estimator of $\theta$ is given by the expected value of the posterior distribution, hence
 
 $$
 \begin{align*}
-\hat\theta_{\text{Bayes}} = \mathbb{E}[\pi(\theta\vertx)] &= \int_{T(\vec X)}^\infty \theta \cdot (n+\alpha)\cdot \theta^{-(n+\alpha+1)} \cdot [T(\vec X)]^{-(n+\alpha)} d\theta\\
+\hat\theta_{\text{Bayes}} = \mathbb{E}[\pi(\theta\vert x)] &= \int_{T(\vec X)}^\infty \theta \cdot (n+\alpha)\cdot \theta^{-(n+\alpha+1)} \cdot [T(\vec X)]^{-(n+\alpha)} d\theta\\
 &= (n+\alpha) \cdot [T(\vec X)]^{-(n+\alpha)} \int_{T(\vec X)}^\infty \theta^{-(n+\alpha)} d\theta\\
 &= \frac{n+\alpha}{-(n+\alpha)+1} [T(\vec X)]^{-(n+\alpha)} [ \theta^{-(n+\alpha)+1}]\Bigg\vert_{\theta = T(\vec X)}^\infty\\
 &= \frac{n+\alpha}{n+\alpha-1}T(\vec X).
@@ -210,7 +210,7 @@ $$
 **Solution:** Note that in the formula
 
 $$
-\pi(\theta\vertx) = \frac{p(x\vert\theta)\pi(\theta)}{\displaystyle{\int_\Theta p(x\vert\theta)\pi(\theta)d\theta}},
+\pi(\theta\vert x) = \frac{p(x\vert\theta)\pi(\theta)}{\displaystyle{\int_\Theta p(x\vert\theta)\pi(\theta)d\theta}},
 $$
 
 the denominator is independent of $\theta$, hence we have
