@@ -1,5 +1,5 @@
 ---
-title: "Three Methods for Point Estimation: Mathods of Moments; Bayesian Estimation and MLE"
+title: "Three Methods for Point Estimation: Methods of Moments; Bayesian Estimation and MLE"
 collection: publications
 category: statistics
 permalink: /publication/pointestimation
@@ -9,7 +9,7 @@ date: 2025-01-30
 venue: 'Winter'
 #slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
 #paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Jiajun Zhang, (2025) Three Methods for Point Estimation: Mathods of Moments; Bayesian Estimation and MLE'
+citation: 'Jiajun Zhang, (2025) Three Methods for Point Estimation: Methods of Moments; Bayesian Estimation and MLE'
 ---
 
 
