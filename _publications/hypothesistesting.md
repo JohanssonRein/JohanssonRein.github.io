@@ -366,7 +366,7 @@ $$
 \chi^2 = \frac{(n-1)s^2}{\sigma_0^2} = \frac{9\times0.0003}{0.0002} = 13.5
 $$
 
-In this case we will reject $\mathcal{H}0$ if we have $\chi^2 > \chi^2_{\alpha,n-1} = \chi^2_{0.05,9} = 16.918$, where we see that we do not satisfy this condition, and hence we will not reject $\mathcal{H}_0$, and we conclude that at significance level 
+In this case we will reject $\mathcal{H}0$ if we have $\chi^2 > \chi^2{\alpha,n-1} = \chi^2{0.05,9} = 16.918$, where we see that we do not satisfy this condition, and hence we will not reject $\mathcal{H}0$, and we conclude that at significance level 
 $\alpha=0.05$, we do not have much information that $\sigma^2>0.0002$.
 
 
@@ -386,8 +386,20 @@ $$
 \chi^2 = \frac{(n-1)s^2}{\sigma_0^2} = \frac{15\times6.1}{4} = 22.875
 $$
 
-Under this condition we will reject $\mathcal{H}0$ if $\chi^2 > \chi^2_{\alpha/2,n-1}$ or $\chi^2 <\chi^2_{1-\alpha/2,n-1}$. Here we have $\alpha=0.05, n-1=15$, and $\chi_{0.025,15}^2 = 27.48839$ and $\chi_{0.975,15}^2=6.26214$, and we see that 
-$\chi^2$ do not satisfy any of these two conditions, so we will not reject $\mathcal{H}_0$, at significance level $0.05$.
+Under this condition we will reject $\mathcal{H}0$ if 
+
+$$
+\chi^2 > \chi^2_{\alpha/2,n-1}
+$$
+
+or
+
+$$
+\chi^2 <\chi^2_{1-\alpha/2,n-1}
+$$
+
+Here we have $\alpha=0.05, n-1=15$, and $\chi{0.025,15}^2 = 27.48839$ and $\chi{0.975,15}^2=6.26214$, and we see that 
+$\chi^2$ do not satisfy any of these two conditions, so we will not reject $\mathcal{H}0$, at significance level $0.05$.
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Example.</strong> A study published in $2004$ in Current Allergy and Clinical
