@@ -42,7 +42,7 @@ and does not depend on $\theta$. (In this case $Uniform(0,\theta)$ is excluded);
 
 * Furthermore, assume for $\vec x \in \mathcal{S}$, $\theta \in \Theta \subset \mathbb{R}$, $\displaystyle{\frac{d}{d\theta}\log p_{\theta}(\vec x)}$ exists;
 
-* Also, assume for any statistics $h(\vec X)$ with $\mathbb{E}\{ \Big| h(\vec X) \Big| \} < +\infty, \forall \theta \in \Theta$ we have
+* Also, assume for any statistics $h(\vec X)$ with $\mathbb{E}\{ \vert h(\vec X) \vert \} < +\infty, \forall \theta \in \Theta$ we have
   
 $$
 \frac{d}{d\theta} \int_{\mathcal{S}} h(\vec x) p_{\theta}(\vec x) d\vec x = \int_{\mathcal{S}} h(\vec x) \frac{d}{d\theta} p_{\theta}(\vec x)d\vec x
