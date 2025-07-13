@@ -16,7 +16,7 @@ citation: 'Jiajun Zhang, (2025) Three Methods for Point Estimation: Mathods of M
 
 # Methods of Moments
 
-In methods of moments, we simply match the $k$th moment with the $k$th sample moment. Let $X_1,\cdots,X_n \overset{i.i.d}{\sim} f(\theta,x)$ where $\theta \in \Theta \subset \mathbb{R}^d$, so our parameter of interest is $\vec\theta = (\theta_1,\cdots,\theta_d)^T$. With the assumption that $\mathbb{E}\vertX_i\vert^d$ exists, we denote the $j$th population moments as
+In methods of moments, we simply match the $k$th moment with the $k$th sample moment. Let $X_1,\cdots,X_n \overset{i.i.d}{\sim} f(\theta,x)$ where $\theta \in \Theta \subset \mathbb{R}^d$, so our parameter of interest is $\vec\theta = (\theta_1,\cdots,\theta_d)^T$. With the assumption that $\mathbb{E}\vert X_i\vert^d$ exists, we denote the $j$th population moments as
 
 $$
 \mu_j(\vec\theta) = \mathbb{E} X_i^j
