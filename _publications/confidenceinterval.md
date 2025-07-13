@@ -7,9 +7,9 @@ excerpt: 'In this article we will talk about confidence interval'
 date: 2025-06-01
 order: 6
 venue: 'Winter'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
+#slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
+#paperurl: 'http://academicpages.github.io/files/paper1.pdf'
+#bibtexurl: 'http://academicpages.github.io/files/bibtex1.bib'
 citation: 'Jiajun Zhang, You. (2025), part of my notes in Honors Statistics taught by Prof. Abbas Khalili'
 ---
 
