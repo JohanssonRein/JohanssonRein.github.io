@@ -63,7 +63,7 @@ $$
 Recall from the previous example where we have $X_1,\cdots,X_n \overset{i.i.d}{\sim} Bernoulli(\theta)$, and the estimators we introduced before, i.e $\overline{X}_n ; \displaystyle{\frac{X_1+X_2}{2}}, X_5$ are all unbiased indeed!
 
 
-**Example:** Suppose we have $X_1,\cdots,X_n \overset{i.i.d}{\sim} F_{\theta}$ where $\theta = \begin{pmatrix} \mu \\ \sigma^2 \end{pmatrix}, \mu = \mathbb{E} X_i, \sigma^2 = \Var(X_i)$, then
+**Example:** Suppose we have $X_1,\cdots,X_n \overset{i.i.d}{\sim} F_{\theta}$ where $\theta = \begin{pmatrix} \mu \\ \sigma^2 \end{pmatrix}, \mu = \mathbb{E} X_i, \sigma^2 = \mathbf{Var}(X_i)$, then
 
 $\bullet$ $\displaystyle{\hat{\mu}_n = \overline{X}_n = \frac{1}{n} \sum_{i=1}^n X_i}$ is an unbiased estimator of $\mu$.
 
@@ -91,7 +91,7 @@ $$
 
 **Example:** Suppose we have $X_1,\cdots,X_n \overset{i.i.d}{\sim} Uniform(0,\theta)$, $\theta>0$ is out target parameter, then the estimator $\hat{\theta}_{n,1} = 2X_3, \hat{\theta}_{n,2} = 2\overline{X}_n$ are all unbiased, but $\hat{\theta}_{n,3} = X_{(n)} := \max_{1 \leq i \leq n}(X_1,\cdots,X_n)$ is biased, since $\mathbb{E}\{\hat{\theta}_{n,3}\} = \frac{n}{n+1}\theta$. A way to correct the bias of $\hat{\theta}_{n,3}$ would be $\hat{\theta}_{n,4} = \frac{n+1}{n} X_{(n)}$.
 
-As we see from the previous examples, for a parameter $\theta \in \Theta \subset \mathbb{R}^d$ we could come up with unbiased estimators. Another criterion that we could bring into our assessment of an estimator is its variance $\Var_{\theta}\{ \hat{\theta}_n \}$, if exists.
+As we see from the previous examples, for a parameter $\theta \in \Theta \subset \mathbb{R}^d$ we could come up with unbiased estimators. Another criterion that we could bring into our assessment of an estimator is its variance $\mathbf{Var}_{\theta}\{ \hat{\theta}_n \}$, if exists.
 
 In the class of unbiased estimator, we could choose the one that has the smallest variance.
 
@@ -104,7 +104,7 @@ $$
 Note that
 
 $$
-MSE_{\theta}(\hat{\theta}_n) = \mathbb{E}_{\theta}[(\hat{\theta}_n - \mathbb{E}_{\theta}(\hat{\theta}_n) + \mathbb{E}_{\theta}(\hat{\theta}_n)-\theta)^2] = \Var_{\theta}(\hat{\theta}_n) + [Bias(\hat{\theta}_n)]^2.
+MSE_{\theta}(\hat{\theta}_n) = \mathbb{E}_{\theta}[(\hat{\theta}_n - \mathbb{E}_{\theta}(\hat{\theta}_n) + \mathbb{E}_{\theta}(\hat{\theta}_n)-\theta)^2] = \mathbf{Var}_{\theta}(\hat{\theta}_n) + [Bias(\hat{\theta}_n)]^2.
 $$
 
 
