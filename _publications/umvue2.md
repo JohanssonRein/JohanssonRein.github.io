@@ -18,7 +18,7 @@ In this section we propose two more methods to compute the UMVUE.
   <strong>Theorem.</strong> (Rao-Blackwell) Let $U(\vec X)$ be an unbiased estimator of $\tau(\theta)$ if exists, let $T(\vec X)$ be a sufficient statistic of the parameter family, set
   
 $$
-\delta(t) = \mathbb{E}\{ U(\vec X) | T(\vec X) = t\}
+\delta(t) = \mathbb{E}\{ U(\vec X) \vert T(\vec X) = t\}
 $$
 
 then we claim that:
