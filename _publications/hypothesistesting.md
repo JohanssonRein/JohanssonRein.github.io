@@ -447,7 +447,7 @@ $$
 z = \frac{\hat{p} - p_0}{\sqrt{\frac{p_0(1-p_0)}{n}}} = \frac{0.15-0.1}{\sqrt{0.1\times 0.9 / 100}} = 1.66667
 $$
 
-and we will reject $\mathcal{H}_0$ if $z > z_{\alpha} = z_{0.005} = 1.645$, which means we will reject $\mathcal{H}_0$ under significance level $\alpha=0.05$.
+and we will reject $\mathcal{H}0$ if $z > z_{\alpha} = z_{0.005} = 1.645$, which means we will reject $\mathcal{H}_0$ under significance level $\alpha=0.05$.
 
 
 
