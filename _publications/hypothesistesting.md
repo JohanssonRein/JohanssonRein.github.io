@@ -107,7 +107,7 @@ $$
 where
 
 $$
--2\log[\lambda_n(\vec X)] = 2\Big\{ \sup_{\theta \in \Theta} \l_n(\theta) - \sup_{\theta \in \Theta_0} \l_n(\theta) \Big\}
+-2\log[\lambda_n(\vec X)] = 2\Big\{ \sup_{\theta \in \Theta} l_n(\theta) - \sup_{\theta \in \Theta_0} l_n(\theta) \Big\}
 $$
 </div>
 
@@ -266,7 +266,7 @@ $$
 
 
 
-Now I have listed a bunch of exercises, do it carefully, and identify which of the above $7$ cases! The values of $z,t,\chi$ can all be found in the standard table.\\
+Now I have listed a bunch of exercises, do it carefully, and identify which of the above $7$ cases! The values of $z,t,\chi$ can all be found in the standard table.
 
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
@@ -288,7 +288,7 @@ $$
 t = \frac{\overline{x} - \mu_0}{s/\sqrt{12}} = \frac{535.7-550}{37.8/\sqrt{12}} = -1.310493468
 $$
 
-now, in order to reject $\mathcal{H}_0$ under level $\alpha$, we need $t < -t_{\alpha, n-1}$, which according to the $t$-table we have $t_{0.05,11} = 1.796$, where we have $-1.31049 > -1.796$, 
+now, in order to reject $\mathcal{H}0$ under level $\alpha$, we need $t < -t_{\alpha, n-1}$, which according to the $t$-table we have $t_{0.05,11} = 1.796$, where we have $-1.31049 > -1.796$, 
 hence we do not reject $\mathcal{H}_0$, so at significance level $\alpha=0.05$, we do not see any evidence that the mean weight is less than $550$ pounds.
 
 
@@ -311,7 +311,7 @@ $$
 t = \frac{\overline{x} - \mu_0}{s/\sqrt{21}} = \frac{927.43-1000}{154.45/\sqrt{21}} = -2.153
 $$
 
-now in order to reject $\mathcal{H}_0$ under level $\alpha$,
+now in order to reject $\mathcal{H}0$ under level $\alpha$,
 we need $\vert t\vert > t_{\alpha/2.n-1} $ and from the $t$-table we have $t_{\alpha/2 , n-1} = t_{0.025,20} = 2.086$, and since we do have $\vert t\vert = 2.153 > 2.086$, we will hence reject $\mathcal{H}_0$ and in favor of $\mathcal{H}_1$, that is, 
 there is evidence that the mean water usage is different from $1$ million liter per day.
 
@@ -344,7 +344,7 @@ $$
 t = \frac{0.041-0.026}{0.012\times\sqrt{\frac{1}{10}+\frac{1}{13}}} = 2.97178
 $$
 
-while we will reject $\mathcal{H}_0$ if
+while we will reject $\mathcal{H}0$ if
 $\vert t\vert >t_{\alpha/2, n+m-2} = t_{0.025,21 } = 2.08$, which we see that clearly we should reject $\mathcal{H}_0$, meaning that the amount of DDT in juveniles and nestlings are not the same.
 
 
@@ -366,7 +366,7 @@ $$
 \chi^2 = \frac{(n-1)s^2}{\sigma_0^2} = \frac{9\times0.0003}{0.0002} = 13.5
 $$
 
-In this case we will reject $\mathcal{H}_0$ if we have $\chi^2 > \chi^2_{\alpha,n-1} = \chi^2_{0.05,9} = 16.918$, where we see that we do not satisfy this condition, and hence we will not reject $\mathcal{H}_0$, and we conclude that at significance level 
+In this case we will reject $\mathcal{H}0$ if we have $\chi^2 > \chi^2_{\alpha,n-1} = \chi^2_{0.05,9} = 16.918$, where we see that we do not satisfy this condition, and hence we will not reject $\mathcal{H}_0$, and we conclude that at significance level 
 $\alpha=0.05$, we do not have much information that $\sigma^2>0.0002$.
 
 
@@ -380,13 +380,13 @@ variance unknown.
 </div>
 
 
-In this example, we will test $\mathcal{H}_0 : \sigma^2 = 4$ and $\mathcal{H}_1:\sigma^2\neq 4$. \textit{Note that standard deviation is $\sigma$!!!}. In this normal sample with both mean and variance unknown, we first compute the value under the null hypothesis $\mathcal{H}_0$:
+In this example, we will test $\mathcal{H}_0 : \sigma^2 = 4$ and $\mathcal{H}_1:\sigma^2\neq 4$. Note that standard deviation is $\sigma$!!!. In this normal sample with both mean and variance unknown, we first compute the value under the null hypothesis $\mathcal{H}_0$:
 
 $$
 \chi^2 = \frac{(n-1)s^2}{\sigma_0^2} = \frac{15\times6.1}{4} = 22.875
 $$
 
-Under this condition we will reject $\mathcal{H}_0$ if $\chi^2 > \chi^2_{\alpha/2,n-1}$ or $\chi^2 <\chi^2_{1-\alpha/2,n-1}$. Here we have $\alpha=0.05, n-1=15$, and $\chi_{0.025,15}^2 = 27.48839$ and $\chi_{0.975,15}^2=6.26214$, and we see that 
+Under this condition we will reject $\mathcal{H}0$ if $\chi^2 > \chi^2_{\alpha/2,n-1}$ or $\chi^2 <\chi^2_{1-\alpha/2,n-1}$. Here we have $\alpha=0.05, n-1=15$, and $\chi_{0.025,15}^2 = 27.48839$ and $\chi_{0.975,15}^2=6.26214$, and we see that 
 $\chi^2$ do not satisfy any of these two conditions, so we will not reject $\mathcal{H}_0$, at significance level $0.05$.
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
@@ -409,7 +409,7 @@ $$
 t = \frac{\overline{x} - \mu_0}{s/\sqrt{n}} = \frac{19.3-15}{11.9/\sqrt{46}} = 2.4507
 $$
 
-We will reject $\mathcal{H}_0$ if $t > t_{\alpha,n-1} = t_{0.01,45} = 2.326$, where we will reject $\mathcal{H}_0$ under this case, at a significance level $\alpha=0.01$.
+We will reject $\mathcal{H}0$ if $t > t_{\alpha,n-1} = t_{0.01,45} = 2.326$, where we will reject $\mathcal{H}_0$ under this case, at a significance level $\alpha=0.01$.
 
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
@@ -477,7 +477,7 @@ $$
 z = \frac{0.074468-0.1}{\displaystyle{\sqrt{0.09341(1-0.09341)/94+0.09341(1-0.09341)/270}}} = -0.73262
 $$
 
-We will reject $\mathcal{H}_0$ if $\vert z\vert > z_{\alpha/2} = z_{0.025} = 1.96$, and hence we do not reject $\mathcal{H}_0$, under the significance level $\alpha=0.05$.
+We will reject $\mathcal{H}0$ if $\vert z\vert > z_{\alpha/2} = z_{0.025} = 1.96$, and hence we do not reject $\mathcal{H}_0$, under the significance level $\alpha=0.05$.
 
 
 
