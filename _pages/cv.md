@@ -12,7 +12,7 @@ redirect_from:
 Education
 ======
 * Bachelor of Science in Honors Applied Mathematics, McGill University, 2022-2026
-  * Undergraduate Research Thesis: (still under construction) [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf)
+  
 
 
 Work experience
@@ -55,6 +55,13 @@ Teaching
 ======
 * Fall 2023 - Now: Mathematics Tutor and Teaching Assistant
   * McGill University
+ 
+Papers Written by Me
+======
+
+* Undergraduate Research Thesis: (still under construction) [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf).
+
+* An Introduction to the Three-Body Problem: [Introduction to CR3BP: Stability, Orbits](/files/3R3BP.pdf).
 
   
 Skills
