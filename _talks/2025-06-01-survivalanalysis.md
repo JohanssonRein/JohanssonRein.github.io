@@ -26,21 +26,6 @@ This is a series of conference focusing on survival analysis organised by me dur
 
 # Next Talk:
 
-## Conference 2:
-
-* Time & Location: 
-
-  * July 9th, 2025, 12:00 - 13:00; Both in person (Burnside, exact room TBD) and online (via discord group)
-    
-* Description of the second talk:
-  
-  * Introducing basic statistical features of non-parametric estimation: Empirical cdf, and convergence;
-  * Kaplan Meier estimator for the survival function, Green's formula, and confidence intervals;
-  * Nelson-Aalen estimator for the cumulative hazard function.
-  * A multi-state model and Aalen-Johansen estimator.
-
-* The slides can be found [here](/files/SurvivalAnalysisTalk2.pdf)
-
 ## Conference 3:
 
 * Time & Location:
@@ -55,6 +40,21 @@ This is a series of conference focusing on survival analysis organised by me dur
 
 
 # Past Talk:
+
+## Conference 2:
+
+* Time & Location: 
+
+  * July 9th, 2025, 12:00 - 13:00; Both in person (Burnside, exact room TBD) and online (via discord group)
+    
+* Description of the second talk:
+  
+  * Introducing basic statistical features of non-parametric estimation: Empirical cdf, and convergence;
+  * Kaplan Meier estimator for the survival function, Green's formula, and confidence intervals;
+  * Nelson-Aalen estimator for the cumulative hazard function.
+  * A multi-state model and Aalen-Johansen estimator.
+
+* The slides can be found [here](/files/SurvivalAnalysisTalk2.pdf)
 
 ## Conference 1:
 
