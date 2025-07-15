@@ -11,7 +11,7 @@ redirect_from:
 
 <br>
 
-# Coursework and Studies
+# Undergraduate Studies
 
 * I am currently an undergraduate student at McGill University, located in Montréal, Canada. My major is Honors Applied Mathematics with a concentration in statistics.
 
