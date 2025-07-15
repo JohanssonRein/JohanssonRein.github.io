@@ -31,12 +31,13 @@ redirect_from:
 
 * My research interests so far are in mathematical statistics and partial differential equations. Furthermore I am also interested in one field where mathematics is widely applied:  Biostatistics, especially the field of survival analysis, I would like to study survival analysis alongside with causal inference, also investigating some multi-state models using markov chain and probability theory.
 
-* I am currently doing my research in survival analysis with professor Masoud Asgharian in McGill University, Department of Mathematics and Statistics. You may find my research thesis here which is still under construction. It provides a theoretical approach and serves as an introduction to
+* I am currently doing my research in survival analysis with professor Masoud Asgharian in McGill University, Department of Mathematics and Statistics. You may find my research thesis here: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf),
+which is still under construction. It provides a theoretical approach and serves as an introduction to
 survival analysis, where basic concepts including censoring and truncation were introduced, also examined different estimating techniques for parametric; non-parametric and semi-parametric as well as hypothesis testing.
 
 <br>
 
-
+You can nevigate to other topic bars on top to know more about me. :)
 
 
 
