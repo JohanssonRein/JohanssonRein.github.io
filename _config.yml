@@ -91,26 +91,26 @@ publication_category:
     description: >
      This set of notes will feature the necessary and elementry knowledges of mathematical statistics, it can be used as a good reference for MATH 357 (Honors Statistics) or MATH 324 (Statistics) for McGill University students. The topics include:
 
-     (1) Basic theory of random samples, asymptotically distribution theory;
+     (1) *Basic theory of random samples, asymptotically distribution theory;
 
-     (2) Unbiased Estimators, Methods of Finding UMVUE, Theory of Sufficiency;
+     (2) *Unbiased Estimators, Methods of Finding UMVUE, Theory of Sufficiency;
 
-     (3) Three systematically ways of desihning estimators: Methods of Moments, Bayesian Method, MLE;
+     (3) *Three systematically ways of desihning estimators: Methods of Moments, Bayesian Method, MLE;
 
-     (4) Confidence Interval and Hypothesis Testing.
+     (4) *Confidence Interval and Hypothesis Testing.
      
      I have also attached a summary of the topics covered in this class ([here](/files/STATS_Practice.pdf)). In this summary I have listed all important theorems and also attached some nice exercises
      with solutions to them. It can be used as a good reference for final review. The complete set of notes can be found ([here](/files/Statistics.pdf)), which is still under construction so far. 
      
      Additional textbooks for references are: 
      
-     (1) :An Introduction to Probability and Statistics}, by Vijay K.Rohatgi and A.K. Md. Ehsanes Saleh.
+     (1) *An Introduction to Probability and Statistics}, by Vijay K.Rohatgi and A.K. Md. Ehsanes Saleh.
      
-     (2) A First Course in Probability, by Sheldon Ross; 
+     (2) *A First Course in Probability, by Sheldon Ross; 
      
-     (3) Introduction to Probability, Statistics and Random Processes, by H. Pishro-Nik; 
+     (3) *Introduction to Probability, Statistics and Random Processes, by H. Pishro-Nik; 
      
-     (4) Statistical Inference, by George Casella and Roger L. Berger.
+     (4) *Statistical Inference, by George Casella and Roger L. Berger.
 
      Should you have any questions, please contact the author.
   calculus:
@@ -124,11 +124,11 @@ publication_category:
      in McGill University and can be used as a good reference for self study. It can also be used for MATH 323 (Probability) when ignoring some higher-level topics. All the notes are separated from ([my own notes here](/files/Intro_to_probability.pdf)) and the reader can check for this full notes. 
      Additional textbooks for references are: 
      
-     (1) :An Introduction to Probability and Statistics}, by Vijay K.Rohatgi and A.K. Md. Ehsanes Saleh.
+     (1) *An Introduction to Probability and Statistics}, by Vijay K.Rohatgi and A.K. Md. Ehsanes Saleh.
 
-     (2) A First Course in Probability, by Sheldon Ross; 
+     (2) *A First Course in Probability, by Sheldon Ross; 
      
-     (3) Introduction to Probability, Statistics and Random Processes, by H. Pishro-Nik
+     (3) *Introduction to Probability, Statistics and Random Processes, by H. Pishro-Nik
 
      Should you have any questions, please contact the author.
   linearalgebra:
