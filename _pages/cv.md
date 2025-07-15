@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+A pdf version of my CV can be found [here](/files/cv.pdf).
+
 Education
 ======
 * Bachelor of Science in Honors Applied Mathematics, McGill University, 2022-2026
