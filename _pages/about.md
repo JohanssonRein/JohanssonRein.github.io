@@ -15,7 +15,7 @@ redirect_from:
 
 * I am currently an undergraduate student at McGill University, located in Montréal, Canada. My major is Honors Applied Mathematics with a concentration in statistics.
 
-* I was in Honors Statistics and Computer Science for the first two years of my study, and I transferred to Honors Applied Mathematics on my third year to further develop a solid training in mathematics. My undergraduate coursework include:
+* I was in Honors Statistics and Computer Science for the first two years of my study, and I transferred to Honors Applied Mathematics on my third year to further develop a solid training in mathematics. My undergraduate coursework includes:
 
   * 4 semesters of calculus (Single Variable Differential Calculus; Single Variable Integral Calculus; Multi-Variable Calculus and Advanced Calculus)
   * 4 semesters of real analysis (Single Variable Real Analysis I, II; Measure Theory and Lebesgue Integration theory; Functional analysis)
@@ -41,7 +41,7 @@ survival analysis with causal inference, etc. may be my further research topics.
 
 <br>
 
-You can nevigate to other topic bars on top to know more about me. :)
+You can nevigate to other menus on top to know more about me. :)
 
 
 
