@@ -12,3 +12,7 @@ venue: 'Summer'
 #citation: 'Jiajun Zhang, (2025) Uniformly Minimum Variance Unbiased Estimator (UMVUE)'
 ---
 
+完整的笔记参见 [此处](/files/线性代数.pdf).
+
+
+
