@@ -20,7 +20,9 @@ redirect_from:
 * I am currently doing my research in survival analysis with professor Masoud Asgharian in McGill University, Department of Mathematics and Statistics. You may find my research thesis here: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf),
 which is still under construction. It provides a theoretical approach and serves as an introduction to
 survival analysis, where basic concepts including censoring and truncation were introduced, I also examined different estimating techniques for parametric; non-parametric and semi-parametric inference as well as hypothesis testing. Some further topics like Bayesian approach to survival analysis;
-survival analysis with causal inference, etc. may be my further research topics. 
+survival analysis with causal inference, etc. may be my further research topics.
+
+* Now I am working on the estimating techniques in length-biased, right-censored data. The paper is still under construction.
 
 <br>
 
