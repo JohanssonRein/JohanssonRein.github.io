@@ -120,7 +120,7 @@ publication_category:
   probability:
     title: 'Probability'
     description: >
-     This set of notes will feature a undergraduate level, introductory level class to probability theory. Where elementry measure theory will be introduced but still covers all aspects of probability theory. This set of notes are at the same level for MATH 356 (Honors Probability) 
+     This set of notes will feature an undergraduate level, introductory level class to probability theory. Where elementry measure theory will be introduced but still covers all aspects of probability theory. This set of notes are at the same level for MATH 356 (Honors Probability) 
      in McGill University and can be used as a good reference for self study. It can also be used for MATH 323 (Probability) when ignoring some higher-level topics. All the notes are separated from ([my own notes here](/files/Intro_to_probability.pdf)) and the reader can check for this full notes. 
      Additional textbooks for references are: 
      <br><br>
@@ -141,7 +141,7 @@ publication_category:
   ode:
     title: 'Ordinary Differential Equations'
     description: >
-     This set of notes will feature an undergraduate level course in ordinary differential equations. 
+     This set of notes will feature an undergraduate level course in ordinary differential equations. My own notes can be found [here](/files/ode.pdf)
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
