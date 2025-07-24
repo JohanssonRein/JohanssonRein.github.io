@@ -13,4 +13,6 @@ citation: 'Jiajun Zhang, (2025) Uniformly Minimum Variance Unbiased Estimator (U
 ---
 
 
-My notes: [here](/files/ode.pdf)
+My notes: [here](/files/ode.pdf) 
+
+Note that this note is still under construction.
