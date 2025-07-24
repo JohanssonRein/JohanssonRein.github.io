@@ -140,6 +140,8 @@ publication_category:
      reference for advanced probability theory, and you may use this notes as some theorical background for my probability notes listed above.
   ode:
     title: 'Ordinary Differential Equations'
+    description: >
+     This set of notes will feature an undergraduate level course in ordinary differential equations. 
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
