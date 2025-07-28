@@ -20,8 +20,8 @@ main:
   - title: "Travelling & Cooking"
     url: /portfolio/
         
-  #- title: "Fun Math"
-    #url: /funmath/
+  - title: "Research"
+    url: /research/
     
   - title: "CV"
     url: /cv/
