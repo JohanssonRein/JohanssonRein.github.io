@@ -121,6 +121,8 @@ publication_category:
     title: 'Calculus'
   differentialequations:
     title: 'Partial Differential Equations'
+    description: >
+     This set of notes will focus on basic theory of partial differential equations, which corresponds to MATH 475 taught at McGill university. My own notes for the course is [here](/files/pde.pdf), more notes can be found under this section.
   probability:
     title: 'Probability'
     description: >
