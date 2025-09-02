@@ -86,6 +86,10 @@ author:
 publication_category:
   books:
     title: 'Books'
+  regression:
+     title: 'Regression and Analysis of Variance'
+     description: >
+      This note is based on MATH 533 (Regression and ANOVA) at McGill University taught by Prof. Mehdi Dagdoug, where my notes can be found [here](/files/regression.pdf)
   statistics:
     title: 'Statistics'
     description: >
