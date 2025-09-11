@@ -94,29 +94,10 @@ publication_category:
     title: 'Statistics'
     description: >
      This set of notes will feature the necessary and elementry knowledges of mathematical statistics, it can be used as a good reference for MATH 357 (Honors Statistics) or MATH 324 (Statistics) for McGill University students. The topics include:
-     <br><br>
-     (1) Basic theory of random samples, asymptotically distribution theory;
-     <br><br>
-     (2) Unbiased Estimators, Methods of Finding UMVUE, Theory of Sufficiency;
-     <br><br>
-     (3) Three systematically ways of desihning estimators: Methods of Moments, Bayesian Method, MLE;
-     <br><br>
-     (4) Confidence Interval and Hypothesis Testing.
-     <br><br>
-     I have also attached a summary of the topics covered in this class ([here](/files/STATS_Practice.pdf)). In this summary I have listed all important theorems and also attached some nice exercises
+     Basic theory of random samples, asymptotically distribution theory; Unbiased Estimators, Methods of Finding UMVUE, Theory of Sufficiency;
+     Three systematically ways of desihning estimators: Methods of Moments, Bayesian Method, MLE;
+     Confidence Interval and Hypothesis Testing. I have also attached a summary of the topics covered in this class ([here](/files/STATS_Practice.pdf)). In this summary I have listed all important theorems and also attached some nice exercises
      with solutions to them. It can be used as a good reference for final review. The complete set of notes can be found ([here](/files/Statistics.pdf)), which is still under construction so far. 
-     <br><br>
-     Additional textbooks for references are: 
-     <br><br>
-     (1) An Introduction to Probability and Statistics}, by Vijay K.Rohatgi and A.K. Md. Ehsanes Saleh.
-     <br><br>
-     (2) A First Course in Probability, by Sheldon Ross; 
-     <br><br>
-     (3) Introduction to Probability, Statistics and Random Processes, by H. Pishro-Nik; 
-     <br><br>
-     (4) Statistical Inference, by George Casella and Roger L. Berger.
-     <br><br>
-     Should you have any questions, please contact the author.
   calculus:
     title: 'Calculus'
   differentialequations:
@@ -128,14 +109,6 @@ publication_category:
     description: >
      This set of notes will feature an undergraduate level, introductory level class to probability theory. Where elementry measure theory will be introduced but still covers all aspects of probability theory. This set of notes are at the same level for MATH 356 (Honors Probability) 
      in McGill University and can be used as a good reference for self study. It can also be used for MATH 323 (Probability) when ignoring some higher-level topics. All the notes are separated from ([my own notes here](/files/Intro_to_probability.pdf)) and the reader can check for this full notes. 
-     Additional textbooks for references are: 
-     <br><br>
-     (1) An Introduction to Probability and Statistics}, by Vijay K.Rohatgi and A.K. Md. Ehsanes Saleh.
-      <br><br>
-     (2) A First Course in Probability, by Sheldon Ross; 
-      <br><br>
-     (3) Introduction to Probability, Statistics and Random Processes, by H. Pishro-Nik
-      <br><br>
      Should you have any questions, please contact the author.
   linearalgebra:
     title: 'Linear Algebra'
@@ -148,6 +121,10 @@ publication_category:
     title: 'Ordinary Differential Equations'
     description: >
      This set of notes will feature an undergraduate level course in ordinary differential equations. My own notes can be found [here](/files/ode.pdf)
+  discrete:
+    title: 'Discrete Mathematics and Graph Theory'
+    description: >
+     This is a set of notes on discrete mathematics and graph theory.
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
