@@ -9,7 +9,7 @@
 
 main:
   - title: "Math Resources"
-    url: /publications/
+    url: /resources/
 
   - title: "Talks"
     url: /talks/    
