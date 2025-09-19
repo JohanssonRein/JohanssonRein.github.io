@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-* My name is Jiajun Zhang, you may call me Johnson. I am from Luoyang, China.
+* My name is Jiajun Zhang, you may call me Johnson. I am from Luoyang, China. Right now I am a senior student at McGill University, my major is Honors Applied Mathematics.
 
 
 
@@ -15,14 +15,13 @@ redirect_from:
   
 # Research Interests
 
-* My research interests so far are in mathematical statistics. Furthermore I am also interested in one field where mathematics is widely applied:  Biostatistics, especially the field of survival analysis, I would like to study survival analysis alongside with causal inference, also investigating some multi-state models using markov chain and probability theory.
+* My research interests so far are in mathematical statistics, differential equations and their applications. For example Biostatistics, Deep Learning, Mathematical Finance, Dynamical Systems and so on.
 
-* I am currently doing my research in survival analysis with professor Masoud Asgharian in McGill University, Department of Mathematics and Statistics. You may find my research thesis here: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf),
-which is still under construction. It provides a theoretical approach and serves as an introduction to
-survival analysis, where basic concepts including censoring and truncation were introduced, I also examined different estimating techniques for parametric; non-parametric and semi-parametric inference as well as hypothesis testing. Some further topics like Bayesian approach to survival analysis;
-survival analysis with causal inference, etc. may be my further research topics.
+* I have finished my Honors Research Project under professor Masoud Asgharian's supervision. You may find my research thesis here: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf).
 
-* Now I am working on the estimating techniques in length-biased, right-censored data. The paper is still under construction. The paper (imcomplete) is attached here: [RCLB](/files/rclb.pdf), which I will update around weekly. Now I am working on a NPMLE estimator of RCLB data, some properties are yet to be investigated. You may find the corresponding part on section 2.3.
+* Now I am interested in deep learning, and I am working on a project with imbalanced classification.
+
+
 
 <br>
 
