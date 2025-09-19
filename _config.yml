@@ -93,38 +93,32 @@ publication_category:
   statistics:
     title: 'Statistics'
     description: >
-     This set of notes will feature the necessary and elementry knowledges of mathematical statistics, it can be used as a good reference for MATH 357 (Honors Statistics) or MATH 324 (Statistics) for McGill University students. The topics include:
-     Basic theory of random samples, asymptotically distribution theory; Unbiased Estimators, Methods of Finding UMVUE, Theory of Sufficiency;
-     Three systematically ways of desihning estimators: Methods of Moments, Bayesian Method, MLE;
-     Confidence Interval and Hypothesis Testing. I have also attached a summary of the topics covered in this class ([here](/files/STATS_Practice.pdf)). In this summary I have listed all important theorems and also attached some nice exercises
-     with solutions to them. It can be used as a good reference for final review. The complete set of notes can be found ([here](/files/Statistics.pdf)), which is still under construction so far. 
+     This note is based on MATH 357 (Honors Statistics) at McGill University taught by Prof. Abbas Khalili.
+     A summary of the topics covered in this class: ([here](/files/STATS_Practice.pdf)).  The complete set of notes: ([here](/files/Statistics.pdf)), which is still under construction so far. 
   calculus:
     title: 'Calculus'
   differentialequations:
     title: 'Partial Differential Equations'
     description: >
-     This set of notes will focus on basic theory of partial differential equations, which corresponds to MATH 475 taught at McGill university. My own notes for the course is [here](/files/MATH_475_Notes.pdf), more notes can be found under this section.
+     This note is based on MATH 475 (Honors PDE) at McGill University taught by Prof. Adam Oberman. My notes: [here](/files/MATH_475_Notes.pdf)
   probability:
     title: 'Probability'
     description: >
-     This set of notes will feature an undergraduate level, introductory level class to probability theory. Where elementry measure theory will be introduced but still covers all aspects of probability theory. This set of notes are at the same level for MATH 356 (Honors Probability) 
-     in McGill University and can be used as a good reference for self study. It can also be used for MATH 323 (Probability) when ignoring some higher-level topics. All the notes are separated from ([my own notes here](/files/Intro_to_probability.pdf)) and the reader can check for this full notes. 
-     Should you have any questions, please contact the author.
+     This note is based on MATH 356 (Honors Probability) at McGill University taught by Prof. Masoud Asgharian. My Notes: ([my own notes here](/files/Intro_to_probability.pdf))  
   linearalgebra:
     title: 'Linear Algebra'
   realanalysis:
     title: 'Real Analysis'
     description: >
-     Here you can find my notes on a higher-level analysis course. It was taught by Prof. Linan Chen at McGill University during Fall 2024. It contains all the necessary and important topics in measure theory, Lebesgue integration theory and differentiation theory. It is also a very good 
-     reference for advanced probability theory, and you may use this notes as some theorical background for my probability notes listed above.
+     Here you can find my notes on a higher-level analysis course. It was taught by Prof. Linan Chen at McGill University during Fall 2024. 
   ode:
     title: 'Ordinary Differential Equations'
     description: >
-     This set of notes will feature an undergraduate level course in ordinary differential equations. My own notes can be found [here](/files/ode.pdf)
+     This note is based on MATH 325 (Honors ODE) at McGill University taught by Prof. Jean-Philippe Lessard. My notes: [here](/files/ode.pdf)
   discrete:
     title: 'Discrete Mathematics and Graph Theory'
     description: >
-     This is a set of notes on discrete mathematics and graph theory.
+     This note is based on MATH 350 (Honors Discrete Mathematics) at McGill University.
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
