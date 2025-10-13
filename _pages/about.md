@@ -59,7 +59,7 @@ You can nevigate to other menus on top to know more about me. :)
 
 <div style="text-align: center;">
   <img src="/images/airbus320.jpg" alt="Mont Tremblant Park, Autumn 2024" width="600">
-  <p><em>Air Canada A320, On my flight feom Montreal to Toronto.</em></p>
+  <p><em>Air Canada A320, On my flight from Montreal to Toronto.</em></p>
 </div>
 
 <br>
