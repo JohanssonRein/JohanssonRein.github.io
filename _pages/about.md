@@ -9,12 +9,7 @@ redirect_from:
 
 * My name is Jiajun Zhang, you may call me Johnson. I am from Luoyang, China. Right now I am a senior student at McGill University, my major is Honors Applied Mathematics.
 
-# Happy 22th birthday!!!
 
-<div style="text-align: center;">
-  <img src="/images/22th.jpg" alt="Mont Tremblant Park, Autumn 2024" width="600">
-  <p><em>happy birthday to me!</em></p>
-</div>
 
 
  <br>
@@ -36,6 +31,12 @@ You can nevigate to other menus on top to know more about me. :)
 
 # Selected Photos
 
+
+<div style="text-align: center;">
+  <img src="/images/22th.jpg" alt="Mont Tremblant Park, Autumn 2024" width="600">
+  <p><em>happy 22th birthday to me! (2025.10.08)</em></p>
+</div>
+
 <div style="text-align: center;">
   <img src="/images/dc.JPG" alt="Mont Tremblant Park, Autumn 2024" width="600">
   <p><em>Washington DC</em></p>
@@ -45,14 +46,14 @@ You can nevigate to other menus on top to know more about me. :)
 
 <div style="text-align: center;">
   <img src="/images/megatron.jpeg" alt="Mont Tremblant Park, Autumn 2024" width="600">
-  <p><em>Universal Studios, Orlando 2025</em></p>
+  <p><em>Me and Megatron, Universal Studios, Orlando 2025</em></p>
 </div>
 
 <br>
 
 <div style="text-align: center;">
   <img src="/images/nyc.jpeg" alt="Mont Tremblant Park, Autumn 2024" width="600">
-  <p><em>Rockefeller Center, New York City</em></p>
+  <p><em>On top of the Rockefeller Center, New York City</em></p>
 </div>
 
 <br>
