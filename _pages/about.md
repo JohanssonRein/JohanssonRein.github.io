@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <div style="text-align: center;">
-  <img src="/images/monttremblant.png" alt="Winter Break" width="500">
+  <img src="/images/monttremblant.jpg" alt="Mont Tremblant Park, Autumn 2024" width="600">
   <p><em>This is just a meme</em></p>
 </div>
 
