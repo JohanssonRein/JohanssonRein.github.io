@@ -9,7 +9,7 @@ redirect_from:
 
 <div style="text-align: center;">
   <img src="/images/monttremblant.jpg" alt="Mont Tremblant Park, Autumn 2024" width="600">
-  <p><em>This is just a meme</em></p>
+  <p><em>Mont Tremblant, Autumn 2024</em></p>
 </div>
 
 * My name is Jiajun Zhang, you may call me Johnson. I am from Luoyang, China. Right now I am a senior student at McGill University, my major is Honors Applied Mathematics.
