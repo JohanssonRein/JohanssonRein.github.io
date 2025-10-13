@@ -46,7 +46,7 @@ I also love travelling, as you can tell from the selected photos below. :)
 
 <div style="text-align: center;">
   <img src="/images/megatron.jpeg" alt="Mont Tremblant Park, Autumn 2024" width="600">
-  <p><em>Me and Megatron, Universal Studios, Orlando 2025</em></p>
+  <p><em>Me and Megatron, Universal Studios, Orlando</em></p>
 </div>
 
 <br>
@@ -61,6 +61,13 @@ I also love travelling, as you can tell from the selected photos below. :)
 <div style="text-align: center;">
   <img src="/images/stanley.jpeg" alt="Mont Tremblant Park, Autumn 2024" width="600">
   <p><em>Stanley Park, Vancouver</em></p>
+</div>
+
+<br>
+
+<div style="text-align: center;">
+  <img src="/images/miami.jpg" alt="Winter Break" width="400">
+  <p><em>Miami beach, FL.</em></p>
 </div>
 
 <br>
