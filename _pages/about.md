@@ -34,6 +34,44 @@ redirect_from:
 You can nevigate to other menus on top to know more about me. :)
 
 
+# Selected Photos
+
+<div style="text-align: center;">
+  <img src="/images/dc.JPG" alt="Mont Tremblant Park, Autumn 2024" width="600">
+  <p><em>Washington DC</em></p>
+</div>
+
+<br>
+
+<div style="text-align: center;">
+  <img src="/images/megatron.jpeg" alt="Mont Tremblant Park, Autumn 2024" width="600">
+  <p><em>Universal Studios, Orlando 2025</em></p>
+</div>
+
+<br>
+
+<div style="text-align: center;">
+  <img src="/images/nyc.jpeg" alt="Mont Tremblant Park, Autumn 2024" width="600">
+  <p><em>Rockefeller Center, New York City</em></p>
+</div>
+
+<br>
+
+<div style="text-align: center;">
+  <img src="/images/stanley.jpeg" alt="Mont Tremblant Park, Autumn 2024" width="600">
+  <p><em>Stanley Park, Vancouver</em></p>
+</div>
+
+<br>
+
+<div style="text-align: center;">
+  <img src="/images/airbus320.jpg" alt="Mont Tremblant Park, Autumn 2024" width="600">
+  <p><em>Air Canada A320, On my flight feom Montreal to Toronto.</em></p>
+</div>
+
+<br>
+
+
 
 
 
