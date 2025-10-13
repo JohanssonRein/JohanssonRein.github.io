@@ -12,6 +12,8 @@ venue: 'Fall'
 citation: 'Jiajun Zhang, (2025) Graph Theory Exercise Bank'
 ---
 
+# Note: This site will be updated periodically. A paf version can be found here
+
 # Graph Basics: Connectivity
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
