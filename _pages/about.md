@@ -26,7 +26,7 @@ redirect_from:
 
 <br>
 
-You can nevigate to other menus on top to know more about me. :)
+I also love travelling, as you can tell from the selected photos below. :)
 
 
 # Selected Photos
