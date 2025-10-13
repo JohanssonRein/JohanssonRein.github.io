@@ -71,10 +71,7 @@ You can nevigate to other menus on top to know more about me. :)
 
 <br>
 
-<div style="text-align: center;">
-  <img src="/images/fishing.jpg" alt="Mont Tremblant Park, Autumn 2024" width="600">
-  <p><em>Whiteby, ON, Summer 2025</em></p>
-</div>
+
 
 
 
