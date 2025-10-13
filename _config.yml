@@ -30,7 +30,7 @@ author:
   # Biographic information
   avatar           : "myPic.png"
   name             : "Jiajun Zhang"
-  pronouns         : # example: "she/her"  
+  pronouns         : "He/Him"
   bio              : "Undergraduate, Honors Applied Mathematics"
   location         : "Montreal, Canada"
   employer         : "McGill University"
@@ -71,7 +71,7 @@ author:
   medium           : # URL
   pinterest        : # Username
   soundcloud       : # Username
-  steam            : # Username
+  steam            : "johnsonleno"
   telegram         : # URL
   tumblr           : # Username
   twitter          : # Username for X / Twitter
@@ -80,7 +80,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  zhihu            : # Username
+  reddit           : "Johansson"
 
 # Publication Category - The following the list of publication categories and their headings
 publication_category:
