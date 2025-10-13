@@ -12,7 +12,14 @@ venue: 'Fall'
 citation: 'Jiajun Zhang, (2025) Graph Theory Exercise Bank'
 ---
 
-* Note: This site will be updated periodically. A pdf version can be found [here](/files/350_exercises.pdf).
+
+* I have sorted many good exercises into different topics.
+
+* Exercises are taken from past assignments, midterm and final exams.
+
+* This site will be updated periodically. A pdf version can be found [here](/files/350_exercises.pdf).
+
+<br>
 
 # Part One: Graph Basics: Connectivity
 
