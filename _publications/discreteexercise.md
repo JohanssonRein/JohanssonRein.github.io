@@ -35,6 +35,39 @@ Hence $G^c$ is connected.
 </details>
 </div>
 
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Exercise.</strong>  Let $T$ be a tree with $n$ vertices, if there exists $v \in V(T)$ with $\deg_T(v)=k$, show $T$ has at least $k$ leaves.
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+
+   If $n=0$ then there is nothing to show. We assume $T$ has at most $k-1$ leaves, and we can even let $k$ be the largest degree. Then by handshaking lemma we have
+
+   $$
+\begin{align}
+2|E(T)| &= \sum_{v \in V(T)} \deg(v)\\
+&\leq k-1+\sum_{v \in V(T),\deg(v)>1} \deg(v)\\
+&\leq k-1+(n-k+1)k
+\end{align}
+$$
+
+also we know $T$ is a tree so $|E(T)|+1=|V(T)|$ and we indeed have $2n-2 \leq k-1+(n-k+1)k$. Fix $n$ and we have
+
+$$
+2n-2 \leq -k^2+(n+2)k-1
+$$
+
+as a function of $k$ where $k \in\mathbb{N}$. Let $f(k) = -k^2+(n+2)k-1$, it is a parabola which obtains its maximum at $k=n+2$. However $f(2n+2) = -(n+2)^2 +(n+2)(n+2)-1=-1$ and $2n-2 \leq -1$ iff $n=0$, a contradiction.
+  </div>
+</details>
+</div>
+
+
+
+
 
 
 
