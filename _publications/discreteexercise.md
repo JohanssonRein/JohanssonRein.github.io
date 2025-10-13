@@ -14,7 +14,7 @@ citation: 'Jiajun Zhang, (2025) Graph Theory Exercise Bank'
 
 * Note: This site will be updated periodically. A pdf version can be found [here](/files/350_exercises.pdf).
 
-# Graph Basics: Connectivity
+# Part One: Graph Basics: Connectivity
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Exercise 1.</strong>  The compliment of a graph $G$, denote by $G^c$, is defined by the following: If $u,v \in V(G)$ are adjacent in $G$, then they are not adjacent in $G^c$; If $u,v \in V(G)$ are not adjacent in $G$, then they are adjacent in $G^c$. Show either $G$ or $G^c$ is connected.
@@ -61,6 +61,20 @@ $$
 $$
 
 as a function of $k$ where $k \in\mathbb{N}$. Let $f(k) = -k^2+(n+2)k-1$, it is a parabola which obtains its maximum at $k=n+2$. However $f(2n+2) = -(n+2)^2 +(n+2)(n+2)-1=-1$ and $2n-2 \leq -1$ iff $n=0$, a contradiction.
+  </div>
+</details>
+</div>
+
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Exercise 3.</strong>  Let $G$ be a simple graph such that each vertex has degree at least $k$. Show that $G$ has a cycle with length at least $k$.
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+
+   Let $P$ denote the longest path in $G$ and $v$ to be one end. We claim that all neighbors of $v$ must be on $P$ otherwise we can make the path longer. Then denote $u$ to be the furthest neighbor of $u$ on the path $P$, then along the path $P$ the distance from $u$ to $v$ is $k-1$, plus $u$ is connected to $v$ by an edge $e$, then $P$ along with $e$ is the path of desired length (shortest).
   </div>
 </details>
 </div>
