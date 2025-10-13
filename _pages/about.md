@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <div style="text-align: center;">
-  <img src="/images/monttremblant.jpg" alt="Mont Tremblant Park, Autumn 2024" width="600">
+  <img src="/images/tremblant.png" alt="Mont Tremblant Park, Autumn 2024" width="600">
   <p><em>Mont Tremblant, Autumn 2024</em></p>
 </div>
 
