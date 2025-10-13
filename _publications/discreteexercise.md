@@ -24,7 +24,7 @@ citation: 'Jiajun Zhang, (2025) Graph Theory Exercise Bank'
   </summary>
   <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
     <strong>Solution.</strong><br>
-    If $E(G) = \varnothing$ or $G$ is connected, then there is nothinh to show and the result is immediate. It suffices to show that $G$ is not connected but $E(G) \neq \varnothing$ will imply $G^c$ is connected. Take any $u,v \in V(G)$, then:
+    If $E(G) = \varnothing$ or $G$ is connected, then there is nothing to show and the result is immediate. It suffices to show that $G$ is not connected but $E(G) \neq \varnothing$ will imply $G^c$ is connected. Take any $u,v \in V(G)$, then:
 
 Case 1: If $u,v$ are not adjacent, then by definition $u,v$ is adjacent in $G^c$ and hence $u,v$ are connected;
 
