@@ -7,6 +7,7 @@ redirect_from:
   - /about.html
 ---
 
+
 <div style="text-align: center;">
   <img src="/images/fishing.jpg" alt="Mont Tremblant Park, Autumn 2024" width="600">
   <p><em>Whiteby, ON, Summer 2025</em></p>
