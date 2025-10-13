@@ -17,7 +17,7 @@ citation: 'Jiajun Zhang, (2025) Graph Theory Exercise Bank'
 # Graph Basics: Connectivity
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
-  <strong>Exercise.</strong>  The compliment of a graph $G$, denote by $G^c$, is defined by the following: If $u,v \in V(G)$ are adjacent in $G$, then they are not adjacent in $G^c$; If $u,v \in V(G)$ are not adjacent in $G$, then they are adjacent in $G^c$. Show either $G$ or $G^c$ is connected.
+  <strong>Exercise 1.</strong>  The compliment of a graph $G$, denote by $G^c$, is defined by the following: If $u,v \in V(G)$ are adjacent in $G$, then they are not adjacent in $G^c$; If $u,v \in V(G)$ are not adjacent in $G$, then they are adjacent in $G^c$. Show either $G$ or $G^c$ is connected.
 <details style="margin-top: 1em;">
   <summary style="font-weight: bold; color: #444; cursor: pointer;">
     Click to show/hide solution
@@ -36,7 +36,7 @@ Hence $G^c$ is connected.
 </div>
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
-  <strong>Exercise.</strong>  Let $T$ be a tree with $n$ vertices, if there exists $v \in V(T)$ with $\deg_T(v)=k$, show $T$ has at least $k$ leaves.
+  <strong>Exercise 2.</strong>  Let $T$ be a tree with $n$ vertices, if there exists $v \in V(T)$ with $\deg_T(v)=k$, show $T$ has at least $k$ leaves.
 <details style="margin-top: 1em;">
   <summary style="font-weight: bold; color: #444; cursor: pointer;">
     Click to show/hide solution
