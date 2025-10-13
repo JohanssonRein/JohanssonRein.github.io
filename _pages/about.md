@@ -7,6 +7,11 @@ redirect_from:
   - /about.html
 ---
 
+<div style="text-align: center;">
+  <img src="/images/monttremblant.png" alt="Winter Break" width="500">
+  <p><em>This is just a meme</em></p>
+</div>
+
 * My name is Jiajun Zhang, you may call me Johnson. I am from Luoyang, China. Right now I am a senior student at McGill University, my major is Honors Applied Mathematics.
 
 
