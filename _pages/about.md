@@ -79,6 +79,10 @@ You can nevigate to other menus on top to know more about me. :)
 
 <br>
 
+<div style="text-align: center;">
+  <img src="/images/whitehouse.jpeg" alt="Mont Tremblant Park, Autumn 2024" width="600">
+  <p><em>Madame Tussauds, New York City</em></p>
+</div>
 
 
 
