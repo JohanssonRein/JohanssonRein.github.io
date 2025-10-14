@@ -21,7 +21,7 @@ citation: 'Jiajun Zhang, (2025) Graph Theory Exercise Bank'
 
 <br>
 
-# Part One: Graph Basics: Connectivity
+# Part One: Graph Basics, Connectivity
 
 <div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
   <strong>Exercise 1.</strong>  The compliment of a graph $G$, denote by $G^c$, is defined by the following: If $u,v \in V(G)$ are adjacent in $G$, then they are not adjacent in $G^c$; If $u,v \in V(G)$ are not adjacent in $G$, then they are adjacent in $G^c$. Show either $G$ or $G^c$ is connected.
@@ -99,6 +99,8 @@ as a function of $k$ where $k \in\mathbb{N}$. Let $f(k) = -k^2+(n+2)k-1$, it is 
   </div>
 </details>
 </div>
+
+# Part Two: Spanning Trees
 
 
 
