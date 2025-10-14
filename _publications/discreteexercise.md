@@ -86,6 +86,20 @@ as a function of $k$ where $k \in\mathbb{N}$. Let $f(k) = -k^2+(n+2)k-1$, it is 
 </details>
 </div>
 
+<div style="border-left: 6px solid orange; background-color: #fff3e0; padding: 10px; margin: 15px 0;">
+  <strong>Exercise 4.</strong>  Denote $g(G)$ to be the length of the shortest cycle in $G$. Show that if $G$ contains a cycle then $g(G) \leq 2diam(G)+1$.
+<details style="margin-top: 1em;">
+  <summary style="font-weight: bold; color: #444; cursor: pointer;">
+    Click to show/hide solution
+  </summary>
+  <div style="border-left: 6px solid gray; background-color: #f9f9f9; padding: 10px; margin-top: 10px;">
+    <strong>Solution.</strong><br>
+
+  Assume such a shortest cycle has length at least $2diam(G)+2$, then $\exists u,v \in V(C)$ such that their distance on $C$ is at least $\diam(G)+1$. Then use the definition in $G$ any path $P$ with ends $u,v$ has length at most $diam(G)$ and hence it follows that $P \subsetneq C$ and hence $P$ along with the shorter $x-y$ path in $C$ will form a shorter circle and that's a contradiction (overlapping of vertices are possible but that will make our cycle even shorter).
+  </div>
+</details>
+</div>
+
 
 
 
