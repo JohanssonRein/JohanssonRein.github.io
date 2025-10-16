@@ -102,7 +102,7 @@ I also love travelling, as you can tell from the selected photos below. :)
 
 <div style="text-align: center;">
   <img src="/images/shanghai.jpg" alt="Mont Tremblant Park, Autumn 2024" width="600">
-  <p><em>Waitan, Shanghai</em></p>
+  <p><em>Waitan (外滩), Shanghai</em></p>
 </div>
 
 
