@@ -91,6 +91,15 @@ I also love travelling, as you can tell from the selected photos below. :)
   <p><em>Madame Tussauds, New York City</em></p>
 </div>
 
+<br>
+
+<div style="text-align: center;">
+  <img src="/images/niagarafalls.jpeg" alt="Mont Tremblant Park, Autumn 2024" width="600">
+  <p><em>Niagara Falls</em></p>
+</div>
+
+<br>
+
 
 
 
