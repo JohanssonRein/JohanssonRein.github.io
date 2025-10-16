@@ -94,7 +94,7 @@ I also love travelling, as you can tell from the selected photos below. :)
 <br>
 
 <div style="text-align: center;">
-  <img src="/images/niagarafalls.jpeg" alt="Mont Tremblant Park, Autumn 2024" width="600">
+  <img src="/images/niagarafalls.jpg" alt="Mont Tremblant Park, Autumn 2024" width="600">
   <p><em>Niagara Falls</em></p>
 </div>
 
