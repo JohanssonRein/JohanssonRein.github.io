@@ -9,9 +9,6 @@ redirect_from:
 
 * My name is Jiajun Zhang, you may call me Johnson. I am from Luoyang, China. Right now I am a senior student at McGill University, my major is Honors Applied Mathematics.
 
-
-
-
  <br>
   
 # Research Interests
@@ -20,15 +17,14 @@ redirect_from:
 
 * I have finished my Honors Research Project under professor Masoud Asgharian's supervision. You may find my research thesis here: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf).
 
-* Now I am interested in deep learning, and I am working on a project with imbalanced classification.
 
 # Projects and Research Work
 
-## Ungoing Projects (I will update periodically):
+## Ungoing Projects (I will update them periodically):
 
 * Imbalanced Classification: [PDF Here](/files/imbalanced_classification.pdf) (independent study project supervised by Professor Abbas Khalili)
 
-* Neyman-Pearson Classification: [PDF Here](/files/NP_Classification.pdf) (Joint work with Emile Petit, a research course on Deep Learning and Neural Networks)
+* Neyman-Pearson Classification: [PDF Here](/files/NP_Classification.pdf) (Joint work with Emile Petit, a research course on Deep Learning and Neural Networks taught by Professor Masoud Asgharian)
 
 
 
