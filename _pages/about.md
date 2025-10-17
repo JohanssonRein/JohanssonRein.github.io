@@ -26,18 +26,19 @@ redirect_from:
 
 ## Ungoing Project (I will update periodically):
 
-* Imbalanced Classification: [PDF Here](/files/imbalanced_classification.pdf)
+* Imbalanced Classification: [PDF Here](/files/imbalanced_classification.pdf) (independent study project supervised by Professor Abbas Khalili)
 
-* Neyman-Pearson Classification: [PDF Here](/files/NP_Classification.pdf) (Joint work with Emile Petit)
+* Neyman-Pearson Classification: [PDF Here](/files/NP_Classification.pdf) (Joint work with Emile Petit, a research course on Deep Learning and Neural Networks)
 
-* Right-censored; Length-biased data: [PDF Here](/files/rclb.pdf)
+
 
 ## Previous Projects:
+
+* Right-censored; Length-biased data: [PDF Here](/files/rclb.pdf) (A contiuation of my summer research on survival analysis)
 
 * Survival Analysis, 2025 Summer Research: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf)
 
 * Dynamical Systems, An Introduction to Circular Restricted Three-Body Problem: [CR3BP](/files/3R3BP.pdf)
-
 
 
 <br>
