@@ -22,7 +22,7 @@ redirect_from:
 
 * Now I am interested in deep learning, and I am working on a project with imbalanced classification.
 
-# Projects
+# Projects and Research Work
 
 ## Ungoing Project (I will update periodically):
 
