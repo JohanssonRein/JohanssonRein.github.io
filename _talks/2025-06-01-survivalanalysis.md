@@ -24,7 +24,12 @@ This is a series of conference focusing on survival analysis organised by me dur
 
 
 
-# Next Talk:
+
+# Past Talk:
+
+## Conference 4:
+
+### This conference is cancelled due to several reasons.
 
 ## Conference 3:
 
@@ -34,12 +39,9 @@ This is a series of conference focusing on survival analysis organised by me dur
 
 * Description of the talk:
 
-  * Counting processes, martingale theory, stochastic processes and the asymptotic properties of Nelson-Aalen; Kaplan-Meier estimators.
+* Counting processes, martingale theory, stochastic processes and the asymptotic properties of Nelson-Aalen; Kaplan-Meier estimators.
 
-* The slides is still under construction.
-
-
-# Past Talk:
+* The slides will be posted upon request.
 
 ## Conference 2:
 
