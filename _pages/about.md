@@ -28,9 +28,15 @@ redirect_from:
 
 * Imbalanced Classification: [PDF Here](/files/imbalanced_classification.pdf)
 
-* Neyman-Pearson Classification: [PDF Here](/files/NP_Classification.pdf)
+* Neyman-Pearson Classification: [PDF Here](/files/NP_Classification.pdf) (Joint work with Emile Petit)
 
 * Right-censored; Length-biased data: [PDF Here](/files/rclb.pdf)
+
+## Previous Projects:
+
+* Survival Analysis, 2025 Summer Research: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf)
+
+* Dynamical Systems, An Introduction to Circular Restricted Three-Body Problem: [CR3BP](/files/3R3BP.pdf)
 
 
 
