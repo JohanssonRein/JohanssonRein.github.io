@@ -24,7 +24,7 @@ redirect_from:
 
 # Projects and Research Work
 
-## Ungoing Project (I will update periodically):
+## Ungoing Projects (I will update periodically):
 
 * Imbalanced Classification: [PDF Here](/files/imbalanced_classification.pdf) (independent study project supervised by Professor Abbas Khalili)
 
