@@ -22,6 +22,16 @@ redirect_from:
 
 * Now I am interested in deep learning, and I am working on a project with imbalanced classification.
 
+# Projects
+
+## Ungoing Project (I will update periodically):
+
+* Imbalanced Classification: [PDF Here](files/imbalanced_classification.pdf)
+
+* Neyman-Pearson Classification: [PDF Here](files/NP_Classification.pdf)
+
+* Right-censored; Length-biased data: [PDF Here](files/rclb.pdf)
+
 
 
 <br>
