@@ -22,6 +22,8 @@ redirect_from:
 
 ## Ungoing Projects (I will update them periodically):
 
+* High Dimensional Statistics: (Research Project for MATH 533: Regression and ANOVA, due in 1 month and paper under construction. Topics will include high dimensional regression)
+
 * Imbalanced Classification: [PDF Here](/files/imbalanced_classification.pdf) (independent study project supervised by Professor Abbas Khalili)
 
 * Neyman-Pearson Classification: [PDF Here](/files/NP_Classification.pdf) (Joint work with Emile Petit, a research course on Deep Learning and Neural Networks taught by Professor Masoud Asgharian)
