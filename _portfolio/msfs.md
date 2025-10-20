@@ -6,8 +6,8 @@ collection: portfolio
 
 
 <div style="text-align: center;">
-  <img src="/images/" alt="Winter Break" width="400">
-  <p><em>Côte de bœuf avec purée des pommes de terre, a traditional French dish, steak is midium-rare</em></p>
+  <img src="/images/Microsoft Flight Simulator Screenshot 2025.10.19 - 10.24.35.82.png" alt="Winter Break" width="500">
+  <p><em>Boeing 787-9, Star Wars Livery, All Nipon Airways, Frankfurt</em></p>
 </div>
 
 
