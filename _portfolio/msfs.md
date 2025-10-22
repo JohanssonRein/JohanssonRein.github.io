@@ -15,6 +15,11 @@ collection: portfolio
   <p><em>Boeing 787-9, Air Canada, En Route CYHZ - CYUL</em></p>
 </div>
 
+<div style="text-align: center;">
+  <img src="/images/westjet.png" alt="Winter Break" width="1000">
+  <p><em>Boeing 787-9, WestJet, En Route CYYC - CYVR</em></p>
+</div>
+
 
 
 
