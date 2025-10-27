@@ -41,15 +41,7 @@ redirect_from:
 
 <br>
 
-# Gaming
 
-I mainly play the following games:
-
-* Geoguessr (Somehow an expert), where you guess the location based on a screenshot from Google maps. My Geoguessr game profile is [here](https://www.geoguessr.com/user/66077416b52224de403bb88b);
-
-* Microsoft flight simulator, Boeing 787-9 and Airbus A320 are the aircrafts that I am most familar with;
-
-* Many other games on steam, depending on my mood.
 
 
 
