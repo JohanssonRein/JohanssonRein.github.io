@@ -1,10 +1,9 @@
-# Selected Photos
+---
+title: "Travelling"
+excerpt: "The places I have been to"  #<br/><img src='/images/mcgill.jpg'>"
+collection: portfolio
+---
 
-
-<div style="text-align: center;">
-  <img src="/images/22th.jpg" alt="Mont Tremblant Park, Autumn 2024" width="600">
-  <p><em>happy 22th birthday to me! (2025.10.08)</em></p>
-</div>
 
 <div style="text-align: center;">
   <img src="/images/dc.JPG" alt="Mont Tremblant Park, Autumn 2024" width="600">
