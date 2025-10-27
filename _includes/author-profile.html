@@ -10,8 +10,8 @@
   {% if author.avatar contains "://" %}
     <img src="{{ author.avatar }}" alt="{{ author.name }}" style="display: block; margin: 0 auto 10px; border-radius: 50% / 35%; width: 160px; height: 200px; object-fit: cover;">
   {% else %}
-    <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" style="display: block; margin: 0 auto 10px; border-radius: 50%; width: 120px; height: 
-    120px; object-fit: cover;">
+    <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" style="display: block; margin: 0 auto 10px; border-radius: 50% / 35%; width: 160px; height: 
+    200px; object-fit: cover;">
   {% endif %}
 </div>
 
