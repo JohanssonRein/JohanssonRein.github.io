@@ -38,6 +38,8 @@ redirect_from:
 
 * Dynamical Systems, An Introduction to Circular Restricted Three-Body Problem: [CR3BP](/files/3R3BP.pdf)
 
+* Linear Algebra Textbook: [Linear Algebra](/files/线性代数.pdf). Please go to Math Resources page for more notes that I wrote.
+
 
 <br>
 
