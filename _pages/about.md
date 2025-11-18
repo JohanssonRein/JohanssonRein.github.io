@@ -26,8 +26,8 @@ redirect_from:
 
 * Imbalanced Classification: [PDF Here](/files/imbalanced_classification.pdf) (Independent study project supervised by Professor Abbas Khalili)
 
-* Vapnik-Chervonenkis Dimension, Probabilistic Bounds and Application to Neyman-Pearson Classification: [PDF Here](/files/NPClassifiers.pdf) (Joint work with Emile Petit, a research course on Deep Learning and Neural Networks taught by Professor Masoud Asgharian)
-
+* Vapnik-Chervonenkis Dimension and Probabilistic Bounds: [PDF Here](/files/NPClassifiers.pdf) (Joint work with Emile Petit, a research course on Deep Learning and Neural Networks taught by Professor Masoud Asgharian).
+  
 
 
 ## Previous Projects:
