@@ -10,6 +10,18 @@ redirect_from:
 * My name is Jiajun Zhang, you may call me Johnson. I am from Luoyang, China. Right now I am a senior student at McGill University, my major is Honors Applied Mathematics.
 
  <br>
+
+# Recent Activities
+
+* Nov 26th, 2:20pm - 4:00pm : Research Talk on Vapnik-Chervonenkis dimension, Probabilistic bounds, and Neyman-Pearson Classification.
+  * Slides of the talk: [PDF Here](/files/NPClassifiers.pdf)
+  * Location: Burnside Building, Room 1234, McGill University
+  * Joint work with Emile Petit
+ 
+* Jan 9th - 11th: The Seminars in Undergraduate Mathematics in Montreal (SUMM), 2026.
+  * Topic: Introduction to Survival Analysis
+  * Abstract: In survival analysis, we are interested in time to event data, i.e., the time until the occurrence of some events which are of our interests. Time to event data often presents a characteristic feature known as censoring and truncation. In this talk, we will see how we can estimate some key survival features in parametric, non-parametric and semi-parametric families when censoring and truncation are present.
+  * Time/Location: TBD
   
 # Research Interests
 
