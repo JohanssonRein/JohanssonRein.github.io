@@ -13,7 +13,7 @@ redirect_from:
 
 # Recent Activities
 
-* Nov 26th, 2:20pm - 4:00pm : Research Talk on Vapnik-Chervonenkis dimension, Probabilistic bounds, and Neyman-Pearson Classification.
+* Nov 26th, 2:30pm - 4:00pm : Research Talk on Vapnik-Chervonenkis dimension, Probabilistic bounds, and Neyman-Pearson Classification.
   * Slides of the talk: [PDF Here](/files/NPClassifiers.pdf)
   * Location: Burnside Building, Room 1234, McGill University
   * Joint work with Emile Petit
