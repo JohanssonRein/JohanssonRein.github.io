@@ -69,7 +69,7 @@ redirect_from:
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
   <div>
     <img src="/images/lagrange.png" alt="Lagrange Points" width="550">
-    <p><em>Figure 1: In a restricted (planar) circular three-body problem, we assume two bodies $m_1>m_2$ together with a massless object. For example the Sun-Earth-Satellite system. In this system there are 5 different Lagrange points for the third body (satellite). Three colinear Lagrange points and 2 equilaterial lagrange points. In this case it means that if
+    <p><em>Figure 1: In a restricted (planar) circular three-body problem, we assume two bodies $m_1>m_2$ together with a massless object. For example the Sun-Earth-Satellite system. In this system there are 5 different Lagrange points for the third body (satellite). Three colinear Lagrange points and 2 equilaterial lagrange points. If
 $
 m_2 \leq 0.04m_1
 $
