@@ -9,6 +9,13 @@ redirect_from:
 
 * My name is Jiajun Zhang, you may call me Johnson. I am from Luoyang, China. Right now I am a senior student at McGill University, my major is Honors Applied Mathematics.
 
+# Research Interests
+
+* My research interests so far are in mathematical statistics, differential equations and their applications. For example Biostatistics, Deep Learning, Mathematical Finance, Dynamical Systems and so on.
+
+* I have finished my Honors Research Project under professor Masoud Asgharian's supervision. You may find my research thesis here: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf).
+
+
 # Recent Activities:
 
 ## Research Talk on Vapnik-Chervonenkis dimension, Probabilistic bounds, and Neyman-Pearson Classification.
@@ -35,13 +42,6 @@ redirect_from:
    * Time/Location: TBD
    * Slides of the talk: Remain confidential before the talk :)
    * Official site: [SUMM](https://www.summ.xyz/en/index.html)
-
-  
-# Research Interests
-
-* My research interests so far are in mathematical statistics, differential equations and their applications. For example Biostatistics, Deep Learning, Mathematical Finance, Dynamical Systems and so on.
-
-* I have finished my Honors Research Project under professor Masoud Asgharian's supervision. You may find my research thesis here: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf).
 
 
 # Projects and Research Work
