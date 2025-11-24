@@ -11,7 +11,9 @@ redirect_from:
 
  <br>
 
-# Recent Activities
+<div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
+  <strong>Recent Activities.</strong># 
+  Recent Activities
 
 * Nov 26th, 2025: 2:30pm - 4:00pm : Research Talk on Vapnik-Chervonenkis dimension, Probabilistic bounds, and Neyman-Pearson Classification.
   * Slides of the talk: [PDF Here](/files/NPClassifiers.pdf)
@@ -24,6 +26,8 @@ redirect_from:
   * Time/Location: TBD
   * Slides of the talk: Remain confidential before the talk :)
   * Official site: [SUMM](https://www.summ.xyz/en/index.html)
+</div>
+
   
 # Research Interests
 
