@@ -76,7 +76,7 @@ $
 then we would achieve a steady state around equilaterial Lagrange points $L_4,L_5$. This type of behavior has been observed in the Solar System. For instance, there is a sub-class of asteroids, known as the Trojan asteroids, which are trapped in the vicinity of the $L_4$ and $L_5$ points of the Sun-Jupiter system, and consequently share Jupiter's orbit around the Sun, staying approximately $60^\circ$ ahead of, and $60^\circ$ behind, Jupiter, respectively. See the figure below:</em></p>
   </div>
   <div>
-    <img src="/images/jupiter.png" alt="Trojan Asteroids" width="300">
+    <img src="/images/jupiter.png" alt="Trojan Asteroids" width="500">
     <p><em>Figure 2: Jupiter & Trojan Asteroids</em></p>
   </div>
 </div>
