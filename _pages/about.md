@@ -64,6 +64,8 @@ redirect_from:
 
 ### Dynamical Systems, An Introduction to Circular Restricted Three-Body Problem: [CR3BP](/files/3R3BP.pdf)
 
+* Abstract: This project studies the dynamics of a restricted circular restricted three body problem (CR3BP). Motivated from the closed solution of a two body problem, an additionally massless object is added into the system and we derive the set of Lagrange points of the third body as well as their corresponding orbits and stability.
+
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
   <div>
     <img src="/images/lagrange.png" alt="Lagrange Points" width="500">
