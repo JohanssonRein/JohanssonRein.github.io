@@ -58,13 +58,18 @@ redirect_from:
 
 ## Previous Projects:
 
-* Right-censored; Length-biased data: [PDF Here](/files/rclb.pdf) (A contiuation of my summer research on survival analysis)
+### Right-censored; Length-biased data: [PDF Here](/files/rclb.pdf) (A contiuation of my summer research on survival analysis)
 
-* Survival Analysis, 2025 Summer Research: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf)
+### Survival Analysis, 2025 Summer Research: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf)
 
-* Dynamical Systems, An Introduction to Circular Restricted Three-Body Problem: [CR3BP](/files/3R3BP.pdf)
+### Dynamical Systems, An Introduction to Circular Restricted Three-Body Problem: [CR3BP](/files/3R3BP.pdf)
 
-* Linear Algebra Textbook: [Linear Algebra](/files/线性代数.pdf). Please go to Math Resources page for more notes that I wrote.
+<div style="text-align: center;">
+  <img src="/images/coverpage.png" alt="Winter Break" width="600">
+  <p><em>The green dots in the picture are the Trojan asteroids, they behave almost exactly as predicted in the CR3BP, and in Sun-Jupiter system, we have $\mu = 0.00095$, and $e=0.0487$. The group of asteroid near $L_4$ are called Greek Camp and the group of asteroid near $L_5$ is called Trojan camp. Isn't it nice?</em></p>
+</div>
+
+### Linear Algebra Textbook: [Linear Algebra](/files/线性代数.pdf). Please go to Math Resources page for more notes that I wrote.
 
 
 <br>
