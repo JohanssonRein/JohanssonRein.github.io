@@ -12,8 +12,7 @@ redirect_from:
  <br>
 
 <div style="background-color: #cceeff; padding: 1em; border-left: 6px solid #3399cc; border-radius: 8px; margin: 1em 0;">
-  <strong>Recent Activities.</strong># 
-  Recent Activities
+  <strong>Recent Activities.</strong>
 
 * Nov 26th, 2025: 2:30pm - 4:00pm : Research Talk on Vapnik-Chervonenkis dimension, Probabilistic bounds, and Neyman-Pearson Classification.
   * Slides of the talk: [PDF Here](/files/NPClassifiers.pdf)
