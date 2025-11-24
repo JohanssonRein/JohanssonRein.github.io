@@ -21,7 +21,7 @@ redirect_from:
 
 <div style="text-align: center;">
   <img src="/images/coverpage.png" alt="Winter Break" width="600">
-  <p><em></em></p>
+  <p><em>Poster of my talk</em></p>
 </div>
 
    * Time and Location: Jan 9th - 11th, 2026, McGill University. Exact time TBD.
