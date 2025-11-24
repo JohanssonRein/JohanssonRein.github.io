@@ -65,7 +65,9 @@ redirect_from:
 ### Dynamical Systems, An Introduction to Circular Restricted Three-Body Problem: [CR3BP](/files/3R3BP.pdf)
 
 <div style="text-align: center;">
-  <img src="/images/jupiter.png" alt="Winter Break" width="600">
+  <img src="/images/lagrange.png" alt="Winter Break" width="400">
+  <p><em> Hi</em></p>
+  <img src="/images/jupiter.png" alt="Winter Break" width="400">
   <p><em>The green dots in the picture are the Trojan asteroids, they behave almost exactly as predicted in the CR3BP, and in Sun-Jupiter system, we have $\mu = 0.00095$, and $e=0.0487$. The group of asteroid near $L_4$ are called Greek Camp and the group of asteroid near $L_5$ is called Trojan camp. Isn't it nice?</em></p>
 </div>
 
