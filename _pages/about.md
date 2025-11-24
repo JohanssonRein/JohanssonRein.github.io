@@ -64,16 +64,17 @@ redirect_from:
 
 ### Dynamical Systems, An Introduction to Circular Restricted Three-Body Problem: [CR3BP](/files/3R3BP.pdf)
 
-<div style="display: flex; justify-content: center; gap: 20px;">
-  <div style="text-align: center;">
-    <img src="/images/lagrange.png" alt="Lagrange" width="300">
+<div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
+  <div>
+    <img src="/images/lagrange.png" alt="Lagrange Points" width="300">
     <p><em>Figure 1: Lagrange Points</em></p>
   </div>
-  <div style="text-align: center;">
-    <img src="/images/jupiter.png" alt="Jupiter" width="300">
+  <div>
+    <img src="/images/jupiter.png" alt="Trojan Asteroids" width="300">
     <p><em>Figure 2: Jupiter & Trojan Asteroids</em></p>
   </div>
 </div>
+
 
 
 ### Linear Algebra Textbook: [Linear Algebra](/files/线性代数.pdf). Please go to Math Resources page for more notes that I wrote.
