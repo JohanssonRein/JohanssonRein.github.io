@@ -64,7 +64,7 @@ redirect_from:
 
 ### Dynamical Systems, An Introduction to Circular Restricted Three-Body Problem: [CR3BP](/files/3R3BP.pdf)
 
-<div style="display: flex; justify-content: center; gap: 30px;">
+<div style="display: flex; justify-content: center; gap: 20px;">
   <div style="text-align: center;">
     <img src="/images/lagrange.png" alt="Lagrange" width="300">
     <p><em>Figure 1: Lagrange Points</em></p>
