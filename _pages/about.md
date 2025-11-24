@@ -68,7 +68,7 @@ redirect_from:
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
   <div>
-    <img src="/images/lagrange.png" alt="Lagrange Points" width="500">
+    <img src="/images/lagrange.png" alt="Lagrange Points" width="550">
     <p><em>Figure 1: In a restricted (planar) circular three-body problem, we assume two bodies $m_1>m_2$ together with a massless object. For example the Sun-Earth-Satellite system. In this system there are 5 different Lagrange points for the third body (satellite). Three colinear Lagrange points and 2 equilaterial lagrange points. In this case it means that if
 $
 m_2 \leq 0.04m_1
@@ -76,7 +76,7 @@ $
 then we would achieve a steady state around equilaterial Lagrange points $L_4,L_5$. </em></p>
   </div>
   <div>
-    <img src="/images/jupiter.png" alt="Trojan Asteroids" width="500">
+    <img src="/images/jupiter.png" alt="Trojan Asteroids" width="450">
     <p><em>Figure 2: This type of stability behavior has been observed in the Solar System. For instance, there is a sub-class of asteroids, known as the Trojan asteroids, which are trapped in the vicinity of the $L_4$ and $L_5$ points of the Sun-Jupiter system, and consequently share Jupiter's orbit around the Sun, staying approximately $60^\circ$ ahead of, and $60^\circ$ behind, Jupiter, respectively.</em></p>
   </div>
 </div>
