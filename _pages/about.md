@@ -20,7 +20,7 @@ redirect_from:
 ## The Seminars in Undergraduate Mathematics in Montreal (SUMM), 2026.
 
 <div style="text-align: center;">
-  <img src="/images/coverpage.png" alt="Winter Break" width="1000">
+  <img src="/images/coverpage.png" alt="Winter Break" width="600">
   <p><em></em></p>
 </div>
 
