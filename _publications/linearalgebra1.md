@@ -1,11 +1,11 @@
 ---
 title: "线性方程组的求解"
 collection: publications
-category: linear algebra
+category: linearalgebra
 permalink: /publication/linearalgebra1
 excerpt: ''
 date: 2025-11-24
-order: 1
+order: 2
 venue: 'Fall'
 #slidesurl: 'http://academicpages.github.io/files/slides3.pdf'
 #paperurl: 'http://academicpages.github.io/files/paper3.pdf'
