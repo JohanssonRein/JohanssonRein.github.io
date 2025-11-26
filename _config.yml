@@ -120,6 +120,10 @@ publication_category:
     title: 'Discrete Mathematics and Graph Theory'
     description: >
      This note is based on MATH 350 (Honors Discrete Mathematics) at McGill University.
+  practice:
+    title: 'Practice Exams and Questions Written by Me'
+    description: >
+     You may find some practice questions and practice exams. They are all written by me and can be used freely.
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
