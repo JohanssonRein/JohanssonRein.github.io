@@ -12,4 +12,4 @@ venue: 'Fall'
 #citation: 'Jiajun Zhang, (2025) Uniformly Minimum Variance Unbiased Estimator (UMVUE)'
 ---
 
-Please see the practice exam here
+Please see the practice exam [PDF Here](/files/linear_algebra_exam_1.pdf)
