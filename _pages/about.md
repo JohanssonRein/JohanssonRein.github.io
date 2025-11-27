@@ -46,7 +46,7 @@ redirect_from:
 
 ## Previous Projects:
 
-## Research Talk on Vapnik-Chervonenkis Dimension, Probabilistic Bounds, and Neyman-Pearson Classification.
+### Research Talk on Vapnik-Chervonenkis Dimension, Probabilistic Bounds, and Neyman-Pearson Classification.
 
 <div style="text-align: center;">
   <img src="/images/NPClass.png" alt="Winter Break" width="600">
