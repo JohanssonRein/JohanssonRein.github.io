@@ -58,7 +58,7 @@ redirect_from:
    * Joint work with Emile Petit
 
   <div style="text-align: center;">
-  <img src="/images/vc_talk.png" alt="Winter Break" width="600">
+  <img src="/images/vctalk.jpg" alt="Winter Break" width="600">
   <p><em>Picture of me giving the talk. Credit: Emile Petit</em></p>
 </div>
 
