@@ -38,7 +38,7 @@ redirect_from:
 ## Ungoing Projects (I will update them periodically):
 
 
-* Imbalanced Classification: [PDF Here](/files/imbalanced_classification.pdf) (Independent study project supervised by Professor Abbas Khalili)
+* Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
   
 
 ## Previous Projects:
