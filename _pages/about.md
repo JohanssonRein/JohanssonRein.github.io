@@ -37,14 +37,13 @@ redirect_from:
 
 ## Ungoing Projects (I will update them periodically):
 
-* A Survey on High-Dimensional Regression: [PDF Here](/files/survey_hdr.pdf) (Research Project for the course MATH 533: Regression and ANOVA taught by Professor Mehdi Dagdoug, joint work with Caroline Wang and James Liang)
 
 * Imbalanced Classification: [PDF Here](/files/imbalanced_classification.pdf) (Independent study project supervised by Professor Abbas Khalili)
-
-* Vapnik-Chervonenkis Dimension and Probabilistic Bounds: [PDF Here](/files/NPClassifiers.pdf) (Joint work with Emile Petit, a research course on Deep Learning and Neural Networks taught by Professor Masoud Asgharian).
   
 
 ## Previous Projects:
+
+### A Survey on High-Dimensional Regression: [PDF Here](/files/survey_hdr.pdf) (Research Project for the course MATH 533: Regression and ANOVA taught by Professor Mehdi Dagdoug, joint work with Caroline Wang and James Liang)
 
 ### Research Talk on Vapnik-Chervonenkis Dimension, Probabilistic Bounds, and Neyman-Pearson Classification.
 
