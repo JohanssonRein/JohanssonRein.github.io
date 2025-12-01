@@ -43,7 +43,7 @@ redirect_from:
 
 ## Previous Projects:
 
-### A Survey on High-Dimensional Regression: [PDF Here](/files/survey_hdr.pdf) (Research Project for the course MATH 533: Regression and ANOVA taught by Professor Mehdi Dagdoug, joint work with Caroline Wang and James Liang)
+### A Survey on High-Dimensional Regression: [PDF Here](/files/A_Survey_on_High_Dimensional_Regression.pdf) (Research Project for the course MATH 533: Regression and ANOVA taught by Professor Mehdi Dagdoug, joint work with Caroline Wang and James Liang)
 
 ### Research Talk on Vapnik-Chervonenkis Dimension, Probabilistic Bounds, and Neyman-Pearson Classification.
 
