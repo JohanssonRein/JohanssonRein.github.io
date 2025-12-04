@@ -56,8 +56,11 @@ redirect_from:
 </div>
 
    * Time and Location: Nov 26th, 2:30pm - 4:00pm. Burnside Hall 1234, McGill University.
+    
    * Slides of the talk: [PDF Here](/files/NPClassifiers.pdf)
+     
    * Location: Burnside Building, Room 1234, McGill University
+     
    * Joint work with Emile Petit
 
   <div style="text-align: center;">
