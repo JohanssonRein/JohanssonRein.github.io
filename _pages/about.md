@@ -35,10 +35,15 @@ redirect_from:
 
 # Current Projects and Research Work
 
-## Ungoing Projects (I will update them periodically):
+## Ungoing Projects:
+
+### Physics-informed neural networks. Joint work with Emile Petit.
+
+<br>
+
+### Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
 
 
-* Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
   
 
 ## Previous Projects:
