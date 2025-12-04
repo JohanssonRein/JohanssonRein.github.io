@@ -50,11 +50,6 @@ redirect_from:
 
 * Research Talk on Vapnik-Chervonenkis Dimension, Probabilistic Bounds, and Neyman-Pearson Classification.
 
-<div style="text-align: center;">
-  <img src="/images/NPClass.png" alt="Winter Break" width="600">
-  <p><em>A simulation: The true distributions of $\vec x$ under two classes are $\mathcal{N}(0,1)$ (with $y=0$), $\mathcal{N}(2,1)$ (with $y=1$). If user prefers a type I error $R_0(f) \leq 0.05$, a classical classifier $\mathbf{1}\{ x \geq 1\}$ would have $R_0(f) = 0.16$, but the NP classifier $\mathbf{1}\{ x \geq 1.65\}$ will satisfy the type I error constraint while minimize type II error. </em></p>
-</div>
-
    * Time and Location: Nov 26th, 2:30pm - 4:00pm. Burnside Hall 1234, McGill University.
     
    * Slides of the talk: [PDF Here](/files/NPClassifiers.pdf)
@@ -62,6 +57,11 @@ redirect_from:
    * Location: Burnside Building, Room 1234, McGill University
      
    * Joint work with Emile Petit
+ 
+<div style="text-align: center;">
+  <img src="/images/NPClass.png" alt="Winter Break" width="600">
+  <p><em>A simulation: The true distributions of $\vec x$ under two classes are $\mathcal{N}(0,1)$ (with $y=0$), $\mathcal{N}(2,1)$ (with $y=1$). If user prefers a type I error $R_0(f) \leq 0.05$, a classical classifier $\mathbf{1}\{ x \geq 1\}$ would have $R_0(f) = 0.16$, but the NP classifier $\mathbf{1}\{ x \geq 1.65\}$ will satisfy the type I error constraint while minimize type II error. </em></p>
+</div>
 
 * Right-censored; Length-biased data: [PDF Here](/files/rclb.pdf) (A contiuation of my summer research on survival analysis)
 
