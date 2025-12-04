@@ -37,42 +37,40 @@ redirect_from:
 
 ## Ungoing Projects:
 
-### Physics-informed neural networks. Joint work with Emile Petit.
+* Physics-informed neural networks. Joint work with Emile Petit.
 
-<br>
-
-### Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
+* Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
 
 
   
 
 ## Previous Projects:
 
-### A Survey on High-Dimensional Regression: [PDF Here](/files/A_Survey_on_High_Dimensional_Regression.pdf) (Research Project for the course MATH 533: Regression and ANOVA taught by Professor Mehdi Dagdoug, joint work with Caroline Wang and James Liang)
+* A Survey on High-Dimensional Regression: [PDF Here](/files/A_Survey_on_High_Dimensional_Regression.pdf) (Research Project for the course MATH 533: Regression and ANOVA taught by Professor Mehdi Dagdoug, joint work with Caroline Wang and James Liang)
 
-### Research Talk on Vapnik-Chervonenkis Dimension, Probabilistic Bounds, and Neyman-Pearson Classification.
+* Research Talk on Vapnik-Chervonenkis Dimension, Probabilistic Bounds, and Neyman-Pearson Classification.
 
 <div style="text-align: center;">
   <img src="/images/NPClass.png" alt="Winter Break" width="600">
   <p><em>A simulation: The true distributions of $\vec x$ under two classes are $\mathcal{N}(0,1)$ (with $y=0$), $\mathcal{N}(2,1)$ (with $y=1$). If user prefers a type I error $R_0(f) \leq 0.05$, a classical classifier $\mathbf{1}\{ x \geq 1\}$ would have $R_0(f) = 0.16$, but the NP classifier $\mathbf{1}\{ x \geq 1.65\}$ will satisfy the type I error constraint while minimize type II error. </em></p>
 </div>
-   * Time and Location: Nov 26th, 2:30pm - 4:00pm. Burnside Hall 1234, McGill University.
-   * Slides of the talk: [PDF Here](/files/NPClassifiers.pdf)
-   * Location: Burnside Building, Room 1234, McGill University
-   * Joint work with Emile Petit
+   ** Time and Location: Nov 26th, 2:30pm - 4:00pm. Burnside Hall 1234, McGill University.
+   ** Slides of the talk: [PDF Here](/files/NPClassifiers.pdf)
+   ** Location: Burnside Building, Room 1234, McGill University
+   ** Joint work with Emile Petit
 
   <div style="text-align: center;">
   <img src="/images/vctalk.jpg" alt="Winter Break" width="600">
   <p><em>Picture of me giving the talk. Credit: Emile Petit</em></p>
 </div>
 
-### Right-censored; Length-biased data: [PDF Here](/files/rclb.pdf) (A contiuation of my summer research on survival analysis)
+* Right-censored; Length-biased data: [PDF Here](/files/rclb.pdf) (A contiuation of my summer research on survival analysis)
 
-### Survival Analysis, 2025 Summer Research: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf)
+* Survival Analysis, 2025 Summer Research: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf)
 
-### Dynamical Systems, An Introduction to Circular Restricted Three-Body Problem: [CR3BP](/files/3R3BP.pdf)
+* Dynamical Systems, An Introduction to Circular Restricted Three-Body Problem: [CR3BP](/files/3R3BP.pdf)
 
-* Abstract: This project studies the dynamics of a restricted circular restricted three body problem (CR3BP). Motivated from the closed solution of a two body problem, an additionally massless object is added into the system and we derive the set of Lagrange points of the third body as well as their corresponding orbits and stability.
+  ** Abstract: This project studies the dynamics of a restricted circular restricted three body problem (CR3BP). Motivated from the closed solution of a two body problem, an additionally massless object is added into the system and we derive the set of Lagrange points of the third body as well as their corresponding orbits and stability.
 
 <div style="display: flex; justify-content: center; gap: 20px; align-items: flex-start;">
   <div>
@@ -89,9 +87,7 @@ then we would achieve a steady state around equilaterial Lagrange points $L_4,L_
   </div>
 </div>
 
-
-
-### Linear Algebra Textbook: [Linear Algebra](/files/线性代数.pdf). Please go to Math Resources page for more notes that I wrote.
+* Linear Algebra Textbook: [Linear Algebra](/files/线性代数.pdf). Please go to Math Resources page for more notes that I wrote.
 
 
 <br>
