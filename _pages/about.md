@@ -33,7 +33,7 @@ redirect_from:
    * Official site: [SUMM](https://www.summ.xyz/en/index.html)
 
 
-# Current Projects and Research Work
+# Projects and Research Work
 
 ## Ungoing Projects:
 
