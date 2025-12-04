@@ -63,11 +63,6 @@ redirect_from:
      
    * Joint work with Emile Petit
 
-  <div style="text-align: center;">
-  <img src="/images/vctalk.jpg" alt="Winter Break" width="600">
-  <p><em>Picture of me giving the talk. Credit: Emile Petit</em></p>
-</div>
-
 * Right-censored; Length-biased data: [PDF Here](/files/rclb.pdf) (A contiuation of my summer research on survival analysis)
 
 * Survival Analysis, 2025 Summer Research: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf)
