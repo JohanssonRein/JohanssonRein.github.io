@@ -39,6 +39,11 @@ redirect_from:
 
 * Physics-informed neural networks. Joint work with Emile Petit.
 
+<div style="text-align: center;">
+  <img src="/images/image.png" alt="Winter Break" width="600">
+  <p><em>This figure illustrates the Physics-Informed Neural Network’s reconstruction of the Navier–Stokes solution for the cylinder-wake dataset.</em></p>
+</div>
+
 * Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
 
 
