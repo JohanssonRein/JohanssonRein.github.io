@@ -41,7 +41,7 @@ redirect_from:
 
 ## Previous Projects:
 
-* [Small PINNs](https://www.summ.xyz/en/index.html). Joint work with Emile Petit.
+* [Small PINNs](/files/smallPINNs.pdf). Joint work with Emile Petit.
 
   * Source code and model is available [here](https://github.com/Topaze05/smallPINN).
 
