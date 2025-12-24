@@ -52,7 +52,10 @@ redirect_from:
 
 * A Survey on High-Dimensional Regression: [PDF Here](/files/A_Survey_on_High_Dimensional_Regression.pdf) (Research Project for the course MATH 533: Regression and ANOVA taught by Professor Mehdi Dagdoug, joint work with Caroline Wang and James Liang)
 
-
+<div style="text-align: center;">
+  <img src="/images/highdim.png" alt="Winter Break" width="700">
+  <p><em>The estimated coefficient for the top $9$ selected features (genes) using Ridge, Lasso and Elastic Net from Riboflavin dataset.</em></p>
+</div>
 
 * Research Talk on Vapnik-Chervonenkis Dimension, Probabilistic Bounds, and Neyman-Pearson Classification.
 
