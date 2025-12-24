@@ -37,6 +37,10 @@ redirect_from:
 
 ## Ungoing Projects:
 
+* Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
+
+## Previous Projects:
+
 * [Small PINNs](https://www.summ.xyz/en/index.html). Joint work with Emile Petit.
 
   * Source code and model is available [here](https://github.com/Topaze05/smallPINN).
@@ -46,11 +50,9 @@ redirect_from:
   <p><em>This figure illustrates the Physics-Informed Neural Network’s reconstruction of the Navier–Stokes solution for the cylinder-wake dataset.</em></p>
 </div>
 
-* Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
-
-## Previous Projects:
-
 * A Survey on High-Dimensional Regression: [PDF Here](/files/A_Survey_on_High_Dimensional_Regression.pdf) (Research Project for the course MATH 533: Regression and ANOVA taught by Professor Mehdi Dagdoug, joint work with Caroline Wang and James Liang)
+
+
 
 * Research Talk on Vapnik-Chervonenkis Dimension, Probabilistic Bounds, and Neyman-Pearson Classification.
 
