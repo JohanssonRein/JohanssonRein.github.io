@@ -37,7 +37,9 @@ redirect_from:
 
 ## Ungoing Projects:
 
-* Physics-informed neural networks. Joint work with Emile Petit.
+* [Small PINNs](https://www.summ.xyz/en/index.html). Joint work with Emile Petit.
+
+  * Source code and model is available [here](https://github.com/Topaze05/smallPINN).
 
 <div style="text-align: center;">
   <img src="/images/image.png" alt="Winter Break" width="800">
@@ -45,9 +47,6 @@ redirect_from:
 </div>
 
 * Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
-
-
-  
 
 ## Previous Projects:
 
