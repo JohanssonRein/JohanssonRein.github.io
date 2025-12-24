@@ -3,7 +3,12 @@ title: "Travelling"
 excerpt: "The places I have been to"  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
 ---
+<div style="text-align: center;">
+  <img src="/images/berk.jpg" alt="Mont Tremblant Park, Autumn 2024" width="600">
+  <p><em>Island of Berk, Epic Universe, Orlando FL.</em></p>
+</div>
 
+<br>
 
 <div style="text-align: center;">
   <img src="/images/dc.JPG" alt="Mont Tremblant Park, Autumn 2024" width="600">
