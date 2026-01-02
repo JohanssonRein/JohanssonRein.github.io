@@ -34,7 +34,7 @@ redirect_from:
 
 ## Publication: Statistical Inferences for Estimating Survival Data
 
-  * Paper: [PDE Here](/files/Statistical_Inferences_for_Estimating_Survival_Probability.pdf)
+  * Paper: [PDF Here](/files/Statistical_Inferences_for_Estimating_Survival_Probability.pdf)
   * Journal: McGill Science Undergraduate Research Journal 
   * Status: Submitted, Under Review
 
