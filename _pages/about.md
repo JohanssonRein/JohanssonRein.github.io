@@ -32,6 +32,11 @@ redirect_from:
    * Slides of the talk: Remain confidential before the talk :)
    * Official site: [SUMM](https://www.summ.xyz/en/index.html)
 
+## Publication: Statistical Inferences for Estimating Survival Data
+
+  * Paper: [PDE Here](/files/Statistical_Inferences_for_Estimating_Survival_Probability.pdf)
+  * Journal: McGill Science Undergraduate Research Journal 
+  * Status: Submitted, Under Review
 
 # Projects and Research Work
 
