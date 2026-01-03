@@ -31,12 +31,6 @@ for semi-parametric inference. Finally, we introduce the log-rank test, which is
    * Slides of the talk: Under construction.
    * Official site: [SUMM](https://www.summ.xyz/en/index.html)
 
-## Publication: Statistical Inferences for Estimating Survival Data
-
-  * Paper: [PDF Here](/files/Statistical_Inferences_for_Estimating_Survival_Probability.pdf)
-  * Journal: McGill Science Undergraduate Research Journal 
-  * Status: Submitted, Under Review
-
 # Projects and Research Work
 
 ## Ungoing Projects:
