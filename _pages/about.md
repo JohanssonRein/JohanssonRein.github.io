@@ -28,7 +28,7 @@ widely used in biostatistical and epidemiological research. We begin by introduc
 the key estimating techniques for survival data based on parametric, non-parametric, and semi-parametric inferences. We briefly introduce likelihood inference for parametric inference, life table methods, the KaplanMeier (KM) estimator and its variants for non-parametric inference, and Cox’s proportional hazard (PH) model
 for semi-parametric inference. Finally, we introduce the log-rank test, which is commonly used for testing statistical significance in the survival data among multiple groups.
    * Time/Location: TBD
-   * Slides of the talk: Under construction.
+   * Slides of the talk: [Here](/files/Statistical_Inferences_for_Survival_Data_Talk.pdf).
    * Official site: [SUMM](https://www.summ.xyz/en/index.html)
 
 # Projects and Research Work
