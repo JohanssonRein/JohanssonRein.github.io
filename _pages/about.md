@@ -22,11 +22,9 @@ redirect_from:
 
    * Time and Location: Jan 9th - 11th, 2026, McGill University. Exact time TBD.
    * Topic: Statistical Inference for Survival Data.
-   * Abstract: Survival analysis studies the behavior of time-to-event data, which arise naturally in modern statistical studiesand are characterized by incomplete observations due to censoring and truncation. These unique features invalidate classical statistical methods and require the development of specialized inferential tools. This article
-presents an introduction to basic theories and methodologies used for modeling time-to-event data, which are
-widely used in biostatistical and epidemiological research. We begin by introducing the censoring and truncation mechanism, followed by defining basic quantities, including survival and hazard functions. We next study
+   * Abstract: Survival analysis studies the behavior of time-to-event data, which arise naturally in modern statistical studiesand are characterized by incomplete observations due to censoring and truncation. These unique features invalidate classical statistical methods and require the development of specialized inferential tools. This article presents an introduction to basic theories and methodologies used for modeling time-to-event data, which are widely used in biostatistical and epidemiological research. We begin by introducing the censoring and truncation mechanism, followed by defining basic quantities, including survival and hazard functions. We next study
 the key estimating techniques for survival data based on parametric, non-parametric, and semi-parametric inferences. We briefly introduce likelihood inference for parametric inference, life table methods, the KaplanMeier (KM) estimator and its variants for non-parametric inference, and Cox’s proportional hazard (PH) model
-for semi-parametric inference. Finally, we introduce the log-rank test, which is commonly used for testing statistical significance in the survival data among multiple groups.
+for semi-parametric inference. 
    * Time/Location: TBD
    * Slides of the talk: [Here](/files/Statistical_Inference_for_Survival_Data_Talk.pdf).
    * Official site: [SUMM](https://www.summ.xyz/en/index.html)
