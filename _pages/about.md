@@ -20,16 +20,15 @@ redirect_from:
  
 ## The Seminars in Undergraduate Mathematics in Montreal (SUMM), 2026.
 
-<div style="text-align: center;">
-  <img src="/images/coverpage.png" alt="Winter Break" width="600">
-  <p><em>Poster of my talk</em></p>
-</div>
-
    * Time and Location: Jan 9th - 11th, 2026, McGill University. Exact time TBD.
-   * Topic: An Introduction to Survival Analysis
-   * Abstract: In survival analysis, we are interested in time to event data, i.e., the time until the occurrence of some events which are of our interests. Time to event data often presents a characteristic feature known as censoring and truncation where the observations are imcomplete. In this talk, we will see how we can estimate some key survival features in parametric, non-parametric and semi-parametric families when censoring and truncation are present.
+   * Topic: Statistical Inference for Survival Data.
+   * Abstract: Survival analysis studies the behavior of time-to-event data, which arise naturally in modern statistical studiesand are characterized by incomplete observations due to censoring and truncation. These unique features invalidate classical statistical methods and require the development of specialized inferential tools. This article
+presents an introduction to basic theories and methodologies used for modeling time-to-event data, which are
+widely used in biostatistical and epidemiological research. We begin by introducing the censoring and truncation mechanism, followed by defining basic quantities, including survival and hazard functions. We next study
+the key estimating techniques for survival data based on parametric, non-parametric, and semi-parametric inferences. We briefly introduce likelihood inference for parametric inference, life table methods, the KaplanMeier (KM) estimator and its variants for non-parametric inference, and Cox’s proportional hazard (PH) model
+for semi-parametric inference. Finally, we introduce the log-rank test, which is commonly used for testing statistical significance in the survival data among multiple groups.
    * Time/Location: TBD
-   * Slides of the talk: Remain confidential before the talk :)
+   * Slides of the talk: Under construction.
    * Official site: [SUMM](https://www.summ.xyz/en/index.html)
 
 ## Publication: Statistical Inferences for Estimating Survival Data
