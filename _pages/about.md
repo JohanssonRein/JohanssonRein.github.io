@@ -27,6 +27,7 @@ the key estimating techniques for survival data based on parametric, non-paramet
 for semi-parametric inference. 
    * Time/Location: TBD
    * Slides of the talk: [Here](/files/Statistical_Inference_for_Survival_Data_Talk.pdf).
+   * Written report: [Here](/files/Statistical_Inference_for_Survival_Data.pdf)
    * Official site: [SUMM](https://www.summ.xyz/en/index.html)
 
 # Projects and Research Work
