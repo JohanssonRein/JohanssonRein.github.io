@@ -28,7 +28,7 @@ for semi-parametric inference.
    * Time/Location: January 10th, 9:30 - 10:00, Trottier Building, McGill University.
    * Slides of the talk: [Here](/files/Statistical_Inference_for_Survival_Data_Talk.pdf).
    * Written report: [Here](/files/Statistical_Inference_for_Survival_Data.pdf)
-   * Official site: [SUMM](https://www.summ.xyz/en/index.html)
+   * Official site and schedule: [SUMM](https://www.summ.xyz/en/index.html)
 
 # Projects and Research Work
 
