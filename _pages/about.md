@@ -25,7 +25,6 @@ redirect_from:
   <p><em>Thank you Suelynn for taking nice pictures, and thank you Antonio for organising my talk!</em></p>
 </div>
 
-   * Time and Location: Jan 9th - 11th, 2026, McGill University. Exact time TBD.
    * Topic: Statistical Inference for Survival Data.
    * Abstract: Survival analysis studies the behavior of time-to-event data, which arise naturally in modern statistical studies and are characterized by incomplete observations due to censoring and truncation. These unique features invalidate classical statistical methods and require the development of specialized inferential tools. This talk presents an introduction to basic theories and methodologies used for modeling time-to-event data, which are widely used in biostatistical and epidemiological research. We introduce the censoring and truncation mechanism, follow by the famous Kaplan-Meier (KM) estimator and its variants. If time permits, we will also talk about Cox proportional hazard (PH) model and regression techniques. 
    * Time/Location: January 10th, 9:30 - 10:00, Trottier Building 0070, McGill University, Montréal.
