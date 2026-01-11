@@ -20,10 +20,15 @@ redirect_from:
  
 ## The Seminars in Undergraduate Mathematics in Montreal (SUMM), 2026.
 
-<div style="text-align: center;">
-  <img src="/images/SUMM2026Dinner.jpg" alt="Winter Break" width="800">
-  <p><em>Thank you Marin for the nice picture! </em></p>
-</div>
+<br>
+<iframe
+  src="https://www.youtube.com/embed/VrINiS_dOF4"
+  width="560"
+  height="315"
+  frameborder="0"
+  allowfullscreen>
+</iframe>
+<br>
 
    * Topic: Statistical Inference for Survival Data.
    * Abstract: Survival analysis studies the behavior of time-to-event data, which arise naturally in modern statistical studies and are characterized by incomplete observations due to censoring and truncation. These unique features invalidate classical statistical methods and require the development of specialized inferential tools. This talk presents an introduction to basic theories and methodologies used for modeling time-to-event data, which are widely used in biostatistical and epidemiological research. We introduce the censoring and truncation mechanism, follow by the famous Kaplan-Meier (KM) estimator and its variants. If time permits, we will also talk about Cox proportional hazard (PH) model and regression techniques. 
@@ -32,13 +37,7 @@ redirect_from:
    * Written report: [Here](/files/Statistical_Inference_for_Survival_Data.pdf)
    * Official site and schedule: [SUMM](https://www.summ.xyz/en/index.html)
 
-<iframe
-  src="https://www.youtube.com/embed/VrINiS_dOF4"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+
 
 
 
