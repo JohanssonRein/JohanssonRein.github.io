@@ -21,7 +21,7 @@ redirect_from:
 ## The Seminars in Undergraduate Mathematics in Montreal (SUMM), 2026.
 
 <div style="text-align: center;">
-  <img src="/images/summtalk.png" alt="Winter Break" width="800">
+  <img src="/images/summtalk.png" alt="Winter Break" width="700">
   <p><em>Thank you Suelynn for taking nice pictures, and thank you Antonio for organising my talk!</em></p>
 </div>
 
