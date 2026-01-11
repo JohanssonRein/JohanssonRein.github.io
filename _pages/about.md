@@ -33,7 +33,7 @@ redirect_from:
    * Official site and schedule: [SUMM](https://www.summ.xyz/en/index.html)
 
 <iframe
-  src="https://www.youtube.com/embed/AHBod9Hc0Sg"
+  src="https://www.youtube.com/embed/VrINiS_dOF4"
   width="560"
   height="315"
   frameborder="0"
