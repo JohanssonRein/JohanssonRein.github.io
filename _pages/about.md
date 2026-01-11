@@ -32,13 +32,7 @@ redirect_from:
    * Written report: [Here](/files/Statistical_Inference_for_Survival_Data.pdf)
    * Official site and schedule: [SUMM](https://www.summ.xyz/en/index.html)
 
-   * Talk Video: <iframe
-  src="https://www.youtube.com/embedVrINiS_dOF4"
-  width="560"
-  height="315"
-  frameborder="0"
-  allowfullscreen>
-</iframe>
+
 
 # Projects and Research Work
 
