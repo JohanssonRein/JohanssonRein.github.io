@@ -13,6 +13,6 @@ citation: 'Jiajun Zhang, (2025) Regression and ANOVA Course Notes'
 ---
 
 
-My notes: [here](/files/regression.pdf) 
+Please consult my notes here: [here](/files/regression.pdf) 
 
-Note that this note is still under construction.
+
