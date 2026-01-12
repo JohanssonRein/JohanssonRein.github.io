@@ -127,7 +127,7 @@ publication_category:
   complex:
      title: 'Complex Analysis'
      description: >
-       This note is based on MATH 249 (Honors Complex Analysis) taught by professor Henri Darmon at McGill University, in winter 2026.
+       This note is based on MATH 249 (Honors Complex Analysis) taught by professor Henri Darmon at McGill University, in winter 2026. My notes (will be updated weekly): [here](/files/MATH_249_Notes.pdf)
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
