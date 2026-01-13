@@ -91,27 +91,35 @@ publication_category:
      title: 'Regression and Analysis of Variance'
      description: >
       This note is based on MATH 533 (Regression and ANOVA) at McGill University taught by Prof. Mehdi Dagdoug, where my notes can be found [here](/files/regression.pdf)
+  glm:
+     title: 'Generalized Linear Models'
+     description: >
+       This note is based on MATH 523 (Generalized Linear Models) taught by professor Russell Steele at McGill University, in Winter 2026. My notes (will be updated weekly): [here](/files/GLM.pdf)
   statistics:
     title: 'Statistics'
     description: >
      This note is based on MATH 357 (Honors Statistics) at McGill University taught by Prof. Abbas Khalili.
      A summary of the topics covered in this class: ([here](/files/STATS_Practice.pdf)).  The complete set of notes: ([here](/files/Statistics.pdf)), which is still under construction so far. 
+  probability:
+    title: 'Probability'
+    description: >
+     This note is based on MATH 356 (Honors Probability) at McGill University taught by Prof. Masoud Asgharian. My Notes: ([my own notes here](/files/Intro_to_probability.pdf))  
   calculus:
     title: 'Calculus'
   differentialequations:
     title: 'Partial Differential Equations'
     description: >
      This note is based on MATH 475 (Honors PDE) at McGill University taught by Prof. Adam Oberman. My notes: [here](/files/MATH_475_Notes.pdf)
-  probability:
-    title: 'Probability'
-    description: >
-     This note is based on MATH 356 (Honors Probability) at McGill University taught by Prof. Masoud Asgharian. My Notes: ([my own notes here](/files/Intro_to_probability.pdf))  
   linearalgebra:
     title: 'Linear Algebra'
   realanalysis:
     title: 'Real Analysis'
     description: >
      Here you can find my notes on a higher-level analysis course. It was taught by Prof. Linan Chen at McGill University during Fall 2024. 
+  complex:
+     title: 'Complex Analysis'
+     description: >
+       This note is based on MATH 249 (Honors Complex Analysis) taught by professor Henri Darmon at McGill University, in winter 2026. My notes (will be updated weekly): [here](/files/MATH_249_Notes.pdf)
   ode:
     title: 'Ordinary Differential Equations'
     description: >
@@ -124,14 +132,7 @@ publication_category:
     title: 'Practice Exams and Questions Written by Me'
     description: >
      You may find some practice questions and practice exams. They are all written by me and can be used freely.
-  complex:
-     title: 'Complex Analysis'
-     description: >
-       This note is based on MATH 249 (Honors Complex Analysis) taught by professor Henri Darmon at McGill University, in winter 2026. My notes (will be updated weekly): [here](/files/MATH_249_Notes.pdf)
-  glm:
-     title: 'Generalized Linear Models'
-     description: >
-       This note is based on MATH 523 (Generalized Linear Models) taught by professor Russell Steele at McGill University, in Winter 2026. My notes (will be updated weekly): [here](/files/GLM.pdf)
+  
 
 # Site Settings
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
