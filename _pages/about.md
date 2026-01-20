@@ -39,13 +39,13 @@ redirect_from:
 
 
 
-
-
 # Projects and Research Work
 
 ## Ungoing Projects:
 
 * Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
+
+* Spatial Statistics: Directed Reading Program, Supervised by Peiyuan Huang, PhD in Statistics.
 
 ## Previous Projects:
 
