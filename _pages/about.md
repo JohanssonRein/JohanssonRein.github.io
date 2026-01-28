@@ -17,6 +17,10 @@ redirect_from:
 
 
 # Recent Activities:
+
+## New Repository: Research Blog
+
+* I found out that it would be benefical for me to write some short articles for my research in different fields. They will come out soon!
  
 ## The Seminars in Undergraduate Mathematics in Montreal (SUMM), 2026.
 
