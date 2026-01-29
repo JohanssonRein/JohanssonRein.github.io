@@ -20,8 +20,8 @@ main:
   - title: "Hobbies"
     url: /portfolio/
         
-  #- title: "Research"
-    #url: /research/
+  - title: "Research Blogs"
+    url: /research_blogs/
     
   - title: "CV"
     url: /cv/
