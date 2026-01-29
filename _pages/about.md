@@ -49,6 +49,11 @@ redirect_from:
 
 * Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
 
+<div style="text-align: center;">
+  <img src="/images/svmgaussian.png" alt="Winter Break" width="800">
+  <p><em>This figure illustrates the decision regions using SVM with Gaussian kernel given by $K(\vec x,\vec x') = \exp(-||\vec x - \vec x'||^2)$ on the wine data set. There are 3 different classes represent 3 different cultivars and 13 covariates.</em></p>
+</div>
+
 * Spatial Statistics: Directed Reading Program, Supervised by Peiyuan Huang, PhD in Statistics.
 
 ## Previous Projects:
