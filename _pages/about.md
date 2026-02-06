@@ -51,7 +51,7 @@ redirect_from:
 
 <div style="text-align: center;">
   <img src="/images/carthousing.png" alt="Winter Break" width="800">
-  <p><em>This figures shows a spatial classification of housing prices in California. Houses are classified into different price range ($\exp(\text{value})$ based on spatial information (latitute and longitude. )</em></p>
+  <p><em>This figures shows a spatial classification of housing prices in California. Houses are classified into different price ranges ($\exp(\text{value})$ based on spatial information (latitute and longitude ). This is a decision tree structure and the CART (Classification and Regression Trees) algorithm is being used.</em></p>
 </div>
 
 * Spatial Statistics: Directed Reading Program, Supervised by Peiyuan Huang, PhD in Statistics.
