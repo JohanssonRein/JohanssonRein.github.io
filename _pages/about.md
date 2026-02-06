@@ -27,10 +27,11 @@ redirect_from:
 ## Ungoing Projects:
 
 * Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
+* Project report: [Imbalanced Classification and Sparsity](/files/480_report.pdf) (Last updated: Feb 5th, 2026). Plan for next week: Random Forests, K-th Nearest Neighbors, Gradient Boost Trees, and the probabilistic theories of tree-based algorithms.
 
 <div style="text-align: center;">
   <img src="/images/carthousing.png" alt="Winter Break" width="800">
-  <p><em>This figures shows a spatial classification of housing prices in California. Houses are classified into different price ranges ($\exp(\text{value})$ based on spatial information (latitute and longitude ). This is a decision tree structure and the CART (Classification and Regression Trees) algorithm is being used. For details, see [Imbalanced Classification and Sparsity](/files/480_report.pdf), Chapter 3, for more details.</em></p>
+  <p><em>This figures shows a spatial classification of housing prices in California. Houses are classified into different price ranges ($\exp(\text{value})$ based on spatial information (latitute and longitude ). This is a decision tree structure and the CART (Classification and Regression Trees) algorithm is being used. For details, see my written report, Chapter 3.</em></p>
 </div>
 
 * Spatial Statistics: Directed Reading Program, Supervised by Peiyuan Huang, PhD in Statistics.
