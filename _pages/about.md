@@ -7,7 +7,8 @@ redirect_from:
   - /about.html
 ---
 
-* My name is Jiajun Zhang, you may call me Johnson. I am from Luoyang, China. Right now I am a senior student at McGill University, my major is Honors Applied Mathematics. I identify myself as a statisticsican and applied mathematician.
+* My name is Jiajun Zhang, you may call me Johnson. I am from Luoyang, China.
+
 
 # Research Interests
 
