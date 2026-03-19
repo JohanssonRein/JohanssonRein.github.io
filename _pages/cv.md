@@ -28,7 +28,11 @@ Undergraduate Projects
 
 During my undergraduate degree, I took several graduate-level classes and had several projects and research reports:
 
-* 2025.11 - Current: Physics-informed neural networks
+* 2026.1 - Current: Imbalanced classification and sparsity
+  * Honors Independent study, MATH 480, supervised by Prof. Abbas Khalili
+* 2026.1 - Current: Spactial Statistics
+  * Directed Reading Program (DRP), supervised by Peiyuan Huang
+* 2025.11 - 2025.12: Physics-informed neural networks
    * Joint work with Emile Petit
 * 2025.11 - 2025.12: Vapnik-Chervonenkis Dimension, Probabilistic Bounds and Neyman-Pearson Classification
    * Joint work with Emile Petit
