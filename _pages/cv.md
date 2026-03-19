@@ -14,7 +14,6 @@ A pdf version of my CV can be found [here](/files/Jiajun_Zhang_cv.pdf).
 Education
 ======
 * Master of Science in Statistics, University of British Columbia, 2026 - . Supervisor: [Jiahua Chen](https://www.stat.ubc.ca/~jhchen/)
-
 * Bachelor of Science in Honors Applied Mathematics, McGill University, 2022-2026
 
 Research Experience
