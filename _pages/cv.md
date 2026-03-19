@@ -45,20 +45,30 @@ Work experience
   * Duties includes: Hold weekly office hours (5 hours weekly) at Burnside building room 911 and answer math questions from other students. Questions are from a wide range of fields including calculus, analysis, abstract algebra, linear algebra, probability, statistics and differential equations.
   * Supervisor: Jerome Fortier
 
+* 2026.1 - 2026.4: Undergraduate Course Assistant (MATH 357 Honors Statistics)
+  * McGill University
+  * Duties included: I work as an undergraduate course assistant for MATH 254 (Honors Analysis 1) taught by Prof. Pengfei Guan, my duties include grading students' homework and writing solutions and provide feedbacks to the professor.
+  * Supervisor: Angela White, Abbas Khalili
+ 
+* 2026.1 - 2026.4: Undergraduate Course Assistant (MATH 340: Discrete Mathematics)
+  * McGill University
+  * Duties included: I work as an undergraduate course assistant for MATH 254 (Honors Analysis 1) taught by Prof. Pengfei Guan, my duties include grading students' homework and writing solutions and provide feedbacks to the professor.
+  * Supervisor: Angela White, Jeremy Macdonald
+    
 * 2025.9 - 2025.12: Undergraduate Course Assistant (MATH 254 Honors Analysis I)
   * McGill University
   * Duties included: I work as an undergraduate course assistant for MATH 254 (Honors Analysis 1) taught by Prof. Pengfei Guan, my duties include grading students' homework and writing solutions and provide feedbacks to the professor.
-  * Supervisor: Angela White
+  * Supervisor: Angela White, Pengfei Guan
 
 * 2024.9 - 2025.1: Undergraduate Course Assistant (MATH 248 Honors Vector Calculus)
   * McGill University
   * Duties included: I work as an undergraduate course assistant for MATH 248 (Honors Vector Calculus) taught by Prof. Jean-Pierre Mutanguha, my duties include grading students' homework and writing solutions and provide feedbacks to the professor.
-  * Supervisor: Angela White
+  * Supervisor: Angela White, Jean-Pierre Mutanguha
 
 * 2023.9 - 2024. 4: Undergraduate Course Assistant (MATH 223 Linear Algebra)
   * McGill University
   * Duties included: I work as an undergraduate course assistant for MATH 233 (Linear Algebra) taught by Prof. Mikael Pichot, my duties include grading students' homework and writing solutions and provide feedback to the professor.
-  * Supervisor: Angela White
+  * Supervisor: Angela White, Mikael Pichot
 
   
 Talks
