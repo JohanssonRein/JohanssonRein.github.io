@@ -11,7 +11,7 @@ redirect_from:
 
 # Research Interests
 
-* My research interests so far are in mathematical statistics, differential equations and their applications. For example Biostatistics, Deep Learning, Mathematical Finance, Dynamical Systems and so on.
+* My research interests so far are in mathematical statistics, differential equations and their applications. For example Biostatistics, Statistical Learning, Bayesian Statistics, and so on.
 
 * I have finished my Honors Research Project under professor Masoud Asgharian's supervision. You may find my research thesis here: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf).
 
