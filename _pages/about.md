@@ -23,9 +23,8 @@ redirect_from:
 
 * I found out that it would be benefical for me to write some short articles for my research in different fields. They will come out soon!
  
-# Projects and Research Work
 
-## Ungoing Projects:
+## Previous Projects:
 
 * Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
 * Project report: [Imbalanced Classification and Sparsity](/files/480_report.pdf) (Last updated: Feb 5th, 2026). Plan for next week: Random Forests, K-th Nearest Neighbors, Gradient Boost Trees, and the probabilistic theories of tree-based algorithms.
@@ -37,7 +36,7 @@ redirect_from:
 
 * Spatial Statistics: Directed Reading Program, Supervised by Peiyuan Huang, PhD in Statistics.
 
-## Previous Projects:
+  * Presentation: [Modeling Rental Price in Calgary Under Spatial Bayesian Paradigms](/files/drp_presentation.pdf)
 
 * [Small PINNs](/files/smallPINNs.pdf). Joint work with Emile Petit.
 
