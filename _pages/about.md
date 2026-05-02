@@ -38,6 +38,8 @@ redirect_from:
 
   * Presentation: [Modeling Rental Price in Calgary Under Spatial Bayesian Paradigms](/files/drp_presentation.pdf)
 
+<br>
+
 * [Small PINNs](/files/smallPINNs.pdf). Joint work with Emile Petit.
 
   * Source code and model is available [here](https://github.com/Topaze05/smallPINN).
