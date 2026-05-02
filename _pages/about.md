@@ -26,7 +26,8 @@ redirect_from:
 
 ## Previous Projects:
 
-* Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
+### Imbalanced Classification: (Independent study project supervised by Professor Abbas Khalili)
+
 * Project report: [Imbalanced Classification and Sparsity](/files/480_report.pdf) (Last updated: Feb 5th, 2026). Plan for next week: Random Forests, K-th Nearest Neighbors, Gradient Boost Trees, and the probabilistic theories of tree-based algorithms.
 
 <div style="text-align: center;">
@@ -34,19 +35,19 @@ redirect_from:
   <p><em>This figures shows a spatial classification of housing prices in California. Houses are classified into different price ranges ($\exp(\text{value})$ based on spatial information (latitute and longitude ). This is a decision tree structure and the CART (Classification and Regression Trees) algorithm is being used. For details, see my written report, Chapter 3.</em></p>
 </div>
 
-* Spatial Statistics: Directed Reading Program, Supervised by Peiyuan Huang, PhD in Statistics.
+### Spatial Statistics: Directed Reading Program, Supervised by Peiyuan Huang, PhD in Statistics.
 
   * Presentation: [Modeling Rental Price in Calgary Under Spatial Bayesian Paradigms](/files/drp_presentation.pdf)
  
   <div style="text-align: center;">
   <img src="/images/spatial_pred_plot.png" alt="Winter Break" width="800">
-  <p><em>This spatial plot shows the spatial effect in the Calgary area. Yellow region means positive spatial effect, whereas the rental price is higher than the fixed effect would have been predicted. Blue region means negative spatial price, whereas the rental proce is lower than the fixed effect would have been predicted. See [Zhang 2026](/files/drp_presentation.pdf) for more.</em></p>
+  <p><em>This spatial plot shows the spatial effect in the Calgary area. Yellow region means positive spatial effect, whereas the rental price is higher than the fixed effect would have been predicted. Blue region means negative spatial price, whereas the rental proce is lower than the fixed effect would have been predicted. See the written report and the presentation slides for more.</em></p>
 </div>
 
 
 <br>
 
-* [Small PINNs](/files/smallPINNs.pdf). Joint work with Emile Petit.
+### [Small PINNs](/files/smallPINNs.pdf). Joint work with Emile Petit.
 
   * Source code and model is available [here](https://github.com/Topaze05/smallPINN).
 
@@ -55,14 +56,14 @@ redirect_from:
   <p><em>This figure illustrates the Physics-Informed Neural Network’s reconstruction of the Navier–Stokes solution for the cylinder-wake dataset.</em></p>
 </div>
 
-* A Survey on High-Dimensional Regression: [PDF Here](/files/A_Survey_on_High_Dimensional_Regression.pdf) (Research Project for the course MATH 533: Regression and ANOVA taught by Professor Mehdi Dagdoug, joint work with Caroline Wang and James Liang)
+### A Survey on High-Dimensional Regression: [PDF Here](/files/A_Survey_on_High_Dimensional_Regression.pdf) (Research Project for the course MATH 533: Regression and ANOVA taught by Professor Mehdi Dagdoug, joint work with Caroline Wang and James Liang)
 
 <div style="text-align: center;">
   <img src="/images/highdim.png" alt="Winter Break" width="700">
   <p><em>The estimated coefficient for the top $9$ selected features (genes) using Ridge, Lasso and Elastic Net from Riboflavin dataset.</em></p>
 </div>
 
-* Research Talk on Vapnik-Chervonenkis Dimension, Probabilistic Bounds, and Neyman-Pearson Classification.
+### Research Talk on Vapnik-Chervonenkis Dimension, Probabilistic Bounds, and Neyman-Pearson Classification.
 
    * Time and Location: Nov 26th, 2:30pm - 4:00pm. Burnside Hall 1234, McGill University.
     
@@ -77,11 +78,11 @@ redirect_from:
   <p><em>A simulation: The true distributions of $\vec x$ under two classes are $\mathcal{N}(0,1)$ (with $y=0$), $\mathcal{N}(2,1)$ (with $y=1$). If user prefers a type I error $R_0(f) \leq 0.05$, a classical classifier $\mathbf{1}\{ x \geq 1\}$ would have $R_0(f) = 0.16$, but the NP classifier $\mathbf{1}\{ x \geq 1.65\}$ will satisfy the type I error constraint while minimize type II error. </em></p>
 </div>
 
-* Right-censored; Length-biased data: [PDF Here](/files/rclb.pdf) (A contiuation of my summer research on survival analysis)
+### Right-censored; Length-biased data: [PDF Here](/files/rclb.pdf) (A contiuation of my summer research on survival analysis)
 
-* Survival Analysis, 2025 Summer Research: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf)
+### Survival Analysis, 2025 Summer Research: [Analysing Incident and Prevalent Cohort Survival Data (2025)](/files/survivalanalysis.pdf)
 
-* Dynamical Systems, An Introduction to Circular Restricted Three-Body Problem: [CR3BP](/files/3R3BP.pdf)
+### Dynamical Systems, An Introduction to Circular Restricted Three-Body Problem: [CR3BP](/files/3R3BP.pdf)
 
   * Abstract: This project studies the dynamics of a restricted circular restricted three body problem (CR3BP). Motivated from the closed solution of a two body problem, an additionally massless object is added into the system and we derive the set of Lagrange points of the third body as well as their corresponding orbits and stability.
 
@@ -100,7 +101,7 @@ then we would achieve a steady state around equilaterial Lagrange points $L_4,L_
   </div>
 </div>
 
-* Linear Algebra Textbook: [Linear Algebra](/files/线性代数.pdf). Please go to Math Resources page for more notes that I wrote.
+### Linear Algebra Textbook: [Linear Algebra](/files/线性代数.pdf). Please go to Math Resources page for more notes that I wrote.
 
 
 <br>
