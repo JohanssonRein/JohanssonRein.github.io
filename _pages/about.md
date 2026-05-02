@@ -37,6 +37,12 @@ redirect_from:
 * Spatial Statistics: Directed Reading Program, Supervised by Peiyuan Huang, PhD in Statistics.
 
   * Presentation: [Modeling Rental Price in Calgary Under Spatial Bayesian Paradigms](/files/drp_presentation.pdf)
+ 
+  <div style="text-align: center;">
+  <img src="/images/spatial_pred.png" alt="Winter Break" width="800">
+  <p><em>This figures shows a spatial classification of housing prices in California. Houses are classified into different price ranges ($\exp(\text{value})$ based on spatial information (latitute and longitude ). This is a decision tree structure and the CART (Classification and Regression Trees) algorithm is being used. For details, see my written report, Chapter 3.</em></p>
+</div>
+
 
 <br>
 
