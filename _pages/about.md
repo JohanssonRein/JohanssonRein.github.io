@@ -39,8 +39,8 @@ redirect_from:
   * Presentation: [Modeling Rental Price in Calgary Under Spatial Bayesian Paradigms](/files/drp_presentation.pdf)
  
   <div style="text-align: center;">
-  <img src="/images/spatial_pred.png" alt="Winter Break" width="800">
-  <p><em>This figures shows a spatial classification of housing prices in California. Houses are classified into different price ranges ($\exp(\text{value})$ based on spatial information (latitute and longitude ). This is a decision tree structure and the CART (Classification and Regression Trees) algorithm is being used. For details, see my written report, Chapter 3.</em></p>
+  <img src="/images/spatial_pred_plot.png" alt="Winter Break" width="800">
+  <p><em>This spatial plot shows the spatial effect in the Calgary area. Yellow region means positive spatial effect, whereas the rental price is higher than the fixed effect would have been predicted. Blue region means negative spatial price, whereas the rental proce is lower than the fixed effect would have been predicted. See [Zhang 2026](/files/drp_presentation.pdf) for more.</em></p>
 </div>
 
 
