@@ -31,7 +31,7 @@ author:
   avatar           : "Johansson.jpeg"
   name             : "Jiajun Zhang"
   pronouns         : "He/Him"
-  bio              : "M.Sc candidate"
+  bio              : "M.Sc in Statistics"
   location         : "Vancouver, Canada"
   employer         : "University of British Columbia"
   uri              : # URL
@@ -64,7 +64,7 @@ author:
   goodreads        : # Username
   google_plus      : # Username
   keybase          : # Username
-  instagram        : # Username
+  instagram        : "johnsonzhang87"
   lastfm           : # Username
   linkedin         : # Username
   mastodon         : # URL
@@ -80,7 +80,7 @@ author:
   wikipedia        : # Username
   xing             : # Username
   youtube          : # Username
-  reddit           : #"Mission-Guitar1360"
+  reddit           : "Mission-Guitar1360"
   geoguessr        : #"66077416b52224de403bb88b"
 
 # Publication Category - The following the list of publication categories and their headings
