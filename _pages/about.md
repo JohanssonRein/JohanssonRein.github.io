@@ -22,7 +22,16 @@ I even have my own video channel where I upload math videos! Check out my [bilib
 </figure>
 
 
-
+<figure style="text-align: center; margin: 1.5em auto;">
+  <img 
+    src="/images/gundam.png" 
+    alt="Gundam" 
+    style="width: 200px; max-width: 100%; height: auto;"
+  >
+  <figcaption style="font-size: 0.95em;">
+    <em>Figure: description</em>
+  </figcaption>
+</figure>
 
 
 
