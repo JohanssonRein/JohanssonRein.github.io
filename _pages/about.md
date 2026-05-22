@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-# About me
+## About me
 
 My name is Johnson, I was originally born in Luoyang, China, a city known for its peony flower, historical heritages, and delicious soup. 
 
@@ -17,7 +17,7 @@ I even have my own video channel where I upload math videos! Check out my [bilib
 
 
 <figure style="text-align: center;">
-  <img src="/images/gundam.png" alt="Gundam" width="400">
+  <img src="/images/gundam.png" alt="Gundam" width="350">
   <figcaption><em>Figure: Believe me or not, I love mechanics, especially Transformers, freedom Gundam, or any TV series with robots involved. This figure shows my favorite robot in the newest show in China called 机变英盟</em></figcaption>
 </figure>
 
