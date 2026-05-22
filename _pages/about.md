@@ -16,9 +16,9 @@ I am currently a M.Sc student in Statistics at the University of British Columbi
 I even have my own video channel where I upload math videos! Check out my [bilibili](https://space.bilibili.com/14984119?spm_id_from=333.33.0.0). Currently all videos were recorded in Chinese, but I will be setting up a YouTube channel and upload videos in English! Stay tuned!
 
 
-<figure style="text-align: center;">
+<figure style="text-align: center; margin: 1.5em auto;">
   <img src="/images/gundam.png" alt="Gundam" width="200">
-  <figcaption><em>Figure: Believe me or not, I love mechanics, especially Transformers, freedom Gundam, or any TV series with robots involved. This figure shows my favorite robot in the newest show in China called 机变英盟</em></figcaption>
+  <figcaption><em>Figure:</em></figcaption>
 </figure>
 
 
@@ -29,11 +29,11 @@ I even have my own video channel where I upload math videos! Check out my [bilib
     style="width: 200px; max-width: 100%; height: auto;"
   >
   <figcaption style="font-size: 0.95em;">
-    <em>Figure: description</em>
+    <em></em>
   </figcaption>
 </figure>
 
-
+ Believe me or not, I love mechanics, especially Transformers, freedom Gundam, or any TV series with robots involved. This figure shows my favorite robot in the newest show in China called 机变英盟
 
 
 
