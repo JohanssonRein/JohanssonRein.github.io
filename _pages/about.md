@@ -33,6 +33,17 @@ I even have my own video channel where I upload math videos! Check out my [bilib
   </figcaption>
 </figure>
 
+<figure style="text-align: center; margin: 1.5em auto;">
+  <img 
+    src="/images/gundam.png" 
+    alt="Gundam" 
+    style="display: block; margin-left: auto; margin-right: auto; width: 400px !important; max-width: 100% !important; height: auto !important;"
+  >
+  <figcaption style="font-size: 0.95em; text-align: center;">
+    <em></em>
+  </figcaption>
+</figure>
+
  Believe me or not, I love mechanics, especially Transformers, freedom Gundam, or any TV series with robots involved. This figure shows my favorite robot in the newest show in China called 机变英盟
 
 
