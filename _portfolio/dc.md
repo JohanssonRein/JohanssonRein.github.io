@@ -3,6 +3,7 @@ title: "Washington DC"
 excerpt: "My trip to Washington DC (Dec 2023)"  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
 order: 5
+category: travel
 ---
 
 <div style="text-align: center;">
