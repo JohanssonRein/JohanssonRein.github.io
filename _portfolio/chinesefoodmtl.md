@@ -50,13 +50,9 @@ category: food
 
 <div style="text-align: center;">
   <img src="/images/soupzen.jpeg" alt="" width="500">
-  <p><em>My high school lunch.</em></p>
-</div>
-
-<div style="text-align: center;">
-  <img src="/images/hulatang.jpeg" alt="" width="400">
   <p><em>Soup Zen. I would say their Malatang (麻辣烫) is not the traditional type.</em></p>
 </div>
+
 
 <div style="text-align: center;">
   <img src="/images/unclecheng.jpeg" alt="" width="400">
