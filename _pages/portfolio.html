@@ -5,7 +5,7 @@ permalink: /portfolio/
 author_profile: true
 ---
 
-<h1>Travelling</h1>
+<h2>Travelling</h2>
 
 {% assign travel_posts = site.portfolio | where: "category", "travel" | sort: "order" %}
 
@@ -15,10 +15,20 @@ author_profile: true
 
 <br>
 
-<h1>Cooking</h1>
+<h2>Food</h2>
 
 {% assign food_posts = site.portfolio | where: "category", "food" | sort: "order" %}
 
 {% for post in food_posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<br>
+
+<h2>Cooking</h2>
+
+{% assign cooking_posts = site.portfolio | where: "category", "cooking" | sort: "order" %}
+
+{% for post in cooking_posts %}
   {% include archive-single.html %}
 {% endfor %}
