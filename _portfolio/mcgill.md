@@ -26,7 +26,7 @@ category: university
 
 
 <div style="text-align: center;">
-  <img src="/images/burnsidefall.jpg" alt="" width="500">
+  <img src="/images/burnsidefall.webp" alt="" width="500">
   <p><em>The Roddick Gates and Burnside Building (where the department of mathematics and statistics is located) during Fall.</em></p>
 </div>
 
