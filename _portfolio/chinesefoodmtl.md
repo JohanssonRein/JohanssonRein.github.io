@@ -59,7 +59,7 @@ category: food
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/unclecheng.jpg" alt="" width="400">
+  <img src="/images/unclecheng.jpeg" alt="" width="400">
   <p><em>Uncle Cheng， located right next to Marche Newon.</em></p>
 </div>
 
