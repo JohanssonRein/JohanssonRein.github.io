@@ -21,12 +21,10 @@ main:
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "Hobbies"
-    url: /portfolio/
-    
   - title: "CV"
     url: /cv/
-    
+
+  - title: "Hobbies"
+    url: /portfolio/
   
-  #- title: "Guide"
-   # url: /markdown/
+
