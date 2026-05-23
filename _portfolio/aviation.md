@@ -9,12 +9,12 @@ In case you don't know, I love aviations. I also wonder why I didn't become a pi
 
 
 <div style="text-align: center;">
-  <img src="/images/anastarwars.jpeg" alt="" width="400">
+  <img src="/images/anastarwars.jpeg" alt="" width="500">
   <p><em>The star wars livery for ANA, photo taken at Frankfurt international airport.</em></p>
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/lufth747.jpeg" alt="" width="400">
+  <img src="/images/lufth747.jpeg" alt="" width="500">
   <p><em>One of the only three airlines that are still operating Boeing 747 service (Lufthansa, Korean Air, Air China). I had the great pleasure to onboard this Boeing 747-400 on my flight from Frankfurt (FRA) to Shanghai (PVG).</em></p>
 </div>
 
