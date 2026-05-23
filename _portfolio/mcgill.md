@@ -12,7 +12,7 @@ category: university
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/artswinter.jpg" alt="" width="400">
+  <img src="/images/artswinter.jpg" alt="" width="500">
   <p><em>The arts building during winter.</em></p>
 </div>
 
