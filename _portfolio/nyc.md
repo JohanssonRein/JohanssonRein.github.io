@@ -3,6 +3,7 @@ title: "New York City"
 excerpt: "My trip to New York City (Jun 2025)"  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
 order: 4
+category: travel
 ---
 
 <div style="text-align: center;">
