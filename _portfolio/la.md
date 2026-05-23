@@ -7,7 +7,7 @@ category: travel
 ---
 
 <div style="text-align: center;">
-  <img src="/images/griffth.jpeg" alt="" width="400">
+  <img src="/images/griffth.jpeg" alt="" width="600">
   <p><em>The famous Griffth observatory with amazing downtown sunset view</em></p>
 </div>
 
@@ -26,7 +26,7 @@ category: travel
 
 <div style="text-align: center;">
   <img src="/images/lakers.jpeg" alt="" width="400">
-  <p><em>Laker's game at Crypto.com Arena/em></p>
+  <p><em>Laker's game at Crypto.com Arena</em></p>
 </div>
 
 <div style="text-align: center;">
