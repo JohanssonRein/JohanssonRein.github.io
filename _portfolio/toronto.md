@@ -29,27 +29,27 @@ collection: portfolio
 
 
 <div style="text-align: center;">
-  <img src="/images/Niagarafalls.jpeg" alt="" width="400">
+  <img src="/images/Niagarafalls.jpeg" alt="" width="500">
   <p><em>Niagara Falls. If you see the boat below, I am telling you that you will get competely soaked.</em></p>
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/dimsum.jpeg" alt="" width="400">
+  <img src="/images/dimsum.jpeg" alt="" width="500">
   <p><em>The best Dim Sum I ate in Canada, located in Scarborough. The place is called Perfect Chinese Restaurant (雅琼)</em></p>
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/koreanbbq.jpeg" alt="" width="400">
+  <img src="/images/koreanbbq.jpeg" alt="" width="500">
   <p><em>A random Korean Barbeque located at Scarborough as well. I feel like I am back in China when hanging around Scarborough...</em></p>
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/chinesefoodT.jpeg" alt="" width="400">
+  <img src="/images/chinesefoodT.jpeg" alt="" width="500">
   <p><em>A very authentic Sichuan restaurant near University of Toronto. The Mapo Tofu 麻婆豆腐 is especially authentic (approved by my 50% Sichuanese gene)</em></p>
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/thanksgiving.jpeg" alt="" width="400">
+  <img src="/images/thanksgiving.jpeg" alt="" width="500">
   <p><em>The Thanksgiving dinner in Toronto.</em></p>
 </div>
 
