@@ -12,7 +12,7 @@ category: cooking
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/jambalaya.jpeg" alt="" width="500">
+  <img src="/images/jambalaya.jpeg" alt="" width="600">
   <p><em>My first try on jambalaya.</em></p>
 </div>
 
@@ -22,7 +22,7 @@ category: cooking
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/wonton.jpeg" alt="" width="500">
+  <img src="/images/wonton.jpeg" alt="" width="600">
   <p><em>Homemade wonton (馄饨)</em></p>
 </div>
 
