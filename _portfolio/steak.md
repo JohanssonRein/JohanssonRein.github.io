@@ -7,22 +7,22 @@ category: cooking
 ---
 
 <div style="text-align: center;">
-  <img src="/images/putmushroom.jpg" alt="Winter Break" width="500">
+  <img src="/images/putmushroom.jpg" alt="" width="500">
   <p><em></em></p>
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/putsteak.jpg" alt="Winter Break" width="500">
+  <img src="/images/putsteak.jpg" alt="" width="500">
   <p><em></em></p>
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/sealit.jpg" alt="Winter Break" width="500">
+  <img src="/images/sealit.jpg" alt="" width="500">
   <p><em></em></p>
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/covereggwash.jpg" alt="Winter Break" width="500">
+  <img src="/images/covereggwash.jpg" alt="" width="500">
   <p><em></em></p>
 </div>
 
@@ -32,12 +32,12 @@ category: cooking
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/putmushroom.jpg" alt="Winter Break" width="500">
+  <img src="/images/putmushroom.jpg" alt="" width="500">
   <p><em></em></p>
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/beefwellington2.jpg" alt="Winter Break" width="500">
+  <img src="/images/beefwellington2.jpg" alt="" width="500">
   <p><em>Homemade beef wellington</em></p>
 </div>
 
