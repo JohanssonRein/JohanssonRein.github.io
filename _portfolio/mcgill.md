@@ -23,10 +23,6 @@ category: university
   <p><em>Arts Buildiung after a snow storm.</em></p>
 </div>
 
-<div style="text-align: center;">
-  <img src="/images/library.jpeg" alt="" width="400">
-  <p><em>The main library: Irving K. Barber Learning Centre.</em></p>
-</div>
 
 
 <div style="text-align: center;">
