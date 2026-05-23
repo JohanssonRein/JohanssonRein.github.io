@@ -1,6 +1,6 @@
 ---
 title: "China 中国美食"
-excerpt: "My trip to Sichuan -- My mom's hometown"  #<br/><img src='/images/mcgill.jpg'>"
+excerpt: "The real Chinese food from China"  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
 order: 3
 category: food
@@ -52,5 +52,26 @@ category: food
   <img src="/images/luoyigao.jpg" alt="" width="400">
   <p><em>My high school lunch.</em></p>
 </div>
+
+<div style="text-align: center;">
+  <img src="/images/hulatang.jpeg" alt="" width="400">
+  <p><em>Hulatang 胡辣汤, a traditional breakfast in western Henan province.</em></p>
+</div>
+
+<div style="text-align: center;">
+  <img src="/images/shengjian.jpg" alt="" width="500">
+  <p><em>Shengjian 生煎 in Shanghai. It tastes sweet despite there is meat inside!</em></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
 
 
