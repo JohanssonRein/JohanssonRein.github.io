@@ -3,6 +3,7 @@ title: "Los Angeles"
 excerpt: "My trip to Los Angeles"  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
 order: 2
+category: travel
 ---
 
 <div style="text-align: center;">
