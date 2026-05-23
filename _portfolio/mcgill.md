@@ -7,12 +7,12 @@ category: university
 ---
 
 <div style="text-align: center;">
-  <img src="/images/artssummer.jpeg" alt="" width="500">
+  <img src="/images/artssummer.jpg" alt="" width="500">
   <p><em>The iconic arts building during summer.</em></p>
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/artswinter.jpeg" alt="" width="400">
+  <img src="/images/artswinter.jpg" alt="" width="400">
   <p><em>The arts building during winter.</em></p>
 </div>
 
@@ -26,13 +26,13 @@ category: university
 
 
 <div style="text-align: center;">
-  <img src="/images/burnsidefall.jpeg" alt="" width="500">
+  <img src="/images/burnsidefall.jpg" alt="" width="500">
   <p><em>The Roddick Gates and Burnside Building (where the department of mathematics and statistics is located) during Fall.</em></p>
 </div>
 
 
 <div style="text-align: center;">
-  <img src="/images/mactavish.jpeg" alt="" width="500">
+  <img src="/images/mactavish.jpg" alt="" width="500">
   <p><em>MacTavish Rd.</em></p>
 </div>
 
