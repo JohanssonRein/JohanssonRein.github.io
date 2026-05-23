@@ -2,7 +2,7 @@
 title: "Katsu Lovers"
 excerpt: "Best Katsu places in Montreal (By me)"  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
-order: 11
+order: 2
 category: food
 ---
 
