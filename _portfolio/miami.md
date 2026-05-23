@@ -3,6 +3,7 @@ title: "Miami"
 excerpt: "My trip to Miami (Feb 2023)"  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
 order: 3
+category: travel
 ---
 
 <div style="text-align: center;">
