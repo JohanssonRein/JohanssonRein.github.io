@@ -52,7 +52,7 @@ category: travel
 
 <div style="text-align: center;">
   <img src="/images/pajeta.jpeg" alt="" width="400">
-  <p><em>Chicken pajeta, a Mexican dish (I think), with juicy and flavorful chicken accompanied with caramelized onion.</em></p>
+  <p><em>Chicken fajitas, a Mexican dish (I think), with juicy and flavorful chicken accompanied with caramelized onion.</em></p>
 </div>
 
 <div style="text-align: center;">
