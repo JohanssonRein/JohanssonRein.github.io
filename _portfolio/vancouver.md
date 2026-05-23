@@ -29,7 +29,7 @@ collection: portfolio
 
 
 <div style="text-align: center;">
-  <img src="/images/stanleypark.jpeg" alt="" width="400">
+  <img src="/images/stanleypark.jpeg" alt="" width="500">
   <p><em>Stanley Park</em></p>
 </div>
 
