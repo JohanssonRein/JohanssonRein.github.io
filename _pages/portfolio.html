@@ -77,7 +77,23 @@ author_profile: true
   {% endfor %}
 </details>
 
+<br>
 
+<h2 style="font-size: 1.4em;">Painting</h2>
+
+<details>
+  <summary style="cursor: pointer; font-weight: bold; color: #52adc8;">
+    I also love to paint. You can see some of my drawings here:
+  </summary>
+
+  <br>
+
+  {% assign painting_posts = site.portfolio | where: "category", "painting" | sort: "order" %}
+
+  {% for post in painting %}
+    {% include archive-single.html %}
+  {% endfor %}
+</details>
 
 
 
