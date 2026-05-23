@@ -36,7 +36,7 @@ category: travel
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/welocicoaster.jpeg" alt="" width="400">
+  <img src="/images/velocicoaster.jpeg" alt="" width="400">
   <p><em>Velocicoaster. The current record I believe is that somebody rode this 140 times in one day.</em></p>
 </div>
 
