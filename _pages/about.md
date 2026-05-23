@@ -11,7 +11,7 @@ redirect_from:
 
 My name is Johnson, I was originally born in Luoyang, China, a city known for its peony flower, historical heritages, and delicious soup. 
 
-<figure style="text-align: center; margin: 0.9em auto;">
+<figure style="width: 300px; max-width: 100%; margin: 0.9em auto; text-align: center;">
   <img 
     src="/images/gundam.png" 
     alt="Gundam" 
