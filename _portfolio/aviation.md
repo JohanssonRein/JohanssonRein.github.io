@@ -2,6 +2,7 @@
 title: "Aviation"
 excerpt: "My love for aviation"  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
+order: 11
 ---
 
 In case you don't know, I love aviations. I also wonder why I didn't become a pilot... Anyway I love plane spotting, and here are some pictures for you to enjoy!
