@@ -1,9 +1,9 @@
 ---
-title: "How to cook a perfect steak"
+title: "Steak"
 excerpt: "My own receipe on how to cook steak"   #<br/><img src='/images/500x300.png'>
 collection: portfolio
 order: 12
-category: food
+category: cooking
 ---
 
 <div style="text-align: center;">
