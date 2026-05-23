@@ -2,6 +2,7 @@
 title: "Toronto"
 excerpt: "My trip to Toronto (Multiple Times)"  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
+order: 6
 ---
 
 <div style="text-align: center;">
