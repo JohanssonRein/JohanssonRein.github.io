@@ -2,6 +2,7 @@
 title: "Sichuan 四川"
 excerpt: "My trip to Sichuan -- My mom's hometown"  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
+order: 1
 ---
 
 <div style="text-align: center;">
