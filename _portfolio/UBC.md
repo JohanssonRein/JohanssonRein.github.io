@@ -2,7 +2,7 @@
 title: "University of British Columbia"
 excerpt: "My master's degree starts here..."  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
-order: 5
+order: 8
 ---
 
 <div style="text-align: center;">
