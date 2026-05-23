@@ -24,6 +24,12 @@ order: 3
 
 
 <div style="text-align: center;">
+  <img src="/images/beachandocean.jpeg" alt="" width="400">
+  <p><em>The beach and ocean, crystal clear.</em></p>
+</div>
+
+
+<div style="text-align: center;">
   <img src="/images/lighthouse.jpeg" alt="" width="400">
   <p><em>The light house at Key West</em></p>
 </div>
@@ -32,6 +38,7 @@ order: 3
   <img src="/images/keywestpoint.jpeg" alt="" width="400">
   <p><em>The Southernmost point of mainland U.S.</em></p>
 </div>
+
 
 
 
