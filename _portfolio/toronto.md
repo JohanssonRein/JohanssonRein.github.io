@@ -5,7 +5,7 @@ collection: portfolio
 ---
 
 <div style="text-align: center;">
-  <img src="/images/torontoisland.jpeg" alt="" width="400">
+  <img src="/images/totontoisland.jpeg" alt="" width="400">
   <p><em>Toronto Island with beautiful downtown view. Thumbs up to my lovely photographer Tianyi!</em></p>
 </div>
 
