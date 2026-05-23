@@ -22,7 +22,6 @@ My name is Johnson, I was originally born in Luoyang, China, a city known for it
   </figcaption>
 </figure>
 
-<br>
 I am currently a M.Sc student in Statistics at the University of British Columbia. I finished my undergraduate studies at McGill University where I obtained a first class honors degree in Applied Mathematics. As you can see I like mathematics a lot! 
 
 <br>
