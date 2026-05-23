@@ -2,7 +2,7 @@
 title: "How to cook a perfect steak"
 excerpt: "My own receipe on how to cook steak"   #<br/><img src='/images/500x300.png'>
 collection: portfolio
-order: 10
+order: 12
 category: food
 ---
 
