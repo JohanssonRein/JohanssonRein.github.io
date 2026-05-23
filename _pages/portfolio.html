@@ -1,15 +1,24 @@
 ---
 layout: archive
-title: "Travelling & Cooking"
+title: "Hobbies"
 permalink: /portfolio/
 author_profile: true
 ---
 
-{% include base_path %}
+<h1>Travelling</h1>
 
-{% assign sorted_portfolio = site.portfolio | sort: "order" %}
+{% assign travel_posts = site.portfolio | where: "category", "travel" | sort: "order" %}
 
-{% for post in sorted_portfolio %}
+{% for post in travel_posts %}
   {% include archive-single.html %}
 {% endfor %}
 
+<br>
+
+<h1>Cooking</h1>
+
+{% assign food_posts = site.portfolio | where: "category", "food" | sort: "order" %}
+
+{% for post in food_posts %}
+  {% include archive-single.html %}
+{% endfor %}
