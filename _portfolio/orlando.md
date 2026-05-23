@@ -12,7 +12,7 @@ category: travel
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/seaworldorlando.jpeg" alt="" width="400">
+  <img src="/images/seaworldorlando.png" alt="" width="400">
   <p><em>See World Orlando</em></p>
 </div>
 
