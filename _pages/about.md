@@ -18,7 +18,7 @@ My name is Johnson, I was originally born in Luoyang, China, a city known for it
     style="display: block; margin-left: auto; margin-right: auto; width: 300px !important; max-width: 100% !important; height: auto !important;"
   >
   <figcaption style="font-size: 0.95em; text-align: center;">
-    <em>Lovely!</em>
+    <em></em>
   </figcaption>
 </figure>
 
