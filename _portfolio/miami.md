@@ -1,6 +1,6 @@
 ---
-title: "Los Angeles"
-excerpt: "My trip to Los Angeles"  #<br/><img src='/images/mcgill.jpg'>"
+title: "Miami"
+excerpt: "My trip to Miami (Feb 2023)"  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
 order: 3
 ---
