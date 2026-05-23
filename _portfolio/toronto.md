@@ -18,7 +18,7 @@ collection: portfolio
 
 <div style="text-align: center;">
   <img src="/images/raptors.jpeg" alt="" width="400">
-  <p><em>Toronto Raptors v.s Boston Celtics at Soctiabank arena.</em></p>
+  <p><em>Toronto Raptors v.s Boston Celtics at Scotiabank arena.</em></p>
 </div>
 
 
