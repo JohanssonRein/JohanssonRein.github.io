@@ -17,12 +17,12 @@ category: cooking
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/homehotpot.jpeg" alt="" width="500">
+  <img src="/images/homehotpot.jpeg" alt="" width="600">
   <p><em>Hot pot at home.</em></p>
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/wonton.jpeg" alt="" width="600">
+  <img src="/images/wonton.jpeg" alt="" width="500">
   <p><em>Homemade wonton (馄饨)</em></p>
 </div>
 
