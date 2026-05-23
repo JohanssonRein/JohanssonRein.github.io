@@ -5,40 +5,87 @@ permalink: /portfolio/
 author_profile: true
 ---
 
-<h2>Travelling</h2>
+{% include base_path %}
 
-{% assign travel_posts = site.portfolio | where: "category", "travel" | sort: "order" %}
+<h2 style="font-size: 1.4em;">Travelling</h2>
 
-{% for post in travel_posts %}
-  {% include archive-single.html %}
-{% endfor %}
+<details>
+  <summary style="cursor: pointer; font-weight: bold; color: #52adc8;">
+    Show all travelling posts
+  </summary>
 
-<br>
+  <br>
 
-<h2>Universities</h2>
+  {% assign travel_posts = site.portfolio | where: "category", "travel" | sort: "order" %}
 
-{% assign university_posts = site.portfolio | where: "category", "university" | sort: "order" %}
-
-{% for post in university_posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-<br>
-
-<h2>Food</h2>
-
-{% assign food_posts = site.portfolio | where: "category", "food" | sort: "order" %}
-
-{% for post in food_posts %}
-  {% include archive-single.html %}
-{% endfor %}
+  {% for post in travel_posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+</details>
 
 <br>
 
-<h2>Cooking</h2>
+<h2 style="font-size: 1.4em;">Universities</h2>
 
-{% assign cooking_posts = site.portfolio | where: "category", "cooking" | sort: "order" %}
+<details>
+  <summary style="cursor: pointer; font-weight: bold; color: #52adc8;">
+    Show all university posts
+  </summary>
 
-{% for post in cooking_posts %}
-  {% include archive-single.html %}
-{% endfor %}
+  <br>
+
+  {% assign university_posts = site.portfolio | where: "category", "university" | sort: "order" %}
+
+  {% for post in university_posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+</details>
+
+<br>
+
+<h2 style="font-size: 1.4em;">Restaurants</h2>
+
+<details>
+  <summary style="cursor: pointer; font-weight: bold; color: #52adc8;">
+    Show all restaurant posts
+  </summary>
+
+  <br>
+
+  {% assign food_posts = site.portfolio | where: "category", "food" | sort: "order" %}
+
+  {% for post in food_posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+</details>
+
+<br>
+
+<h2 style="font-size: 1.4em;">Cooking</h2>
+
+<details>
+  <summary style="cursor: pointer; font-weight: bold; color: #52adc8;">
+    Show all cooking posts
+  </summary>
+
+  <br>
+
+  {% assign cooking_posts = site.portfolio | where: "category", "cooking" | sort: "order" %}
+
+  {% for post in cooking_posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+
