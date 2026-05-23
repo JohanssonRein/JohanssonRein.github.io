@@ -28,9 +28,11 @@ I love travelling, painting, and mechanics (I wonder why I did not become an eng
     style="display: block; margin-left: auto; margin-right: auto; width: 400px !important; max-width: 100% !important; height: auto !important;"
   >
   <figcaption style="font-size: 0.95em; text-align: center;">
-    <em></em>Lovely painting.
+    <em></em>
   </figcaption>
 </figure>
+
+Lovely painting!
 
 
 
