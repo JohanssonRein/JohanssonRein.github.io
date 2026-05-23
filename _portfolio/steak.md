@@ -37,7 +37,7 @@ category: cooking
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/beefwellington2.jpg" alt="" width="500">
+  <img src="/images/wellington.jpg" alt="" width="500">
   <p><em>Homemade beef wellington</em></p>
 </div>
 
