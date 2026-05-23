@@ -2,6 +2,7 @@
 title: "Vancouver"
 excerpt: "My trip to Vancouver (Oct 2023 + May 2026)"  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
+order: 7
 ---
 
 <div style="text-align: center;">
