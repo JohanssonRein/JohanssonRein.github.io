@@ -15,6 +15,16 @@ author_profile: true
 
 <br>
 
+<h2>Universities</h2>
+
+{% assign university_posts = site.portfolio | where: "category", "university" | sort: "order" %}
+
+{% for post in university_posts %}
+  {% include archive-single.html %}
+{% endfor %}
+
+<br>
+
 <h2>Food</h2>
 
 {% assign food_posts = site.portfolio | where: "category", "food" | sort: "order" %}
