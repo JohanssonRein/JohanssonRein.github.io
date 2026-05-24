@@ -41,7 +41,7 @@ I am currently a M.Sc student in Statistics at the University of British Columbi
 
 <figure style="width: 280px; max-width: 100%; margin: 1.5em auto; text-align: center;">
   <img 
-    src="/images/gdavatar.png" 
+    src="/images/LRavatar.png" 
     alt="Gundam" 
     style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%;"
   >
