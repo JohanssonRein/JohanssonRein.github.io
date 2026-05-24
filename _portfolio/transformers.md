@@ -23,14 +23,16 @@ Some paintings were ancient: I painted them in the year 2017 and 2018...
   <p><em>This shows how I normally paint on paper. I start with sketching the overall layout with a pencil, then using a pen to secure the outline, and finally using markers for coloring.</em></p>
 </div>
 
-
-
 <div style="text-align: center;">
   <img src="/images/optimuspaint.jpg" alt="" width="550">
   <p><em>It follows the same idea. This painting and the previous Bumblebee were both from the movie Transformers 5.</em></p>
 </div>
 
-
+<div style="text-align: center;">
+  <img src="/images/yechi.jpg" alt="" width="550">
+  <p><em>I mainly paint with pen and paper since I learned painting that way. But I am also trying digital painting using graphics tablet, and here is one of them. 
+  This painting is a specific frame taken from the series 机变英盟. </em></p>
+</div>
 
 
 
