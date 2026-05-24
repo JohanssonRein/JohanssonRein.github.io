@@ -18,7 +18,7 @@ My name is Johnson, I was originally born in Luoyang, China, a city known for it
     style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%;"
   >
   <figcaption style="font-size: 0.95em; margin-top: 0.5em;">
-    <em>My robotic avatar. Credit: 阿绘他炉渣的老登, LOFTER.</em>
+    <em>MCredit: 阿绘他炉渣的老登, LOFTER.</em>
   </figcaption>
 </figure>
 
