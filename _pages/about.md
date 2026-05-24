@@ -9,7 +9,7 @@ redirect_from:
 
 ## About me
 
-My name is Johnson, I was originally born in Luoyang, China, a city known for its peony flower, historical heritages, and delicious soup. 
+My name is Johnson, I was originally born in Luoyang (洛阳), China, a city known for its peony flower, historical heritages, and delicious soup. 
 
 <figure style="width: 280px; max-width: 100%; margin: 1.5em auto; text-align: center;">
   <img 
@@ -18,7 +18,7 @@ My name is Johnson, I was originally born in Luoyang, China, a city known for it
     style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%;"
   >
   <figcaption style="font-size: 0.95em; margin-top: 0.5em;">
-    <em></em>
+    <em>Old Town of Luoyang.</em>
   </figcaption>
 </figure>
 
