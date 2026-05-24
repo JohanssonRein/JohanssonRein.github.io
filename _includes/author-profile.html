@@ -6,12 +6,12 @@
 
 <div itemscope itemtype="http://schema.org/Person"> 
 
-  <div class="author__avatar" style="text-align: center;">
+  <div class="author__avatar" style="text-align: center; display: flex; justify-content: center;">
   {% if author.avatar contains "://" %}
-    <img src="{{ author.avatar }}" alt="{{ author.name }}" style="display: block; margin: 0 auto 10px; border-radius: 70% / 80%; width: 170px; height: 200px; object-fit: cover; box-shadow: 0 0 4px rgba(0,0,0,0.2);">
+    <img src="{{ author.avatar }}" alt="{{ author.name }}" style="display: block; width: 180px; height: 180px; object-fit: cover; border-radius: 50%; margin: 0 auto 10px auto; box-shadow: 0 0 4px rgba(0,0,0,0.2);">
   {% else %}
-    <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" style="display: block; margin: 0 auto 10px; border-radius: 70% / 80%; width: 170px; height: 
-    200px; object-fit: cover; box-shadow: 0 0 4px rgba(0,0,0,0.2);">
+    <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}" style="display: block; width: 180px; height: 
+    180px; object-fit: cover; border-radius: 50%; margin: 0 auto 10px auto; box-shadow: 0 0 4px rgba(0,0,0,0.2);">
   {% endif %}
 </div>
 
