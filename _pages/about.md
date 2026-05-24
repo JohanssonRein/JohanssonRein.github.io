@@ -11,14 +11,14 @@ redirect_from:
 
 My name is Johnson, I was originally born in Luoyang, China, a city known for its peony flower, historical heritages, and delicious soup. 
 
-<figure style="width: 330px; max-width: 100%; margin: 0.9em auto; text-align: center;">
+<figure style="width: 200px; max-width: 100%; margin: 1.5em auto; text-align: center;">
   <img 
     src="/images/gundam.png" 
     alt="Gundam" 
-    style="display: block; margin-left: auto; margin-right: auto; width: 300px !important; max-width: 100% !important; height: auto !important;"
+    style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;"
   >
-  <figcaption style="font-size: 0.95em; text-align: center;">
-    <em>Credit: 阿绘他炉渣的老登, LOFTER</em>
+  <figcaption style="font-size: 0.95em; margin-top: 0.5em;">
+    <em>My robotic avatar. Credit: 阿绘他炉渣的老登, LOFTER.</em>
   </figcaption>
 </figure>
 
@@ -32,16 +32,7 @@ In fact I always want to become a professor and teach cool math. I even have my 
 I love travelling, painting, and mechanics (I wonder why I did not become an engineer...), especially Transformers, freedom Gundam, or any TV series with robots involved. 
 
 
-<figure style="width: 200px; max-width: 100%; margin: 1.5em auto; text-align: center;">
-  <img 
-    src="/images/gundam.png" 
-    alt="Gundam" 
-    style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;"
-  >
-  <figcaption style="font-size: 0.95em; margin-top: 0.5em;">
-    <em>Figure: description</em>
-  </figcaption>
-</figure>
+
 
 
 
