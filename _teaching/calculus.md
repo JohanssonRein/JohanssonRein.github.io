@@ -8,4 +8,4 @@ order: 1
 
 ### Here is a practice exam for calculus 2 (Integration of single variable functions and infinite series)
 
-[Practice Exam](files/MATH141practice.pdf)
+[Practice Exam](/files/MATH141practice.pdf)
