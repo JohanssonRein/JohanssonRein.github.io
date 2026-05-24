@@ -18,7 +18,7 @@ My name is Johnson, I was originally born in Luoyang (洛阳), China, a city kno
     style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%;"
   >
   <figcaption style="font-size: 0.95em; margin-top: 0.5em;">
-    <em>Old Town of Luoyang.</em>
+    <em></em>
   </figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ I love travelling, painting, and mechanics (I wonder why I did not become an eng
     style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%;"
   >
   <figcaption style="font-size: 0.95em; margin-top: 0.5em;">
-    <em>Credit: 阿绘他炉渣的老登, LOFTER.</em>
+    <em></em>
   </figcaption>
 </figure>
 
@@ -46,7 +46,7 @@ I am currently a M.Sc student in Statistics at the University of British Columbi
     style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%;"
   >
   <figcaption style="font-size: 0.95em; margin-top: 0.5em;">
-    <em>Gradient descent.</em>
+    <em></em>
   </figcaption>
 </figure>
 
