@@ -11,11 +11,11 @@ redirect_from:
 
 My name is Johnson, I was originally born in Luoyang, China, a city known for its peony flower, historical heritages, and delicious soup. 
 
-<figure style="width: 250px; max-width: 100%; margin: 1.5em auto; text-align: center;">
+<figure style="width: 280px; max-width: 100%; margin: 1.5em auto; text-align: center;">
   <img 
     src="/images/gundam.png" 
     alt="Gundam" 
-    style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%;"
+    style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%;"
   >
   <figcaption style="font-size: 0.95em; margin-top: 0.5em;">
     <em>My robotic avatar. Credit: 阿绘他炉渣的老登, LOFTER.</em>
