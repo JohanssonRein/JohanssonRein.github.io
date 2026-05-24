@@ -2,8 +2,8 @@
 title: "Transformers"
 excerpt: "Like I said, I love watching Transformers, I used to sketch them on paper when I was in middle school..."  #<br/><img src='/images/mcgill.jpg'>"
 collection: portfolio
-order: 1
-category: painting
+order: 3
+category: cooking
 ---
 
 Some paintings were ancient: I painted them in the year 2017 and 2018...
