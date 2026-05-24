@@ -265,7 +265,7 @@ kramdown:
 collections:
   teaching:
     output: true
-    permalink: /:teaching/:path/
+    permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
