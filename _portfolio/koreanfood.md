@@ -6,7 +6,7 @@ order: 6
 category: food
 ---
 
-One of the most iconic Korean restaurant: Opiano. It is right next to McGill, I eat here roughly every week...
+## One of the most iconic Korean restaurant: Opiano. It is right next to McGill, I eat here roughly every week...
 
 
 <div style="text-align: center;">
@@ -38,7 +38,7 @@ One of the most iconic Korean restaurant: Opiano. It is right next to McGill, I 
   <p><em>Bbyeo Haejangguk, aka pork bone soup, with fried dumplings. It is the perfect meal in Winter.</em></p>
 </div>
 
-Other Korean restaurants: (Sorry Opiano took over so many credits...)
+## Other Korean restaurants: (Sorry Opiano took over so many credits...)
 
 <div style="text-align: center;">
   <img src="/images/realkoreanbbq.jpg" alt="" width="500">
