@@ -23,7 +23,7 @@ category: food
 
 <div style="text-align: center;">
   <img src="/images/opianoramen.jpg" alt="" width="500">
-  <p><em>Budae Jjigae/em></p>
+  <p><em>Budae Jjigae</em></p>
 </div>
 
 
