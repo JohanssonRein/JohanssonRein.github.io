@@ -9,12 +9,12 @@ category: painting
 The oldtown of Luoyang (洛阳).
 
 <div style="text-align: center;">
-  <img src="/images/gulou.jpg" alt="" width="400">
+  <img src="/images/gulou.jpg" alt="" width="600">
   <p><em></em></p>
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/chengmen.jpg" alt="" width="400">
+  <img src="/images/chengmen.jpg" alt="" width="600">
   <p><em></em></p>
 </div>
 
