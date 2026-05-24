@@ -37,11 +37,11 @@ I love travelling, painting, and mechanics (I wonder why I did not become an eng
 </figure>
 
 <br>
-I am currently a M.Sc student in Statistics at the University of British Columbia. I finished my undergraduate studies at McGill University where I obtained a first class honors degree in Applied Mathematics. As you can see I like mathematics a lot! 
+I am currently a M.Sc student in Statistics at the University of British Columbia. I finished my undergraduate studies at McGill University where I obtained a first class honors degree in Applied Mathematics. As you can see I like Mathematics and Statistics a lot! 
 
 <figure style="width: 280px; max-width: 100%; margin: 1.5em auto; text-align: center;">
   <img 
-    src="/images/statsavatar.png" 
+    src="/images/gdavatar.png" 
     alt="Gundam" 
     style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%;"
   >
