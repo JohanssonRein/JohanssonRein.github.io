@@ -46,7 +46,7 @@ I am currently a M.Sc student in Statistics at the University of British Columbi
     style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%;"
   >
   <figcaption style="font-size: 0.95em; margin-top: 0.5em;">
-    <em></em>
+    <em>Gradient descent.</em>
   </figcaption>
 </figure>
 
