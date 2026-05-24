@@ -14,6 +14,11 @@ Some paintings were ancient: I painted them in the year 2017 and 2018...
 </div>
 
 <div style="text-align: center;">
+  <img src="/images/barricade.jpg" alt="" width="400">
+  <p><em>Barricade, from the movie Transformers 4.</em></p>
+</div>
+
+<div style="text-align: center;">
   <img src="/images/bumblebeepaint.jpg" alt="" width="550">
   <p><em>This shows how I normally paint on paper. I start with sketching the overall layout with a pencil, then using a pen to secure the outline, and finally using markers for coloring.</em></p>
 </div>
