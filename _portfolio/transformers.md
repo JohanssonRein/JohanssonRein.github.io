@@ -29,7 +29,7 @@ Some paintings were ancient: I painted them in the year 2017 and 2018...
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/yechi.jpg" alt="" width="600">
+  <img src="/images/yechi.jpg" alt="" width="750">
   <p><em>I mainly paint with pen and paper since I learned painting that way. But I am also trying digital painting using graphics tablet, and here is one of them. 
   This painting is a specific frame taken from the series 机变英盟. </em></p>
 </div>
