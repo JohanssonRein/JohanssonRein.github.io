@@ -21,7 +21,18 @@ mathematical statistics, applied mathematics in general (all recorded in Chinese
 
 {% include base_path %}
 
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
-{% endfor %}
+<h2 style="font-size: 1.4em;">Practice Materials</h2>
 
+<details>
+  <summary style="cursor: pointer; font-weight: bold; color: #52adc8;">
+    Click here to see some practice problems that I designed
+  </summary>
+
+  <br>
+
+  {% assign practice_posts = site.teaching | where: "category", "practice" | sort: "order" %}
+
+  {% for post in practice_posts %}
+    {% include archive-single.html %}
+  {% endfor %}
+</details>
