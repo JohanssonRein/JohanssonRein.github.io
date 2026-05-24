@@ -19,7 +19,7 @@ category: travel
 
 
 <div style="text-align: center;">
-  <img src="/images/qc3.jpeg" alt="" width="500">
+  <img src="/images/qc3.jpeg" alt="" width="400">
   <p><em></em></p>
 </div>
 
@@ -36,4 +36,27 @@ category: travel
 </div>
 
 
+<div style="text-align: center;">
+  <img src="/images/food1.jpeg" alt="" width="500">
+  <p><em></em></p>
+</div>
+
+
+
+<div style="text-align: center;">
+  <img src="/images/food2.jpeg" alt="" width="500">
+  <p><em></em></p>
+</div>
+
+
+<div style="text-align: center;">
+  <img src="/images/food3.jpeg" alt="" width="500">
+  <p><em></em></p>
+</div>
+
+
+<div style="text-align: center;">
+  <img src="/images/food4.jpeg" alt="" width="500">
+  <p><em></em></p>
+</div>
 
