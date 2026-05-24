@@ -15,7 +15,7 @@ My name is Johnson, I was originally born in Luoyang, China, a city known for it
   <img 
     src="/images/gundam.png" 
     alt="Gundam" 
-    style="width: 200px; height: 200px; object-fit: cover; border-radius: 50%;"
+    style="width: 250px; height: 250px; object-fit: cover; border-radius: 50%;"
   >
   <figcaption style="font-size: 0.95em; margin-top: 0.5em;">
     <em>My robotic avatar. Credit: 阿绘他炉渣的老登, LOFTER.</em>
