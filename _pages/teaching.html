@@ -36,6 +36,14 @@ I also design practice problems for different math courses, and I enjoy doing th
   {% assign practice_posts = site.teaching | where: "category", "practice" | sort: "order" %}
 
   {% for post in practice_posts %}
-    {% include archive-single.html %}
+    <div style="margin-bottom: 2em;">
+      <h2 style="font-size: 1.2em; margin-bottom: 0.3em;">
+        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      </h2>
+
+      {% if post.excerpt %}
+        <p style="margin-top: 0;">{{ post.excerpt }}</p>
+      {% endif %}
+    </div>
   {% endfor %}
 </details>
