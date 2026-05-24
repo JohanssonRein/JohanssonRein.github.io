@@ -13,7 +13,7 @@ My name is Johnson, I was originally born in Luoyang, China, a city known for it
 
 <figure style="width: 280px; max-width: 100%; margin: 1.5em auto; text-align: center;">
   <img 
-    src="/images/luoyang.png" 
+    src="/images/luoyang.jpg" 
     alt="Gundam" 
     style="width: 280px; height: 280px; object-fit: cover; border-radius: 50%;"
   >
