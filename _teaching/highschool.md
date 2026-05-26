@@ -7,4 +7,4 @@ category: practice
 ---
 
 ### Here is my math note back in high school. (Spoiler's alert: It's written in Chinese)
-[Math Note](/files/highschoolmathnote.pdf)
+Here is the note: [Math Note](/files/highschoolmathnote.pdf). In fact it is so dense in knowledge that I would refer to this note regularly, even today.
