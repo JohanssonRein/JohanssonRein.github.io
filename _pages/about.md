@@ -23,7 +23,7 @@ My name is Johnson, I was originally born in Luoyang (洛阳), China, a city kno
 </figure>
 
 <br>
-I love travelling, painting, and mechanics (I wonder why I did not become an engineer...), especially Transformers, freedom Gundam, or any TV series with robots involved. 
+I love travelling, painting, and mechanics (I wonder why I did not become an engineer...), especially Transformers, freedom Gundam, or any series with robots involved. 
 
 <figure style="width: 280px; max-width: 100%; margin: 1.5em auto; text-align: center;">
   <img 
@@ -37,7 +37,7 @@ I love travelling, painting, and mechanics (I wonder why I did not become an eng
 </figure>
 
 <br>
-I am currently a M.Sc student in Statistics at the University of British Columbia. I finished my undergraduate studies at McGill University where I obtained a first class honors degree in Applied Mathematics. As you can see I like Mathematics and Statistics a lot! 
+I am currently a M.Sc student in Statistics at the University of British Columbia. I finished my undergraduate studies at McGill University where I obtained a first class honors degree in Applied Mathematics. As you can see I like Applied Mathematics and Statistics a lot (definitely not pure math)! 
 
 <figure style="width: 280px; max-width: 100%; margin: 1.5em auto; text-align: center;">
   <img 
