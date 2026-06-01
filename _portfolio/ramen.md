@@ -30,7 +30,7 @@ category: food
 </div>
 
 <div style="text-align: center;">
-  <img src="/images/yokato.jpeg" alt="" width="400">
+  <img src="/images/yokato.jpg" alt="" width="400">
   <p><em>Yokato Yokabai Ramen</em></p>
 </div>
 
