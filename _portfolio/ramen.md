@@ -29,6 +29,11 @@ category: food
   <p><em>Marurachi ramen, in Vancouver</em></p>
 </div>
 
+<div style="text-align: center;">
+  <img src="/images/yokato.jpeg" alt="" width="400">
+  <p><em>Yokato Yokabai Ramen</em></p>
+</div>
+
 
 <div style="text-align: center;">
   <img src="/images/raijin.jpeg" alt="" width="400">
