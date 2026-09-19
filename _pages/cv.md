@@ -44,7 +44,9 @@ During my undergraduate degree, I took several graduate-level classes and had se
 
 Work experience
 ======
-* 2024.9 - Present: Mathematics Helpdesk Tutor
+* 2026.9 - Current: Graduate Teaching Assistant (STAT 251: Introductory Probability and Statistics)
+  * University of British Columbia
+* 2024.9 - 2026.4: Mathematics Helpdesk Tutor
   * McGill University
   * Duties includes: Hold weekly office hours (5 hours weekly) at Burnside building room 911 and answer math questions from other students. Questions are from a wide range of fields including calculus, analysis, abstract algebra, linear algebra, probability, statistics and differential equations.
   * Supervisor: Jerome Fortier
