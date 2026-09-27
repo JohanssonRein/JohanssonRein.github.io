@@ -139,6 +139,16 @@ publication_category:
     group: 'Math at McGill'
     description: >
      This note is based on MATH 350 (Honors Discrete Mathematics) at McGill University.
+  statistical_inference:
+    title: 'Statistical Inference'
+    group: 'Stats at UBC'
+    description: >
+     This note is based on STAT 560/561 (Statistical Inference) at the University of British Columbia. The note can be found [here](/files/STAT_560.pdf).
+  probability_theory:
+    title: 'Probability Theory'
+    group: 'Stats at UBC'
+    description: >
+     This note is based on STAT 547 (Probability Theory) at the University of British Columbia. The note can be found [here](/files/STAT_547.pdf).
   
 
 # Site Settings
