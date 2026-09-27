@@ -16,29 +16,93 @@ In this page, you will find several notes on different mathematics topics, notes
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% for category in site.publication_category %}
-  {% assign filtered_posts = site.publications | where: "category", category[0] | sort: "order" %}
-  {% if filtered_posts.size > 0 %}
+<!-- Statistics and Probability -->
+<details class="resource-group">
+  <summary class="resource-group-title">
+    Math at McGill
+  </summary>
 
-  <h2>{{ category[1].title }}</h2>
-  {% if category[1].description %}
-    <p style="margin: 0 0 1em 0; font-size: 0.95em; color: #555;">
-      {{ category[1].description | markdownify }}
-    </p>
-  {% endif %}
+  <div class="resource-group-content">
 
-  <details>
-    <summary style="cursor: pointer;">Show notes</summary>
-    <hr />
-    {% for post in filtered_posts %}
-      {% include archive-single.html %}
+    {% for category in site.publication_category %}
+      {% if category[1].group == "Math at McGill" %}
+
+        {% assign filtered_posts = site.publications
+          | where: "category", category[0]
+          | sort: "order" %}
+
+        {% if filtered_posts.size > 0 %}
+
+          <h2>{{ category[1].title }}</h2>
+
+          {% if category[1].description %}
+            <div class="resource-description">
+              {{ category[1].description | markdownify }}
+            </div>
+          {% endif %}
+
+          <details class="resource-notes">
+            <summary>Show notes</summary>
+            <hr />
+
+            {% for post in filtered_posts %}
+              {% include archive-single.html %}
+            {% endfor %}
+
+          </details>
+
+        {% endif %}
+      {% endif %}
     {% endfor %}
-  </details>
 
-  {% endif %}
-{% endfor %}
+  </div>
+</details>
 
+<!-- Algebra and Discrete Mathematics -->
+<details class="resource-group">
+  <summary class="resource-group-title">
+    Stats at UBC
+  </summary>
+
+  <div class="resource-group-content">
+
+    {% for category in site.publication_category %}
+      {% if category[1].group == "Stats at UBC" %}
+
+        {% assign filtered_posts = site.publications
+          | where: "category", category[0]
+          | sort: "order" %}
+
+        {% if filtered_posts.size > 0 %}
+
+          <h2>{{ category[1].title }}</h2>
+
+          {% if category[1].description %}
+            <div class="resource-description">
+              {{ category[1].description | markdownify }}
+            </div>
+          {% endif %}
+
+          <details class="resource-notes">
+            <summary>Show notes</summary>
+            <hr />
+
+            {% for post in filtered_posts %}
+              {% include archive-single.html %}
+            {% endfor %}
+
+          </details>
+
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+  </div>
+</details>
+
+
+
+ 
 
 
 
