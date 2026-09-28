@@ -1,7 +1,7 @@
 ---
 title: "Statistical Inference (STAT 560/561)"
 collection: publications
-category: statistical inference
+category: statistical_inference
 permalink: /publication/560
 order: 1
 #excerpt: 'My notes for STAT 560/561 at UBC'
