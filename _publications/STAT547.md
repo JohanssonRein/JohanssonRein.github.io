@@ -1,7 +1,7 @@
 ---
 title: "Probability Theory (STAT 547)"
 collection: publications
-category: probability theory
+category: probability_theory
 permalink: /publication/547
 order: 1
 #excerpt: 'My notes for STAT 547 (Probability Theory) at UBC'
