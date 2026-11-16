@@ -24,7 +24,14 @@ I am Jiajun Zhang (Johnson), I was originally born in Luoyang (洛阳), China, a
 
 <br>
 
-I am currently a M.Sc student in Statistics at the University of British Columbia (Supervisor: Jiahua Chen). I finished my undergraduate studies at McGill University where I obtained a first class honors degree in Applied Mathematics. I am interested in parameter estimation in mixture models and Bayesian inference.
+I am currently a M.Sc student in Statistics at the University of British Columbia (Supervisor: Jiahua Chen). I finished my undergraduate studies at McGill University where I obtained a first class honors degree in Applied Mathematics. My research interests include:
+
+-Survey Sampling
+-Finite Mixture Models
+-Survival Analysis
+-Bayesian theory and MCMC methods
+
+
 
 
 
