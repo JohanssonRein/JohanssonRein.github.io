@@ -13,6 +13,6 @@ citation: 'Jiajun Zhang, (2026) Notes on survey sampling'
 ---
 
 
-My notes: [here](/files/survey_sampling.pdf) 
+My notes: [here](/files/Survey_Sampling.pdf) 
 
 
