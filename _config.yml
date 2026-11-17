@@ -149,6 +149,11 @@ publication_category:
     group: 'Stats at UBC'
     description: >
      This note is based on STAT 547 (Probability Theory) at the University of British Columbia. The note can be found [here](/files/STAT_547.pdf).
+  survey_sampling:
+    title: 'Survey Sampling'
+    group: 'Stats at UBC'
+    description: >
+     This note is about survey sampling which I self-studied starting from November, 2026. The note is largely based on the book by Changbao Wu, Marry Thompson, and the lecture notes by Mehdi Dagdoug. The note can be found [here](/files/Survey_Sampling.pdf).
   
 
 # Site Settings
